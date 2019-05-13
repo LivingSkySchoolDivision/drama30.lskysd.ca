@@ -1,0 +1,1621 @@
+<html><!-- #BeginTemplate "/Templates/templatestudent.dwt" -->
+
+<head>
+
+<!-- #BeginEditable "doctitle" --> 
+
+<title>Student: The Project</title>
+
+<!-- #EndEditable --> 
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<script language="JavaScript">
+
+<!--
+
+function MM_preloadImages() { //v3.0
+
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+
+}
+
+
+
+function MM_findObj(n, d) { //v4.0
+
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+
+  if(!x && document.getElementById) x=document.getElementById(n); return x;
+
+}
+
+
+
+function MM_nbGroup(event, grpName) { //v3.0
+
+  var i,img,nbArr,args=MM_nbGroup.arguments;
+
+  if (event == "init" && args.length > 2) {
+
+    if ((img = MM_findObj(args[2])) != null && !img.MM_init) {
+
+      img.MM_init = true; img.MM_up = args[3]; img.MM_dn = img.src;
+
+      if ((nbArr = document[grpName]) == null) nbArr = document[grpName] = new Array();
+
+      nbArr[nbArr.length] = img;
+
+      for (i=4; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+
+        if (!img.MM_up) img.MM_up = img.src;
+
+        img.src = img.MM_dn = args[i+1];
+
+        nbArr[nbArr.length] = img;
+
+    } }
+
+  } else if (event == "over") {
+
+    document.MM_nbOver = nbArr = new Array();
+
+    for (i=1; i < args.length-1; i+=3) if ((img = MM_findObj(args[i])) != null) {
+
+      if (!img.MM_up) img.MM_up = img.src;
+
+      img.src = (img.MM_dn && args[i+2]) ? args[i+2] : args[i+1];
+
+      nbArr[nbArr.length] = img;
+
+    }
+
+  } else if (event == "out" ) {
+
+    for (i=0; i < document.MM_nbOver.length; i++) {
+
+      img = document.MM_nbOver[i]; img.src = (img.MM_dn) ? img.MM_dn : img.MM_up; }
+
+  } else if (event == "down") {
+
+    if ((nbArr = document[grpName]) != null)
+
+      for (i=0; i < nbArr.length; i++) { img=nbArr[i]; img.src = img.MM_up; img.MM_dn = 0; }
+
+    document[grpName] = nbArr = new Array();
+
+    for (i=2; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+
+      if (!img.MM_up) img.MM_up = img.src;
+
+      img.src = img.MM_dn = args[i+1];
+
+      nbArr[nbArr.length] = img;
+
+  } }
+
+}
+
+
+
+function MM_swapImgRestore() { //v3.0
+
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+
+}
+
+
+
+function MM_swapImage() { //v3.0
+
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+
+}
+
+//-->
+
+</script>
+
+<!-- #BeginEditable "CourseBuilder" --> 
+
+<script language="JavaScript">
+
+<!--
+
+function MM_initInteractions(){}
+
+//-->
+
+</script>
+
+<!-- #EndEditable --> 
+
+</head>
+
+
+
+<body bgcolor="#993366" text="#000000" onLoad="MM_initInteractions();MM_preloadImages('../library/buttons/home_r1_c1_f3.gif','../library/buttons/home_r1_c1_f2.gif','../library/buttons/home_r1_c1_f4.gif','../library/buttons/home_r2_c1_f2.gif','../library/buttons/courseoutline_r1_c1_f3.gif','../library/buttons/courseoutline_r1_c1_f2.gif','../library/buttons/courseoutline_r1_c1_f4.gif','../library/buttons/courseoutline_r2_c1_f2.gif','../library/buttons/sitemap_r1_c1_f3.gif','../library/buttons/sitemap_r1_c1_f2.gif','../library/buttons/sitemap_r1_c1_f4.gif','../library/buttons/help_r1_c1_f3.gif','../library/buttons/help_r1_c1_f2.gif','../library/buttons/help_r1_c1_f4.gif','../library/buttons/help_r2_c1_f2.gif','../library/buttons/resources_r1_c1_f3.gif','../library/buttons/resources_r1_c1_f2.gif','../library/buttons/resources_r1_c1_f4.gif','../library/buttons/resources_r2_c1_f2.gif','../library/buttons/teacher1_r1_c1_f3.gif','../library/buttons/teacher1_r1_c1_f2.gif','../library/buttons/teacher1_r1_c1_f4.gif','../library/buttons/teacher1_r2_c1_f2.gif','../library/buttons/class_f3.gif','../library/buttons/class_f2.gif','../library/buttons/class_f4.gif','../library/buttons/outline_f3.gif','../library/buttons/outline_f2.gif','../library/buttons/outline_f4.gif','../library/buttons/studentblue_r1_c1_f3.gif','../library/buttons/studentblue_r1_c1_f2.gif','../library/buttons/studentblue_r1_c1_f4.gif')">
+
+<table width="700" border="0" cellpadding="0" cellspacing="0">
+
+  <tr> 
+
+    <td width="97" valign="top" bgcolor="993366" rowspan="2"> <!-- #BeginLibraryItem "/library/buttons/home.lbi" --><table border="0" cellpadding="0" cellspacing="0" width="96">
+
+<!-- fwtable fwsrc="home1.png" fwbase="home.gif" -->
+
+  <tr>
+
+   <td><img src="../library/buttons/spacer.gif" width="96" height="1" border="0"></td>
+
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+
+  </tr>
+
+  <tr>
+
+    <td><a href="../index.html" onMouseOut="MM_nbGroup('out');"  onMouseOver="MM_nbGroup('over','home_r1_c1','../library/buttons/home_r1_c1_f2.gif','../library/buttons/home_r1_c1_f4.gif',1)"  onClick="MM_nbGroup('down','navbar1','home_r1_c1','../library/buttons/home_r1_c1_f3.gif',1)" ><img name="home_r1_c1" src="../library/buttons/home_r1_c1.gif" width="96" height="79" border="0" alt="home"></a></td>
+
+   <td><img src="../library/buttons/spacer.gif" width="1" height="79" border="0"></td>
+
+  </tr>
+
+  <tr>
+
+   <td><a href="#" onMouseOut="MM_swapImgRestore();"  onMouseOver="MM_swapImage('home_r2_c1','','../library/buttons/home_r2_c1_f2.gif',1)" ><img name="home_r2_c1" src="../library/buttons/home_r2_c1.gif" width="96" height="1" border="0"></a></td>
+
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+
+  </tr>
+
+</table>
+
+<!-- #EndLibraryItem --></td>
+
+    <td valign="top" width="97" bgcolor="993366" rowspan="2"><!-- #BeginLibraryItem "/library/buttons/studentblue.lbi" --><table border="0" cellpadding="0" cellspacing="0" width="96">
+
+<!-- fwtable fwsrc="student1.png" fwbase="studentblue.gif" -->
+
+  <tr>
+
+   <td><img src="../library/buttons/spacer.gif" width="95" height="1" border="0"></td>
+
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+
+  </tr>
+
+  <tr>
+
+    <td><a href="../mainpages/student.html" onMouseOut="MM_nbGroup('out');"  onMouseOver="MM_nbGroup('over','studentblue_r1_c1','../library/buttons/studentblue_r1_c1_f2.gif','../library/buttons/studentblue_r1_c1_f4.gif',1)"  onClick="MM_nbGroup('down','navbar1','studentblue_r1_c1','../library/buttons/studentblue_r1_c1_f3.gif',1)" ><img name="studentblue_r1_c1" src="../library/buttons/studentblue_r1_c1.gif" width="95" height="79" border="0"></a></td>
+
+   <td rowspan="2"><img name="studentblue_r1_c2" src="../library/buttons/studentblue_r1_c2.gif" width="1" height="80" border="0"></td>
+
+   <td><img src="../library/buttons/spacer.gif" width="1" height="79" border="0"></td>
+
+  </tr>
+
+  <tr>
+
+   <td><img name="studentblue_r2_c1" src="../library/buttons/studentblue_r2_c1.gif" width="95" height="1" border="0"></td>
+
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+
+  </tr>
+
+</table>
+
+<!-- #EndLibraryItem --></td>
+
+    <td width="97" valign="top" rowspan="2" bgcolor="993366"><!-- #BeginLibraryItem "/library/buttons/teacher1.lbi" --><table border="0" cellpadding="0" cellspacing="0" width="96">
+
+<!-- fwtable fwsrc="teacher1.png" fwbase="teacher1.gif" -->
+
+  <tr>
+
+   <td><img src="../library/buttons/spacer.gif" width="96" height="1" border="0"></td>
+
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+
+  </tr>
+
+  <tr>
+
+    <td><a href="../mainpages/teacher.html" onMouseOut="MM_nbGroup('out');"  onMouseOver="MM_nbGroup('over','teacher1_r1_c1','../library/buttons/teacher1_r1_c1_f2.gif','../library/buttons/teacher1_r1_c1_f4.gif',1)"  onClick="MM_nbGroup('down','navbar1','teacher1_r1_c1','../library/buttons/teacher1_r1_c1_f3.gif',1)" ><img name="teacher1_r1_c1" src="../library/buttons/teacher1_r1_c1.gif" width="96" height="79" border="0"></a></td>
+
+   <td><img src="../library/buttons/spacer.gif" width="1" height="79" border="0"></td>
+
+  </tr>
+
+  <tr>
+
+   <td><a href="#" onMouseOut="MM_swapImgRestore();"  onMouseOver="MM_swapImage('teacher1_r2_c1','','../library/buttons/teacher1_r2_c1_f2.gif',1)" ><img name="teacher1_r2_c1" src="../library/buttons/teacher1_r2_c1.gif" width="96" height="1" border="0"></a></td>
+
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+
+  </tr>
+
+</table>
+
+<!-- #EndLibraryItem --></td>
+
+    <td width="409" height="81" valign="top" bgcolor="993366"><!-- #BeginEditable "banner" --><!-- #BeginLibraryItem "/library/buttons/dr30titlestudent.lbi" --><img name="dr30titlestudent" src="../library/buttons/dr30titlestudent.gif" width="400" height="80" border="0"><!-- #EndLibraryItem --><!-- #EndEditable --></td>
+
+  </tr>
+
+  <tr> 
+
+    <td valign="top" height="23" bgcolor="993366"><!-- #BeginEditable "pagetitle" --> 
+
+      <div align="center"></div>
+
+      <!-- #EndEditable --></td>
+
+  </tr>
+
+  <tr> 
+
+    <td valign="top" height="347"> 
+
+      <table width="100%" border="0" cellpadding="0" cellspacing="0">
+
+        <tr> 
+
+          <td width="97" height="56" valign="top" bgcolor="993366"> <!-- #BeginLibraryItem "/library/buttons/courseoutline.lbi" --><table border="0" cellpadding="0" cellspacing="0" width="96">
+
+<!-- fwtable fwsrc="courseoutline1.png" fwbase="courseoutline.gif" -->
+
+  <tr>
+
+   <td><img src="../library/buttons/spacer.gif" width="96" height="1" border="0"></td>
+
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+
+  </tr>
+
+  <tr>
+
+    <td><a href="../mainpages/courseoutline.htm" onMouseOut="MM_nbGroup('out');"  onMouseOver="MM_nbGroup('over','courseoutline_r1_c1','../library/buttons/courseoutline_r1_c1_f2.gif','../library/buttons/courseoutline_r1_c1_f4.gif',1)"  onClick="MM_nbGroup('down','navbar1','courseoutline_r1_c1','../library/buttons/courseoutline_r1_c1_f3.gif',1)" ><img name="courseoutline_r1_c1" src="../library/buttons/courseoutline_r1_c1.gif" width="96" height="79" border="0"></a></td>
+
+   <td><img src="../library/buttons/spacer.gif" width="1" height="79" border="0"></td>
+
+  </tr>
+
+  <tr>
+
+   <td><a href="#" onMouseOut="MM_swapImgRestore();"  onMouseOver="MM_swapImage('courseoutline_r2_c1','','../library/buttons/courseoutline_r2_c1_f2.gif',1)" ><img name="courseoutline_r2_c1" src="../library/buttons/courseoutline_r2_c1.gif" width="96" height="1" border="0"></a></td>
+
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+
+  </tr>
+
+</table>
+
+<!-- #EndLibraryItem --><!-- #BeginLibraryItem "/library/buttons/sitemap.lbi" --><table border="0" cellpadding="0" cellspacing="0" width="96">
+
+<!-- fwtable fwsrc="sitemap1.png" fwbase="sitemap.gif" -->
+
+  <tr>
+
+   <td><img src="../library/buttons/spacer.gif" width="95" height="1" border="0"></td>
+
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+
+  </tr>
+
+  <tr>
+
+    <td><a href="../mainpages/templatemainmap.html" onMouseOut="MM_nbGroup('out');"  onMouseOver="MM_nbGroup('over','sitemap_r1_c1','../library/buttons/sitemap_r1_c1_f2.gif','../library/buttons/sitemap_r1_c1_f4.gif',1)"  onClick="MM_nbGroup('down','navbar1','sitemap_r1_c1','../library/buttons/sitemap_r1_c1_f3.gif',1)" ><img name="sitemap_r1_c1" src="../library/buttons/sitemap_r1_c1.gif" width="95" height="79" border="0"></a></td>
+
+   <td rowspan="2"><img name="sitemap_r1_c2" src="../library/buttons/sitemap_r1_c2.gif" width="1" height="80" border="0"></td>
+
+   <td><img src="../library/buttons/spacer.gif" width="1" height="79" border="0"></td>
+
+  </tr>
+
+  <tr>
+
+   <td><img name="sitemap_r2_c1" src="../library/buttons/sitemap_r2_c1.gif" width="95" height="1" border="0"></td>
+
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+
+  </tr>
+
+</table>
+
+<!-- #EndLibraryItem --><!-- #BeginLibraryItem "/library/buttons/help.lbi" --><table border="0" cellpadding="0" cellspacing="0" width="96">
+
+<!-- fwtable fwsrc="help1.png" fwbase="help.gif" -->
+
+  <tr>
+
+   <td><img src="../library/buttons/spacer.gif" width="96" height="1" border="0"></td>
+
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+
+  </tr>
+
+  <tr>
+
+    <td><a href="../mainpages/help.html" onMouseOut="MM_nbGroup('out');"  onMouseOver="MM_nbGroup('over','help_r1_c1','../library/buttons/help_r1_c1_f2.gif','../library/buttons/help_r1_c1_f4.gif',1)"  onClick="MM_nbGroup('down','navbar1','help_r1_c1','../library/buttons/help_r1_c1_f3.gif',1)" ><img name="help_r1_c1" src="../library/buttons/help_r1_c1.gif" width="96" height="79" border="0"></a></td>
+
+   <td><img src="../library/buttons/spacer.gif" width="1" height="79" border="0"></td>
+
+  </tr>
+
+  <tr>
+
+   <td><a href="#" onMouseOut="MM_swapImgRestore();"  onMouseOver="MM_swapImage('help_r2_c1','','../library/buttons/help_r2_c1_f2.gif',1)" ><img name="help_r2_c1" src="../library/buttons/help_r2_c1.gif" width="96" height="1" border="0"></a></td>
+
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+
+  </tr>
+
+</table>
+
+<!-- #EndLibraryItem --><!-- #BeginLibraryItem "/library/buttons/resources.lbi" --><table border="0" cellpadding="0" cellspacing="0" width="96">
+
+<!-- fwtable fwsrc="resources1.png" fwbase="resources.gif" -->
+
+  <tr>
+
+   <td><img src="../library/buttons/spacer.gif" width="96" height="1" border="0"></td>
+
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+
+  </tr>
+
+  <tr>
+
+    <td><a href="../mainpages/resources.html" onMouseOut="MM_nbGroup('out');"  onMouseOver="MM_nbGroup('over','resources_r1_c1','../library/buttons/resources_r1_c1_f2.gif','../library/buttons/resources_r1_c1_f4.gif',1)"  onClick="MM_nbGroup('down','navbar1','resources_r1_c1','../library/buttons/resources_r1_c1_f3.gif',1)" ><img name="resources_r1_c1" src="../library/buttons/resources_r1_c1.gif" width="96" height="79" border="0"></a></td>
+
+   <td><img src="../library/buttons/spacer.gif" width="1" height="79" border="0"></td>
+
+  </tr>
+
+  <tr>
+
+   <td><a href="#" onMouseOut="MM_swapImgRestore();"  onMouseOver="MM_swapImage('resources_r2_c1','','../library/buttons/resources_r2_c1_f2.gif',1)" ><img name="resources_r2_c1" src="../library/buttons/resources_r2_c1.gif" width="96" height="1" border="0"></a></td>
+
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+
+  </tr>
+
+</table>
+
+<!-- #EndLibraryItem --></td>
+
+        </tr>
+
+      </table>
+
+    </td>
+
+    <td colspan="3" rowspan="2" valign="top" bgcolor="993366"> <!-- #BeginEditable "content" --> 
+
+      <table width="603" border="0" cellpadding="5" cellspacing="0" bgcolor="ede4d8">
+
+        <tr> 
+
+          <td height="228" width="593" valign="top"> 
+
+            <div align="center"> 
+
+              <p><!-- #BeginLibraryItem "/library/buttons/class.lbi" --><a href="class.html" onMouseOut="MM_nbGroup('out');"  onMouseOver="MM_nbGroup('over','class','../library/buttons/class_f2.gif','../library/buttons/class_f4.gif',1)"  onClick="MM_nbGroup('down','navbar1','class','../library/buttons/class_f3.gif',1)" ><img name="class" src="../library/buttons/class.gif" width="96" height="40" border="0"></a><!-- #EndLibraryItem --><!-- #BeginLibraryItem "/library/buttons/outline.lbi" --><a href="studentoutline.html" onMouseOut="MM_nbGroup('out');"  onMouseOver="MM_nbGroup('over','outline','../library/buttons/outline_f2.gif','../library/buttons/outline_f4.gif',1)"  onClick="MM_nbGroup('down','navbar1','outline','../library/buttons/outline_f3.gif',1)" ><img name="outline" src="../library/buttons/outline.gif" width="96" height="40" border="0"></a><!-- #EndLibraryItem --></p>
+
+              <p align="left"><font size="4" color="663333" face="Georgia, Times New Roman, Times, serif"><b>Unit 
+
+                2 - Theatre History<i><br>
+
+                </i></b></font><i><font face="Georgia, Times New Roman, Times, serif" size="4" color="663333">Module 
+
+                4: Theatre Era Project<br>
+
+                </font></i><font face="Georgia, Times New Roman, Times, serif" size="4" color="663333">Lesson 
+
+                1 - The Project</font></p>
+
+              <div align="left"></div>
+
+              <div align="center"> 
+
+                <p align="left"><b><font face="Georgia, Times New Roman, Times, serif" color="#000000"><b>Introduction:<br>
+                  </b></font></b><font face="Georgia, Times New Roman, Times, serif" color="#000000">Once 
+                  you have had the opportunity to explore basic dramatic skills 
+                  and the history of the theatre, you can focus on an area that 
+                  interests you. This open-ended project is designed to provide 
+                  that opportunity in combination with presentation skills.</font><b><font face="Georgia, Times New Roman, Times, serif" color="#000000"><b> 
+                  </b></font></b></p>
+
+                <p align="left"><b><font face="Georgia, Times New Roman, Times, serif" color="#000000">Resources:</font></b><font face="Georgia, Times New Roman, Times, serif" color="#000000"><br>
+
+                  (pdf's) <a href="../teacher/pdf/2historyproject.pdf">Project 
+
+                  Outline</a>; <a href="../teacher/pdf/2directingvideo.pdf">How 
+
+                  to Direct a Video</a></font></p>
+
+              </div>
+
+            </div>
+
+          </td>
+
+        </tr>
+
+        <tr> 
+          <td height="2537" valign="top"> 
+            <div align="center"> 
+              <div align="center"></div>
+              <div align="left"> 
+                <p><b><font face="Georgia, Times New Roman, Times, serif">Activities:</font></b></p>
+                <p align="center"><b><font face="Georgia, Times New Roman, Times, serif"><i>The 
+                  Preparation Process</i></font></b></p>
+                <p><font face="Georgia, Times New Roman, Times, serif"><b>Step 
+                  1 - Think about your personal goals for this class:</b> <br>
+                  1. What do you really wish to accomplish? <br>
+                  2. How can you improve your skills and challenge yourself?<br>
+                  <b><br>
+                  Step 2 - Choosing a topic and project:</b><br>
+                  1. Think about your interests and talents<br>
+                  2. Look through the list of possible topics and projects. </font><br>
+                  <font face="Georgia, Times New Roman, Times, serif">3. Select 
+                  a topic </font></p>
+                <div align="left"> 
+                  <p><font face="Georgia, Times New Roman, Times, serif"> <b>Step 
+                    3 - Choose a collaborative group only if you must</b><br>
+                    1. Y</font><font face="Georgia, Times New Roman, Times, serif">our 
+                    &#147;Theatre History Project&#148; may be done individually 
+                    or with a group (You may choose to work with others only if 
+                    it is relevant to the topic). <br>
+                    2. Each person is responsible for a specific area of study 
+                    and yet the presentation is done as a group.<br>
+                    </font></p>
+                </div>
+                <p align="left"><font face="Georgia, Times New Roman, Times, serif"><i>*Suggested 
+                  time of 10 classes to complete the project and you will need 
+                  to complete some of the work outside of class time.</i></font></p>
+                <div align="left"> 
+                  <div align="left"><font face="Georgia, Times New Roman, Times, serif"><br>
+                    </font> 
+                    <div align="center"><font face="Georgia, Times New Roman, Times, serif"><b><font size="4">Possible 
+                      General Topics:</font></b></font><font face="Georgia, Times New Roman, Times, serif" size="4"> 
+                      </font> </div>
+                    <table width="575" border="0" align="center" bgcolor="#FFFFFF">
+                      <tr> 
+                        <td width="48%" bgcolor="#FFFFFF"> 
+                          <div align="left"> 
+                            <div align="left"></div>
+                          </div>
+                          <ul>
+                            <li> 
+                              <div align="left"><font face="Georgia, Times New Roman, Times, serif">Ancient 
+                                and Classical Theatre<br>
+                                </font></div>
+                            </li>
+                            <li> 
+                              <div align="left"><font face="Georgia, Times New Roman, Times, serif">Greek<br>
+                                </font></div>
+                            </li>
+                            <li> 
+                              <div align="left"><font face="Georgia, Times New Roman, Times, serif">Roman<br>
+                                </font></div>
+                            </li>
+                            <li> 
+                              <div align="left"><font face="Georgia, Times New Roman, Times, serif">Choral 
+                                Speaking, Chants<br>
+                                </font></div>
+                            </li>
+                            <li> 
+                              <div align="left"><font face="Georgia, Times New Roman, Times, serif">Ritual<br>
+                                </font></div>
+                            </li>
+                            <li> 
+                              <div align="left"><font face="Georgia, Times New Roman, Times, serif">Masks<br>
+                                </font></div>
+                            </li>
+                            <li> 
+                              <div align="left"><font face="Georgia, Times New Roman, Times, serif">Dionysus<br>
+                                </font></div>
+                            </li>
+                            <li> 
+                              <div align="left"><font face="Georgia, Times New Roman, Times, serif">Acropolis, 
+                                Ancient Theatres<br>
+                                </font></div>
+                            </li>
+                            <li> 
+                              <div align="left"><font face="Georgia, Times New Roman, Times, serif">Egyptian<br>
+                                </font></div>
+                            </li>
+                            <li> 
+                              <div align="left"><font face="Georgia, Times New Roman, Times, serif">African<br>
+                                </font></div>
+                            </li>
+                            <li> 
+                              <div align="left"><font face="Georgia, Times New Roman, Times, serif">Asian<br>
+                                </font></div>
+                            </li>
+                            <li> 
+                              <div align="left"><font face="Georgia, Times New Roman, Times, serif">Mythology<br>
+                                </font></div>
+                            </li>
+                            <li> 
+                              <div align="left"><font face="Georgia, Times New Roman, Times, serif">Middle 
+                                Ages and Renaissance<br>
+                                </font></div>
+                            </li>
+                            <li> 
+                              <div align="left"><font face="Georgia, Times New Roman, Times, serif">Commedia 
+                                del Arte<br>
+                                </font></div>
+                            </li>
+                            <li> 
+                              <div align="left"><font face="Georgia, Times New Roman, Times, serif">Travelling 
+                                Troupes<br>
+                                </font></div>
+                            </li>
+                            <li> 
+                              <div align="left"><font face="Georgia, Times New Roman, Times, serif">Morality 
+                                plays, Satires<br>
+                                </font></div>
+                            </li>
+                            <li> 
+                              <div align="left"><font face="Georgia, Times New Roman, Times, serif">Costumes<br>
+                                </font></div>
+                            </li>
+                            <li> 
+                              <div align="left"><font face="Georgia, Times New Roman, Times, serif">Puppets<br>
+                                </font></div>
+                            </li>
+                            <li> 
+                              <div align="left"><font face="Georgia, Times New Roman, Times, serif">Elizabethan<br>
+                                </font></div>
+                            </li>
+                            <li> 
+                              <div align="left"><font face="Georgia, Times New Roman, Times, serif">Shakespeare<br>
+                                </font></div>
+                            </li>
+                            <li> 
+                              <div align="left"><font face="Georgia, Times New Roman, Times, serif">Marlowe, 
+                                Jonson <br>
+                                </font></div>
+                            </li>
+                            <li> 
+                              <div align="left"><font face="Georgia, Times New Roman, Times, serif">Globe 
+                                Theatre<br>
+                                </font></div>
+                            </li>
+                            <li> 
+                              <div align="left"><font face="Georgia, Times New Roman, Times, serif">Neo-Classical</font><font face="Georgia, Times New Roman, Times, serif"><br>
+                                </font></div>
+                            </li>
+                            <li> 
+                              <div align="left"><font face="Georgia, Times New Roman, Times, serif">18th 
+                                Century &amp; 19th Century<br>
+                                </font></div>
+                            </li>
+                            <li> 
+                              <div align="left"><font face="Georgia, Times New Roman, Times, serif">Victorian<br>
+                                </font></div>
+                            </li>
+                            <li> 
+                              <div align="left"><font face="Georgia, Times New Roman, Times, serif">Edwardian<br>
+                                </font></div>
+                            </li>
+                            <li> 
+                              <div align="left"><font face="Georgia, Times New Roman, Times, serif">Restoration 
+                                Theatre<br>
+                                </font></div>
+                            </li>
+                            <li> 
+                              <div align="left"><font face="Georgia, Times New Roman, Times, serif">Drawing 
+                                Room drama</font></div>
+                            </li>
+                          </ul>
+                        </td>
+                        <td width="52%" bgcolor="#FFFFFF"><font face="Georgia, Times New Roman, Times, serif"><br>
+                          </font> 
+                          <ul>
+                            <li> 
+                              <div align="left"><font face="Georgia, Times New Roman, Times, serif">Oscar 
+                                Wilde, George Bernard Shaw<br>
+                                </font></div>
+                            </li>
+                            <li> 
+                              <div align="left"><font face="Georgia, Times New Roman, Times, serif">Upper 
+                                Class Issues<br>
+                                </font></div>
+                            </li>
+                            <li> 
+                              <div align="left"><font face="Georgia, Times New Roman, Times, serif">Modern 
+                                and Contemporary<br>
+                                </font></div>
+                            </li>
+                            <li> 
+                              <div align="left"><font face="Georgia, Times New Roman, Times, serif">Irish 
+                                Theatre - Synge, Behan, Joyce<br>
+                                </font></div>
+                            </li>
+                            <li> 
+                              <div align="left"><font face="Georgia, Times New Roman, Times, serif">Abbey 
+                                Theatre - W.B. Yeats<br>
+                                </font></div>
+                            </li>
+                            <li> 
+                              <div align="left"><font face="Georgia, Times New Roman, Times, serif">Realism 
+                                - Ibsen, Chekov, Strindberg<br>
+                                </font></div>
+                            </li>
+                            <li> 
+                              <div align="left"><font face="Georgia, Times New Roman, Times, serif">Political 
+                                - Brecht, Arthur Miller<br>
+                                </font></div>
+                            </li>
+                            <li> 
+                              <div align="left"><font face="Georgia, Times New Roman, Times, serif">Absurd 
+                                - Beckett, Ionesco, Havel<br>
+                                </font></div>
+                            </li>
+                            <li> 
+                              <div align="left"><font face="Georgia, Times New Roman, Times, serif">Theatre 
+                                of the Oppressed - Boal<br>
+                                </font></div>
+                            </li>
+                            <li> 
+                              <div align="left"><font face="Georgia, Times New Roman, Times, serif">Modern 
+                                - Pinter, Albee<br>
+                                </font></div>
+                            </li>
+                            <li> 
+                              <div align="left"><font face="Georgia, Times New Roman, Times, serif">American 
+                                Theatre - Tennessee Williams, Sheppard, O&#146;Neill, 
+                                Miller <br>
+                                </font></div>
+                            </li>
+                            <li> 
+                              <div align="left"><font face="Georgia, Times New Roman, Times, serif">Living 
+                                Theatre - McClure <br>
+                                </font></div>
+                            </li>
+                            <li> 
+                              <div align="left"><font face="Georgia, Times New Roman, Times, serif">Theatre 
+                                of Revolt<br>
+                                </font></div>
+                            </li>
+                            <li> 
+                              <div align="left"><font face="Georgia, Times New Roman, Times, serif">Avant 
+                                Garde - Wooster, Robert LePage<br>
+                                </font></div>
+                            </li>
+                            <li> 
+                              <div align="left"><font face="Georgia, Times New Roman, Times, serif">Multi 
+                                Media - Laurie Anderson, Spalding Gray<br>
+                                </font></div>
+                            </li>
+                            <li> 
+                              <div align="left"><font face="Georgia, Times New Roman, Times, serif">Clown 
+                                - Mump &amp; Smoot<br>
+                                </font></div>
+                            </li>
+                            <li> 
+                              <div align="left"><font face="Georgia, Times New Roman, Times, serif">Collectives 
+                                - Passe Mureille, Paper Wheat<br>
+                                </font></div>
+                            </li>
+                            <li> 
+                              <div align="left"><font face="Georgia, Times New Roman, Times, serif">National, 
+                                Regional Theatre<br>
+                                </font></div>
+                            </li>
+                            <li> 
+                              <div align="left"><font face="Georgia, Times New Roman, Times, serif">Puppet, 
+                                Marionette<br>
+                                </font></div>
+                            </li>
+                            <li> 
+                              <div align="left"><font face="Georgia, Times New Roman, Times, serif">Musicals, 
+                                Broadway</font></div>
+                            </li>
+                            <li> 
+                              <div align="left"><font face="Georgia, Times New Roman, Times, serif">World 
+                                Theatre<br>
+                                </font></div>
+                            </li>
+                            <li> 
+                              <div align="left"><font face="Georgia, Times New Roman, Times, serif">Kno 
+                                Theatre<br>
+                                </font></div>
+                            </li>
+                            <li> 
+                              <div align="left"><font face="Georgia, Times New Roman, Times, serif">Indonesian 
+                                Shadow Puppets<br>
+                                </font></div>
+                            </li>
+                            <li> 
+                              <div align="left"><font face="Georgia, Times New Roman, Times, serif">Africa<br>
+                                </font></div>
+                            </li>
+                            <li> 
+                              <div align="left"><font face="Georgia, Times New Roman, Times, serif">China 
+                                &quot;Beijing Opera&quot;<br>
+                                </font></div>
+                            </li>
+                            <li> 
+                              <div align="left"><font face="Georgia, Times New Roman, Times, serif">India<br>
+                                </font></div>
+                            </li>
+                            <li> 
+                              <div align="left"><font face="Georgia, Times New Roman, Times, serif">Brazil 
+                                &quot;Theatre of the Oppressed&quot;</font></div>
+                            </li>
+                          </ul>
+                        </td>
+                      </tr>
+                    </table>
+                    <font face="Georgia, Times New Roman, Times, serif"><br>
+                    <br>
+                    </font> 
+                    <table width="300" border="3" align="center" bordercolor="#993366">
+                      <tr> 
+                        <td width="70%"> 
+                          <div align="left"> 
+                            <div align="left"> 
+                              <div align="center"><b><font face="Georgia, Times New Roman, Times, serif"> 
+                                </font></b></div>
+                            </div>
+                          </div>
+                          <div align="center"><b><font face="Georgia, Times New Roman, Times, serif" size="4">Possible 
+                            Projects </font></b></div>
+                        </td>
+                        <td width="30%"> 
+                          <div align="center"><font face="Georgia, Times New Roman, Times, serif"><img src="../library/images/clapboard.gif" width="60" height="79"></font></div>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <blockquote>
+              <div align="center">
+                <div align="left">
+                  <div align="left">
+                    <div align="left"><br>
+                      <font face="Georgia, Times New Roman, Times, serif">For 
+                      example:</font></div>
+                  </div>
+                </div>
+              </div>
+              <div align="center"> 
+                <div align="left"> 
+                  <div align="left"> 
+                    <div align="left"> 
+                      <div align="left"> 
+                        <div align="left"> 
+                          <div align="left"> 
+                            <div align="left"> 
+                              <div align="left"> 
+                                <div align="left"> 
+                                  <div align="left"> 
+                                    <div align="left"> 
+                                      <div align="left"> 
+                                        <div align="left"> 
+                                          <div align="left"> 
+                                            <div align="left"> 
+                                              <div align="left"> 
+                                                <div align="left"> 
+                                                  <div align="left"> 
+                                                    <div align="left"> 
+                                                      <div align="left"> 
+                                                        <div align="left"><font face="Georgia, Times New Roman, Times, serif">&#149; 
+                                                          perform a scene (or 
+                                                          monologue) from a specific 
+                                                          play; include script 
+                                                          analysis showing &quot;objectives&quot; 
+                                                          and &quot;beats&quot;.</font></div>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div align="left"> 
+                                      <div align="left"> 
+                                        <div align="left"> 
+                                          <div align="left"> 
+                                            <div align="left"> 
+                                              <div align="left"> 
+                                                <div align="left"> 
+                                                  <div align="left"> 
+                                                    <div align="left"> 
+                                                      <div align="left"> 
+                                                        <div align="left"> 
+                                                          <div align="left"></div>
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div align="center"> 
+                <div align="left"> 
+                  <div align="left"> 
+                    <div align="left"> 
+                      <div align="left"> 
+                        <div align="left"> 
+                          <div align="left"> 
+                            <div align="left"> 
+                              <div align="left"> 
+                                <div align="left"> 
+                                  <div align="left"> 
+                                    <div align="left"> 
+                                      <div align="left"> 
+                                        <div align="left"> 
+                                          <div align="left"> 
+                                            <div align="left"> 
+                                              <div align="left"> 
+                                                <div align="left"> 
+                                                  <div align="left"> 
+                                                    <div align="left"> 
+                                                      <div align="left"> 
+                                                        <div align="left"> 
+                                                          <div align="left"><font face="Georgia, Times New Roman, Times, serif">&#149; 
+                                                            create a maquette 
+                                                            for the set for a 
+                                                            specific play; explain 
+                                                            the reasons for choice 
+                                                            of colour, texture, 
+                                                            placement; is it realistic, 
+                                                            minimal or symbolic; 
+                                                            possibly build or 
+                                                            paint a set piece.</font></div>
+                                                          <div align="left"></div>
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div align="center"> 
+                <div align="left"> 
+                  <div align="left"> 
+                    <div align="left"> 
+                      <div align="left"> 
+                        <div align="left"> 
+                          <div align="left"> 
+                            <div align="left"> 
+                              <div align="left"> 
+                                <div align="left"> 
+                                  <div align="left"> 
+                                    <div align="left"> 
+                                      <div align="left"> 
+                                        <div align="left"> 
+                                          <div align="left"> 
+                                            <div align="left"> 
+                                              <div align="left"> 
+                                                <div align="left"> 
+                                                  <div align="left"> 
+                                                    <div align="left"> 
+                                                      <div align="left"> 
+                                                        <div align="left"> 
+                                                          <div align="left"><font face="Georgia, Times New Roman, Times, serif">&#149; 
+                                                            direct a video as 
+                                                            a movie trailer for 
+                                                            a specific play; capture 
+                                                            highlights from various 
+                                                            scenes, build interest 
+                                                            in the plot, create 
+                                                            an effect.</font></div>
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div align="center"> 
+                <div align="left"> 
+                  <div align="left"> 
+                    <div align="left"> 
+                      <div align="left"> 
+                        <div align="left"> 
+                          <div align="left"> 
+                            <div align="left"> 
+                              <div align="left"> 
+                                <div align="left"> 
+                                  <div align="left"><font face="Georgia, Times New Roman, Times, serif">&#149; 
+                                    film a documentary on the era</font>. </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div align="center"> 
+                <div align="left"> 
+                  <div align="left"> 
+                    <div align="left"> 
+                      <div align="left"> 
+                        <div align="left"> 
+                          <div align="left"> 
+                            <div align="left"> 
+                              <div align="left"> 
+                                <div align="left"> 
+                                  <div align="left"><font face="Georgia, Times New Roman, Times, serif">&#149; 
+                                    m</font><font face="Georgia, Times New Roman, Times, serif">ix 
+                                    two eras to create a new scene</font> 
+                                    <div align="left"> 
+                                      <div align="left"> 
+                                        <div align="left"> 
+                                          <div align="left"> 
+                                            <div align="left"> 
+                                              <div align="left"> 
+                                                <div align="left"> 
+                                                  <div align="left"> 
+                                                    <div align="left"> 
+                                                      <div align="left"> 
+                                                        <div align="left"></div>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div align="center"> 
+                <div align="left"> 
+                  <div align="left"> 
+                    <div align="left"> 
+                      <div align="left"> 
+                        <div align="left"> 
+                          <div align="left"> 
+                            <div align="left"> 
+                              <div align="left"> 
+                                <div align="left"> 
+                                  <div align="left"> 
+                                    <div align="left"> 
+                                      <div align="left"> 
+                                        <div align="left"> 
+                                          <div align="left"> 
+                                            <div align="left"> 
+                                              <div align="left"> 
+                                                <div align="left"> 
+                                                  <div align="left"> 
+                                                    <div align="left"> 
+                                                      <div align="left"> 
+                                                        <div align="left"><font face="Georgia, Times New Roman, Times, serif">design 
+                                                          costumes for a specific 
+                                                          play; create one costume 
+                                                          piece; recreate a period 
+                                                          piece. </font></div>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div align="left"> 
+                                      <div align="left"> 
+                                        <div align="left"> 
+                                          <div align="left"> 
+                                            <div align="left"> 
+                                              <div align="left"> 
+                                                <div align="left"> 
+                                                  <div align="left"> 
+                                                    <div align="left"> 
+                                                      <div align="left"> 
+                                                        <div align="left"></div>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div align="center"> 
+                <div align="left"> 
+                  <div align="left"> 
+                    <div align="left"> 
+                      <div align="left"> 
+                        <div align="left"> 
+                          <div align="left"> 
+                            <div align="left"> 
+                              <div align="left"> 
+                                <div align="left"> 
+                                  <div align="left"> 
+                                    <div align="left"> 
+                                      <div align="left"> 
+                                        <div align="left"> 
+                                          <div align="left"> 
+                                            <div align="left"> 
+                                              <div align="left"> 
+                                                <div align="left"> 
+                                                  <div align="left"> 
+                                                    <div align="left"> 
+                                                      <div align="left"> 
+                                                        <div align="left"><font face="Georgia, Times New Roman, Times, serif">&#149; 
+                                                          build a prop piece for 
+                                                          a specific play (or 
+                                                          a set of connected props); 
+                                                          research the proper 
+                                                          material to be most 
+                                                          effective.</font></div>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div align="left"> 
+                                      <div align="left"> 
+                                        <div align="left"> 
+                                          <div align="left"> 
+                                            <div align="left"> 
+                                              <div align="left"> 
+                                                <div align="left"> 
+                                                  <div align="left"> 
+                                                    <div align="left"> 
+                                                      <div align="left"> 
+                                                        <div align="left"></div>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div align="center"> 
+                <div align="left"> 
+                  <div align="left"> 
+                    <div align="left"> 
+                      <div align="left"> 
+                        <div align="left"> 
+                          <div align="left"> 
+                            <div align="left"> 
+                              <div align="left"> 
+                                <div align="left"> 
+                                  <div align="left"> 
+                                    <div align="left"> 
+                                      <div align="left"> 
+                                        <div align="left"> 
+                                          <div align="left"> 
+                                            <div align="left"> 
+                                              <div align="left"> 
+                                                <div align="left"> 
+                                                  <div align="left"> 
+                                                    <div align="left"> 
+                                                      <div align="left"> 
+                                                        <div align="left"><font face="Georgia, Times New Roman, Times, serif">&#149; 
+                                                          create a music composition 
+                                                          for a specific play; 
+                                                          if possible, play or 
+                                                          record the music; explain 
+                                                          the significance of 
+                                                          the music.</font></div>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div align="left"> 
+                                      <div align="left"> 
+                                        <div align="left"> 
+                                          <div align="left"> 
+                                            <div align="left"> 
+                                              <div align="left"> 
+                                                <div align="left"> 
+                                                  <div align="left"> 
+                                                    <div align="left"> 
+                                                      <div align="left"> 
+                                                        <div align="left"></div>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div align="center"> 
+                <div align="left"> 
+                  <div align="left"> 
+                    <div align="left"> 
+                      <div align="left"> 
+                        <div align="left"> 
+                          <div align="left"> 
+                            <div align="left"> 
+                              <div align="left"> 
+                                <div align="left"> 
+                                  <div align="left"> 
+                                    <div align="left"> 
+                                      <div align="left"> 
+                                        <div align="left"> 
+                                          <div align="left"> 
+                                            <div align="left"> 
+                                              <div align="left"> 
+                                                <div align="left"> 
+                                                  <div align="left"> 
+                                                    <div align="left"> 
+                                                      <div align="left"> 
+                                                        <div align="left"><font face="Georgia, Times New Roman, Times, serif">&#149; 
+                                                          create a lighting plan 
+                                                          for a specific play; 
+                                                          explain choice of colour, 
+                                                          placement and effect. 
+                                                          If possible, show the 
+                                                          lights on a stage - 
+                                                          or, if not available, 
+                                                          draw the plan and make 
+                                                          a cue by cue.</font></div>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div align="left"> 
+                                      <div align="left"> 
+                                        <div align="left"> 
+                                          <div align="left"> 
+                                            <div align="left"> 
+                                              <div align="left"> 
+                                                <div align="left"> 
+                                                  <div align="left"> 
+                                                    <div align="left"> 
+                                                      <div align="left"> 
+                                                        <div align="left"></div>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div align="center"> 
+                <div align="left"> 
+                  <div align="left"> 
+                    <div align="left"> 
+                      <div align="left"> 
+                        <div align="left"> 
+                          <div align="left"> 
+                            <div align="left"> 
+                              <div align="left"> 
+                                <div align="left"> 
+                                  <div align="left"> 
+                                    <div align="left"> 
+                                      <div align="left"> 
+                                        <div align="left"> 
+                                          <div align="left"> 
+                                            <div align="left"> 
+                                              <div align="left"> 
+                                                <div align="left"> 
+                                                  <div align="left"> 
+                                                    <div align="left"> 
+                                                      <div align="left"> 
+                                                        <div align="left"><font face="Georgia, Times New Roman, Times, serif">&#149; 
+                                                          create makeup (possibly 
+                                                          hair and clothing), 
+                                                          for a specific character; 
+                                                          design on paper first, 
+                                                          then create it on a 
+                                                          model; explain choices 
+                                                          for colour, textures, 
+                                                          etc.</font></div>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div align="left"> 
+                                      <div align="left"> 
+                                        <div align="left"> 
+                                          <div align="left"> 
+                                            <div align="left"> 
+                                              <div align="left"> 
+                                                <div align="left"> 
+                                                  <div align="left"> 
+                                                    <div align="left"> 
+                                                      <div align="left"> 
+                                                        <div align="left"></div>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div align="center"> 
+                <div align="left"> 
+                  <div align="left"> 
+                    <div align="left"> 
+                      <div align="left"> 
+                        <div align="left"> 
+                          <div align="left"> 
+                            <div align="left"> 
+                              <div align="left"> 
+                                <div align="left"> 
+                                  <div align="left"> 
+                                    <div align="left"> 
+                                      <div align="left"> 
+                                        <div align="left"> 
+                                          <div align="left"> 
+                                            <div align="left"> 
+                                              <div align="left"> 
+                                                <div align="left"> 
+                                                  <div align="left"> 
+                                                    <div align="left"> 
+                                                      <div align="left"> 
+                                                        <div align="left"><font face="Georgia, Times New Roman, Times, serif">&#149; 
+                                                          draw a story board for 
+                                                          a play; create each 
+                                                          scene in a drawn (cartoon) 
+                                                          panel - you can use 
+                                                          stick figures with written 
+                                                          detail if drawing is 
+                                                          not a strength.</font></div>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div align="center"> 
+                <div align="left"><font face="Georgia, Times New Roman, Times, serif">&#149; 
+                  design a web site</font>.</div>
+              </div>
+              <div align="center"> 
+                <div align="left"><font face="Georgia, Times New Roman, Times, serif">&#149; 
+                  film or stage a talk show with famous people from theatre as 
+                  guests</font>.</div>
+              </div>
+              <div align="center"> 
+                <div align="left"><font face="Georgia, Times New Roman, Times, serif">&#149; 
+                  write a research paper</font>.</div>
+              </div>
+              <div align="center"> 
+                <div align="left"><font face="Georgia, Times New Roman, Times, serif">&#149; 
+                  w</font><font face="Georgia, Times New Roman, Times, serif">rite 
+                  and illustrate a children&#146;s book on theatre history</font>.</div>
+              </div>
+              <div align="center"> 
+                <div align="left"><font face="Georgia, Times New Roman, Times, serif">&#149; 
+                  create a puppet show</font>.</div>
+              </div>
+              <div align="center"> 
+                <div align="left"><font face="Georgia, Times New Roman, Times, serif">&#149; 
+                  create a model of the Globe Theatre or the Acropolis.</font></div>
+              </div>
+              <div align="center">
+                <div align="left"><font face="Georgia, Times New Roman, Times, serif">&#149; 
+                  design and create masks for a specific play.</font> </div>
+              </div>
+            </blockquote>
+            <div align="center">
+              <div align="left">
+                <hr>
+                <font face="Georgia, Times New Roman, Times, serif"><b>Assignment:</b></font><br>
+              </div>
+            </div>
+            <div align="center"> 
+              <div align="left"> 
+                <div align="left"> 
+                  <table width="400" border="3" align="center" bordercolor="#993366">
+                    <tr> 
+                      <td width="163"> 
+                        <div align="center"> 
+                          <p><font face="Georgia, Times New Roman, Times, serif"><b>Part 
+                            1 -Submit an Outline:</b> </font></p>
+                          <p><font face="Georgia, Times New Roman, Times, serif" color="#993366">(If 
+                            you are working in a group, each member must still 
+                            submit his or her own outline.)</font></p>
+                        </div>
+                      </td>
+                      <td width="217"> 
+                        <div align="center"><img src="../library/images/2typing.gif" width="200" height="119"></div>
+                      </td>
+                    </tr>
+                  </table>
+                  <p><font face="Georgia, Times New Roman, Times, serif"><b><br>
+                    </b></font><i><font face="Georgia, Times New Roman, Times, serif">Include 
+                    the following in your outline (due at the end of your second 
+                    work day):</font></i><br>
+                    <font face="Georgia, Times New Roman, Times, serif">1. </font><font face="Georgia, Times New Roman, Times, serif">Describe 
+                    the project in detail.<br>
+                    <br>
+                    2. Describe the role (duties &amp; responsibilities) of each 
+                    person involved.<br>
+                    <br>
+                    3. What are expected outcomes with regards to performance, 
+                    display, video, demonstration, costume, set, etc.?<br>
+                    <br>
+                    4. How will it be presented?<br>
+                    (Attach drawings, designs, images, scripts as needed for marking.)<br>
+                    </font><font face="Georgia, Times New Roman, Times, serif"><br>
+                    5. Create a timeline to indicate work expected for class and 
+                    homework.<br>
+                    <br>
+                    6. Summary Notes <br>
+                    (Keep point form notes on your topic and ideas that come to 
+                    you as you complete your research. Number each point as you 
+                    need a minimum of 50 points. Attach pages as needed.)</font></p>
+                  <p><font face="Georgia, Times New Roman, Times, serif"><b>Part 
+                    2 - Work on the Project:</b></font></p>
+                  <p><font face="Georgia, Times New Roman, Times, serif">1. <font face="Georgia, Times New Roman, Times, serif">The 
+                    process will be monitored and evaluated daily (for example: 
+                    attendance, daily effort, responsibility for own work, initiative, 
+                    staying on task without prompting from me.) <br>
+                    </font><br>
+                    2. <font face="Georgia, Times New Roman, Times, serif">The 
+                    teacher&#146;s role is as facilitator and guide; to offer 
+                    advice, instruction and critical feedback as required. As 
+                    on any independent project, you must be careful to keep yourself 
+                    on task.</font></font></p>
+                  <p><font face="Georgia, Times New Roman, Times, serif">3. You 
+                    have a total of 10 days, 8 of which will be dedicated to working 
+                    on this project.<br>
+                    </font></p>
+                  <p><font face="Georgia, Times New Roman, Times, serif"><b>Part 
+                    3 - Present your Project:</b></font></p>
+                  <p><font face="Georgia, Times New Roman, Times, serif">1. Your 
+                    final day of work time should be used to practice your presentation. 
+                    Remember that a portion of your project mark is allocated 
+                    for how you present.</font></p>
+                  <p><font face="Georgia, Times New Roman, Times, serif">2. Project 
+                    presentation times will be scheduled following the 10 days 
+                    of work periods.<br>
+                    </font></p>
+                </div>
+              </div>
+              <hr>
+              <p align="left"><font face="Georgia, Times New Roman, Times, serif"><b>Evaluation: 
+                </b>You will be evaluated on your project outline (including description), 
+                drawings, timeline and summary notes. You will also be evaluated 
+                on your project presentation.<b> <br>
+                </b></font></p>
+              <div align="left"></div>
+              <div align="left"></div>
+              <p><font face="Georgia, Times New Roman, Times, serif"><a href="2evaluation.html">Next 
+                Lesson</a> / <a href="2visual.html">Previous Lesson</a></font></p>
+            </div>
+          </td>
+
+        </tr>
+
+        <tr> 
+
+          <td height="2"></td>
+
+        </tr>
+
+      </table>
+
+      <!-- #EndEditable --></td>
+
+  </tr>
+
+  <tr> 
+
+    <td valign="top" height="89" bgcolor="993366"> <!-- #BeginEditable "optional" --> 
+
+      <table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="993366">
+
+        <tr> 
+
+          <td width="97" height="89" valign="top" bgcolor="993366">&nbsp;</td>
+
+        </tr>
+
+      </table>
+
+      <!-- #EndEditable --></td>
+
+  </tr>
+
+  <tr> 
+
+    <td height="0"></td>
+
+    <td></td>
+
+    <td></td>
+
+    <td></td>
+
+  </tr>
+
+</table>
+
+</body>
+
+<!-- #EndTemplate --></html>
+

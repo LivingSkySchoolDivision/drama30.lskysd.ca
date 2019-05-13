@@ -1,0 +1,450 @@
+<html>
+<!-- #BeginTemplate "/Templates/templateteacher.dwt" --> 
+<head>
+<!-- #BeginEditable "doctitle" --> 
+<title>Teacher - Commedia</title>
+<!-- #EndEditable --> 
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<script language="JavaScript">
+<!--
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && document.getElementById) x=document.getElementById(n); return x;
+}
+
+function MM_nbGroup(event, grpName) { //v3.0
+  var i,img,nbArr,args=MM_nbGroup.arguments;
+  if (event == "init" && args.length > 2) {
+    if ((img = MM_findObj(args[2])) != null && !img.MM_init) {
+      img.MM_init = true; img.MM_up = args[3]; img.MM_dn = img.src;
+      if ((nbArr = document[grpName]) == null) nbArr = document[grpName] = new Array();
+      nbArr[nbArr.length] = img;
+      for (i=4; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+        if (!img.MM_up) img.MM_up = img.src;
+        img.src = img.MM_dn = args[i+1];
+        nbArr[nbArr.length] = img;
+    } }
+  } else if (event == "over") {
+    document.MM_nbOver = nbArr = new Array();
+    for (i=1; i < args.length-1; i+=3) if ((img = MM_findObj(args[i])) != null) {
+      if (!img.MM_up) img.MM_up = img.src;
+      img.src = (img.MM_dn && args[i+2]) ? args[i+2] : args[i+1];
+      nbArr[nbArr.length] = img;
+    }
+  } else if (event == "out" ) {
+    for (i=0; i < document.MM_nbOver.length; i++) {
+      img = document.MM_nbOver[i]; img.src = (img.MM_dn) ? img.MM_dn : img.MM_up; }
+  } else if (event == "down") {
+    if ((nbArr = document[grpName]) != null)
+      for (i=0; i < nbArr.length; i++) { img=nbArr[i]; img.src = img.MM_up; img.MM_dn = 0; }
+    document[grpName] = nbArr = new Array();
+    for (i=2; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+      if (!img.MM_up) img.MM_up = img.src;
+      img.src = img.MM_dn = args[i+1];
+      nbArr[nbArr.length] = img;
+  } }
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+</script>
+</head>
+<body bgcolor="#669966" text="#000000" onLoad="MM_preloadImages('../library/buttons/home_r1_c1_f3.gif','../library/buttons/home_r1_c1_f2.gif','../library/buttons/home_r1_c1_f4.gif','../library/buttons/home_r2_c1_f2.gif','../library/buttons/studentblue_r1_c1_f3.gif','../library/buttons/studentblue_r1_c1_f2.gif','../library/buttons/studentblue_r1_c1_f4.gif','../library/buttons/courseoutline_r1_c1_f3.gif','../library/buttons/courseoutline_r1_c1_f2.gif','../library/buttons/courseoutline_r1_c1_f4.gif','../library/buttons/courseoutline_r2_c1_f2.gif','../library/buttons/sitemap_r1_c1_f3.gif','../library/buttons/sitemap_r1_c1_f2.gif','../library/buttons/sitemap_r1_c1_f4.gif','../library/buttons/help_r1_c1_f3.gif','../library/buttons/help_r1_c1_f2.gif','../library/buttons/help_r1_c1_f4.gif','../library/buttons/help_r2_c1_f2.gif','../library/buttons/resources_r1_c1_f3.gif','../library/buttons/resources_r1_c1_f2.gif','../library/buttons/resources_r1_c1_f4.gif','../library/buttons/resources_r2_c1_f2.gif','../library/buttons/aboutsite_f3.gif','../library/buttons/aboutsite_f2.gif','../library/buttons/aboutsite_f4.gif','../library/buttons/planning_f3.gif','../library/buttons/planning_f2.gif','../library/buttons/planning_f4.gif','../library/buttons/teacher1_r1_c1_f3.gif','../library/buttons/teacher1_r1_c1_f2.gif','../library/buttons/teacher1_r1_c1_f4.gif','../library/buttons/teacher1_r2_c1_f2.gif')">
+<table width="700" border="0" cellpadding="0" cellspacing="0">
+  <tr> 
+    <td width="97" valign="top" bgcolor="669966" rowspan="2"> <!-- #BeginLibraryItem "/library/buttons/home.lbi" --><table border="0" cellpadding="0" cellspacing="0" width="96">
+<!-- fwtable fwsrc="home1.png" fwbase="home.gif" -->
+  <tr>
+   <td><img src="../library/buttons/spacer.gif" width="96" height="1" border="0"></td>
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+  </tr>
+  <tr>
+    <td><a href="../index.html" onMouseOut="MM_nbGroup('out');"  onMouseOver="MM_nbGroup('over','home_r1_c1','../library/buttons/home_r1_c1_f2.gif','../library/buttons/home_r1_c1_f4.gif',1)"  onClick="MM_nbGroup('down','navbar1','home_r1_c1','../library/buttons/home_r1_c1_f3.gif',1)" ><img name="home_r1_c1" src="../library/buttons/home_r1_c1.gif" width="96" height="79" border="0" alt="home"></a></td>
+   <td><img src="../library/buttons/spacer.gif" width="1" height="79" border="0"></td>
+  </tr>
+  <tr>
+   <td><a href="#" onMouseOut="MM_swapImgRestore();"  onMouseOver="MM_swapImage('home_r2_c1','','../library/buttons/home_r2_c1_f2.gif',1)" ><img name="home_r2_c1" src="../library/buttons/home_r2_c1.gif" width="96" height="1" border="0"></a></td>
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+  </tr>
+</table>
+<!-- #EndLibraryItem --></td>
+    <td valign="top" width="97" bgcolor="669966" rowspan="2"><!-- #BeginLibraryItem "/library/buttons/studentblue.lbi" --><table border="0" cellpadding="0" cellspacing="0" width="96">
+<!-- fwtable fwsrc="student1.png" fwbase="studentblue.gif" -->
+  <tr>
+   <td><img src="../library/buttons/spacer.gif" width="95" height="1" border="0"></td>
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+  </tr>
+  <tr>
+    <td><a href="../mainpages/student.html" onMouseOut="MM_nbGroup('out');"  onMouseOver="MM_nbGroup('over','studentblue_r1_c1','../library/buttons/studentblue_r1_c1_f2.gif','../library/buttons/studentblue_r1_c1_f4.gif',1)"  onClick="MM_nbGroup('down','navbar1','studentblue_r1_c1','../library/buttons/studentblue_r1_c1_f3.gif',1)" ><img name="studentblue_r1_c1" src="../library/buttons/studentblue_r1_c1.gif" width="95" height="79" border="0"></a></td>
+   <td rowspan="2"><img name="studentblue_r1_c2" src="../library/buttons/studentblue_r1_c2.gif" width="1" height="80" border="0"></td>
+   <td><img src="../library/buttons/spacer.gif" width="1" height="79" border="0"></td>
+  </tr>
+  <tr>
+   <td><img name="studentblue_r2_c1" src="../library/buttons/studentblue_r2_c1.gif" width="95" height="1" border="0"></td>
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+  </tr>
+</table>
+<!-- #EndLibraryItem --></td>
+    <td width="97" valign="top" rowspan="2"><!-- #BeginLibraryItem "/library/buttons/teacher1.lbi" --><table border="0" cellpadding="0" cellspacing="0" width="96">
+<!-- fwtable fwsrc="teacher1.png" fwbase="teacher1.gif" -->
+  <tr>
+   <td><img src="../library/buttons/spacer.gif" width="96" height="1" border="0"></td><td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td></tr>
+  <tr>
+    <td><a href="../mainpages/teacher.html" onMouseOut="MM_nbGroup('out');"  onMouseOver="MM_nbGroup('over','teacher1_r1_c1','../library/buttons/teacher1_r1_c1_f2.gif','../library/buttons/teacher1_r1_c1_f4.gif',1)"  onClick="MM_nbGroup('down','navbar1','teacher1_r1_c1','../library/buttons/teacher1_r1_c1_f3.gif',1)" ><img name="teacher1_r1_c1" src="../library/buttons/teacher1_r1_c1.gif" width="96" height="79" border="0"></a></td><td><img src="../library/buttons/spacer.gif" width="1" height="79" border="0"></td></tr>
+  <tr>
+   <td><a href="#" onMouseOut="MM_swapImgRestore()"  onMouseOver="MM_swapImage('teacher1_r2_c1','','../library/buttons/teacher1_r2_c1_f2.gif',1)" ><img name="teacher1_r2_c1" src="../library/buttons/teacher1_r2_c1.gif" width="96" height="1" border="0"></a></td><td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td></tr>
+</table><!-- #EndLibraryItem --></td>
+    <td width="409" valign="top" bgcolor="669966" height="91"><!-- #BeginEditable "banner" --><!-- #BeginLibraryItem "/library/buttons/dr30titleteacher.lbi" --><img name="dr30titleteacher" src="../library/buttons/dr30titleteacher.gif" width="400" height="80" border="0"><!-- #EndLibraryItem --><!-- #EndEditable --></td>
+  </tr>
+  <tr> 
+    <td valign="top" bgcolor="669966" height="23"><!-- #BeginEditable "pagetitle" --> 
+      <div align="center"></div>
+      <!-- #EndEditable --></td>
+  </tr>
+  <tr> 
+    <td valign="top" height="347"> 
+      <table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="669966">
+        <tr> 
+          <td width="97" height="56" valign="top" bgcolor="669966"> <!-- #BeginLibraryItem "/library/buttons/courseoutline.lbi" --><table border="0" cellpadding="0" cellspacing="0" width="96">
+<!-- fwtable fwsrc="courseoutline1.png" fwbase="courseoutline.gif" -->
+  <tr>
+   <td><img src="../library/buttons/spacer.gif" width="96" height="1" border="0"></td>
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+  </tr>
+  <tr>
+    <td><a href="../mainpages/courseoutline.htm" onMouseOut="MM_nbGroup('out');"  onMouseOver="MM_nbGroup('over','courseoutline_r1_c1','../library/buttons/courseoutline_r1_c1_f2.gif','../library/buttons/courseoutline_r1_c1_f4.gif',1)"  onClick="MM_nbGroup('down','navbar1','courseoutline_r1_c1','../library/buttons/courseoutline_r1_c1_f3.gif',1)" ><img name="courseoutline_r1_c1" src="../library/buttons/courseoutline_r1_c1.gif" width="96" height="79" border="0"></a></td>
+   <td><img src="../library/buttons/spacer.gif" width="1" height="79" border="0"></td>
+  </tr>
+  <tr>
+   <td><a href="#" onMouseOut="MM_swapImgRestore();"  onMouseOver="MM_swapImage('courseoutline_r2_c1','','../library/buttons/courseoutline_r2_c1_f2.gif',1)" ><img name="courseoutline_r2_c1" src="../library/buttons/courseoutline_r2_c1.gif" width="96" height="1" border="0"></a></td>
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+  </tr>
+</table>
+<!-- #EndLibraryItem --><!-- #BeginLibraryItem "/library/buttons/sitemap.lbi" --><table border="0" cellpadding="0" cellspacing="0" width="96">
+<!-- fwtable fwsrc="sitemap1.png" fwbase="sitemap.gif" -->
+  <tr>
+   <td><img src="../library/buttons/spacer.gif" width="95" height="1" border="0"></td>
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+  </tr>
+  <tr>
+    <td><a href="../mainpages/templatemainmap.html" onMouseOut="MM_nbGroup('out');"  onMouseOver="MM_nbGroup('over','sitemap_r1_c1','../library/buttons/sitemap_r1_c1_f2.gif','../library/buttons/sitemap_r1_c1_f4.gif',1)"  onClick="MM_nbGroup('down','navbar1','sitemap_r1_c1','../library/buttons/sitemap_r1_c1_f3.gif',1)" ><img name="sitemap_r1_c1" src="../library/buttons/sitemap_r1_c1.gif" width="95" height="79" border="0"></a></td>
+   <td rowspan="2"><img name="sitemap_r1_c2" src="../library/buttons/sitemap_r1_c2.gif" width="1" height="80" border="0"></td>
+   <td><img src="../library/buttons/spacer.gif" width="1" height="79" border="0"></td>
+  </tr>
+  <tr>
+   <td><img name="sitemap_r2_c1" src="../library/buttons/sitemap_r2_c1.gif" width="95" height="1" border="0"></td>
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+  </tr>
+</table>
+<!-- #EndLibraryItem --><!-- #BeginLibraryItem "/library/buttons/help.lbi" --><table border="0" cellpadding="0" cellspacing="0" width="96">
+<!-- fwtable fwsrc="help1.png" fwbase="help.gif" -->
+  <tr>
+   <td><img src="../library/buttons/spacer.gif" width="96" height="1" border="0"></td>
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+  </tr>
+  <tr>
+    <td><a href="../mainpages/help.html" onMouseOut="MM_nbGroup('out');"  onMouseOver="MM_nbGroup('over','help_r1_c1','../library/buttons/help_r1_c1_f2.gif','../library/buttons/help_r1_c1_f4.gif',1)"  onClick="MM_nbGroup('down','navbar1','help_r1_c1','../library/buttons/help_r1_c1_f3.gif',1)" ><img name="help_r1_c1" src="../library/buttons/help_r1_c1.gif" width="96" height="79" border="0"></a></td>
+   <td><img src="../library/buttons/spacer.gif" width="1" height="79" border="0"></td>
+  </tr>
+  <tr>
+   <td><a href="#" onMouseOut="MM_swapImgRestore();"  onMouseOver="MM_swapImage('help_r2_c1','','../library/buttons/help_r2_c1_f2.gif',1)" ><img name="help_r2_c1" src="../library/buttons/help_r2_c1.gif" width="96" height="1" border="0"></a></td>
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+  </tr>
+</table>
+<!-- #EndLibraryItem --><!-- #BeginLibraryItem "/library/buttons/resources.lbi" --><table border="0" cellpadding="0" cellspacing="0" width="96">
+<!-- fwtable fwsrc="resources1.png" fwbase="resources.gif" -->
+  <tr>
+   <td bgcolor="669966"><img src="../library/buttons/spacer.gif" width="96" height="1" border="0"></td>
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+  </tr>
+  <tr>
+    <td><a href="../mainpages/resources.html" onMouseOut="MM_nbGroup('out');"  onMouseOver="MM_nbGroup('over','resources_r1_c1','../library/buttons/resources_r1_c1_f2.gif','../library/buttons/resources_r1_c1_f4.gif',1)"  onClick="MM_nbGroup('down','navbar1','resources_r1_c1','../library/buttons/resources_r1_c1_f3.gif',1)" ><img name="resources_r1_c1" src="../library/buttons/resources_r1_c1.gif" width="96" height="79" border="0"></a></td>
+   <td><img src="../library/buttons/spacer.gif" width="1" height="79" border="0"></td>
+  </tr>
+  <tr>
+   <td><a href="#" onMouseOut="MM_swapImgRestore();"  onMouseOver="MM_swapImage('resources_r2_c1','','../library/buttons/resources_r2_c1_f2.gif',1)" ><img name="resources_r2_c1" src="../library/buttons/resources_r2_c1.gif" width="96" height="1" border="0"></a></td>
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+  </tr>
+</table>
+<!-- #EndLibraryItem --></td>
+        </tr>
+      </table>
+    </td>
+    <td colspan="3" rowspan="2" valign="top" bgcolor="669966"> <!-- #BeginEditable "content" --> 
+      <table width="603" border="0" cellpadding="5" cellspacing="0" bgcolor="669966">
+        <tr> 
+          <td height="2892" width="593" valign="top" bgcolor="ede4d8"> 
+            <div align="center"> 
+              <p><!-- #BeginLibraryItem "/library/buttons/aboutsite.lbi" --><a href="aboutsite.html" onMouseOut="MM_nbGroup('out');"  onMouseOver="MM_nbGroup('over','aboutsite','../library/buttons/aboutsite_f2.gif','../library/buttons/aboutsite_f4.gif',1)"  onClick="MM_nbGroup('down','navbar1','aboutsite','../library/buttons/aboutsite_f3.gif',1)" ><img name="aboutsite" src="../library/buttons/aboutsite.gif" width="96" height="40" border="0"></a><!-- #EndLibraryItem --><!-- #BeginLibraryItem "/library/buttons/planning.lbi" --><a href="courseoutline.html" onMouseOut="MM_nbGroup('out');"  onMouseOver="MM_nbGroup('over','planning','../library/buttons/planning_f2.gif','../library/buttons/planning_f4.gif',1)"  onClick="MM_nbGroup('down','navbar1','planning','../library/buttons/planning_f3.gif',1)" ><img name="planning" src="../library/buttons/planning.gif" width="96" height="40" border="0"></a><!-- #EndLibraryItem --></p>
+              <p align="left"><font size="4" color="663333" face="Georgia, Times New Roman, Times, serif"><b>Unit 
+                2 - Theatre History<i><br>
+                </i></b></font><i><font face="Georgia, Times New Roman, Times, serif" size="4" color="663333">Module 
+                2: Jesters, Tricksters and Fools<br>
+                </font></i><font face="Georgia, Times New Roman, Times, serif" size="4" color="663333">Lesson 
+                2 - Commedia del Arte</font></p>
+              <p align="left"><font face="Georgia, Times New Roman, Times, serif" color="#000000"><b>Introduction:<br>
+                </b></font><font face="Georgia, Times New Roman, Times, serif" color="#000000">The 
+                purpose of this lesson is to become familiar with (and experiment 
+                with) the commedia style.</font></p>
+              <p align="left"><font face="Georgia, Times New Roman, Times, serif" color="#000000"><b>Objectives:</b><br>
+                - </font><font face="Georgia, Times New Roman, Times, serif">share 
+                responses with other students</font><font face="Georgia, Times New Roman, Times, serif" color="#000000"><br>
+                - </font><font face="Georgia, Times New Roman, Times, serif">listen 
+                to the ideas of others</font><font face="Georgia, Times New Roman, Times, serif" color="#000000"><br>
+                - </font><font face="Georgia, Times New Roman, Times, serif">work 
+                cooperatively in groups of all sizes to plan and participate in 
+                drama experiences</font><br>
+                - <font face="Georgia, Times New Roman, Times, serif">practice 
+                leadership of small and large groups</font><br>
+                - <font face="Georgia, Times New Roman, Times, serif">accept the 
+                leadership of others in small and large groups</font><font face="Georgia, Times New Roman, Times, serif" color="#000000"><br>
+                </font><font face="Georgia, Times New Roman, Times, serif" color="#000000"><br>
+                <b><font face="Georgia, Times New Roman, Times, serif" color="#000000">Resource:</font></b><font face="Georgia, Times New Roman, Times, serif" color="#000000"><br>
+                (pdf) <a href="pdf/2theatrehistorynotes.pdf">Background notes 
+                for theatre history unit</a></font> </font></p>
+              <p align="left"><b><font face="Georgia, Times New Roman, Times, serif" color="#000000">CELs:</font></b><font face="Georgia, Times New Roman, Times, serif" color="#000000"><br>
+                C, CCT</font></p>
+              <p align="left"><b><font face="Georgia, Times New Roman, Times, serif" color="#000000">Components:</font></b><font face="Georgia, Times New Roman, Times, serif" color="#000000"><br>
+                Creative/Productive, Cultural/Historical</font></p>
+              <table width="550" border="5" cellspacing="0" cellpadding="5">
+                <tr>
+                  <td width="7%"><!-- #BeginLibraryItem "/library/images/questionmark.lbi" --><img name="questionmark" src="../library/images/questionmark.gif" width="30" height="49" border="0"><!-- #EndLibraryItem --></td>
+                  <td width="93%"><font face="Georgia, Times New Roman, Times, serif"><i>Ask 
+                    your students the following questions as an anticipatory set:</i><br>
+                    Who are some of your favorite comedians? What is it that makes 
+                    them funny - physical stuff, social commentary, risqu&eacute; 
+                    material? In laughing at them, are we also laughing at ourselves 
+                    and others we know?</font></td>
+                </tr>
+              </table>
+              <p align="center"><!-- #BeginLibraryItem "/library/images/flags.lbi" --><img name="flags" src="../library/images/flags.gif" width="175" height="42" border="0"><!-- #EndLibraryItem --><!-- #BeginLibraryItem "/library/images/flags.lbi" --><img name="flags" src="../library/images/flags.gif" width="175" height="42" border="0"><!-- #EndLibraryItem --><!-- #BeginLibraryItem "/library/images/flags.lbi" --><img name="flags" src="../library/images/flags.gif" width="175" height="42" border="0"><!-- #EndLibraryItem --></p>
+              <div align="center">
+                <div align="left"> 
+                  <p><b><font face="Georgia, Times New Roman, Times, serif">Activities:</font></b></p>
+                  <p><b><font face="Georgia, Times New Roman, Times, serif">Activity 
+                    1- Warm Up:</font></b></p>
+                  <p><b><font face="Georgia, Times New Roman, Times, serif">&quot;Everybody's 
+                    It&quot;<br>
+                    </font></b><font face="Georgia, Times New Roman, Times, serif">This 
+                    is a good energy boosting game of tag. Everybody is it all 
+                    at the same time. You yell 'go' and then the students try 
+                    to tag others while not being tagged themselves. Tagging can 
+                    only happen on the back. It works best in a fairly large, 
+                    yet contained area.<br>
+                    * Variation: when tagging call out the name of an animal, 
+                    the person tagged must stand and make the animal noise until 
+                    &quot;freed&quot; by a hug.</font><b><font face="Georgia, Times New Roman, Times, serif"> 
+                    </font></b><font face="Georgia, Times New Roman, Times, serif">(5 
+                    min.)</font><b><font face="Georgia, Times New Roman, Times, serif"><br>
+                    <br>
+                    &quot;Yes, Let's&quot;<br>
+                    </font></b><font face="Georgia, Times New Roman, Times, serif">This 
+                    game encourages students to listen and accept suggestions.</font><b><font face="Georgia, Times New Roman, Times, serif"> 
+                    </font></b><font face="Georgia, Times New Roman, Times, serif">Students 
+                    begin by walking about the room in a random pattern. At any 
+                    point, anyone can call out an instruction -&quot;Let's all 
+                    crow like roosters&quot;, and everyone must respond &quot;Yes, 
+                    Let's!&quot; and then must continue crowing until a new instruction 
+                    is called. Let the game continue with lots of suggestions. 
+                    Often it will end after much movement and silliness when someone 
+                    gets the bright idea to say, &quot;Let's all lay down and 
+                    go to sleep!&quot;. (5 -8 min.)</font></p>
+                </div>
+              </div>
+              <div align="center">
+                <div align="left"></div>
+              </div>
+              <div align="center"> 
+                <div align="left"><font face="Georgia, Times New Roman, Times, serif"><b>Activity 
+                  2 - Mask Monologue:</b><u><b><br>
+                  <br>
+                  </b></u></font></div>
+              </div>
+              <div align="center"> 
+                <div align="left"><font face="Georgia, Times New Roman, Times, serif">Read 
+                  the background information on the masks and the notes page on 
+                  Commedia dell 'Arte. Form groups of 3 to 5 people and have the 
+                  students work together to prepare a summary of the notes and 
+                  write a description of one of the masks as seen on the related 
+                  sites (below). </font></div>
+              </div>
+              <div align="center"> 
+                <div align="left"> 
+                  <p><font face="Georgia, Times New Roman, Times, serif">Using 
+                    the mask as an inspiration for the character, the groups improvise 
+                    scenes suitable for the characters. Each scene must set up 
+                    an opportunity for a monologue (perhaps in the form of an 
+                    aside to the audience). After students have completed the 
+                    improv, they should summarize the scene in writing and turn 
+                    it in with the mask description and summary of notes. (30-40 
+                    min.).</font></p>
+                </div>
+              </div>
+              <table width="550" border="5" cellspacing="0" cellpadding="5">
+                <tr> 
+                  <td width="247" align="center" valign="middle"> 
+                    <p><!-- #BeginLibraryItem "/library/images/greekpair.lbi" --><img name="greekpair" src="../library/images/greekpair.gif" width="200" height="136" border="0"><!-- #EndLibraryItem --></p>
+                    <p align="left"><font face="Georgia, Times New Roman, Times, serif">This 
+                      image shows two examples of the reconstructed masks, a Slave 
+                      and a Young Man. These are typical characters from Menander's 
+                      plays.</font></p>
+                  </td>
+                  <td bgcolor="#669966" colspan="2"> 
+                    <p><font face="Georgia, Times New Roman, Times, serif" color="#FFFFFF">&quot;The 
+                      reconstructions are based on the appearance of the original 
+                      masks as shown by artifacts, mainly small models or masks 
+                      used as motifs in the decoration of pottery or sculpture. 
+                      There are no known surviving examples of the original masks 
+                      used in (<i>Commedia del Arte</i>) performances. The aims 
+                      of the project are to show what the original masks might 
+                      have looked like and to produce a set of masks that can 
+                      be used in performances of plays by Menander, the only New 
+                      Comedy playwright whose works survive. &quot;</font></p>
+                    <p><font face="Georgia, Times New Roman, Times, serif" size="2" color="#FFFFFF">(Chris 
+                      Vervain copyright 2001)</font></p>
+                  </td>
+                </tr>
+                <tr> 
+                  <td colspan="2" height="212" valign="top" bgcolor="#669966"> 
+                    <p><font face="Georgia, Times New Roman, Times, serif" color="#FFFFFF">This 
+                      image shows a mask designed to be suitable for a female 
+                      character from Menander, possibly a hetaera.<br>
+                      </font></p>
+                    <p><font face="Georgia, Times New Roman, Times, serif" color="#FFFFFF">View 
+                      the web site: Chris Vervain - <a href="http://www.chrisvervain.btinternet.co.uk/">&quot;Mask 
+                      Theatre&quot;<br>
+                      </a></font></p>
+                    <p>&nbsp;</p>
+                    <p align="center"><font face="Georgia, Times New Roman, Times, serif" size="2" color="#FFFFFF">(Chris 
+                      Verain, copyright 2001)</font></p>
+                  </td>
+                  <td width="155" valign="middle" align="center"> 
+                    <p><!-- #BeginLibraryItem "/library/images/greekfemale.lbi" --><img name="greekfemale" src="../library/images/greekfemale.gif" width="150" height="147" border="0"><!-- #EndLibraryItem --></p>
+                  </td>
+                </tr>
+              </table>
+              <p align="left"><font face="Georgia, Times New Roman, Times, serif"><b>Activity 
+                3 - Commedia Scene:</b><br>
+                <br>
+                Have students create their own Commedia type scenes using the 
+                characters in modern settings. Use masks (if available), or a 
+                simple costume piece to denote characters. Use the same small 
+                groups of three to five from the previous assignment. Select from 
+                the table below to choose characters and improvisational scenarios 
+                (20 min.):</font></p>
+              <table width="550" border="5" cellspacing="0" cellpadding="5">
+                <tr>
+                  <td width="232"><font face="Georgia, Times New Roman, Times, serif"><b>Characters</b></font></td>
+                  <td width="284"><b><font face="Georgia, Times New Roman, Times, serif">Scenarios</font></b></td>
+                </tr>
+                <tr>
+                  <td width="232"><font face="Georgia, Times New Roman, Times, serif"><b>M</b></font><b><font face="Georgia, Times New Roman, Times, serif">asters:</font></b><font face="Georgia, Times New Roman, Times, serif"><br>
+                    </font><font face="Georgia, Times New Roman, Times, serif"><i>Pantalone</i> 
+                    (old, crude, greedy, paranoid and of limited intelligence)<br>
+                    <i>Gratiano</i> (usually a miserly lawyer, called <i>vecchi</i>)</font><font face="Georgia, Times New Roman, Times, serif"><br>
+                    </font> 
+                    <div align="left"><font face="Georgia, Times New Roman, Times, serif"><i>Capitano</i> 
+                      (a blustering Spanish captain who is afraid of his own shadow)<br>
+                      <br>
+                      </font></div>
+                    <font face="Georgia, Times New Roman, Times, serif"><b>Servants:</b><br>
+                    <i>Pedrolino and Arlecchino (Harlequin)</i> are clever, quick 
+                    and always looking to trick the master (they are called <i>zanni</i>)<br>
+                    <i>1st Zany</i> (a male servant who was a clever rogue often 
+                    plotting against the masters) <br>
+                    <i>2nd Zany</i> (a stupid male servant caught up in the 1st 
+                    Zany's plans and ends up a victim of his pranks)<br>
+                    <i>3rd Zany</i> (a female servant who would participate in 
+                    schemes and provide a romantic story among the servants)<br>
+                    <br>
+                    <b>Lovers:</b><br>
+                    (in love, called <i>amarosi</i>) </font></td>
+                  <td width="284"> 
+                    <p><font face="Georgia, Times New Roman, Times, serif">i) 
+                      A local restaurant, customers and employees, trying to place 
+                      an order - no one has any brains at all.</font></p>
+                    <p><font face="Georgia, Times New Roman, Times, serif">ii) 
+                      At the scene of an minor auto accident, arguing over who 
+                      is to blame, the police arrive.</font></p>
+                    <p><font face="Georgia, Times New Roman, Times, serif">iii) 
+                      A scene about love and mistaken identity.</font></p>
+                    <p><font face="Georgia, Times New Roman, Times, serif">iv) 
+                      A scene about greed and trickery.</font></p>
+                    <p><font face="Georgia, Times New Roman, Times, serif">v) 
+                      At a work site on a highway project, in which no work ever 
+                      seems to get accomplished.</font></p>
+                    <p><font face="Georgia, Times New Roman, Times, serif">vi) 
+                      At a political rally, trying to win votes and gather donations 
+                      for the party.</font></p>
+                    <p><font face="Georgia, Times New Roman, Times, serif">vii) 
+                      Try a scene with a<b> lazzo </b>- a piece of stage business 
+                      with juggling, singing or acrobatics - which was once a 
+                      regular part of an actor's repertoire. (See <a href="2juggle.html">Lesson 
+                      4</a> in this module for juggling instruction.)</font></p>
+                      </td>
+                </tr>
+              </table>
+              <hr>
+              <p align="left"><b><font face="Georgia, Times New Roman, Times, serif">Instructional 
+                Strategies:</font></b><font face="Georgia, Times New Roman, Times, serif"><br>
+                Role play, assigned questions, games</font></p>
+              <p align="left"><font face="Georgia, Times New Roman, Times, serif"><b>Evaluation:<br>
+                </b>You are evaluated based on your group's interpretation of 
+                the comedy style. Read <a href="pdf/commedia_del_arte_evaluation.pdf">the 
+                evaluation sheet</a> before beginning the assignments.<b> </b></font></p>
+              <p align="left"><b><font face="Georgia, Times New Roman, Times, serif">Alternative 
+                On-line Activity:<br>
+                </font></b><font face="Georgia, Times New Roman, Times, serif">Have 
+                students complete only Activities 2 and 3. Have the students complete 
+                the same activate in home schools with only a partner, then e-mail 
+                the responses to you or send video clips. You may also chose to 
+                have a teacher in the remote location evaluate the student work.</font></p>
+              <p align="center"><font face="Georgia, Times New Roman, Times, serif"><a href="2clown.html">Next 
+                Lesson</a> / <a href="../student/2commedia.html">Student Lesson</a> 
+                / <a href="2trickster.html">Previous Lesson</a></font></p>
+              </div>
+          </td>
+        </tr>
+        <tr> 
+          <td height="22"></td>
+        </tr>
+      </table>
+      <!-- #EndEditable --></td>
+  </tr>
+  <tr> 
+    <td valign="top" height="89"> 
+      <table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="669966">
+        <tr> 
+          <td width="97" height="89" valign="top" bgcolor="669966"><!-- #BeginEditable "optional" --><!-- #EndEditable --></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr> 
+    <td height="0"></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+</table>
+</body>
+<!-- #EndTemplate -->
+</html>

@@ -1,0 +1,1 @@
+<a href="../../teacher/aboutsite.html" onMouseOut="MM_nbGroup('out');"  onMouseOver="MM_nbGroup('over','aboutsite','aboutsite_f2.gif','aboutsite_f4.gif',1);"  onClick="MM_nbGroup('down','navbar1','aboutsite','aboutsite_f3.gif',1);" ><img name="aboutsite" src="aboutsite.gif" width="96" height="40" border="0"></a>

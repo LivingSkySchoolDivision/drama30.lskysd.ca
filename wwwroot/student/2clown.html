@@ -1,0 +1,1148 @@
+<html><!-- #BeginTemplate "/Templates/templatestudent.dwt" -->
+
+<head>
+
+<!-- #BeginEditable "doctitle" --> 
+
+<title>Student: Clown Character</title>
+
+<!-- #EndEditable --> 
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<script language="JavaScript">
+
+<!--
+
+function MM_preloadImages() { //v3.0
+
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+
+}
+
+
+
+function MM_findObj(n, d) { //v4.0
+
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+
+  if(!x && document.getElementById) x=document.getElementById(n); return x;
+
+}
+
+
+
+function MM_nbGroup(event, grpName) { //v3.0
+
+  var i,img,nbArr,args=MM_nbGroup.arguments;
+
+  if (event == "init" && args.length > 2) {
+
+    if ((img = MM_findObj(args[2])) != null && !img.MM_init) {
+
+      img.MM_init = true; img.MM_up = args[3]; img.MM_dn = img.src;
+
+      if ((nbArr = document[grpName]) == null) nbArr = document[grpName] = new Array();
+
+      nbArr[nbArr.length] = img;
+
+      for (i=4; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+
+        if (!img.MM_up) img.MM_up = img.src;
+
+        img.src = img.MM_dn = args[i+1];
+
+        nbArr[nbArr.length] = img;
+
+    } }
+
+  } else if (event == "over") {
+
+    document.MM_nbOver = nbArr = new Array();
+
+    for (i=1; i < args.length-1; i+=3) if ((img = MM_findObj(args[i])) != null) {
+
+      if (!img.MM_up) img.MM_up = img.src;
+
+      img.src = (img.MM_dn && args[i+2]) ? args[i+2] : args[i+1];
+
+      nbArr[nbArr.length] = img;
+
+    }
+
+  } else if (event == "out" ) {
+
+    for (i=0; i < document.MM_nbOver.length; i++) {
+
+      img = document.MM_nbOver[i]; img.src = (img.MM_dn) ? img.MM_dn : img.MM_up; }
+
+  } else if (event == "down") {
+
+    if ((nbArr = document[grpName]) != null)
+
+      for (i=0; i < nbArr.length; i++) { img=nbArr[i]; img.src = img.MM_up; img.MM_dn = 0; }
+
+    document[grpName] = nbArr = new Array();
+
+    for (i=2; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+
+      if (!img.MM_up) img.MM_up = img.src;
+
+      img.src = img.MM_dn = args[i+1];
+
+      nbArr[nbArr.length] = img;
+
+  } }
+
+}
+
+
+
+function MM_swapImgRestore() { //v3.0
+
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+
+}
+
+
+
+function MM_swapImage() { //v3.0
+
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+
+}
+
+//-->
+
+</script>
+
+<!-- #BeginEditable "CourseBuilder" --> 
+
+<script language="JavaScript">
+
+<!--
+
+function MM_initInteractions(){}
+
+//-->
+
+</script>
+
+<!-- #EndEditable --> 
+
+</head>
+
+
+
+<body bgcolor="#993366" text="#000000" onLoad="MM_initInteractions();MM_preloadImages('../library/buttons/home_r1_c1_f3.gif','../library/buttons/home_r1_c1_f2.gif','../library/buttons/home_r1_c1_f4.gif','../library/buttons/home_r2_c1_f2.gif','../library/buttons/courseoutline_r1_c1_f3.gif','../library/buttons/courseoutline_r1_c1_f2.gif','../library/buttons/courseoutline_r1_c1_f4.gif','../library/buttons/courseoutline_r2_c1_f2.gif','../library/buttons/sitemap_r1_c1_f3.gif','../library/buttons/sitemap_r1_c1_f2.gif','../library/buttons/sitemap_r1_c1_f4.gif','../library/buttons/help_r1_c1_f3.gif','../library/buttons/help_r1_c1_f2.gif','../library/buttons/help_r1_c1_f4.gif','../library/buttons/help_r2_c1_f2.gif','../library/buttons/resources_r1_c1_f3.gif','../library/buttons/resources_r1_c1_f2.gif','../library/buttons/resources_r1_c1_f4.gif','../library/buttons/resources_r2_c1_f2.gif','../library/buttons/teacher1_r1_c1_f3.gif','../library/buttons/teacher1_r1_c1_f2.gif','../library/buttons/teacher1_r1_c1_f4.gif','../library/buttons/teacher1_r2_c1_f2.gif','../library/buttons/class_f3.gif','../library/buttons/class_f2.gif','../library/buttons/class_f4.gif','../library/buttons/outline_f3.gif','../library/buttons/outline_f2.gif','../library/buttons/outline_f4.gif','../library/buttons/studentblue_r1_c1_f3.gif','../library/buttons/studentblue_r1_c1_f2.gif','../library/buttons/studentblue_r1_c1_f4.gif')">
+
+<table width="700" border="0" cellpadding="0" cellspacing="0">
+
+  <tr> 
+
+    <td width="97" valign="top" bgcolor="993366" rowspan="2"> <!-- #BeginLibraryItem "/library/buttons/home.lbi" --><table border="0" cellpadding="0" cellspacing="0" width="96">
+
+<!-- fwtable fwsrc="home1.png" fwbase="home.gif" -->
+
+  <tr>
+
+   <td><img src="../library/buttons/spacer.gif" width="96" height="1" border="0"></td>
+
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+
+  </tr>
+
+  <tr>
+
+    <td><a href="../index.html" onMouseOut="MM_nbGroup('out');"  onMouseOver="MM_nbGroup('over','home_r1_c1','../library/buttons/home_r1_c1_f2.gif','../library/buttons/home_r1_c1_f4.gif',1)"  onClick="MM_nbGroup('down','navbar1','home_r1_c1','../library/buttons/home_r1_c1_f3.gif',1)" ><img name="home_r1_c1" src="../library/buttons/home_r1_c1.gif" width="96" height="79" border="0" alt="home"></a></td>
+
+   <td><img src="../library/buttons/spacer.gif" width="1" height="79" border="0"></td>
+
+  </tr>
+
+  <tr>
+
+   <td><a href="#" onMouseOut="MM_swapImgRestore();"  onMouseOver="MM_swapImage('home_r2_c1','','../library/buttons/home_r2_c1_f2.gif',1)" ><img name="home_r2_c1" src="../library/buttons/home_r2_c1.gif" width="96" height="1" border="0"></a></td>
+
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+
+  </tr>
+
+</table>
+
+<!-- #EndLibraryItem --></td>
+
+    <td valign="top" width="97" bgcolor="993366" rowspan="2"><!-- #BeginLibraryItem "/library/buttons/studentblue.lbi" --><table border="0" cellpadding="0" cellspacing="0" width="96">
+
+<!-- fwtable fwsrc="student1.png" fwbase="studentblue.gif" -->
+
+  <tr>
+
+   <td><img src="../library/buttons/spacer.gif" width="95" height="1" border="0"></td>
+
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+
+  </tr>
+
+  <tr>
+
+    <td><a href="../mainpages/student.html" onMouseOut="MM_nbGroup('out');"  onMouseOver="MM_nbGroup('over','studentblue_r1_c1','../library/buttons/studentblue_r1_c1_f2.gif','../library/buttons/studentblue_r1_c1_f4.gif',1)"  onClick="MM_nbGroup('down','navbar1','studentblue_r1_c1','../library/buttons/studentblue_r1_c1_f3.gif',1)" ><img name="studentblue_r1_c1" src="../library/buttons/studentblue_r1_c1.gif" width="95" height="79" border="0"></a></td>
+
+   <td rowspan="2"><img name="studentblue_r1_c2" src="../library/buttons/studentblue_r1_c2.gif" width="1" height="80" border="0"></td>
+
+   <td><img src="../library/buttons/spacer.gif" width="1" height="79" border="0"></td>
+
+  </tr>
+
+  <tr>
+
+   <td><img name="studentblue_r2_c1" src="../library/buttons/studentblue_r2_c1.gif" width="95" height="1" border="0"></td>
+
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+
+  </tr>
+
+</table>
+
+<!-- #EndLibraryItem --></td>
+
+    <td width="97" valign="top" rowspan="2" bgcolor="993366"><!-- #BeginLibraryItem "/library/buttons/teacher1.lbi" --><table border="0" cellpadding="0" cellspacing="0" width="96">
+
+<!-- fwtable fwsrc="teacher1.png" fwbase="teacher1.gif" -->
+
+  <tr>
+
+   <td><img src="../library/buttons/spacer.gif" width="96" height="1" border="0"></td>
+
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+
+  </tr>
+
+  <tr>
+
+    <td><a href="../mainpages/teacher.html" onMouseOut="MM_nbGroup('out');"  onMouseOver="MM_nbGroup('over','teacher1_r1_c1','../library/buttons/teacher1_r1_c1_f2.gif','../library/buttons/teacher1_r1_c1_f4.gif',1)"  onClick="MM_nbGroup('down','navbar1','teacher1_r1_c1','../library/buttons/teacher1_r1_c1_f3.gif',1)" ><img name="teacher1_r1_c1" src="../library/buttons/teacher1_r1_c1.gif" width="96" height="79" border="0"></a></td>
+
+   <td><img src="../library/buttons/spacer.gif" width="1" height="79" border="0"></td>
+
+  </tr>
+
+  <tr>
+
+   <td><a href="#" onMouseOut="MM_swapImgRestore();"  onMouseOver="MM_swapImage('teacher1_r2_c1','','../library/buttons/teacher1_r2_c1_f2.gif',1)" ><img name="teacher1_r2_c1" src="../library/buttons/teacher1_r2_c1.gif" width="96" height="1" border="0"></a></td>
+
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+
+  </tr>
+
+</table>
+
+<!-- #EndLibraryItem --></td>
+
+    <td width="409" height="81" valign="top" bgcolor="993366"><!-- #BeginEditable "banner" --><!-- #BeginLibraryItem "/library/buttons/dr30titlestudent.lbi" --><img name="dr30titlestudent" src="../library/buttons/dr30titlestudent.gif" width="400" height="80" border="0"><!-- #EndLibraryItem --><!-- #EndEditable --></td>
+
+  </tr>
+
+  <tr> 
+
+    <td valign="top" height="23" bgcolor="993366"><!-- #BeginEditable "pagetitle" --> 
+
+      <div align="center"></div>
+
+      <!-- #EndEditable --></td>
+
+  </tr>
+
+  <tr> 
+
+    <td valign="top" height="347"> 
+
+      <table width="100%" border="0" cellpadding="0" cellspacing="0">
+
+        <tr> 
+
+          <td width="97" height="56" valign="top" bgcolor="993366"> <!-- #BeginLibraryItem "/library/buttons/courseoutline.lbi" --><table border="0" cellpadding="0" cellspacing="0" width="96">
+
+<!-- fwtable fwsrc="courseoutline1.png" fwbase="courseoutline.gif" -->
+
+  <tr>
+
+   <td><img src="../library/buttons/spacer.gif" width="96" height="1" border="0"></td>
+
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+
+  </tr>
+
+  <tr>
+
+    <td><a href="../mainpages/courseoutline.htm" onMouseOut="MM_nbGroup('out');"  onMouseOver="MM_nbGroup('over','courseoutline_r1_c1','../library/buttons/courseoutline_r1_c1_f2.gif','../library/buttons/courseoutline_r1_c1_f4.gif',1)"  onClick="MM_nbGroup('down','navbar1','courseoutline_r1_c1','../library/buttons/courseoutline_r1_c1_f3.gif',1)" ><img name="courseoutline_r1_c1" src="../library/buttons/courseoutline_r1_c1.gif" width="96" height="79" border="0"></a></td>
+
+   <td><img src="../library/buttons/spacer.gif" width="1" height="79" border="0"></td>
+
+  </tr>
+
+  <tr>
+
+   <td><a href="#" onMouseOut="MM_swapImgRestore();"  onMouseOver="MM_swapImage('courseoutline_r2_c1','','../library/buttons/courseoutline_r2_c1_f2.gif',1)" ><img name="courseoutline_r2_c1" src="../library/buttons/courseoutline_r2_c1.gif" width="96" height="1" border="0"></a></td>
+
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+
+  </tr>
+
+</table>
+
+<!-- #EndLibraryItem --><!-- #BeginLibraryItem "/library/buttons/sitemap.lbi" --><table border="0" cellpadding="0" cellspacing="0" width="96">
+
+<!-- fwtable fwsrc="sitemap1.png" fwbase="sitemap.gif" -->
+
+  <tr>
+
+   <td><img src="../library/buttons/spacer.gif" width="95" height="1" border="0"></td>
+
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+
+  </tr>
+
+  <tr>
+
+    <td><a href="../mainpages/templatemainmap.html" onMouseOut="MM_nbGroup('out');"  onMouseOver="MM_nbGroup('over','sitemap_r1_c1','../library/buttons/sitemap_r1_c1_f2.gif','../library/buttons/sitemap_r1_c1_f4.gif',1)"  onClick="MM_nbGroup('down','navbar1','sitemap_r1_c1','../library/buttons/sitemap_r1_c1_f3.gif',1)" ><img name="sitemap_r1_c1" src="../library/buttons/sitemap_r1_c1.gif" width="95" height="79" border="0"></a></td>
+
+   <td rowspan="2"><img name="sitemap_r1_c2" src="../library/buttons/sitemap_r1_c2.gif" width="1" height="80" border="0"></td>
+
+   <td><img src="../library/buttons/spacer.gif" width="1" height="79" border="0"></td>
+
+  </tr>
+
+  <tr>
+
+   <td><img name="sitemap_r2_c1" src="../library/buttons/sitemap_r2_c1.gif" width="95" height="1" border="0"></td>
+
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+
+  </tr>
+
+</table>
+
+<!-- #EndLibraryItem --><!-- #BeginLibraryItem "/library/buttons/help.lbi" --><table border="0" cellpadding="0" cellspacing="0" width="96">
+
+<!-- fwtable fwsrc="help1.png" fwbase="help.gif" -->
+
+  <tr>
+
+   <td><img src="../library/buttons/spacer.gif" width="96" height="1" border="0"></td>
+
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+
+  </tr>
+
+  <tr>
+
+    <td><a href="../mainpages/help.html" onMouseOut="MM_nbGroup('out');"  onMouseOver="MM_nbGroup('over','help_r1_c1','../library/buttons/help_r1_c1_f2.gif','../library/buttons/help_r1_c1_f4.gif',1)"  onClick="MM_nbGroup('down','navbar1','help_r1_c1','../library/buttons/help_r1_c1_f3.gif',1)" ><img name="help_r1_c1" src="../library/buttons/help_r1_c1.gif" width="96" height="79" border="0"></a></td>
+
+   <td><img src="../library/buttons/spacer.gif" width="1" height="79" border="0"></td>
+
+  </tr>
+
+  <tr>
+
+   <td><a href="#" onMouseOut="MM_swapImgRestore();"  onMouseOver="MM_swapImage('help_r2_c1','','../library/buttons/help_r2_c1_f2.gif',1)" ><img name="help_r2_c1" src="../library/buttons/help_r2_c1.gif" width="96" height="1" border="0"></a></td>
+
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+
+  </tr>
+
+</table>
+
+<!-- #EndLibraryItem --><!-- #BeginLibraryItem "/library/buttons/resources.lbi" --><table border="0" cellpadding="0" cellspacing="0" width="96">
+
+<!-- fwtable fwsrc="resources1.png" fwbase="resources.gif" -->
+
+  <tr>
+
+   <td><img src="../library/buttons/spacer.gif" width="96" height="1" border="0"></td>
+
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+
+  </tr>
+
+  <tr>
+
+    <td><a href="../mainpages/resources.html" onMouseOut="MM_nbGroup('out');"  onMouseOver="MM_nbGroup('over','resources_r1_c1','../library/buttons/resources_r1_c1_f2.gif','../library/buttons/resources_r1_c1_f4.gif',1)"  onClick="MM_nbGroup('down','navbar1','resources_r1_c1','../library/buttons/resources_r1_c1_f3.gif',1)" ><img name="resources_r1_c1" src="../library/buttons/resources_r1_c1.gif" width="96" height="79" border="0"></a></td>
+
+   <td><img src="../library/buttons/spacer.gif" width="1" height="79" border="0"></td>
+
+  </tr>
+
+  <tr>
+
+   <td><a href="#" onMouseOut="MM_swapImgRestore();"  onMouseOver="MM_swapImage('resources_r2_c1','','../library/buttons/resources_r2_c1_f2.gif',1)" ><img name="resources_r2_c1" src="../library/buttons/resources_r2_c1.gif" width="96" height="1" border="0"></a></td>
+
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+
+  </tr>
+
+</table>
+
+<!-- #EndLibraryItem --></td>
+
+        </tr>
+
+      </table>
+
+    </td>
+
+    <td colspan="3" rowspan="2" valign="top" bgcolor="993366"> <!-- #BeginEditable "content" --> 
+
+      <table width="603" border="0" cellpadding="5" cellspacing="0" bgcolor="ede4d8">
+
+        <tr> 
+
+          <td height="1784" width="593" valign="top"> 
+
+            <div align="center"> 
+
+              <p><!-- #BeginLibraryItem "/library/buttons/class.lbi" --><a href="class.html" onMouseOut="MM_nbGroup('out');"  onMouseOver="MM_nbGroup('over','class','../library/buttons/class_f2.gif','../library/buttons/class_f4.gif',1)"  onClick="MM_nbGroup('down','navbar1','class','../library/buttons/class_f3.gif',1)" ><img name="class" src="../library/buttons/class.gif" width="96" height="40" border="0"></a><!-- #EndLibraryItem --><!-- #BeginLibraryItem "/library/buttons/outline.lbi" --><a href="studentoutline.html" onMouseOut="MM_nbGroup('out');"  onMouseOver="MM_nbGroup('over','outline','../library/buttons/outline_f2.gif','../library/buttons/outline_f4.gif',1)"  onClick="MM_nbGroup('down','navbar1','outline','../library/buttons/outline_f3.gif',1)" ><img name="outline" src="../library/buttons/outline.gif" width="96" height="40" border="0"></a><!-- #EndLibraryItem --></p>
+
+              <div align="center"> 
+
+                <p align="left"><font size="4" color="663333" face="Georgia, Times New Roman, Times, serif"><b>Unit 
+
+                  2 - Theatre History<i><br>
+
+                  </i></b></font><i><font face="Georgia, Times New Roman, Times, serif" size="4" color="663333">Module 
+
+                  2: Jesters, Tricksters and Fools<br>
+
+                  </font></i><font face="Georgia, Times New Roman, Times, serif" size="4" color="663333">Lesson 
+
+                  3 - Clown Character</font></p>
+
+                <p align="left"><b><font face="Georgia, Times New Roman, Times, serif" color="#000000">Introduction:</font><font face="Georgia, Times New Roman, Times, serif"><br>
+
+                  </font></b><font face="Georgia, Times New Roman, Times, serif">The 
+
+                  keys to becoming a good clown are simple-<br>
+
+                  &#149; have fun<br>
+
+                  &#149; react to situations.<br>
+
+                  &#149; respond to impulses.</font><b><font face="Georgia, Times New Roman, Times, serif" color="#000000"><br>
+
+                  </font></b><font face="Georgia, Times New Roman, Times, serif" color="#000000">This 
+
+                  lesson will help each actor do all three through warm-ups and 
+
+                  activities.</font></p>
+
+                <hr>
+
+                <div align="left"> 
+
+                  <p><b><font face="Georgia, Times New Roman, Times, serif" color="#000000">Resource:</font></b><font face="Georgia, Times New Roman, Times, serif" color="#000000"><br>
+
+                    (pdf) <a href="../teacher/pdf/2theatrehistorynotes.pdf">Background 
+
+                    notes for theatre history unit</a></font>, <a href="2clownstolookup.html"><font face="Georgia, Times New Roman, Times, serif">additional 
+
+                    clown warm-ups (optional)</font></a><font face="Georgia, Times New Roman, Times, serif">, 
+
+                    <a href="2clownstolookup.html">clowns to look up (optional)</a></font>, 
+
+                    <font face="Georgia, Times New Roman, Times, serif" color="#000000">Clown 
+
+                    noses, some props and costumes, clown sites.</font> <br>
+
+                  </p>
+
+                </div>
+
+                <table width="575" border="1" align="center" bgcolor="#993366" cellpadding="5">
+
+                  <tr> 
+
+                    <td width="451"> 
+
+                      <div align="left"><b><font face="Georgia, Times New Roman, Times, serif" color="#FFFFFF">Talking 
+
+                        Circle:<br>
+
+                        </font></b><font face="Georgia, Times New Roman, Times, serif" color="#FFFFFF">What 
+
+                        do you think of when you think of clown?<br>
+                        Many people only think of the &quot;fright wig&quot; clown, 
+                        at children's parties making balloon animals. The idea 
+                        of clown is really about a character - child-like in some 
+                        ways (though not childish), innocent, capable of making 
+                        us see the humorous side of life. The clowns job is to 
+                        point out truths in life. Focus on character, not physical 
+                        gags.</font></div>
+
+                    </td>
+
+                    <td width="92"> 
+
+                      <div align="center"><img src="../library/images/talkingcircle.gif" width="85" height="67"></div>
+
+                    </td>
+
+                  </tr>
+
+                </table>
+
+                <table width="575" border="3" align="center" bordercolor="#993366" bgcolor="#FFFFFF">
+
+                  <tr> 
+
+                    <td width="450" bgcolor="#FFFFFF" valign="middle"> 
+                      <p><font face="Georgia, Times New Roman, Times, serif"><b>What 
+                        is a clown?</b></font></p>
+
+                      <ul>
+
+                        <li><font face="Georgia, Times New Roman, Times, serif">first 
+
+                          recorded bout 2270 BC in Egypt</font></li>
+
+                        <li><font face="Georgia, Times New Roman, Times, serif">comic 
+
+                          spirit of clowning exists in every culture</font></li>
+
+                        <li><font face="Georgia, Times New Roman, Times, serif">ancient 
+
+                          craft speaks to that which is human in all of us</font></li>
+
+                        <li><font face="Georgia, Times New Roman, Times, serif">many 
+
+                          styles of clown and may know a variety of skills as 
+
+                          a performer, such as: juggling, magic, contortion, acrobatics, 
+
+                          story telling, puppetry, tight rope walking, singing 
+
+                          and clever dialogue</font></li>
+
+                        <li><font face="Georgia, Times New Roman, Times, serif">known 
+
+                          by their ludicrous antics, distinctive costume, and 
+
+                          buffoonery</font></li>
+
+                        <li><font face="Georgia, Times New Roman, Times, serif">characterized 
+
+                          by broad, graphic humour, absurd situations and vigorous 
+
+                          physical action<br>
+
+                          <br>
+
+                          </font></li>
+
+                      </ul>
+
+                    </td>
+
+                    <td width="105" bgcolor="#FFFFFF" valign="middle"> 
+                      <div align="center"><img src="../library/images/jester.gif" width="100" height="115"></div>
+
+                    </td>
+
+                  </tr>
+
+                </table>
+
+                <table width="575" border="2" align="center" bordercolor="#993366" cellpadding="5">
+
+                  <tr> 
+
+                    <td width="150" height="226" valign="top" bgcolor="#FFFFFF"> 
+                      <div align="center"> 
+
+                        <p><br>
+
+                          <img src="../library/images/2funface.gif" width="150" height="209"> 
+
+                          <br>
+
+                        </p>
+
+                      </div>
+
+                    </td>
+
+                    <td width="391" valign="middle" bgcolor="#FFFFFF" height="226"> 
+                      <div align="left"> 
+
+                        <p><font face="Georgia, Times New Roman, Times, serif"><b>Warm 
+
+                          Up &quot;Baby I Love You&quot;</b><br>
+
+                          Stand in a circle with one person in the center as &quot;the 
+
+                          lover&quot;. The lover can pick anyone in the circle 
+
+                          to try to make them laugh. They can physicalize in any 
+
+                          way they like (without touching the other person). They 
+
+                          must keep eye contact and say, &quot;Baby, I love you. 
+
+                          Will you give me a smile?&quot; The other person, keeping 
+
+                          eye contact and a straight face, must respond, &quot;Baby 
+
+                          I love you, but I just can't smile&quot;. If they smile 
+
+                          then they take a turn in the center as the &quot;lover&quot;.</font></p>
+
+                      </div>
+
+                    </td>
+
+                  </tr>
+
+                </table>
+
+                <p align="left"><font face="Georgia, Times New Roman, Times, serif"><b>Activities: 
+
+                  </b></font></p>
+
+                <table width="575" border="2" align="center" bordercolor="#993366">
+
+                  <tr> 
+
+                    <td width="421" valign="middle" height="258" bgcolor="#FFFFFF"> 
+                      <div align="center"> 
+
+                        <p align="left"><b><font face="Georgia, Times New Roman, Times, serif">Activity 
+                          One - &quot;Emotions&quot;</font></b></p>
+
+                        <p align="left"><font face="Georgia, Times New Roman, Times, serif"><br>
+
+                          Stand facing a partner. Decide together on 5 different 
+
+                          emotions to be played (for example: anger, happiness, 
+
+                          fear, surprise and sadness). Begin by one person showing 
+
+                          an emotion, the partner is to feed off their partner's 
+
+                          energy and react in a similar fashion. At any point, 
+
+                          transform the emotion into a new one. The other person 
+
+                          must follow suit. So, the emotion may move from happiness 
+
+                          to surprise to anger to sadness to surprise to fear 
+
+                          .... etc. Do not speak during the exercise, but make 
+
+                          noises, sounds and gestures with each emotion. <br>
+
+                          </font></p>
+
+                      </div>
+
+                    </td>
+
+                    <td width="136" rowspan="2" valign="middle" bgcolor="#FFFFFF" align="center"> 
+
+                      <div align="center"><img src="../library/images/2stunned.gif" width="81" height="200"></div>
+
+                    </td>
+
+                  </tr>
+
+                  <tr> 
+
+                    <td valign="middle" height="65" align="center" bgcolor="#993366"><font face="Georgia, Times New Roman, Times, serif" color="#FFFFFF">Clowns 
+
+                      play their emotions larger than life.<br>
+
+                      They are played out to the audience.<br>
+
+                      On a scale of 1 to 10 - <font size="4"><b>play it at 10.</b></font></font></td>
+
+                  </tr>
+
+                </table>
+
+                <p align="left"><b><font face="Georgia, Times New Roman, Times, serif">Activity 
+
+                  Two - Journal</font></b></p>
+
+                <table width="500" border="5" cellspacing="5" cellpadding="5">
+
+                  <tr> 
+
+                    <td width="78" height="131" valign="top"><img src="../library/images/journal.gif" width="78" height="119"></td>
+
+                    <td valign="top" colspan="2"><b><font face="Georgia, Times New Roman, Times, serif">Write 
+
+                      a journal that answers the following questions:<br>
+
+                      </font></b><font face="Georgia, Times New Roman, Times, serif">What 
+
+                      are the challenges of being a clown? What do you find the 
+
+                      most difficult to do? <br>
+
+                      How might you help yourself prepare to clown - to get into 
+
+                      character?</font><b><font face="Georgia, Times New Roman, Times, serif"> 
+
+                      </font></b></td>
+
+                  </tr>
+
+                  <tr> 
+
+                    <td height="31" colspan="2" valign="middle"> 
+
+                      <div align="center"> 
+
+                        <div align="center"> 
+
+                          <div align="left"><b><font face="Georgia, Times New Roman, Times, serif">Activity 
+
+                            Three - Red Noses</font></b></div>
+
+                        </div>
+
+                      </div>
+
+                      <div align="center"> 
+
+                        <div align="center"> 
+
+                          <div align="left"> 
+
+                            <p><font face="Georgia, Times New Roman, Times, serif">You 
+                              will need several clown noses for the exercises 
+                              described below and a variety of costume pieces 
+                              and props available for use. You may be asked to 
+                              bring in their own props and costume pieces (simple 
+                              things such as a hat).</font></p>
+
+                          </div>
+
+                        </div>
+
+                      </div>
+
+                    </td>
+
+                    <td width="254" valign="top"><img src="../library/images/nose.png" width="250" height="250"></td>
+
+                  </tr>
+
+                </table>
+
+                <div align="center"> 
+
+                  <div align="center"> 
+
+                    <div align="left"></div>
+
+                  </div>
+
+                </div>
+
+                <div align="center"> 
+
+                  <div align="center"> 
+
+                    <div align="left"></div>
+
+                  </div>
+
+                </div>
+
+                <div align="center"> 
+
+                  <blockquote> 
+
+                    <div align="center"> 
+
+                      <div align="left"> 
+
+                        <p>&nbsp;</p>
+
+                        <p><font face="Georgia, Times New Roman, Times, serif"><b>A. 
+
+                          Playing with a Prop</b><br>
+
+                          Working on your own, play around with the prop, exploring 
+
+                          ways it may be used. Consider things such as impossible 
+
+                          uses, weight (gravity), slipperiness or stickiness. 
+
+                          Once you have found the way to play with the object, 
+
+                          find a partner and combine objects and ideas into a 
+
+                          scene which shows interactions.</font></p>
+
+                        <p><font face="Georgia, Times New Roman, Times, serif"><b>B. 
+
+                          Changing Emotions<br>
+
+                          </b>With a partner, improvise a scene based on an idea 
+
+                          which shows change in emotion, such as: &quot;Lost and 
+
+                          Found&quot;; &quot;Coming and Going&quot; or &quot;Building 
+
+                          and Destroying&quot;. Use clown nose and costume piece 
+
+                          to transform. Each person, prior to the scene, privately 
+
+                          chooses an emotion to play when the improvisation begins. 
+
+                          React to one another, allow the emotion to change as 
+
+                          the scene progresses.</font></p>
+
+                      </div>
+
+                    </div>
+
+                  </blockquote>
+
+                </div>
+
+                <div align="center"> 
+
+                  <blockquote> 
+
+                    <div align="center"> 
+
+                      <div align="left"> 
+
+                        <p align="center"><font face="Georgia, Times New Roman, Times, serif"><img src="../library/images/flags.gif" width="175" height="42"><img src="../library/images/flags.gif" width="175" height="42"></font></p>
+
+                        <p align="left"><font face="Georgia, Times New Roman, Times, serif"><b><br>
+                          Bonus/Advanced Project:</b></font></p>
+
+                        <p align="left"><font face="Georgia, Times New Roman, Times, serif">Create 
+
+                          a clown character: name, costume, voice, personality.<br>
+
+                          Put together a solo scene for your clown. Remember to:</font></p>
+
+                      </div>
+
+                    </div>
+
+                  </blockquote>
+
+                </div>
+
+                <ul>
+
+                  <li> 
+
+                    <div align="center"> 
+
+                      <div align="center"> 
+
+                        <div align="left"><font face="Georgia, Times New Roman, Times, serif"> 
+
+                          play the emotion grand, huge</font></div>
+
+                      </div>
+
+                    </div>
+
+                  </li>
+
+                  <li> 
+
+                    <div align="center"> 
+
+                      <div align="center"> 
+
+                        <div align="left"><font face="Georgia, Times New Roman, Times, serif">play 
+
+                          it out front to the audience, eyes make contact with 
+
+                          the audience</font></div>
+
+                      </div>
+
+                    </div>
+
+                  </li>
+
+                  <li> 
+
+                    <div align="center"> 
+
+                      <div align="center"> 
+
+                        <div align="left"><font face="Georgia, Times New Roman, Times, serif">keep 
+
+                          it simple - what does your clown want? Why can't they 
+
+                          get it?</font></div>
+
+                      </div>
+
+                    </div>
+
+                  </li>
+
+                  <li> 
+
+                    <div align="center"> 
+
+                      <div align="center"> 
+
+                        <div align="left"><font face="Georgia, Times New Roman, Times, serif">incorporate 
+
+                          a physical element</font></div>
+
+                      </div>
+
+                    </div>
+
+                  </li>
+
+                  <li> 
+
+                    <div align="center"> 
+
+                      <div align="center"> 
+
+                        <div align="left"><font face="Georgia, Times New Roman, Times, serif">think 
+
+                          about involving the audience in some way</font></div>
+
+                      </div>
+
+                    </div>
+
+                  </li>
+
+                  <li> 
+
+                    <div align="center"> 
+
+                      <div align="center"> 
+
+                        <div align="left"><font face="Georgia, Times New Roman, Times, serif">don't 
+
+                          <i>try</i> for laughs, just play your character straight, 
+
+                          the audience <i>will</i> laugh</font></div>
+
+                      </div>
+
+                    </div>
+
+                  </li>
+
+                  <li> 
+
+                    <div align="center"> 
+
+                      <div align="center"> 
+
+                        <div align="left"><font face="Georgia, Times New Roman, Times, serif">know 
+
+                          the character - then use it - play the situation</font></div>
+
+                      </div>
+
+                    </div>
+
+                  </li>
+
+                  <li> 
+
+                    <div align="center"> 
+
+                      <div align="center"> 
+
+                        <div align="left"><font face="Georgia, Times New Roman, Times, serif">the 
+
+                          only thing you are allowed to exaggerate in comedy is 
+
+                          emotion - worry becomes frenzied anxiety, smugness becomes 
+
+                          unbearable complacency, and distaste becomes anguished 
+
+                          indignation.</font></div>
+
+                      </div>
+
+                    </div>
+
+                  </li>
+
+                  <li> 
+
+                    <div align="center"> 
+
+                      <div align="center"> 
+
+                        <div align="left"><font face="Georgia, Times New Roman, Times, serif">Samuel 
+
+                          West said, &quot;It's overcoming a larger obstacle isn't 
+
+                          it? Like if you're John Cleese in<i> Fawlty Towers</i> 
+
+                          and you want a huge panic, your intention will be to 
+
+                          have the menu typed in 15 seconds instead of 30, and 
+
+                          the typewriter sticks. It's real, you see.&quot;</font></div>
+
+                      </div>
+
+                    </div>
+
+                  </li>
+
+                  <li> 
+
+                    <div align="center"> 
+
+                      <div align="center"> 
+
+                        <div align="left"><font face="Georgia, Times New Roman, Times, serif">don't 
+
+                          be in a rush, take your time with the scenario<br>
+
+                          </font></div>
+
+                      </div>
+
+                    </div>
+
+                  </li>
+
+                </ul>
+
+                <div align="center"> 
+
+                  <blockquote> 
+
+                    <div align="left"></div>
+
+                    <div align="center"> </div>
+
+                  </blockquote>
+
+                  <div align="center"> 
+
+                    <hr>
+
+                  </div>
+
+                  <div align="left"> 
+
+                    <p><font face="Georgia, Times New Roman, Times, serif"><b>Evaluation:<br>
+
+                      </b>Participation in exercise and improvisation activity<b><br>
+
+                      </b></font><b><font face="Georgia, Times New Roman, Times, serif"><br>
+
+                      Alternative On-line Activity:<br>
+
+                      </font></b><font face="Georgia, Times New Roman, Times, serif">- 
+
+                      clown conversation over the phone with a partner <br>
+
+                      - look up clown links to share information with others<br>
+
+                      - work on improvisation scenes solo. </font></p>
+
+                  </div>
+
+                  <p align="center"><font face="Georgia, Times New Roman, Times, serif"><a href="2juggle.html">Next 
+
+                    Lesson</a> /<a href="2commedia.html"> Previous Lesson </a></font></p>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </td>
+
+        </tr>
+
+        <tr> 
+
+          <td height="3"></td>
+
+        </tr>
+
+      </table>
+
+      <!-- #EndEditable --></td>
+
+  </tr>
+
+  <tr> 
+
+    <td valign="top" height="89" bgcolor="993366"> <!-- #BeginEditable "optional" --> 
+
+      <table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="993366">
+
+        <tr> 
+
+          <td width="97" height="89" valign="middle" bgcolor="993366" align="center"> 
+
+            <blockquote>
+
+              <div align="left"></div>
+
+            </blockquote>
+
+            </td>
+
+        </tr>
+
+      </table>
+
+      <!-- #EndEditable --></td>
+
+  </tr>
+
+  <tr> 
+
+    <td height="0"></td>
+
+    <td></td>
+
+    <td></td>
+
+    <td></td>
+
+  </tr>
+
+</table>
+
+</body>
+
+<!-- #EndTemplate --></html>
+

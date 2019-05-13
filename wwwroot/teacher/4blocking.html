@@ -1,0 +1,538 @@
+<html><!-- #BeginTemplate "/Templates/templateteacher.dwt" -->
+<head>
+<!-- #BeginEditable "doctitle" --> 
+<title>Teacher  - Blocking</title>
+<!-- #EndEditable --> 
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<script language="JavaScript">
+<!--
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && document.getElementById) x=document.getElementById(n); return x;
+}
+
+function MM_nbGroup(event, grpName) { //v3.0
+  var i,img,nbArr,args=MM_nbGroup.arguments;
+  if (event == "init" && args.length > 2) {
+    if ((img = MM_findObj(args[2])) != null && !img.MM_init) {
+      img.MM_init = true; img.MM_up = args[3]; img.MM_dn = img.src;
+      if ((nbArr = document[grpName]) == null) nbArr = document[grpName] = new Array();
+      nbArr[nbArr.length] = img;
+      for (i=4; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+        if (!img.MM_up) img.MM_up = img.src;
+        img.src = img.MM_dn = args[i+1];
+        nbArr[nbArr.length] = img;
+    } }
+  } else if (event == "over") {
+    document.MM_nbOver = nbArr = new Array();
+    for (i=1; i < args.length-1; i+=3) if ((img = MM_findObj(args[i])) != null) {
+      if (!img.MM_up) img.MM_up = img.src;
+      img.src = (img.MM_dn && args[i+2]) ? args[i+2] : args[i+1];
+      nbArr[nbArr.length] = img;
+    }
+  } else if (event == "out" ) {
+    for (i=0; i < document.MM_nbOver.length; i++) {
+      img = document.MM_nbOver[i]; img.src = (img.MM_dn) ? img.MM_dn : img.MM_up; }
+  } else if (event == "down") {
+    if ((nbArr = document[grpName]) != null)
+      for (i=0; i < nbArr.length; i++) { img=nbArr[i]; img.src = img.MM_up; img.MM_dn = 0; }
+    document[grpName] = nbArr = new Array();
+    for (i=2; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+      if (!img.MM_up) img.MM_up = img.src;
+      img.src = img.MM_dn = args[i+1];
+      nbArr[nbArr.length] = img;
+  } }
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+</script>
+<!-- #BeginEditable "CourseBuilder" --> 
+<script language="JavaScript">
+<!--
+function MM_initInteractions(){}
+//-->
+</script>
+<script language="JavaScript" src="scripts/behActions.js"></script>
+<script language="JavaScript" src="scripts/behCourseBuilder.js"></script>
+<script language="JavaScript" src="scripts/interactionClass.js"></script>
+<script language="JavaScript" src="scripts/elemInptClass.js"></script>
+<!-- #EndEditable --> 
+</head>
+
+<body bgcolor="#669966" text="#000000" onLoad="MM_initInteractions();MM_preloadImages('../library/buttons/home_r1_c1_f3.gif','../library/buttons/home_r1_c1_f2.gif','../library/buttons/home_r1_c1_f4.gif','../library/buttons/home_r2_c1_f2.gif','../library/buttons/studentblue_r1_c1_f3.gif','../library/buttons/studentblue_r1_c1_f2.gif','../library/buttons/studentblue_r1_c1_f4.gif','../library/buttons/courseoutline_r1_c1_f3.gif','../library/buttons/courseoutline_r1_c1_f2.gif','../library/buttons/courseoutline_r1_c1_f4.gif','../library/buttons/courseoutline_r2_c1_f2.gif','../library/buttons/sitemap_r1_c1_f3.gif','../library/buttons/sitemap_r1_c1_f2.gif','../library/buttons/sitemap_r1_c1_f4.gif','../library/buttons/help_r1_c1_f3.gif','../library/buttons/help_r1_c1_f2.gif','../library/buttons/help_r1_c1_f4.gif','../library/buttons/help_r2_c1_f2.gif','../library/buttons/resources_r1_c1_f3.gif','../library/buttons/resources_r1_c1_f2.gif','../library/buttons/resources_r1_c1_f4.gif','../library/buttons/resources_r2_c1_f2.gif','../library/buttons/aboutsite_f3.gif','../library/buttons/aboutsite_f2.gif','../library/buttons/aboutsite_f4.gif','../library/buttons/planning_f3.gif','../library/buttons/planning_f2.gif','../library/buttons/planning_f4.gif','../library/buttons/teacher1_r1_c1_f3.gif','../library/buttons/teacher1_r1_c1_f2.gif','../library/buttons/teacher1_r1_c1_f4.gif','../library/buttons/teacher1_r2_c1_f2.gif')">
+<table width="700" border="0" cellpadding="0" cellspacing="0">
+  <tr> 
+    <td width="97" valign="top" bgcolor="669966" rowspan="2"> <!-- #BeginLibraryItem "/library/buttons/home.lbi" --><table border="0" cellpadding="0" cellspacing="0" width="96">
+<!-- fwtable fwsrc="home1.png" fwbase="home.gif" -->
+  <tr>
+   <td><img src="../library/buttons/spacer.gif" width="96" height="1" border="0"></td>
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+  </tr>
+  <tr>
+    <td><a href="../index.html" onMouseOut="MM_nbGroup('out');"  onMouseOver="MM_nbGroup('over','home_r1_c1','../library/buttons/home_r1_c1_f2.gif','../library/buttons/home_r1_c1_f4.gif',1)"  onClick="MM_nbGroup('down','navbar1','home_r1_c1','../library/buttons/home_r1_c1_f3.gif',1)" ><img name="home_r1_c1" src="../library/buttons/home_r1_c1.gif" width="96" height="79" border="0" alt="home"></a></td>
+   <td><img src="../library/buttons/spacer.gif" width="1" height="79" border="0"></td>
+  </tr>
+  <tr>
+   <td><a href="#" onMouseOut="MM_swapImgRestore();"  onMouseOver="MM_swapImage('home_r2_c1','','../library/buttons/home_r2_c1_f2.gif',1)" ><img name="home_r2_c1" src="../library/buttons/home_r2_c1.gif" width="96" height="1" border="0"></a></td>
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+  </tr>
+</table>
+<!-- #EndLibraryItem --></td>
+    <td valign="top" width="97" bgcolor="669966" rowspan="2"><!-- #BeginLibraryItem "/library/buttons/studentblue.lbi" --><table border="0" cellpadding="0" cellspacing="0" width="96">
+<!-- fwtable fwsrc="student1.png" fwbase="studentblue.gif" -->
+  <tr>
+   <td><img src="../library/buttons/spacer.gif" width="95" height="1" border="0"></td>
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+  </tr>
+  <tr>
+    <td><a href="../mainpages/student.html" onMouseOut="MM_nbGroup('out');"  onMouseOver="MM_nbGroup('over','studentblue_r1_c1','../library/buttons/studentblue_r1_c1_f2.gif','../library/buttons/studentblue_r1_c1_f4.gif',1)"  onClick="MM_nbGroup('down','navbar1','studentblue_r1_c1','../library/buttons/studentblue_r1_c1_f3.gif',1)" ><img name="studentblue_r1_c1" src="../library/buttons/studentblue_r1_c1.gif" width="95" height="79" border="0"></a></td>
+   <td rowspan="2"><img name="studentblue_r1_c2" src="../library/buttons/studentblue_r1_c2.gif" width="1" height="80" border="0"></td>
+   <td><img src="../library/buttons/spacer.gif" width="1" height="79" border="0"></td>
+  </tr>
+  <tr>
+   <td><img name="studentblue_r2_c1" src="../library/buttons/studentblue_r2_c1.gif" width="95" height="1" border="0"></td>
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+  </tr>
+</table>
+<!-- #EndLibraryItem --></td>
+    <td width="97" valign="top" rowspan="2"><!-- #BeginLibraryItem "/library/buttons/teacher1.lbi" --><table border="0" cellpadding="0" cellspacing="0" width="96">
+<!-- fwtable fwsrc="teacher1.png" fwbase="teacher1.gif" -->
+  <tr>
+   <td><img src="../library/buttons/spacer.gif" width="96" height="1" border="0"></td>
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+  </tr>
+  <tr>
+    <td><a href="../mainpages/teacher.html" onMouseOut="MM_nbGroup('out');"  onMouseOver="MM_nbGroup('over','teacher1_r1_c1','../library/buttons/teacher1_r1_c1_f2.gif','../library/buttons/teacher1_r1_c1_f4.gif',1)"  onClick="MM_nbGroup('down','navbar1','teacher1_r1_c1','../library/buttons/teacher1_r1_c1_f3.gif',1)" ><img name="teacher1_r1_c1" src="../library/buttons/teacher1_r1_c1.gif" width="96" height="79" border="0"></a></td>
+   <td><img src="../library/buttons/spacer.gif" width="1" height="79" border="0"></td>
+  </tr>
+  <tr>
+   <td><a href="#" onMouseOut="MM_swapImgRestore();"  onMouseOver="MM_swapImage('teacher1_r2_c1','','../library/buttons/teacher1_r2_c1_f2.gif',1)" ><img name="teacher1_r2_c1" src="../library/buttons/teacher1_r2_c1.gif" width="96" height="1" border="0"></a></td>
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+  </tr>
+</table>
+<!-- #EndLibraryItem --></td>
+    <td width="409" valign="top" bgcolor="669966" height="91"><!-- #BeginEditable "banner" --><!-- #BeginLibraryItem "/library/buttons/dr30titleteacher.lbi" --><img name="dr30titleteacher" src="../library/buttons/dr30titleteacher.gif" width="400" height="80" border="0"><!-- #EndLibraryItem --><!-- #EndEditable --></td>
+  </tr>
+  <tr> 
+    <td valign="top" bgcolor="669966" height="23"><!-- #BeginEditable "pagetitle" --> 
+      <div align="center"></div>
+      <!-- #EndEditable --></td>
+  </tr>
+  <tr> 
+    <td valign="top" height="347"> 
+      <table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="669966">
+        <tr> 
+          <td width="97" height="56" valign="top" bgcolor="669966"> <!-- #BeginLibraryItem "/library/buttons/courseoutline.lbi" --><table border="0" cellpadding="0" cellspacing="0" width="96">
+<!-- fwtable fwsrc="courseoutline1.png" fwbase="courseoutline.gif" -->
+  <tr>
+   <td><img src="../library/buttons/spacer.gif" width="96" height="1" border="0"></td>
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+  </tr>
+  <tr>
+    <td><a href="../mainpages/courseoutline.htm" onMouseOut="MM_nbGroup('out');"  onMouseOver="MM_nbGroup('over','courseoutline_r1_c1','../library/buttons/courseoutline_r1_c1_f2.gif','../library/buttons/courseoutline_r1_c1_f4.gif',1)"  onClick="MM_nbGroup('down','navbar1','courseoutline_r1_c1','../library/buttons/courseoutline_r1_c1_f3.gif',1)" ><img name="courseoutline_r1_c1" src="../library/buttons/courseoutline_r1_c1.gif" width="96" height="79" border="0"></a></td>
+   <td><img src="../library/buttons/spacer.gif" width="1" height="79" border="0"></td>
+  </tr>
+  <tr>
+   <td><a href="#" onMouseOut="MM_swapImgRestore();"  onMouseOver="MM_swapImage('courseoutline_r2_c1','','../library/buttons/courseoutline_r2_c1_f2.gif',1)" ><img name="courseoutline_r2_c1" src="../library/buttons/courseoutline_r2_c1.gif" width="96" height="1" border="0"></a></td>
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+  </tr>
+</table>
+<!-- #EndLibraryItem --><!-- #BeginLibraryItem "/library/buttons/sitemap.lbi" --><table border="0" cellpadding="0" cellspacing="0" width="96">
+<!-- fwtable fwsrc="sitemap1.png" fwbase="sitemap.gif" -->
+  <tr>
+   <td><img src="../library/buttons/spacer.gif" width="95" height="1" border="0"></td>
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+  </tr>
+  <tr>
+    <td><a href="../mainpages/templatemainmap.html" onMouseOut="MM_nbGroup('out');"  onMouseOver="MM_nbGroup('over','sitemap_r1_c1','../library/buttons/sitemap_r1_c1_f2.gif','../library/buttons/sitemap_r1_c1_f4.gif',1)"  onClick="MM_nbGroup('down','navbar1','sitemap_r1_c1','../library/buttons/sitemap_r1_c1_f3.gif',1)" ><img name="sitemap_r1_c1" src="../library/buttons/sitemap_r1_c1.gif" width="95" height="79" border="0"></a></td>
+   <td rowspan="2"><img name="sitemap_r1_c2" src="../library/buttons/sitemap_r1_c2.gif" width="1" height="80" border="0"></td>
+   <td><img src="../library/buttons/spacer.gif" width="1" height="79" border="0"></td>
+  </tr>
+  <tr>
+   <td><img name="sitemap_r2_c1" src="../library/buttons/sitemap_r2_c1.gif" width="95" height="1" border="0"></td>
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+  </tr>
+</table>
+<!-- #EndLibraryItem --><!-- #BeginLibraryItem "/library/buttons/help.lbi" --><table border="0" cellpadding="0" cellspacing="0" width="96">
+<!-- fwtable fwsrc="help1.png" fwbase="help.gif" -->
+  <tr>
+   <td><img src="../library/buttons/spacer.gif" width="96" height="1" border="0"></td>
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+  </tr>
+  <tr>
+    <td><a href="../mainpages/help.html" onMouseOut="MM_nbGroup('out');"  onMouseOver="MM_nbGroup('over','help_r1_c1','../library/buttons/help_r1_c1_f2.gif','../library/buttons/help_r1_c1_f4.gif',1)"  onClick="MM_nbGroup('down','navbar1','help_r1_c1','../library/buttons/help_r1_c1_f3.gif',1)" ><img name="help_r1_c1" src="../library/buttons/help_r1_c1.gif" width="96" height="79" border="0"></a></td>
+   <td><img src="../library/buttons/spacer.gif" width="1" height="79" border="0"></td>
+  </tr>
+  <tr>
+   <td><a href="#" onMouseOut="MM_swapImgRestore();"  onMouseOver="MM_swapImage('help_r2_c1','','../library/buttons/help_r2_c1_f2.gif',1)" ><img name="help_r2_c1" src="../library/buttons/help_r2_c1.gif" width="96" height="1" border="0"></a></td>
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+  </tr>
+</table>
+<!-- #EndLibraryItem --><!-- #BeginLibraryItem "/library/buttons/resources.lbi" --><table border="0" cellpadding="0" cellspacing="0" width="96">
+<!-- fwtable fwsrc="resources1.png" fwbase="resources.gif" -->
+  <tr>
+   <td><img src="../library/buttons/spacer.gif" width="96" height="1" border="0"></td>
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+  </tr>
+  <tr>
+    <td><a href="../mainpages/resources.html" onMouseOut="MM_nbGroup('out');"  onMouseOver="MM_nbGroup('over','resources_r1_c1','../library/buttons/resources_r1_c1_f2.gif','../library/buttons/resources_r1_c1_f4.gif',1)"  onClick="MM_nbGroup('down','navbar1','resources_r1_c1','../library/buttons/resources_r1_c1_f3.gif',1)" ><img name="resources_r1_c1" src="../library/buttons/resources_r1_c1.gif" width="96" height="79" border="0"></a></td>
+   <td><img src="../library/buttons/spacer.gif" width="1" height="79" border="0"></td>
+  </tr>
+  <tr>
+   <td><a href="#" onMouseOut="MM_swapImgRestore();"  onMouseOver="MM_swapImage('resources_r2_c1','','../library/buttons/resources_r2_c1_f2.gif',1)" ><img name="resources_r2_c1" src="../library/buttons/resources_r2_c1.gif" width="96" height="1" border="0"></a></td>
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+  </tr>
+</table>
+<!-- #EndLibraryItem --></td>
+        </tr>
+      </table>
+    </td>
+    <td colspan="3" rowspan="2" valign="top" bgcolor="669966"> <!-- #BeginEditable "content" --> 
+      <table width="603" border="0" cellpadding="5" cellspacing="0" bgcolor="ede4d8">
+        <tr> 
+          <td height="1780" width="600" valign="top"> 
+            <div align="center"> 
+              <p><!-- #BeginLibraryItem "/library/buttons/aboutsite.lbi" --><a href="aboutsite.html" onMouseOut="MM_nbGroup('out');"  onMouseOver="MM_nbGroup('over','aboutsite','../library/buttons/aboutsite_f2.gif','../library/buttons/aboutsite_f4.gif',1)"  onClick="MM_nbGroup('down','navbar1','aboutsite','../library/buttons/aboutsite_f3.gif',1)" ><img name="aboutsite" src="../library/buttons/aboutsite.gif" width="96" height="40" border="0"></a><!-- #EndLibraryItem --><!-- #BeginLibraryItem "/library/buttons/planning.lbi" --><a href="courseoutline.html" onMouseOut="MM_nbGroup('out');"  onMouseOver="MM_nbGroup('over','planning','../library/buttons/planning_f2.gif','../library/buttons/planning_f4.gif',1)"  onClick="MM_nbGroup('down','navbar1','planning','../library/buttons/planning_f3.gif',1)" ><img name="planning" src="../library/buttons/planning.gif" width="96" height="40" border="0"></a><!-- #EndLibraryItem --></p>
+              <p align="left"><font size="4" color="663333" face="Georgia, Times New Roman, Times, serif"><b>Unit 
+                4- Script and Play Analysis<br>
+                </b></font><i><font face="Georgia, Times New Roman, Times, serif" size="4" color="663333">Module 
+                3 - Blocking<br>
+                </font></i><font face="Georgia, Times New Roman, Times, serif" size="4" color="663333">Lesson 
+                1 - </font><font face="Georgia, Times New Roman, Times, serif" color="#663333"><b>Making 
+                Pictures</b></font> <b><font face="Georgia, Times New Roman, Times, serif" color="#663333">and 
+                Levels</font></b></p>
+              <p align="left"><b><font face="Georgia, Times New Roman, Times, serif">Introduction:<br>
+                </font></b><font face="Georgia, Times New Roman, Times, serif">Blocking 
+                is the controlled stage movement that actors repeat each time 
+                they do a scene. If you are supposed to cross the stage and go 
+                to the door on the line &quot;What, you miserable frog?&quot;, 
+                you have a blocked movement. As you are doing this movement, the 
+                other actors have movements they must complete. Collectively these 
+                movements are called blocking.</font> <br>
+                <font face="Georgia, Times New Roman, Times, serif"> </font></p>
+              <p align="left"><font face="Georgia, Times New Roman, Times, serif">This 
+                lesson is designed to help students understand the concept that 
+                blocking makes pictures.</font></p>
+              <p align="left"><font face="Georgia, Times New Roman, Times, serif" color="#000000"><b>Objectives:</b><br>
+                - to become comfortable in blocking improvised or scripted scenes<br>
+                - to practice leadership in small and large groups<br>
+                - to accept leadership of others in small and large groups<br>
+                - initiate ideas for drama experiences</font></p>
+              <p align="left"><b><font face="Georgia, Times New Roman, Times, serif" color="#000000">Resources:<br>
+                </font></b><font face="Georgia, Times New Roman, Times, serif" color="#000000">(pdf's)<a href="pdf/4blockingexercise.pdf"> 
+                Blocking Exercise I</a>, <a href="pdf/4blockopenscene.pdf">Blocking 
+                Exercise II</a>, Internet connection for one hour</font></p>
+              <p align="left"><font face="Georgia, Times New Roman, Times, serif" color="#000000"><b>CELs: 
+                </b>IL, TL, Com</font></p>
+              <p align="left"><font face="Georgia, Times New Roman, Times, serif" color="#000000"><b>Components:</b> 
+                Creative/Productive</font></p>
+              <hr>
+              <div align="left">
+                <p>&nbsp;</p>
+                </div>
+              <p align="center"><font face="Georgia, Times New Roman, Times, serif"><i><font color="#669966"><b>Characteristics 
+                of good blocking</b></font></i></font></p>
+              <table width="583" border="1" cellspacing="5" cellpadding="5" bgcolor="#FFFFFF">
+                <tr> 
+                  <td> 
+                    <p><font face="Georgia, Times New Roman, Times, serif" color="#669966">If 
+                      frozen at any moment, the blocking forms a beautiful picture.<br>
+                      The blocking is consistent with the characters.<br>
+                      The blocking has good variety.<br>
+                      The blocking uses the whole stage.<br>
+                      Each picture employs many levels (sitting, standing, laying).<br>
+                      Eyes are used to create a focus point or person.</font></p>
+                  </td>
+                </tr>
+              </table>
+              <p align="left"><font face="Georgia, Times New Roman, Times, serif" color="#000000"><b>Activities:</b></font></p>
+              <p align="left"><font face="Georgia, Times New Roman, Times, serif" color="#000000"><b>Activity 
+                1 - Blocking Check:</b><br>
+                The pictures below show how blocked scenes show emotion, even 
+                when frozen. We can see the relationship between the characters 
+                or see events about to happen. The pictures are more interesting 
+                if we see many things going on, or more powerful if one important 
+                thing is happening. Have your students view the pictures and do 
+                the questions as an introductory set. (5 min.)</font></p>
+              <table width="600" border="5" cellspacing="0" cellpadding="5">
+                <tr> 
+                  <td height="242" colspan="2" align="center" valign="middle"><img src="../library/images/block_01.png" width="300" height="222"></td>
+                  <td width="192" valign="middle"> 
+                    <p align="center"><font face="Georgia, Times New Roman, Times, serif"><b>Picture 
+                      1</b></font></p>
+                    <p><font face="Georgia, Times New Roman, Times, serif">The 
+                      movement that is occurring in the scene beside is clear, 
+                      even when it is frozen. <b>D</b> is clearly fleeing the 
+                      scene, just as <b>A</b> is clearly hitting <b>E</b>. We 
+                      can see relationships in how the characters move to protect 
+                      each other (<b>C</b> protects <b>E</b>) or look on indifferently.</font></p>
+                    <p align="center"><font face="Georgia, Times New Roman, Times, serif"><i><font size="-2">Photograph 
+                      by Kurtis Hamel.</font></i></font></p>
+                  </td>
+                </tr>
+                <tr> 
+                  <td width="182" height="316" valign="middle"> 
+                    <p align="center"><font face="Georgia, Times New Roman, Times, serif"><b>Picture 
+                      2</b></font></p>
+                    <p><font face="Georgia, Times New Roman, Times, serif">The 
+                      picture above was more interesting because there were many 
+                      things happening. This picture is more powerful because 
+                      the focal point of the activity is very clear. <b>A</b> 
+                      is the focus of this scene and the &quot;eye&quot; of the 
+                      audience knows to follow <b>A</b>.</font></p>
+                    <p align="center"><font face="Georgia, Times New Roman, Times, serif"><i><font size="-2">Photograph 
+                      by Kurtis Hamel.</font></i></font></p>
+                  </td>
+                  <td valign="middle" colspan="2" align="center"><img src="../library/images/block_02.png" width="300" height="294"></td>
+                </tr>
+                <tr> 
+                  <td height="0"></td>
+                  <td width="101"></td>
+                  <td></td>
+                </tr>
+              </table>
+              <table width="400" border="5" cellspacing="0" cellpadding="5" align="center">
+                <tr> 
+                  <td> <interaction name="MultCh_Radios03" object="G03" template="010_Multiple Choice/020_MultCh_Radios_03.agt" includesrc="interactionClass.js,elemInptClass.js"> 
+                    <div name="G03Layer"> 
+                      <div align="left"><span name="G03question"><font face="Georgia, Times New Roman, Times, serif"><b>1. 
+                        Who has the most power in Picture 1?</b></font></span> 
+                      </div>
+                      <form name="G03choices">
+                        <span name="G03choice1"> <font face="Georgia, Times New Roman, Times, serif"> 
+                        <input name="G03RadioInp" type="radio" onClick="G03.e['choice1'].update()">
+                        A<br>
+                        </font></span> <font face="Georgia, Times New Roman, Times, serif"><span name="G03choice2"> 
+                        <input name="G03RadioInp" type="radio" onClick="G03.e['choice2'].update()">
+                        B<br>
+                        </span> <span name="G03choice3"> 
+                        <input name="G03RadioInp" type="radio" onClick="G03.e['choice3'].update()">
+                        C<br>
+                        </span> <span name="G03choice4"> 
+                        <input name="G03RadioInp" type="radio" onClick="G03.e['choice4'].update()">
+                        D</span></font><span name="G03choice4"><br>
+                        </span> 
+                      </form>
+                      <form name="G03controls">
+                      </form>
+                    </div>
+                    <script language="JavaScript">
+<!--
+  // Copyright 1998,1999 Macromedia, Inc. All rights reserved.
+  function newG03() {
+    G03 = new MM_interaction('G03',1,0,0,null,0,3,0,'','','c','',0);
+    G03.add('inpt','choice1',0,1,0,0);
+    G03.add('inpt','choice2',0,1,1,0);
+    G03.add('inpt','choice3',0,1,0,0);
+    G03.add('inpt','choice4',0,1,0,0);
+    G03.init();
+    G03.am('segm','Segment: Check Time_',1,1);
+    G03.am('cond','Time At Limit_','G03.timeAtLimit == true',0);
+    G03.am('actn','Popup Message','MM_popupMsg(\'You are out of time\')','pm');
+    G03.am('actn','Set Interaction Properties: Disable Interaction','MM_setIntProps(\'G03.setDisabled(true);\')','sp');
+    G03.am('end');
+    G03.am('segm','Segment: Correctness_',1,0);
+    G03.am('cond','Correct_01','G03.correct == true',0);
+    G03.am('actn','Popup Message','MM_popupMsg(\'That\\\'s right, B has the most power.  If what you want happens just because you want it and you don\\\'t have to do anything, that makes you strong.  Think of a gangster movie - the Don (head guy) never hits people unless he feels like it.  Mostly he pays others to dirty their hands.\')','');
+    G03.am('end');
+    G03.am('cond','Incorrect_','G03.correct == (false)',0);
+    G03.am('actn','Popup Message','MM_popupMsg(\'Look at the picture more closely.  One person does not have to do anything to get what he or she wants.\')','');
+    G03.am('end');
+    G03.am('cond','Unknown Response_','G03.knownResponse == false',0);
+    G03.am('actn','Popup Message','MM_popupMsg(\'Unknown Response\')','');
+    G03.am('end');
+    G03.am('segm','Segment: Check Tries_',1,1);
+    G03.am('cond','Tries At Limit_','G03.triesAtLimit == true',0);
+    G03.am('actn','Popup Message','MM_popupMsg(\'You are out of tries\')','pm');
+    G03.am('actn','Set Interaction Properties: Disable Interaction','MM_setIntProps(\'G03.setDisabled(true);\')','sp');
+    G03.am('end');
+  }
+  if (window.newG03 == null) window.newG03 = newG03;
+  if (!window.MM_initIntFns) window.MM_initIntFns = ''; window.MM_initIntFns += 'newG03();';
+//-->
+</script>
+                    <cbi-select object="G03"></interaction><interaction name="MultCh_Radios04" object="G04" template="010_Multiple Choice/020_MultCh_Radios_03.agt" includesrc="interactionClass.js,elemInptClass.js"> 
+                    <div name="G04Layer"> 
+                      <div align="left"><span name="G04question"><b><font face="Georgia, Times New Roman, Times, serif">2. 
+                        Rank the characters in Picture 2 in order by the power 
+                        that they have.</font></b></span> </div>
+                      <form name="G04choices">
+                        <span name="G04choice1"> <font face="Georgia, Times New Roman, Times, serif"> 
+                        <input name="G04RadioInp" type="radio" onClick="G04.e['choice1'].update()">
+                        A, B, C, D, E<br>
+                        </font></span> <font face="Georgia, Times New Roman, Times, serif"><span name="G04choice2"> 
+                        <input name="G04RadioInp" type="radio" onClick="G04.e['choice2'].update()">
+                        A, C, B, D, E<br>
+                        </span> <span name="G04choice3"> 
+                        <input name="G04RadioInp" type="radio" onClick="G04.e['choice3'].update()">
+                        A, C, D, B, E<br>
+                        </span> <span name="G04choice4"> 
+                        <input name="G04RadioInp" type="radio" onClick="G04.e['choice4'].update()">
+                        A, B, D, C, E</span></font><span name="G04choice4"><br>
+                        </span> 
+                      </form>
+                      <form name="G04controls">
+                      </form>
+                    </div>
+                    <script language="JavaScript">
+<!--
+  // Copyright 1998,1999 Macromedia, Inc. All rights reserved.
+  function newG04() {
+    G04 = new MM_interaction('G04',1,0,0,null,0,0,0,'','','c','',0);
+    G04.add('inpt','choice1',0,1,1,0);
+    G04.add('inpt','choice2',0,1,0,0);
+    G04.add('inpt','choice3',0,1,0,0);
+    G04.add('inpt','choice4',0,1,0,0);
+    G04.init();
+    G04.am('segm','Segment: Check Time_',1,1);
+    G04.am('cond','Time At Limit_','G04.timeAtLimit == true',0);
+    G04.am('actn','Popup Message','MM_popupMsg(\'You are out of time\')','pm');
+    G04.am('actn','Set Interaction Properties: Disable Interaction','MM_setIntProps(\'G04.setDisabled(true);\')','sp');
+    G04.am('end');
+    G04.am('segm','Segment: Correctness_',1,0);
+    G04.am('cond','Correct_01','G04.correct == true',0);
+    G04.am('actn','Popup Message','MM_popupMsg(\'Good work - you\\\'ve seen that the blocking has used height and focus to establish power.  The characters that are physically low also have low power.\')','');
+    G04.am('end');
+    G04.am('cond','Incorrect_','G04.correct == (false)',0);
+    G04.am('actn','Popup Message','MM_popupMsg(\'The power structure in this scene is very rigid, and depends on how much the characters accept the strongest.\')','');
+    G04.am('end');
+    G04.am('cond','Unknown Response_','G04.knownResponse == false',0);
+    G04.am('actn','Popup Message','MM_popupMsg(\'Unknown Response\')','');
+    G04.am('end');
+    G04.am('segm','Segment: Check Tries_',1,1);
+    G04.am('cond','Tries At Limit_','G04.triesAtLimit == true',0);
+    G04.am('actn','Popup Message','MM_popupMsg(\'You are out of tries\')','pm');
+    G04.am('actn','Set Interaction Properties: Disable Interaction','MM_setIntProps(\'G04.setDisabled(true);\')','sp');
+    G04.am('end');
+  }
+  if (window.newG04 == null) window.newG04 = newG04;
+  if (!window.MM_initIntFns) window.MM_initIntFns = ''; window.MM_initIntFns += 'newG04();';
+//-->
+</script>
+                    <cbi-select object="G04"></interaction> </td>
+                </tr>
+              </table>
+            </div>
+          </td>
+        </tr>
+        <tr> 
+          <td height="759" valign="top"> 
+            <div align="center"> 
+              <p align="left"><font face="Georgia, Times New Roman, Times, serif" color="#000000"><b>Activity 
+                Two - Internet Search</b></font></p>
+              <table width="583" border="1" cellspacing="5" cellpadding="5">
+                <tr> 
+                  <td width="101" height="98" valign="middle" bgcolor="#669966" align="center"><img src="../library/images/surfnet.gif" width="100" height="80"></td>
+                  <td width="441" rowspan="2" valign="top"> 
+                    <p><font face="Georgia, Times New Roman, Times, serif">Using 
+                      the Internet, students should find pictures of scenes from 
+                      plays. They should look for pictures that fit into 3 categories: 
+                      stage pictures that show power, stage pictures that show 
+                      variety, and stage pictures that show movement.</font></p>
+                    <p><font face="Georgia, Times New Roman, Times, serif">The 
+                      pictures should be copied into an application that supports 
+                      graphics with text underneath. Each of the three categories 
+                      needs to contain a minimum of 3 photos with written explanations 
+                      of what the pictures show and why. The purpose is to demonstrate 
+                      understanding of how blocking functions as a series of pictures. 
+                      (60 min.)</font></p>
+                    <p><font face="Georgia, Times New Roman, Times, serif"><i>Restate 
+                      the following warning to your students verbally: &quot;Remember 
+                      that all pictures you use must be in the public domain (copyright 
+                      free) and should have the URL of the site you copied them 
+                      from listed under the photo.&quot;</i></font></p>
+                  </td>
+                </tr>
+                <tr> 
+                  <td valign="middle" height="118" align="center"> 
+                    <p><font color="#663333"><b><font face="Georgia, Times New Roman, Times, serif" color="#000000"><a href="../mainpages/copyanimage.html"><font color="#663333">How 
+                      do I<br>
+                      copy an image<br>
+                      from the net?</font></a></font></b></font></p>
+                  </td>
+                </tr>
+              </table>
+              <p align="left"><font face="Georgia, Times New Roman, Times, serif" color="#669966"><b><font color="#000000">Activity 
+                3 - Blocking a scene</font></b></font><font face="Georgia, Times New Roman, Times, serif">:</font></p>
+              <p align="left"><font face="Georgia, Times New Roman, Times, serif"><i>(Extra 
+                Blocking Practice if you feel the class could use it: </i></font><i><font face="Georgia, Times New Roman, Times, serif" color="#000000"><br>
+                (pdf's)<a href="pdf/4blockingexercise.pdf"> Blocking Exercise 
+                I</a>, <a href="pdf/4blockopenscene.pdf">Blocking Exercise II</a></font><font face="Georgia, Times New Roman, Times, serif">)</font><font face="Georgia, Times New Roman, Times, serif"></font></i><font face="Georgia, Times New Roman, Times, serif"><br>
+                <br>
+                Students should break into groups of two to five and develop a 
+                dramatic scene without words. Through blocked movement, they must 
+                demonstrate who has the power in the scene and why. The main conflict 
+                and each character's objective must also be demonstrated through 
+                movement. Groups should present their scenes for the class. Following 
+                each scene, the class should discuss what has worked and what 
+                has not. (30 min.)</font></p>
+              <hr>
+              <p align="left"><font face="Georgia, Times New Roman, Times, serif"><b>Instructional 
+                Strategies: </b>role playing, computer assisted instruction</font></p>
+              <p align="left"><font face="Georgia, Times New Roman, Times, serif"><b>Evaluation:</b> 
+                The Internet blocking pictures should be marked out of /27. One 
+                mark would be given for each picture (nine total), each explanation 
+                (nine total) and each correct placement in a category (nine total). 
+                Blocked scenes should be discussed as a class (informal peer-evaluation)<br>
+                </font></p>
+              <p align="left"><font face="Georgia, Times New Roman, Times, serif"><b>On-line 
+                Activity Alternatives: </b>Activity One is already presented on 
+                line. Activity Two could be worked on by groups of two or more 
+                in their home schools.</font></p>
+              <p align="center"><font face="Georgia, Times New Roman, Times, serif"><a href="4characterandconflict.html">Next 
+                Lesson</a> / <a href="../student/4blocking.html">Student Lesson</a> 
+                / <a href="4dollshouse.html">Previous Lesson </a></font></p>
+            </div>
+          </td>
+        </tr>
+        <tr> 
+          <td height="2"></td>
+        </tr>
+      </table>
+      <!-- #EndEditable --></td>
+  </tr>
+  <tr> 
+    <td valign="top" height="89"> 
+      <table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="669966">
+        <tr> 
+          <td width="97" height="89" valign="top" bgcolor="669966"><!-- #BeginEditable "optional" --> 
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <p align="center">&nbsp;</p>
+            <p align="center">&nbsp;</p>
+            <p align="center">&nbsp;</p>
+            <p align="center">&nbsp;</p>
+            <!-- #EndEditable --></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr> 
+    <td height="0"></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+</table>
+</body>
+<!-- #EndTemplate --></html>

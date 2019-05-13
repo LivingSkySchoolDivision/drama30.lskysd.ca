@@ -1,0 +1,478 @@
+<html>
+<!-- #BeginTemplate "/Templates/templateteacher.dwt" --> 
+<head>
+<!-- #BeginEditable "doctitle" --> 
+<title>Teacher - Collective Idea</title>
+<!-- #EndEditable --> 
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<script language="JavaScript">
+<!--
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && document.getElementById) x=document.getElementById(n); return x;
+}
+
+function MM_nbGroup(event, grpName) { //v3.0
+  var i,img,nbArr,args=MM_nbGroup.arguments;
+  if (event == "init" && args.length > 2) {
+    if ((img = MM_findObj(args[2])) != null && !img.MM_init) {
+      img.MM_init = true; img.MM_up = args[3]; img.MM_dn = img.src;
+      if ((nbArr = document[grpName]) == null) nbArr = document[grpName] = new Array();
+      nbArr[nbArr.length] = img;
+      for (i=4; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+        if (!img.MM_up) img.MM_up = img.src;
+        img.src = img.MM_dn = args[i+1];
+        nbArr[nbArr.length] = img;
+    } }
+  } else if (event == "over") {
+    document.MM_nbOver = nbArr = new Array();
+    for (i=1; i < args.length-1; i+=3) if ((img = MM_findObj(args[i])) != null) {
+      if (!img.MM_up) img.MM_up = img.src;
+      img.src = (img.MM_dn && args[i+2]) ? args[i+2] : args[i+1];
+      nbArr[nbArr.length] = img;
+    }
+  } else if (event == "out" ) {
+    for (i=0; i < document.MM_nbOver.length; i++) {
+      img = document.MM_nbOver[i]; img.src = (img.MM_dn) ? img.MM_dn : img.MM_up; }
+  } else if (event == "down") {
+    if ((nbArr = document[grpName]) != null)
+      for (i=0; i < nbArr.length; i++) { img=nbArr[i]; img.src = img.MM_up; img.MM_dn = 0; }
+    document[grpName] = nbArr = new Array();
+    for (i=2; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+      if (!img.MM_up) img.MM_up = img.src;
+      img.src = img.MM_dn = args[i+1];
+      nbArr[nbArr.length] = img;
+  } }
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+</script>
+</head>
+<body bgcolor="#669966" text="#000000" onLoad="MM_preloadImages('../library/buttons/home_r1_c1_f3.gif','../library/buttons/home_r1_c1_f2.gif','../library/buttons/home_r1_c1_f4.gif','../library/buttons/home_r2_c1_f2.gif','../library/buttons/studentblue_r1_c1_f3.gif','../library/buttons/studentblue_r1_c1_f2.gif','../library/buttons/studentblue_r1_c1_f4.gif','../library/buttons/courseoutline_r1_c1_f3.gif','../library/buttons/courseoutline_r1_c1_f2.gif','../library/buttons/courseoutline_r1_c1_f4.gif','../library/buttons/courseoutline_r2_c1_f2.gif','../library/buttons/sitemap_r1_c1_f3.gif','../library/buttons/sitemap_r1_c1_f2.gif','../library/buttons/sitemap_r1_c1_f4.gif','../library/buttons/help_r1_c1_f3.gif','../library/buttons/help_r1_c1_f2.gif','../library/buttons/help_r1_c1_f4.gif','../library/buttons/help_r2_c1_f2.gif','../library/buttons/resources_r1_c1_f3.gif','../library/buttons/resources_r1_c1_f2.gif','../library/buttons/resources_r1_c1_f4.gif','../library/buttons/resources_r2_c1_f2.gif','../library/buttons/aboutsite_f3.gif','../library/buttons/aboutsite_f2.gif','../library/buttons/aboutsite_f4.gif','../library/buttons/planning_f3.gif','../library/buttons/planning_f2.gif','../library/buttons/planning_f4.gif','../library/buttons/teacher1_r1_c1_f3.gif','../library/buttons/teacher1_r1_c1_f2.gif','../library/buttons/teacher1_r1_c1_f4.gif','../library/buttons/teacher1_r2_c1_f2.gif')">
+<table width="700" border="0" cellpadding="0" cellspacing="0">
+  <tr> 
+    <td width="97" valign="top" bgcolor="669966" rowspan="2"> <!-- #BeginLibraryItem "/library/buttons/home.lbi" --><table border="0" cellpadding="0" cellspacing="0" width="96">
+<!-- fwtable fwsrc="home1.png" fwbase="home.gif" -->
+  <tr>
+   <td><img src="../library/buttons/spacer.gif" width="96" height="1" border="0"></td>
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+  </tr>
+  <tr>
+    <td><a href="../index.html" onMouseOut="MM_nbGroup('out');"  onMouseOver="MM_nbGroup('over','home_r1_c1','../library/buttons/home_r1_c1_f2.gif','../library/buttons/home_r1_c1_f4.gif',1)"  onClick="MM_nbGroup('down','navbar1','home_r1_c1','../library/buttons/home_r1_c1_f3.gif',1)" ><img name="home_r1_c1" src="../library/buttons/home_r1_c1.gif" width="96" height="79" border="0" alt="home"></a></td>
+   <td><img src="../library/buttons/spacer.gif" width="1" height="79" border="0"></td>
+  </tr>
+  <tr>
+   <td><a href="#" onMouseOut="MM_swapImgRestore();"  onMouseOver="MM_swapImage('home_r2_c1','','../library/buttons/home_r2_c1_f2.gif',1)" ><img name="home_r2_c1" src="../library/buttons/home_r2_c1.gif" width="96" height="1" border="0"></a></td>
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+  </tr>
+</table>
+<!-- #EndLibraryItem --></td>
+    <td valign="top" width="97" bgcolor="669966" rowspan="2"><!-- #BeginLibraryItem "/library/buttons/studentblue.lbi" --><table border="0" cellpadding="0" cellspacing="0" width="96">
+<!-- fwtable fwsrc="student1.png" fwbase="studentblue.gif" -->
+  <tr>
+   <td><img src="../library/buttons/spacer.gif" width="95" height="1" border="0"></td>
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+  </tr>
+  <tr>
+    <td><a href="../mainpages/student.html" onMouseOut="MM_nbGroup('out');"  onMouseOver="MM_nbGroup('over','studentblue_r1_c1','../library/buttons/studentblue_r1_c1_f2.gif','../library/buttons/studentblue_r1_c1_f4.gif',1)"  onClick="MM_nbGroup('down','navbar1','studentblue_r1_c1','../library/buttons/studentblue_r1_c1_f3.gif',1)" ><img name="studentblue_r1_c1" src="../library/buttons/studentblue_r1_c1.gif" width="95" height="79" border="0"></a></td>
+   <td rowspan="2"><img name="studentblue_r1_c2" src="../library/buttons/studentblue_r1_c2.gif" width="1" height="80" border="0"></td>
+   <td><img src="../library/buttons/spacer.gif" width="1" height="79" border="0"></td>
+  </tr>
+  <tr>
+   <td><img name="studentblue_r2_c1" src="../library/buttons/studentblue_r2_c1.gif" width="95" height="1" border="0"></td>
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+  </tr>
+</table>
+<!-- #EndLibraryItem --></td>
+    <td width="97" valign="top" rowspan="2"><!-- #BeginLibraryItem "/library/buttons/teacher1.lbi" --><table border="0" cellpadding="0" cellspacing="0" width="96">
+<!-- fwtable fwsrc="teacher1.png" fwbase="teacher1.gif" -->
+  <tr>
+   <td><img src="../library/buttons/spacer.gif" width="96" height="1" border="0"></td><td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td></tr>
+  <tr>
+    <td><a href="../mainpages/teacher.html" onMouseOut="MM_nbGroup('out');"  onMouseOver="MM_nbGroup('over','teacher1_r1_c1','../library/buttons/teacher1_r1_c1_f2.gif','../library/buttons/teacher1_r1_c1_f4.gif',1)"  onClick="MM_nbGroup('down','navbar1','teacher1_r1_c1','../library/buttons/teacher1_r1_c1_f3.gif',1)" ><img name="teacher1_r1_c1" src="../library/buttons/teacher1_r1_c1.gif" width="96" height="79" border="0"></a></td><td><img src="../library/buttons/spacer.gif" width="1" height="79" border="0"></td></tr>
+  <tr>
+   <td><a href="#" onMouseOut="MM_swapImgRestore()"  onMouseOver="MM_swapImage('teacher1_r2_c1','','../library/buttons/teacher1_r2_c1_f2.gif',1)" ><img name="teacher1_r2_c1" src="../library/buttons/teacher1_r2_c1.gif" width="96" height="1" border="0"></a></td><td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td></tr>
+</table><!-- #EndLibraryItem --></td>
+    <td width="409" valign="top" bgcolor="669966" height="91"><!-- #BeginEditable "banner" --><!-- #BeginLibraryItem "/library/buttons/dr30titleteacher.lbi" --><img name="dr30titleteacher" src="../library/buttons/dr30titleteacher.gif" width="400" height="80" border="0"><!-- #EndLibraryItem --><!-- #EndEditable --></td>
+  </tr>
+  <tr> 
+    <td valign="top" bgcolor="669966" height="23"><!-- #BeginEditable "pagetitle" --> 
+      <div align="center"></div>
+      <!-- #EndEditable --></td>
+  </tr>
+  <tr> 
+    <td valign="top" height="347"> 
+      <table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="669966">
+        <tr> 
+          <td width="97" height="56" valign="top" bgcolor="669966"> <!-- #BeginLibraryItem "/library/buttons/courseoutline.lbi" --><table border="0" cellpadding="0" cellspacing="0" width="96">
+<!-- fwtable fwsrc="courseoutline1.png" fwbase="courseoutline.gif" -->
+  <tr>
+   <td><img src="../library/buttons/spacer.gif" width="96" height="1" border="0"></td>
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+  </tr>
+  <tr>
+    <td><a href="../mainpages/courseoutline.htm" onMouseOut="MM_nbGroup('out');"  onMouseOver="MM_nbGroup('over','courseoutline_r1_c1','../library/buttons/courseoutline_r1_c1_f2.gif','../library/buttons/courseoutline_r1_c1_f4.gif',1)"  onClick="MM_nbGroup('down','navbar1','courseoutline_r1_c1','../library/buttons/courseoutline_r1_c1_f3.gif',1)" ><img name="courseoutline_r1_c1" src="../library/buttons/courseoutline_r1_c1.gif" width="96" height="79" border="0"></a></td>
+   <td><img src="../library/buttons/spacer.gif" width="1" height="79" border="0"></td>
+  </tr>
+  <tr>
+   <td><a href="#" onMouseOut="MM_swapImgRestore();"  onMouseOver="MM_swapImage('courseoutline_r2_c1','','../library/buttons/courseoutline_r2_c1_f2.gif',1)" ><img name="courseoutline_r2_c1" src="../library/buttons/courseoutline_r2_c1.gif" width="96" height="1" border="0"></a></td>
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+  </tr>
+</table>
+<!-- #EndLibraryItem --><!-- #BeginLibraryItem "/library/buttons/sitemap.lbi" --><table border="0" cellpadding="0" cellspacing="0" width="96">
+<!-- fwtable fwsrc="sitemap1.png" fwbase="sitemap.gif" -->
+  <tr>
+   <td><img src="../library/buttons/spacer.gif" width="95" height="1" border="0"></td>
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+  </tr>
+  <tr>
+    <td><a href="../mainpages/templatemainmap.html" onMouseOut="MM_nbGroup('out');"  onMouseOver="MM_nbGroup('over','sitemap_r1_c1','../library/buttons/sitemap_r1_c1_f2.gif','../library/buttons/sitemap_r1_c1_f4.gif',1)"  onClick="MM_nbGroup('down','navbar1','sitemap_r1_c1','../library/buttons/sitemap_r1_c1_f3.gif',1)" ><img name="sitemap_r1_c1" src="../library/buttons/sitemap_r1_c1.gif" width="95" height="79" border="0"></a></td>
+   <td rowspan="2"><img name="sitemap_r1_c2" src="../library/buttons/sitemap_r1_c2.gif" width="1" height="80" border="0"></td>
+   <td><img src="../library/buttons/spacer.gif" width="1" height="79" border="0"></td>
+  </tr>
+  <tr>
+   <td><img name="sitemap_r2_c1" src="../library/buttons/sitemap_r2_c1.gif" width="95" height="1" border="0"></td>
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+  </tr>
+</table>
+<!-- #EndLibraryItem --><!-- #BeginLibraryItem "/library/buttons/help.lbi" --><table border="0" cellpadding="0" cellspacing="0" width="96">
+<!-- fwtable fwsrc="help1.png" fwbase="help.gif" -->
+  <tr>
+   <td><img src="../library/buttons/spacer.gif" width="96" height="1" border="0"></td>
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+  </tr>
+  <tr>
+    <td><a href="../mainpages/help.html" onMouseOut="MM_nbGroup('out');"  onMouseOver="MM_nbGroup('over','help_r1_c1','../library/buttons/help_r1_c1_f2.gif','../library/buttons/help_r1_c1_f4.gif',1)"  onClick="MM_nbGroup('down','navbar1','help_r1_c1','../library/buttons/help_r1_c1_f3.gif',1)" ><img name="help_r1_c1" src="../library/buttons/help_r1_c1.gif" width="96" height="79" border="0"></a></td>
+   <td><img src="../library/buttons/spacer.gif" width="1" height="79" border="0"></td>
+  </tr>
+  <tr>
+   <td><a href="#" onMouseOut="MM_swapImgRestore();"  onMouseOver="MM_swapImage('help_r2_c1','','../library/buttons/help_r2_c1_f2.gif',1)" ><img name="help_r2_c1" src="../library/buttons/help_r2_c1.gif" width="96" height="1" border="0"></a></td>
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+  </tr>
+</table>
+<!-- #EndLibraryItem --><!-- #BeginLibraryItem "/library/buttons/resources.lbi" --><table border="0" cellpadding="0" cellspacing="0" width="96">
+<!-- fwtable fwsrc="resources1.png" fwbase="resources.gif" -->
+  <tr>
+   <td bgcolor="669966"><img src="../library/buttons/spacer.gif" width="96" height="1" border="0"></td>
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+  </tr>
+  <tr>
+    <td><a href="../mainpages/resources.html" onMouseOut="MM_nbGroup('out');"  onMouseOver="MM_nbGroup('over','resources_r1_c1','../library/buttons/resources_r1_c1_f2.gif','../library/buttons/resources_r1_c1_f4.gif',1)"  onClick="MM_nbGroup('down','navbar1','resources_r1_c1','../library/buttons/resources_r1_c1_f3.gif',1)" ><img name="resources_r1_c1" src="../library/buttons/resources_r1_c1.gif" width="96" height="79" border="0"></a></td>
+   <td><img src="../library/buttons/spacer.gif" width="1" height="79" border="0"></td>
+  </tr>
+  <tr>
+   <td><a href="#" onMouseOut="MM_swapImgRestore();"  onMouseOver="MM_swapImage('resources_r2_c1','','../library/buttons/resources_r2_c1_f2.gif',1)" ><img name="resources_r2_c1" src="../library/buttons/resources_r2_c1.gif" width="96" height="1" border="0"></a></td>
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+  </tr>
+</table>
+<!-- #EndLibraryItem --></td>
+        </tr>
+      </table>
+    </td>
+    <td colspan="3" rowspan="2" valign="top" bgcolor="669966"> <!-- #BeginEditable "content" --> 
+      <table width="603" border="0" cellpadding="5" cellspacing="0" bgcolor="669966">
+        <tr> 
+          <td height="325" width="593" valign="top" bgcolor="ede4d8"> 
+            <div align="center"> 
+              <p><!-- #BeginLibraryItem "/library/buttons/aboutsite.lbi" --><a href="aboutsite.html" onMouseOut="MM_nbGroup('out');"  onMouseOver="MM_nbGroup('over','aboutsite','../library/buttons/aboutsite_f2.gif','../library/buttons/aboutsite_f4.gif',1)"  onClick="MM_nbGroup('down','navbar1','aboutsite','../library/buttons/aboutsite_f3.gif',1)" ><img name="aboutsite" src="../library/buttons/aboutsite.gif" width="96" height="40" border="0"></a><!-- #EndLibraryItem --><!-- #BeginLibraryItem "/library/buttons/planning.lbi" --><a href="courseoutline.html" onMouseOut="MM_nbGroup('out');"  onMouseOver="MM_nbGroup('over','planning','../library/buttons/planning_f2.gif','../library/buttons/planning_f4.gif',1)"  onClick="MM_nbGroup('down','navbar1','planning','../library/buttons/planning_f3.gif',1)" ><img name="planning" src="../library/buttons/planning.gif" width="96" height="40" border="0"></a><!-- #EndLibraryItem --></p>
+              <p align="center"><font size="4" face="Georgia, Times New Roman, Times, serif">Collectives 
+                developed around an idea</font></p>
+              <p align="left"><font face="Georgia, Times New Roman, Times, serif"><b>Introduction:<br>
+                </b>Working through theme or idea presents an interesting challenge. 
+                By its nature, drama requires that people be open to new things 
+                and &quot;go with the flow&quot;. Many people might argue that 
+                working from idea prevents this process. However, ideas can be 
+                modified and created from as easily as pure creative expression 
+                if two conditions are met:<br>
+                1. The people contributing the ideas express comments on the ideas 
+                not on the other people who generate them.<br>
+                2. The group searching for a collective bit of truth, but retains 
+                the understanding that truth is relative.</font></p>
+              <p align="left"><font face="Georgia, Times New Roman, Times, serif"><b>What 
+                is Theme?<br>
+                </b>A theme is the central statement that a work of art or literature 
+                is making. It can take the form of a moral or of an impression 
+                of belief. In developing theme, students need to remember that 
+                a good theme is not stated outright, nor is repeated over and 
+                over. A subtlety expressed theme with many personal touches is 
+                the framework of a strong collective.<b><br>
+                <br>
+                What is Idea based Drama?</b><br>
+                The students have gone through many exercises, assignments and 
+                intense units of study. Now it&#146;s time to focus on concepts 
+                we are passionate about and find ideas. The ability to be thoughtful 
+                is a key ability when trying to develop drama that challenges 
+                the mind. Find an overall concept that fascinates the class and 
+                challenge yourselves to say something profound. Trying again and 
+                again until you find one key idea that resonates with the group.<br>
+                <br>
+                Thematic art comes through a synthesis of all you know intellectually, 
+                understand intuitively, feel through experience and feelings, 
+                and perceive through your beliefs. The central theme is a collective 
+                expression of what you as a group wish to tell the world. Thematic 
+                drama is fundamentally persuasive - the role of the group is illuminate 
+                a central concept in the fabric of life.</font></p>
+              <p align="left"><b><font face="Georgia, Times New Roman, Times, serif">Activities<br>
+                <br>
+                &quot;Getting Ideas&quot; <br>
+                </font></b><font face="Georgia, Times New Roman, Times, serif">The 
+                following activities lead the student through a process for developing 
+                ideas. Use all, or a combination of exercises to explore ideas 
+                and inspiration:</font></p>
+              <table width="575" border="1" cellspacing="0" cellpadding="5">
+                <tr>
+                  <td>
+                    <div align="center">
+                      <div align="center">
+                        <div align="center">
+                          <div align="left"> 
+                            <p><font face="Georgia, Times New Roman, Times, serif"><b><br>
+                              Activity 1 - Personal Survey of Beliefs:</b> <br>
+                              </font><font face="Georgia, Times New Roman, Times, serif">Have 
+                              students complete these statements on scrap paper.</font></p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <ul>
+                      <li> 
+                        <div align="center"> 
+                          <div align="center"> 
+                            <div align="left"><font face="Georgia, Times New Roman, Times, serif">I 
+                              really like these things about myself ....</font></div>
+                          </div>
+                        </div>
+                      </li>
+                      <li> 
+                        <div align="center"> 
+                          <div align="center"> 
+                            <div align="left"><font face="Georgia, Times New Roman, Times, serif">I 
+                              wish I could change ..... </font></div>
+                          </div>
+                        </div>
+                      </li>
+                      <li> 
+                        <div align="center"> 
+                          <div align="center"> 
+                            <div align="left"><font face="Georgia, Times New Roman, Times, serif">I 
+                              am most worried about ..... </font></div>
+                          </div>
+                        </div>
+                      </li>
+                      <li> 
+                        <div align="center"> 
+                          <div align="center"> 
+                            <div align="left"><font face="Georgia, Times New Roman, Times, serif">I 
+                              am most excited about .... </font></div>
+                          </div>
+                        </div>
+                      </li>
+                      <li> 
+                        <div align="center"> 
+                          <div align="center"> 
+                            <div align="left"><font face="Georgia, Times New Roman, Times, serif">I 
+                              am most creative when ... </font></div>
+                          </div>
+                        </div>
+                      </li>
+                      <li> 
+                        <div align="center"> 
+                          <div align="center"> 
+                            <div align="left"><font face="Georgia, Times New Roman, Times, serif">I 
+                              feel most vulnerable when .... </font></div>
+                          </div>
+                        </div>
+                      </li>
+                      <li> 
+                        <div align="center"> 
+                          <div align="center"> 
+                            <div align="left"><font face="Georgia, Times New Roman, Times, serif">I 
+                              feel strong when ..... </font></div>
+                          </div>
+                        </div>
+                      </li>
+                      <li> 
+                        <div align="center"> 
+                          <div align="center"> 
+                            <div align="left"><font face="Georgia, Times New Roman, Times, serif">People 
+                              in this world need to remember ..... (10 to 15 min.)</font></div>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+
+            </td>
+                </tr>
+                <tr>
+                  <td><font face="Georgia, Times New Roman, Times, serif"><b><br>
+                    Activity 2 - Brainstorm:<br>
+                    </b>Using a whiteboard or blackboard, make a list of key issues 
+                    in today's society. There are no wrong responses. Have students 
+                    generate as many examples as they can of ideas that they care 
+                    about. (5-10 min.)<br>
+                    </font></td>
+                </tr>
+                <tr>
+                  <td><font face="Georgia, Times New Roman, Times, serif"><b><br>
+                    Activity 3 - Discussion:</b><br>
+                    &#149; Look at the list of ideas on the board. <br>
+                    &#149; Group like ideas. <br>
+                    &#149; Hold a vote to determine which issue should be discussed 
+                    by the group. Each student should vote three times, and 3 
+                    issues of key interest should be established.<br>
+                    &#149; Appoint a recorder to write down important concepts. 
+                    Discuss each of the three issues for 10 min., then vote to 
+                    establish the overall issue for the group. (40 min.)<br>
+                    </font></td>
+                </tr>
+                <tr>
+                  <td> 
+                    <p><font face="Georgia, Times New Roman, Times, serif"><br>
+                      <b>Activity 4 - Devil's Advocate:</b><br>
+                      </font><font face="Georgia, Times New Roman, Times, serif">The 
+                      group will have established a general consensus about the 
+                      topic to be discussed. Have them choose a position on the 
+                      topic. It should be a position that can be argued, and most 
+                      class members should agree with it. One class member or 
+                      the teacher can play the role of the Devil's Advocate. The 
+                      whole class argues one side, and the Devil's Advocate argues 
+                      the other. The key to the success of the activity is to 
+                      argue the side you are on, rather than your personal opinion. 
+                      This activity serves to clarify students' views on controversial 
+                      topics. <br>
+                      </font></p>
+                    </td>
+                </tr>
+                <tr>
+                  <td><font face="Georgia, Times New Roman, Times, serif"><b><br>
+                    Activity 4 - </b></font><b><font face="Georgia, Times New Roman, Times, serif">Explore 
+                    through Improv:<br>
+                    </font></b><font face="Georgia, Times New Roman, Times, serif">Give 
+                    the students the following instructions for improvisation<b>:</b></font><b><font face="Georgia, Times New Roman, Times, serif"><br>
+                    <br>
+                    </font></b><font face="Georgia, Times New Roman, Times, serif">1. 
+                    Start a scene from a suggestion from the group (or use the 
+                    personal survey as a starting point for ideas) - at any time, 
+                    anybody may call FREEZE and go in and change it subtlety by 
+                    adding in a new dimension, or by changing the objective. (10 
+                    min.)<br>
+                    <br>
+                    2. Group Improv: start a scene and add in characters until 
+                    everybody is in the scene - at any point call out FREEZE and 
+                    ask one to do an internal monologue.<br>
+                    (8 min.)<br>
+                    <br>
+                    3. In partners discuss a scene with lots of conflict, where 
+                    might it be set? Try the scene and at any point the audience 
+                    can call FREEZE and make a suggestion for change, then let 
+                    it continue. (10 min.)<br>
+                    <br>
+                    4. Start the scene with a phone, call someone and they then 
+                    call the next person, and on down the line until the first 
+                    person is called in the end to bring it full circle. (Time 
+                    depends on the size of the class)</font><font face="Georgia, Times New Roman, Times, serif"><br>
+                    </font></td>
+                </tr>
+                <tr>
+                  <td>
+                    <p><font face="Georgia, Times New Roman, Times, serif"><br>
+                      <b>Activity 6 - Explore through Representation</b><br>
+                      Ask students to create a piece of art that represents their 
+                      feelings regarding the group's topic. Provide a wide variety 
+                      art materials including: paint, paper, pastels or crayons, 
+                      scissors, glue, plasticene, and a drawing program for the 
+                      computer. (40 min., plus clean up time).</font><br>
+                    </p>
+                    </td>
+                </tr>
+                <tr>
+                  <td> 
+                    <p><font face="Georgia, Times New Roman, Times, serif"><b><br>
+                      Activity 7 - Writing:<br>
+                      </b>1. View a rant (like those found on CBC's <i>This Hour 
+                      Has 22 Minutes</i>) and discuss the elements of a rant. 
+                      Have students write a rant that centers on the topic for 
+                      discussion. (60 min.)<br>
+                      </font></p>
+                    <p><font face="Georgia, Times New Roman, Times, serif">2. 
+                      Have students write a dialogue between two characters that 
+                      has a conflict that relates to the theme. Tell them they 
+                      can never state the theme outright. (30 min.)</font></p>
+                    <p><font face="Georgia, Times New Roman, Times, serif">3. 
+                      Have students create a stream-of-consciousness piece about 
+                      the central theme. Tell them not to worry about mechanics 
+                      or even logical flow of ideas. Their role is to record anything 
+                      that comes to their minds, even if it seems initially unrelated. 
+                      If students read their work to the class, they may need 
+                      to censure material that is not appropriate for school. 
+                      This should be done at the reading stage, not the writing 
+                      stage. (20 min.)<br>
+                      </font></p>
+                  </td>
+                </tr>
+                <tr>
+                  <td> 
+                    <p><font face="Georgia, Times New Roman, Times, serif"><b><br>
+                      Activity 8 - Collecting Quotes:</b><br>
+                      Students should search the internet for quotations, articles 
+                      or song lyrics that relate to the theme. They should paste 
+                      these into a word processing document, along with the name 
+                      of the person who wrote them. The end product is a collage 
+                      of words that should be discussed as a class during the 
+                      writing process. (40 min.)<br>
+                      </font></p>
+                    </td>
+                </tr>
+              </table>
+              <p align="center"><font face="Georgia, Times New Roman, Times, serif"><a href="5collective.html">Return 
+                to Teacher Lesson</a> / <a href="../student/5collective.html">Go 
+                to Student Lesson</a> / <a href="4directingassignment.html">Previous 
+                Lesson</a></font></p>
+
+              </div>
+          </td>
+        </tr>
+        <tr> 
+          <td height="22"></td>
+        </tr>
+      </table>
+      <!-- #EndEditable --></td>
+  </tr>
+  <tr> 
+    <td valign="top" height="89"> 
+      <table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="669966">
+        <tr> 
+          <td width="97" height="89" valign="top" bgcolor="669966"><!-- #BeginEditable "optional" --><!-- #EndEditable --></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr> 
+    <td height="0"></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+</table>
+</body>
+<!-- #EndTemplate -->
+</html>

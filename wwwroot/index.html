@@ -1,0 +1,427 @@
+<html><!-- #BeginTemplate "/Templates/templatemain.dwt" --><!-- DW6 -->
+<head>
+<!-- #BeginEditable "doctitle" -->
+<title></title>
+<script language="JavaScript" type="text/JavaScript">
+<!--
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+function MM_nbGroup(event, grpName) { //v6.0
+  var i,img,nbArr,args=MM_nbGroup.arguments;
+  if (event == "init" && args.length > 2) {
+    if ((img = MM_findObj(args[2])) != null && !img.MM_init) {
+      img.MM_init = true; img.MM_up = args[3]; img.MM_dn = img.src;
+      if ((nbArr = document[grpName]) == null) nbArr = document[grpName] = new Array();
+      nbArr[nbArr.length] = img;
+      for (i=4; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+        if (!img.MM_up) img.MM_up = img.src;
+        img.src = img.MM_dn = args[i+1];
+        nbArr[nbArr.length] = img;
+    } }
+  } else if (event == "over") {
+    document.MM_nbOver = nbArr = new Array();
+    for (i=1; i < args.length-1; i+=3) if ((img = MM_findObj(args[i])) != null) {
+      if (!img.MM_up) img.MM_up = img.src;
+      img.src = (img.MM_dn && args[i+2]) ? args[i+2] : ((args[i+1])? args[i+1] : img.MM_up);
+      nbArr[nbArr.length] = img;
+    }
+  } else if (event == "out" ) {
+    for (i=0; i < document.MM_nbOver.length; i++) {
+      img = document.MM_nbOver[i]; img.src = (img.MM_dn) ? img.MM_dn : img.MM_up; }
+  } else if (event == "down") {
+    nbArr = document[grpName];
+    if (nbArr)
+      for (i=0; i < nbArr.length; i++) { img=nbArr[i]; img.src = img.MM_up; img.MM_dn = 0; }
+    document[grpName] = nbArr = new Array();
+    for (i=2; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+      if (!img.MM_up) img.MM_up = img.src;
+      img.src = img.MM_dn = (args[i+1])? args[i+1] : img.MM_up;
+      nbArr[nbArr.length] = img;
+  } }
+}
+//-->
+</script>
+<!-- #EndEditable -->
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<script language="JavaScript">
+<!--
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_nbGroup(event, grpName) { //v3.0
+  var i,img,nbArr,args=MM_nbGroup.arguments;
+  if (event == "init" && args.length > 2) {
+    if ((img = MM_findObj(args[2])) != null && !img.MM_init) {
+      img.MM_init = true; img.MM_up = args[3]; img.MM_dn = img.src;
+      if ((nbArr = document[grpName]) == null) nbArr = document[grpName] = new Array();
+      nbArr[nbArr.length] = img;
+      for (i=4; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+        if (!img.MM_up) img.MM_up = img.src;
+        img.src = img.MM_dn = args[i+1];
+        nbArr[nbArr.length] = img;
+    } }
+  } else if (event == "over") {
+    document.MM_nbOver = nbArr = new Array();
+    for (i=1; i < args.length-1; i+=3) if ((img = MM_findObj(args[i])) != null) {
+      if (!img.MM_up) img.MM_up = img.src;
+      img.src = (img.MM_dn && args[i+2]) ? args[i+2] : args[i+1];
+      nbArr[nbArr.length] = img;
+    }
+  } else if (event == "out" ) {
+    for (i=0; i < document.MM_nbOver.length; i++) {
+      img = document.MM_nbOver[i]; img.src = (img.MM_dn) ? img.MM_dn : img.MM_up; }
+  } else if (event == "down") {
+    if ((nbArr = document[grpName]) != null)
+      for (i=0; i < nbArr.length; i++) { img=nbArr[i]; img.src = img.MM_up; img.MM_dn = 0; }
+    document[grpName] = nbArr = new Array();
+    for (i=2; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+      if (!img.MM_up) img.MM_up = img.src;
+      img.src = img.MM_dn = args[i+1];
+      nbArr[nbArr.length] = img;
+  } }
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+//-->
+</script>
+</head>
+
+<body bgcolor="#666699" text="#000000" onLoad="MM_preloadImages('library/buttons/home_r1_c1_f3.gif','library/buttons/home_r1_c1_f2.gif','library/buttons/home_r1_c1_f4.gif','library/buttons/home_r2_c1_f2.gif','library/buttons/teacher1_r1_c1_f3.gif','library/buttons/teacher1_r1_c1_f2.gif','library/buttons/teacher1_r1_c1_f4.gif','library/buttons/teacher1_r2_c1_f2.gif')">
+<table width="700" border="0" cellpadding="0" cellspacing="0">
+  <tr> 
+    <td width="97" valign="top" bgcolor="666699" rowspan="2"><!-- #BeginLibraryItem "/library/buttons/home.lbi" --><table border="0" cellpadding="0" cellspacing="0" width="96">
+<!-- fwtable fwsrc="home1.png" fwbase="home.gif" -->
+  <tr>
+   <td><img src="library/buttons/spacer.gif" width="96" height="1" border="0"></td>
+   <td><img src="library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+  </tr>
+  <tr>
+    <td><a href="index.html" target="_top"  onClick="MM_nbGroup('down','navbar1','home_r1_c1','library/buttons/home_r1_c1_f3.gif',1)"  onMouseOver="MM_nbGroup('over','home_r1_c1','library/buttons/home_r1_c1_f2.gif','library/buttons/home_r1_c1_f4.gif',1)" onMouseOut="MM_nbGroup('out');" ><img name="home_r1_c1" src="library/buttons/home_r1_c1.gif" width="96" height="79" border="0" alt="home"></a></td>
+   <td><img src="library/buttons/spacer.gif" width="1" height="79" border="0"></td>
+  </tr>
+  <tr>
+   <td><a href="#" onMouseOut="MM_swapImgRestore()"  onMouseOver="MM_swapImage('home_r2_c11','','library/buttons/home_r2_c1_f2.gif',1)" ><img src="library/buttons/home_r2_c1.gif" name="home_r2_c11" width="96" height="1" border="0" id="home_r2_c11"></a></td>
+   <td><img src="library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+  </tr>
+</table>
+<!-- #EndLibraryItem --> 
+    </td>
+    <td valign="top" width="97" bgcolor="666699" rowspan="2"><!-- #BeginLibraryItem "/library/buttons/studentblue.lbi" --><table border="0" cellpadding="0" cellspacing="0" width="96">
+<!-- fwtable fwsrc="student1.png" fwbase="studentblue.gif" -->
+  <tr>
+   <td><img src="library/buttons/spacer.gif" width="95" height="1" border="0"></td>
+   <td><img src="library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+   <td><img src="library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+  </tr>
+  <tr>
+    <td><a href="mainpages/student.html" onMouseOut="MM_nbGroup('out');"  onMouseOver="MM_nbGroup('over','studentblue_r1_c1','library/buttons/studentblue_r1_c1_f2.gif','library/buttons/studentblue_r1_c1_f4.gif',1)"  onClick="MM_nbGroup('down','navbar1','studentblue_r1_c1','library/buttons/studentblue_r1_c1_f3.gif',1)" ><img name="studentblue_r1_c1" src="library/buttons/studentblue_r1_c1.gif" width="95" height="79" border="0"></a></td>
+   <td rowspan="2"><img name="studentblue_r1_c2" src="library/buttons/studentblue_r1_c2.gif" width="1" height="80" border="0"></td>
+   <td><img src="library/buttons/spacer.gif" width="1" height="79" border="0"></td>
+  </tr>
+  <tr>
+   <td><img name="studentblue_r2_c1" src="library/buttons/studentblue_r2_c1.gif" width="95" height="1" border="0"></td>
+   <td><img src="library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+  </tr>
+</table>
+<!-- #EndLibraryItem --></td>
+    <td width="97" valign="top" bgcolor="666699" rowspan="2"><!-- #BeginLibraryItem "/library/buttons/teacher1.lbi" --><table border="0" cellpadding="0" cellspacing="0" width="96">
+<!-- fwtable fwsrc="teacher1.png" fwbase="teacher1.gif" -->
+  <tr>
+   <td><img src="library/buttons/spacer.gif" width="96" height="1" border="0"></td><td><img src="library/buttons/spacer.gif" width="1" height="1" border="0"></td></tr>
+  <tr>
+    <td><a href="mainpages/teacher.html" target="_top"  onClick="MM_nbGroup('down','navbar1','teacher1_r1_c1','library/buttons/teacher1_r1_c1_f3.gif',1)"  onMouseOver="MM_nbGroup('over','teacher1_r1_c1','library/buttons/teacher1_r1_c1_f2.gif','library/buttons/teacher1_r1_c1_f4.gif',1)" onMouseOut="MM_nbGroup('out');" ><img name="teacher1_r1_c1" src="library/buttons/teacher1_r1_c1.gif" width="96" height="79" border="0"></a></td><td><img src="library/buttons/spacer.gif" width="1" height="79" border="0"></td></tr>
+  <tr>
+   <td><a href="#" onMouseOut="MM_swapImgRestore()"  onMouseOver="MM_swapImage('teacher1_r2_c11','','library/buttons/teacher1_r2_c1_f2.gif',1)" ><img src="library/buttons/teacher1_r2_c1.gif" name="teacher1_r2_c11" width="96" height="1" border="0" id="teacher1_r2_c11"></a></td><td><img src="library/buttons/spacer.gif" width="1" height="1" border="0"></td></tr>
+</table><!-- #EndLibraryItem --> 
+    </td>
+    <td width="409" height="81" valign="top" bgcolor="666699"><!-- #BeginEditable "banner" --> 
+      <div align="right"><!-- #BeginLibraryItem "/library/buttons/dr30title.lbi" --><img name="dr30title" src="library/buttons/dr30title.gif" width="400" height="80" border="0"><!-- #EndLibraryItem --></div>
+      <!-- #EndEditable --></td>
+  </tr>
+  <tr> 
+    <td valign="top" height="23" bgcolor="666699"><!-- #BeginEditable "pagetitle" -->
+      <div align="center"></div>
+      <!-- #EndEditable --></td>
+  </tr>
+  <tr> 
+    <td valign="top" height="347"> 
+      <table width="100%" border="0" cellpadding="0" cellspacing="0">
+        <tr> 
+          <td width="97" height="56" valign="top" bgcolor="666699"> <!-- #BeginLibraryItem "/library/buttons/courseoutline.lbi" --><table border="0" cellpadding="0" cellspacing="0" width="96">
+<!-- fwtable fwsrc="courseoutline1.png" fwbase="courseoutline.gif" -->
+  <tr>
+   <td><img src="library/buttons/spacer.gif" width="96" height="1" border="0"></td>
+   <td><img src="library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+  </tr>
+  <tr>
+    <td><a href="mainpages/courseoutline.htm" onMouseOut="MM_nbGroup('out');"  onMouseOver="MM_nbGroup('over','courseoutline_r1_c1','library/buttons/courseoutline_r1_c1_f2.gif','library/buttons/courseoutline_r1_c1_f4.gif',1)"  onClick="MM_nbGroup('down','navbar1','courseoutline_r1_c1','library/buttons/courseoutline_r1_c1_f3.gif',1)" ><img name="courseoutline_r1_c1" src="library/buttons/courseoutline_r1_c1.gif" width="96" height="79" border="0"></a></td>
+   <td><img src="library/buttons/spacer.gif" width="1" height="79" border="0"></td>
+  </tr>
+  <tr>
+   <td><a href="#" onMouseOut="MM_swapImgRestore();"  onMouseOver="MM_swapImage('courseoutline_r2_c1','','library/buttons/courseoutline_r2_c1_f2.gif',1)" ><img name="courseoutline_r2_c1" src="library/buttons/courseoutline_r2_c1.gif" width="96" height="1" border="0"></a></td>
+   <td><img src="library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+  </tr>
+</table>
+<!-- #EndLibraryItem --><!-- #BeginLibraryItem "/library/buttons/sitemap.lbi" --><table border="0" cellpadding="0" cellspacing="0" width="96">
+<!-- fwtable fwsrc="sitemap1.png" fwbase="sitemap.gif" -->
+  <tr>
+   <td><img src="library/buttons/spacer.gif" width="95" height="1" border="0"></td>
+   <td><img src="library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+   <td><img src="library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+  </tr>
+  <tr>
+    <td><a href="mainpages/templatemainmap.html" onMouseOut="MM_nbGroup('out');"  onMouseOver="MM_nbGroup('over','sitemap_r1_c1','library/buttons/sitemap_r1_c1_f2.gif','library/buttons/sitemap_r1_c1_f4.gif',1)"  onClick="MM_nbGroup('down','navbar1','sitemap_r1_c1','library/buttons/sitemap_r1_c1_f3.gif',1)" ><img name="sitemap_r1_c1" src="library/buttons/sitemap_r1_c1.gif" width="95" height="79" border="0"></a></td>
+   <td rowspan="2"><img name="sitemap_r1_c2" src="library/buttons/sitemap_r1_c2.gif" width="1" height="80" border="0"></td>
+   <td><img src="library/buttons/spacer.gif" width="1" height="79" border="0"></td>
+  </tr>
+  <tr>
+   <td><img name="sitemap_r2_c1" src="library/buttons/sitemap_r2_c1.gif" width="95" height="1" border="0"></td>
+   <td><img src="library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+  </tr>
+</table>
+<!-- #EndLibraryItem --><!-- #BeginLibraryItem "/library/buttons/help.lbi" --><table border="0" cellpadding="0" cellspacing="0" width="96">
+<!-- fwtable fwsrc="help1.png" fwbase="help.gif" -->
+  <tr>
+   <td><img src="library/buttons/spacer.gif" width="96" height="1" border="0"></td>
+   <td><img src="library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+  </tr>
+  <tr>
+    <td><a href="mainpages/help.html" onMouseOut="MM_nbGroup('out');"  onMouseOver="MM_nbGroup('over','help_r1_c1','library/buttons/help_r1_c1_f2.gif','library/buttons/help_r1_c1_f4.gif',1)"  onClick="MM_nbGroup('down','navbar1','help_r1_c1','library/buttons/help_r1_c1_f3.gif',1)" ><img name="help_r1_c1" src="library/buttons/help_r1_c1.gif" width="96" height="79" border="0"></a></td>
+   <td><img src="library/buttons/spacer.gif" width="1" height="79" border="0"></td>
+  </tr>
+  <tr>
+   <td><a href="#" onMouseOut="MM_swapImgRestore();"  onMouseOver="MM_swapImage('help_r2_c1','','library/buttons/help_r2_c1_f2.gif',1)" ><img name="help_r2_c1" src="library/buttons/help_r2_c1.gif" width="96" height="1" border="0"></a></td>
+   <td><img src="library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+  </tr>
+</table>
+<!-- #EndLibraryItem --><!-- #BeginLibraryItem "/library/buttons/resources.lbi" --><table border="0" cellpadding="0" cellspacing="0" width="96">
+<!-- fwtable fwsrc="resources1.png" fwbase="resources.gif" -->
+  <tr>
+   <td><img src="library/buttons/spacer.gif" width="96" height="1" border="0"></td>
+   <td><img src="library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+  </tr>
+  <tr>
+    <td><a href="mainpages/resources.html" onMouseOut="MM_nbGroup('out');"  onMouseOver="MM_nbGroup('over','resources_r1_c1','library/buttons/resources_r1_c1_f2.gif','library/buttons/resources_r1_c1_f4.gif',1)"  onClick="MM_nbGroup('down','navbar1','resources_r1_c1','library/buttons/resources_r1_c1_f3.gif',1)" ><img name="resources_r1_c1" src="library/buttons/resources_r1_c1.gif" width="96" height="79" border="0"></a></td>
+   <td><img src="library/buttons/spacer.gif" width="1" height="79" border="0"></td>
+  </tr>
+  <tr>
+   <td><a href="#" onMouseOut="MM_swapImgRestore();"  onMouseOver="MM_swapImage('resources_r2_c1','','library/buttons/resources_r2_c1_f2.gif',1)" ><img name="resources_r2_c1" src="library/buttons/resources_r2_c1.gif" width="96" height="1" border="0"></a></td>
+   <td><img src="library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+  </tr>
+</table>
+<!-- #EndLibraryItem --></td>
+        </tr>
+      </table>
+    </td>
+    <td colspan="3" rowspan="2" valign="top" bgcolor="666699"> <!-- #BeginEditable "content" --> 
+      <table width="100%" border="0" cellpadding="5" cellspacing="0">
+        <tr> 
+          <td height="325" width="593" valign="top" bgcolor="ede4d8"><h2 align="right"><font color="#666666" size="1" face="Arial, Helvetica, sans-serif">last 
+              update - 
+              <!-- #BeginDate format:fcAm1a -->Tuesday, February 25, 2003 10:28 AM<!-- #EndDate -->
+              </font></h2>
+            <h2 align="center"><br>
+              <font color="#660033"><font color="663333" face="Georgia, Times New Roman, Times, serif">Welcome 
+              to Drama 30</font><font color="660000" face="Georgia, Times New Roman, Times, serif"> 
+              </font></font></h2>
+            <p align="center"><font color="#660033" face="Georgia, Times New Roman, Times, serif"><b>&quot;Every 
+              child is an artist. The problem is how to <br>
+              remain an artist once he grows up.&quot; <br>
+              Picasso</b></font></p>
+            <table width="522" border="5" cellspacing="5" cellpadding="5" align="center">
+              <tr> 
+                <td><font color="#660033" face="Georgia, Times New Roman, Times, serif"><font color="#000000"><i>Drama 
+                  is about discovering your creative self, awakening the senses, 
+                  strengthening your imagination, and communicating this experience 
+                  to others. You are invited to take part in the adventure. This 
+                  course is a web-based resource which requires you to read, analyze, 
+                  synthesize and do. Drama is active and moves from the theoretical 
+                  to the experiential.</i></font></font></td>
+              </tr>
+            </table>
+            <p><font size="4" face="Georgia, Times New Roman, Times, serif"><b>Navigation:</b></font></p>
+            <p><font face="Georgia, Times New Roman, Times, serif">If you are 
+              teacher who has not used this material before, try reading <a href="teacher/aboutsite.html">the 
+              introduction for teachers.</a> If you are looking for a lesson for 
+              a particular objective, see the <a href="teacher/curobjectives.html">objectives 
+              page</a>.<br>
+              </font></p>
+            <table width="100%" border="5" cellspacing="0" cellpadding="5">
+              <tr> 
+                <td align="center" valign="middle"> <a href="index.html"><img src="library/buttons/home_r1_c1.gif" name="Home" width="96" height="79" border="0" id="Home" onMouseOver="MM_swapImage('Home','','library/buttons/home_r1_c1_f2.gif',1)" onMouseOut="MM_swapImgRestore()"></a></td>
+                <td align="center" valign="middle"> <a href="mainpages/student.html"><img src="library/buttons/studentblue_r1_c1.gif" name="student" width="95" height="79" border="0" id="student" onMouseOver="MM_swapImage('student','','library/buttons/studentblue_r1_c1_f2.gif',1)" onMouseOut="MM_swapImgRestore()"></a></td>
+                <td align="center" valign="middle"><a href="mainpages/teacher.html"><img src="library/buttons/teacher1_r1_c1.gif" name="teacher" width="96" height="79" border="0" id="teacher" onMouseOver="MM_swapImage('teacher','','library/buttons/teacher1_r1_c1_f2.gif',1)" onMouseOut="MM_swapImgRestore()"></a></td>
+              </tr>
+              <tr> 
+                <td align="center"><font face="Georgia, Times New Roman, Times, serif">Brings 
+                  you back <br>
+                  to this page<br>
+                  <font color="#666699"><b>These pages are BLUE</b></font></font></td>
+                <td align="center"><font face="Georgia, Times New Roman, Times, serif">Links 
+                  you to <br>
+                  the student home page<br>
+                  <font color="993366"><b>These pages are PURPLE</b></font></font></td>
+                <td align="center"><font face="Georgia, Times New Roman, Times, serif">Links 
+                  you to<br>
+                  the teacher home page<br>
+                  <font color="669966"><b>These pages are GREEN</b></font></font></td>
+              </tr>
+            </table>
+            <br>
+            <table width="100%" border="5" cellspacing="0" cellpadding="5" align="center">
+              <tr> 
+                <td align="center" valign="middle"><a href="mainpages/courseoutline.htm"><img src="library/buttons/courseoutline_r1_c1.gif" name="courseoutline" width="96" height="79" border="0" id="courseoutline" onMouseOver="MM_swapImage('courseoutline','','library/buttons/courseoutline_r1_c1_f4.gif',1)" onMouseOut="MM_swapImgRestore()"></a></td>
+                <td align="center" valign="middle"><a href="mainpages/templatemainmap.html"><img src="library/buttons/sitemap_r1_c1.gif" name="sitemap" width="95" height="79" border="0" id="sitemap" onMouseOver="MM_swapImage('sitemap','','library/buttons/sitemap1_r1_c1_f4.gif',1)" onMouseOut="MM_swapImgRestore()"></a></td>
+                <td align="center" valign="middle"><a href="mainpages/help.html"><img src="library/buttons/help_r1_c1.gif" name="help" width="96" height="79" border="0" id="help" onMouseOver="MM_swapImage('help','','library/buttons/help_r1_c1_f2.gif',1)" onMouseOut="MM_swapImgRestore()"></a></td>
+                <td align="center" valign="middle"><a href="mainpages/resources.html"><img src="library/buttons/resources_r1_c1.gif" name="resources" width="96" height="79" border="0" id="resources" onMouseOver="MM_swapImage('resources','','library/buttons/resources_r1_c1_f2.gif',1)" onMouseOut="MM_swapImgRestore()"></a></td>
+              </tr>
+              <tr> 
+                <td align="left" valign="top"> <div align="left"><font face="Georgia, Times New Roman, Times, serif">An 
+                    outline of the units, linked to the teacher versions. </font></div></td>
+                <td align="left" valign="top"><font face="Georgia, Times New Roman, Times, serif">A 
+                  map of all the pages in the site.</font></td>
+                <td align="left" valign="top"><font face="Georgia, Times New Roman, Times, serif">Contains 
+                  technical support, a glossary and FAQs</font></td>
+                <td align="left" valign="top"><font face="Georgia, Times New Roman, Times, serif">Contains 
+                  print resources, links, and a list of contact people and organizations</font></td>
+              </tr>
+            </table>
+            <br>
+            <table width="100%" border="5" cellspacing="0" cellpadding="5">
+              <tr> 
+                <td> <p><font size="4"><b><font face="Georgia, Times New Roman, Times, serif">Requirements:</font></b></font></p>
+                  <ul>
+                    <li><font size="3" face="Georgia, Times New Roman, Times, serif"> 
+                      access to digital video camera (or VHS camera), and to audio 
+                      recording </font></li>
+                    <li><font size="3" face="Georgia, Times New Roman, Times, serif">at 
+                      least one other classmate and an open space to work</font></li>
+                    <li><font size="3" face="Georgia, Times New Roman, Times, serif">access 
+                      to a computer with sound and a Flash plug-in</font></li>
+                    <li><font size="3" face="Georgia, Times New Roman, Times, serif">Internet 
+                      Explorer 4.0</font> </li>
+                  </ul></td>
+              </tr>
+            </table>
+            <p><font face="Georgia, Times New Roman, Times, serif"><i><b>Copyright 
+              Information:</b><br>
+              This site is published by Saskatchewan Learning, and the content 
+              on this site may be freely used. Some items from other sites are 
+              used here with permission, and permission should be obtained from 
+              the original source before the material is reproduced in any manner. 
+              This site was created by Sherron Burns and Wendy James. It was last 
+              updated in June of 2002.<br>
+              </i></font></p>
+            <hr width="90%"> <p align="center"><a href="http://www.curriculum.gov.sk.ca/index.jsp"><img src="library/images/saskcurr.gif" alt="Sask. Learning" width="200" height="60" border="0"></a><font face="Georgia, Times New Roman, Times, serif"><i>  
+              </i></font></p>
+          </td>
+        </tr>
+        <tr> 
+          <td height="22"></td>
+        </tr>
+      </table>
+      <!-- #EndEditable --></td>
+  </tr>
+  <tr> 
+    <td valign="top" height="89"> <!-- #BeginEditable "optional" -->
+      <table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="666699">
+        <tr> 
+          <td width="97" height="89" valign="top"> <div align="center"><font color="#FFFFFF"><b><i><font color="#000000"><a href="mainpages/sitecredits.htm"><font color="#FFFFFF">Contributors:</font></a></font></i></b></font> 
+            </div>
+            <p align="center"><font color="#FFFFFF">Designers &amp; Writers:</font><br>
+              &#149;<font color="#000000"> <a href="mainpages/sitecredits.htm#sherron"><font color="#330000">Sherron 
+              Burns</font></a></font><br>
+              &#149; <font color="#000000"><a href="mainpages/sitecredits.htm#wendy"><font color="#330000">Wendy 
+              James</font></a></font><br>
+            </p>
+            <p align="center"><br>
+              <font color="#FFFFFF">Technical Support:</font><br>
+              <a href="mainpages/sitecredits.htm#donna"><font color="#330000">&#149; 
+              Donna DesRoches</font></a><br>
+              <a href="mainpages/sitecredits.htm#karen"><font color="#330000">&#149; 
+              Karen Schmidt Henderson</font></a><br>
+            </p>
+            <p align="center"><font color="#FFFFFF">Contributors:</font><br>
+              <a href="mainpages/sitecredits.htm#cliff"><font color="#330000">&#149; 
+              Cliff Burns</font></a><br>
+              <a href="mainpages/sitecredits.htm#mike"><font color="#330000">&#149; 
+              Mike Diakuw</font></a><br>
+              <a href="mainpages/sitecredits.htm#moira"><font color="#330000">&#149; 
+              Moira Day</font></a><br>
+              <a href="mainpages/sitecredits.htm#pam"><font color="#330000">&#149; 
+              Pamela Haig-Bartley</font></a><br>
+              <br>
+              <font size="5"><br>
+              <b><font color="#FFFFFF"><a href="mainpages/faq.html"><font color="#FFFFCC">FAQs</font></a> 
+              </font></b></font></p>
+            <p align="center">&nbsp;</p>
+            <p align="center"><font color="#FFFFFF"><b><font color="#FFFFCC"><a href="teacher/curobjectives.html"><font color="#FFFFFF">Find 
+              a lesson for a specific objective</font></a></font></b></font></p>
+            <p>&nbsp;</p>
+            <p align="center"><a href="mainpages/maintenance.html"><font color="#FFFFFF"><b>Site 
+              Maintenance</b></font></a></p>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+          </td>
+        </tr>
+      </table>
+      <!-- #EndEditable --></td>
+  </tr>
+  <tr> 
+    <td height="0"></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+</table>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-79613353-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+<!-- #EndTemplate --></html>

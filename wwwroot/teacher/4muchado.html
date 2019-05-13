@@ -1,0 +1,499 @@
+<html><!-- #BeginTemplate "/Templates/templateteacher.dwt" -->
+<head>
+<!-- #BeginEditable "doctitle" --> 
+
+<title>Teacher - Much Ado</title>
+
+<!-- #EndEditable --> 
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<script language="JavaScript">
+<!--
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && document.getElementById) x=document.getElementById(n); return x;
+}
+
+function MM_nbGroup(event, grpName) { //v3.0
+  var i,img,nbArr,args=MM_nbGroup.arguments;
+  if (event == "init" && args.length > 2) {
+    if ((img = MM_findObj(args[2])) != null && !img.MM_init) {
+      img.MM_init = true; img.MM_up = args[3]; img.MM_dn = img.src;
+      if ((nbArr = document[grpName]) == null) nbArr = document[grpName] = new Array();
+      nbArr[nbArr.length] = img;
+      for (i=4; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+        if (!img.MM_up) img.MM_up = img.src;
+        img.src = img.MM_dn = args[i+1];
+        nbArr[nbArr.length] = img;
+    } }
+  } else if (event == "over") {
+    document.MM_nbOver = nbArr = new Array();
+    for (i=1; i < args.length-1; i+=3) if ((img = MM_findObj(args[i])) != null) {
+      if (!img.MM_up) img.MM_up = img.src;
+      img.src = (img.MM_dn && args[i+2]) ? args[i+2] : args[i+1];
+      nbArr[nbArr.length] = img;
+    }
+  } else if (event == "out" ) {
+    for (i=0; i < document.MM_nbOver.length; i++) {
+      img = document.MM_nbOver[i]; img.src = (img.MM_dn) ? img.MM_dn : img.MM_up; }
+  } else if (event == "down") {
+    if ((nbArr = document[grpName]) != null)
+      for (i=0; i < nbArr.length; i++) { img=nbArr[i]; img.src = img.MM_up; img.MM_dn = 0; }
+    document[grpName] = nbArr = new Array();
+    for (i=2; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+      if (!img.MM_up) img.MM_up = img.src;
+      img.src = img.MM_dn = args[i+1];
+      nbArr[nbArr.length] = img;
+  } }
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+</script>
+<!-- #BeginEditable "CourseBuilder" --> 
+<script language="JavaScript">
+<!--
+function MM_initInteractions(){}
+//-->
+</script>
+<!-- #EndEditable --> 
+</head>
+
+<body bgcolor="#669966" text="#000000" onLoad="MM_initInteractions();MM_preloadImages('../library/buttons/home_r1_c1_f3.gif','../library/buttons/home_r1_c1_f2.gif','../library/buttons/home_r1_c1_f4.gif','../library/buttons/home_r2_c1_f2.gif','../library/buttons/studentblue_r1_c1_f3.gif','../library/buttons/studentblue_r1_c1_f2.gif','../library/buttons/studentblue_r1_c1_f4.gif','../library/buttons/courseoutline_r1_c1_f3.gif','../library/buttons/courseoutline_r1_c1_f2.gif','../library/buttons/courseoutline_r1_c1_f4.gif','../library/buttons/courseoutline_r2_c1_f2.gif','../library/buttons/sitemap_r1_c1_f3.gif','../library/buttons/sitemap_r1_c1_f2.gif','../library/buttons/sitemap_r1_c1_f4.gif','../library/buttons/help_r1_c1_f3.gif','../library/buttons/help_r1_c1_f2.gif','../library/buttons/help_r1_c1_f4.gif','../library/buttons/help_r2_c1_f2.gif','../library/buttons/resources_r1_c1_f3.gif','../library/buttons/resources_r1_c1_f2.gif','../library/buttons/resources_r1_c1_f4.gif','../library/buttons/resources_r2_c1_f2.gif','../library/buttons/aboutsite_f3.gif','../library/buttons/aboutsite_f2.gif','../library/buttons/aboutsite_f4.gif','../library/buttons/planning_f3.gif','../library/buttons/planning_f2.gif','../library/buttons/planning_f4.gif','../library/buttons/teacher1_r1_c1_f3.gif','../library/buttons/teacher1_r1_c1_f2.gif','../library/buttons/teacher1_r1_c1_f4.gif','../library/buttons/teacher1_r2_c1_f2.gif')">
+<table width="700" border="0" cellpadding="0" cellspacing="0">
+  <tr> 
+    <td width="97" valign="top" bgcolor="669966" rowspan="2"> <!-- #BeginLibraryItem "/library/buttons/home.lbi" --><table border="0" cellpadding="0" cellspacing="0" width="96">
+<!-- fwtable fwsrc="home1.png" fwbase="home.gif" -->
+  <tr>
+   <td><img src="../library/buttons/spacer.gif" width="96" height="1" border="0"></td>
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+  </tr>
+  <tr>
+    <td><a href="../index.html" onMouseOut="MM_nbGroup('out');"  onMouseOver="MM_nbGroup('over','home_r1_c1','../library/buttons/home_r1_c1_f2.gif','../library/buttons/home_r1_c1_f4.gif',1)"  onClick="MM_nbGroup('down','navbar1','home_r1_c1','../library/buttons/home_r1_c1_f3.gif',1)" ><img name="home_r1_c1" src="../library/buttons/home_r1_c1.gif" width="96" height="79" border="0" alt="home"></a></td>
+   <td><img src="../library/buttons/spacer.gif" width="1" height="79" border="0"></td>
+  </tr>
+  <tr>
+   <td><a href="#" onMouseOut="MM_swapImgRestore();"  onMouseOver="MM_swapImage('home_r2_c1','','../library/buttons/home_r2_c1_f2.gif',1)" ><img name="home_r2_c1" src="../library/buttons/home_r2_c1.gif" width="96" height="1" border="0"></a></td>
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+  </tr>
+</table>
+<!-- #EndLibraryItem --></td>
+    <td valign="top" width="97" bgcolor="669966" rowspan="2"><!-- #BeginLibraryItem "/library/buttons/studentblue.lbi" --><table border="0" cellpadding="0" cellspacing="0" width="96">
+<!-- fwtable fwsrc="student1.png" fwbase="studentblue.gif" -->
+  <tr>
+   <td><img src="../library/buttons/spacer.gif" width="95" height="1" border="0"></td>
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+  </tr>
+  <tr>
+    <td><a href="../mainpages/student.html" onMouseOut="MM_nbGroup('out');"  onMouseOver="MM_nbGroup('over','studentblue_r1_c1','../library/buttons/studentblue_r1_c1_f2.gif','../library/buttons/studentblue_r1_c1_f4.gif',1)"  onClick="MM_nbGroup('down','navbar1','studentblue_r1_c1','../library/buttons/studentblue_r1_c1_f3.gif',1)" ><img name="studentblue_r1_c1" src="../library/buttons/studentblue_r1_c1.gif" width="95" height="79" border="0"></a></td>
+   <td rowspan="2"><img name="studentblue_r1_c2" src="../library/buttons/studentblue_r1_c2.gif" width="1" height="80" border="0"></td>
+   <td><img src="../library/buttons/spacer.gif" width="1" height="79" border="0"></td>
+  </tr>
+  <tr>
+   <td><img name="studentblue_r2_c1" src="../library/buttons/studentblue_r2_c1.gif" width="95" height="1" border="0"></td>
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+  </tr>
+</table>
+<!-- #EndLibraryItem --></td>
+    <td width="97" valign="top" rowspan="2"><!-- #BeginLibraryItem "/library/buttons/teacher1.lbi" --><table border="0" cellpadding="0" cellspacing="0" width="96">
+<!-- fwtable fwsrc="teacher1.png" fwbase="teacher1.gif" -->
+  <tr>
+   <td><img src="../library/buttons/spacer.gif" width="96" height="1" border="0"></td>
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+  </tr>
+  <tr>
+    <td><a href="../mainpages/teacher.html" onMouseOut="MM_nbGroup('out');"  onMouseOver="MM_nbGroup('over','teacher1_r1_c1','../library/buttons/teacher1_r1_c1_f2.gif','../library/buttons/teacher1_r1_c1_f4.gif',1)"  onClick="MM_nbGroup('down','navbar1','teacher1_r1_c1','../library/buttons/teacher1_r1_c1_f3.gif',1)" ><img name="teacher1_r1_c1" src="../library/buttons/teacher1_r1_c1.gif" width="96" height="79" border="0"></a></td>
+   <td><img src="../library/buttons/spacer.gif" width="1" height="79" border="0"></td>
+  </tr>
+  <tr>
+   <td><a href="#" onMouseOut="MM_swapImgRestore();"  onMouseOver="MM_swapImage('teacher1_r2_c1','','../library/buttons/teacher1_r2_c1_f2.gif',1)" ><img name="teacher1_r2_c1" src="../library/buttons/teacher1_r2_c1.gif" width="96" height="1" border="0"></a></td>
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+  </tr>
+</table>
+<!-- #EndLibraryItem --></td>
+    <td width="409" valign="top" bgcolor="669966" height="91"><!-- #BeginEditable "banner" --><!-- #BeginLibraryItem "/library/buttons/dr30titleteacher.lbi" --><img name="dr30titleteacher" src="../library/buttons/dr30titleteacher.gif" width="400" height="80" border="0"><!-- #EndLibraryItem --><!-- #EndEditable --></td>
+  </tr>
+  <tr> 
+    <td valign="top" bgcolor="669966" height="23"><!-- #BeginEditable "pagetitle" --> 
+
+      <div align="center"></div>
+
+      <!-- #EndEditable --></td>
+  </tr>
+  <tr> 
+    <td valign="top" height="347"> 
+      <table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="669966">
+        <tr> 
+          <td width="97" height="56" valign="top" bgcolor="669966"> <!-- #BeginLibraryItem "/library/buttons/courseoutline.lbi" --><table border="0" cellpadding="0" cellspacing="0" width="96">
+<!-- fwtable fwsrc="courseoutline1.png" fwbase="courseoutline.gif" -->
+  <tr>
+   <td><img src="../library/buttons/spacer.gif" width="96" height="1" border="0"></td>
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+  </tr>
+  <tr>
+    <td><a href="../mainpages/courseoutline.htm" onMouseOut="MM_nbGroup('out');"  onMouseOver="MM_nbGroup('over','courseoutline_r1_c1','../library/buttons/courseoutline_r1_c1_f2.gif','../library/buttons/courseoutline_r1_c1_f4.gif',1)"  onClick="MM_nbGroup('down','navbar1','courseoutline_r1_c1','../library/buttons/courseoutline_r1_c1_f3.gif',1)" ><img name="courseoutline_r1_c1" src="../library/buttons/courseoutline_r1_c1.gif" width="96" height="79" border="0"></a></td>
+   <td><img src="../library/buttons/spacer.gif" width="1" height="79" border="0"></td>
+  </tr>
+  <tr>
+   <td><a href="#" onMouseOut="MM_swapImgRestore();"  onMouseOver="MM_swapImage('courseoutline_r2_c1','','../library/buttons/courseoutline_r2_c1_f2.gif',1)" ><img name="courseoutline_r2_c1" src="../library/buttons/courseoutline_r2_c1.gif" width="96" height="1" border="0"></a></td>
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+  </tr>
+</table>
+<!-- #EndLibraryItem --><!-- #BeginLibraryItem "/library/buttons/sitemap.lbi" --><table border="0" cellpadding="0" cellspacing="0" width="96">
+<!-- fwtable fwsrc="sitemap1.png" fwbase="sitemap.gif" -->
+  <tr>
+   <td><img src="../library/buttons/spacer.gif" width="95" height="1" border="0"></td>
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+  </tr>
+  <tr>
+    <td><a href="../mainpages/templatemainmap.html" onMouseOut="MM_nbGroup('out');"  onMouseOver="MM_nbGroup('over','sitemap_r1_c1','../library/buttons/sitemap_r1_c1_f2.gif','../library/buttons/sitemap_r1_c1_f4.gif',1)"  onClick="MM_nbGroup('down','navbar1','sitemap_r1_c1','../library/buttons/sitemap_r1_c1_f3.gif',1)" ><img name="sitemap_r1_c1" src="../library/buttons/sitemap_r1_c1.gif" width="95" height="79" border="0"></a></td>
+   <td rowspan="2"><img name="sitemap_r1_c2" src="../library/buttons/sitemap_r1_c2.gif" width="1" height="80" border="0"></td>
+   <td><img src="../library/buttons/spacer.gif" width="1" height="79" border="0"></td>
+  </tr>
+  <tr>
+   <td><img name="sitemap_r2_c1" src="../library/buttons/sitemap_r2_c1.gif" width="95" height="1" border="0"></td>
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+  </tr>
+</table>
+<!-- #EndLibraryItem --><!-- #BeginLibraryItem "/library/buttons/help.lbi" --><table border="0" cellpadding="0" cellspacing="0" width="96">
+<!-- fwtable fwsrc="help1.png" fwbase="help.gif" -->
+  <tr>
+   <td><img src="../library/buttons/spacer.gif" width="96" height="1" border="0"></td>
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+  </tr>
+  <tr>
+    <td><a href="../mainpages/help.html" onMouseOut="MM_nbGroup('out');"  onMouseOver="MM_nbGroup('over','help_r1_c1','../library/buttons/help_r1_c1_f2.gif','../library/buttons/help_r1_c1_f4.gif',1)"  onClick="MM_nbGroup('down','navbar1','help_r1_c1','../library/buttons/help_r1_c1_f3.gif',1)" ><img name="help_r1_c1" src="../library/buttons/help_r1_c1.gif" width="96" height="79" border="0"></a></td>
+   <td><img src="../library/buttons/spacer.gif" width="1" height="79" border="0"></td>
+  </tr>
+  <tr>
+   <td><a href="#" onMouseOut="MM_swapImgRestore();"  onMouseOver="MM_swapImage('help_r2_c1','','../library/buttons/help_r2_c1_f2.gif',1)" ><img name="help_r2_c1" src="../library/buttons/help_r2_c1.gif" width="96" height="1" border="0"></a></td>
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+  </tr>
+</table>
+<!-- #EndLibraryItem --><!-- #BeginLibraryItem "/library/buttons/resources.lbi" --><table border="0" cellpadding="0" cellspacing="0" width="96">
+<!-- fwtable fwsrc="resources1.png" fwbase="resources.gif" -->
+  <tr>
+   <td><img src="../library/buttons/spacer.gif" width="96" height="1" border="0"></td>
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+  </tr>
+  <tr>
+    <td><a href="../mainpages/resources.html" onMouseOut="MM_nbGroup('out');"  onMouseOver="MM_nbGroup('over','resources_r1_c1','../library/buttons/resources_r1_c1_f2.gif','../library/buttons/resources_r1_c1_f4.gif',1)"  onClick="MM_nbGroup('down','navbar1','resources_r1_c1','../library/buttons/resources_r1_c1_f3.gif',1)" ><img name="resources_r1_c1" src="../library/buttons/resources_r1_c1.gif" width="96" height="79" border="0"></a></td>
+   <td><img src="../library/buttons/spacer.gif" width="1" height="79" border="0"></td>
+  </tr>
+  <tr>
+   <td><a href="#" onMouseOut="MM_swapImgRestore();"  onMouseOver="MM_swapImage('resources_r2_c1','','../library/buttons/resources_r2_c1_f2.gif',1)" ><img name="resources_r2_c1" src="../library/buttons/resources_r2_c1.gif" width="96" height="1" border="0"></a></td>
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+  </tr>
+</table>
+<!-- #EndLibraryItem --></td>
+        </tr>
+      </table>
+    </td>
+    <td colspan="3" rowspan="2" valign="top" bgcolor="669966"> <!-- #BeginEditable "content" --> 
+
+      <table width="603" border="0" cellpadding="5" cellspacing="0" bgcolor="669966">
+
+        <tr> 
+
+          <td height="325" width="593" valign="top" bgcolor="ede4d8"> 
+
+            <div align="center"> 
+
+              <p><!-- #BeginLibraryItem "/library/buttons/aboutsite.lbi" --><a href="aboutsite.html" onMouseOut="MM_nbGroup('out');"  onMouseOver="MM_nbGroup('over','aboutsite','../library/buttons/aboutsite_f2.gif','../library/buttons/aboutsite_f4.gif',1)"  onClick="MM_nbGroup('down','navbar1','aboutsite','../library/buttons/aboutsite_f3.gif',1)" ><img name="aboutsite" src="../library/buttons/aboutsite.gif" width="96" height="40" border="0"></a><!-- #EndLibraryItem --><!-- #BeginLibraryItem "/library/buttons/planning.lbi" --><a href="courseoutline.html" onMouseOut="MM_nbGroup('out');"  onMouseOver="MM_nbGroup('over','planning','../library/buttons/planning_f2.gif','../library/buttons/planning_f4.gif',1)"  onClick="MM_nbGroup('down','navbar1','planning','../library/buttons/planning_f3.gif',1)" ><img name="planning" src="../library/buttons/planning.gif" width="96" height="40" border="0"></a><!-- #EndLibraryItem --></p>
+
+              <p align="left"><font size="4"><b><font face="Georgia, Times New Roman, Times, serif" color="#663333">Unit 
+                Four - Script Analysis</font></b></font><font face="Georgia, Times New Roman, Times, serif" color="#663333"><br>
+                <font size="4"><i>Module 2: Text<br>
+                </i>Lesson 3 - &quot;Much Ado About Nothing&quot; and Subtext</font></font></p>
+
+              <p align="left"><font face="Georgia, Times New Roman, Times, serif"><b>Introduction:<br>
+                </b>The purpose of this lesson is for students to be able to find 
+                the meaning behind the lines.<b><br>
+                <br>
+                Objectives:</b> <br>
+                </font><font face="Georgia, Times New Roman, Times, serif" color="#000000">- 
+                to</font><font face="Georgia, Times New Roman, Times, serif"> 
+                convey relationships with other characters in a scene</font><br>
+                <font face="Georgia, Times New Roman, Times, serif" color="#000000">- 
+                to</font> <font face="Georgia, Times New Roman, Times, serif">express 
+                ideas and emotions appropriate to particular characters<br>
+                </font><font face="Georgia, Times New Roman, Times, serif" color="#000000">- 
+                to</font><font face="Georgia, Times New Roman, Times, serif"> 
+                use a process like &quot;Looking at Plays&quot; in oral and written 
+                response to dramatic presentations<br>
+                </font><font face="Georgia, Times New Roman, Times, serif" color="#000000">- 
+                to</font><font face="Georgia, Times New Roman, Times, serif"> 
+                attempt <font color="#000000"><a href="../mainpages/glossary.html#scripta"><font color="#663333">script 
+                analyis</font></a></font> (not a curriculum objective)<br>
+                </font></p>
+              <p align="left"><font face="Georgia, Times New Roman, Times, serif"><b>Resources:<br>
+                </b><i>Much Ado about Nothing</i> video, Looking At Plays (appendix 
+                B, Drama 30 Curriculum) , <a href="pdf/reviewassignment.pdf">video 
+                review assignment</a>, scene from <i>Much Ado about Nothing</i></font></p>
+
+              <p align="left"><font face="Georgia, Times New Roman, Times, serif"><b>CELs</b>:<br>
+                TL, C, CCT</font></p>
+
+              <p align="left"><font face="Georgia, Times New Roman, Times, serif"><b>Components:</b> 
+                <br>
+                Cultural/Historical, Critical/Responsive, Creative/Productive</font></p>
+
+              <hr>
+              <p align="left"><font face="Georgia, Times New Roman, Times, serif"><b>Activities:<br>
+                </b></font></p>
+
+              <p align="left"><font face="Georgia, Times New Roman, Times, serif"><b>Activity 
+                1 - Viewing and Reviewing<br>
+
+                </b>Before beginning, read and discuss &quot;<a href="http://www.sasked.gov.sk.ca/docs/artsed/dram102030/dramappdxb.html">Looking 
+
+                at Plays</a>&quot;, Appendix B of the Drama 30 Curriculum. (40 
+
+                min) View the video <i>Much Ado About Nothing</i>, directed by 
+
+                Kenneth Branagh. (2hrs, 20 min.) Stop frequently to discuss the 
+
+                events and characterization in the video.</font></p>
+
+              <p align="left"><font face="Georgia, Times New Roman, Times, serif">Print 
+
+                the pdf <a href="pdf/reviewassignment.pdf">Reviewing</a> assignment, 
+
+                and complete the written review. (2 hours)</font></p>
+
+              <p align="left"><font face="Georgia, Times New Roman, Times, serif"> 
+                <b>Activity 2 - Finding Subtext</b></font><br>
+
+              </p>
+
+              <table width="583" border="1" cellspacing="5" cellpadding="5">
+
+                <tr> 
+
+                  <td width="58" height="62" valign="middle" align="center"><img src="../library/images/lightbulb.gif" width="50" height="50"></td>
+
+                  <td width="484" valign="top"><font face="Georgia, Times New Roman, Times, serif"><b>Key 
+                    Idea</b> - Subtext is what the character is means when saying 
+                    his or her lines. For example, when someone says, &quot;My, 
+                    what an unusual color!&quot; he or she is really saying, &quot;That 
+                    color is ugly&quot;. Finding subtext is the art of finding 
+                    the truth under &quot;little white lies&quot; or other misleading 
+                    statements.</font></td>
+
+                </tr>
+
+              </table>
+
+              <table width="583" border="1" cellspacing="5" cellpadding="5">
+
+                <tr> 
+
+                  <td valign="top" width="457" rowspan="2"> 
+
+                    <p><font face="Georgia, Times New Roman, Times, serif">A. 
+                      </font><font face="Georgia, Times New Roman, Times, serif">Conduct 
+                      a talking circle to discuss the use of subtext in our everyday 
+                      lives. Each person should give an example of his or her 
+                      use of subtext in &quot;real life&quot;. Discuss when you 
+                      are most likely to have heavy subtext in your conversation. 
+                      (10-15 min.)</font></p>
+
+                    <p><font face="Georgia, Times New Roman, Times, serif">B. 
+                      Read this short, witty passage where Beatrice and Benedict 
+                      are insulting each other. Try to find the subtext under 
+                      what they are saying. Why do they pay so much attention 
+                      to each other constantly? (5 min.)</font></p>
+
+                    <p><font face="Georgia, Times New Roman, Times, serif">C. 
+                      With a partner, students should look at the sample subtext 
+                      lines as an example. Then they should rewrite the scene, 
+                      substituting the subtext for the real lines. After practicing 
+                      the scene several times using the subtext, they should try 
+                      the real lines again, but keep hints of the subtext in their 
+                      work. Groups should perform their work for the class. (45 
+                      min. plus performance time)</font></p>
+
+                  </td>
+
+                  <td width="85" valign="middle" height="88" align="center"><img src="../library/images/talkingcircle.gif" width="85" height="67"></td>
+
+                </tr>
+
+                <tr> 
+
+                  <td valign="middle" height="185" align="center" bgcolor="669966"> 
+
+                    <p><font face="Georgia, Times New Roman, Times, serif">Download<br>
+                      and Print<br>
+                      </font></p>
+                    <p><font face="Georgia, Times New Roman, Times, serif"><a href="pdf/muchado.pdf">Much 
+                      Ado <br>
+                      about<br>
+                      Nothing </a></font></p>
+
+                    </td>
+
+                </tr>
+
+              </table>
+
+              <table width="583" border="1" cellspacing="5" cellpadding="5">
+                <tr> 
+
+                  <td width="101" height="31" valign="middle" align="center"><img src="../library/images/journal.gif" width="78" height="119"></td>
+
+                  <td width="441" valign="middle" align="left"><font face="Georgia, Times New Roman, Times, serif"><b>Activity 
+                    3 - Journal </b><br>
+                    Write in role as either Beatrice or Benedict about why you 
+                    hate the other character so much. <br>
+                    Your journal must be at least half a page in length. (7 - 
+                    10 min.)</font></td>
+
+                </tr>
+
+              </table>
+
+              <p align="center"><font face="Georgia, Times New Roman, Times, serif"><i>Good 
+                links for the Shakespeare based activities are found in the <a href="../mainpages/links.html">Links</a> 
+                page.</i></font></p>
+
+              <hr>
+              <p align="left"><font face="Georgia, Times New Roman, Times, serif"><b>Instructional 
+                Strategies: </b>Role play, directed questions, reflection, discussion</font></p>
+
+              <p align="left"><font face="Georgia, Times New Roman, Times, serif"><b>Evaluation:</b> 
+
+                Teachers will need to tailor evaluation of the review to the depth 
+
+                with which they cover the process recommended in &quot;Looking 
+
+                at Plays&quot;. Writing style, content, writing process, use of 
+
+                time, mechanics and drafting should be evaluated.<br>
+
+                </font></p>
+
+              <p align="left"><font face="Georgia, Times New Roman, Times, serif"><b>On-line 
+                Activity Alternatives: </b>Discussions and talking circle may 
+                be conducted via a streamed chat. The finished assignment and 
+                journal may be e-mailed to the teacher.</font></p>
+
+              <p align="center"><font face="Georgia, Times New Roman, Times, serif"><a href="4dollshouse.html">Next 
+                Lesson</a> / <a href="../student/4muchado.html">Student Lesson</a> 
+                / <a href="4everyman.html">Previous Lesson</a></font></p>
+
+            </div>
+
+          </td>
+
+        </tr>
+
+        <tr> 
+
+          <td height="22" valign="top" bgcolor="ede4d8">&nbsp;</td>
+
+        </tr>
+
+      </table>
+
+      <!-- #EndEditable --></td>
+  </tr>
+  <tr> 
+    <td valign="top" height="89"> 
+      <table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="669966">
+        <tr> 
+          <td width="97" height="89" valign="top" bgcolor="669966"><!-- #BeginEditable "optional" -->
+
+            <p>&nbsp;</p>
+
+            <p>&nbsp;</p>
+
+            <p>&nbsp;</p>
+
+            <p>&nbsp;</p>
+
+            <p>&nbsp;</p>
+
+            <p>&nbsp;</p>
+
+            <p>&nbsp;</p>
+
+            <p>&nbsp;</p>
+
+            <p>&nbsp;</p>
+
+            <p>&nbsp;</p>
+
+            <p>&nbsp;</p>
+
+            <p>&nbsp;</p>
+
+            <p>&nbsp;</p>
+
+            <p>&nbsp;</p>
+
+            <p>&nbsp;</p>
+
+            <p>&nbsp;</p>
+
+            <p>&nbsp;</p>
+
+            <p>&nbsp;</p>
+
+            <p>&nbsp;</p>
+
+            <p>&nbsp;</p>
+
+            <p>&nbsp;</p>
+
+            <p>&nbsp;</p>
+
+            <p>&nbsp;</p>
+
+            <p>&nbsp;</p>
+
+            <p>&nbsp;</p>
+
+            <p>&nbsp;</p>
+
+            <p>&nbsp;</p>
+
+            <p>&nbsp;</p>
+
+            <p>&nbsp;</p>
+
+            <p>&nbsp;</p>
+
+            <p>&nbsp;</p>
+
+            <!-- #EndEditable --></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr> 
+    <td height="0"></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+</table>
+</body>
+<!-- #EndTemplate --></html>

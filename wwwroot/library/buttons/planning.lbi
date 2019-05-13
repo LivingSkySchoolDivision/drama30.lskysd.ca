@@ -1,0 +1,1 @@
+<a href="../../teacher/courseoutline.html" onMouseOut="MM_nbGroup('out');"  onMouseOver="MM_nbGroup('over','planning','planning_f2.gif','planning_f4.gif',1);"  onClick="MM_nbGroup('down','navbar1','planning','planning_f3.gif',1);" ><img name="planning" src="planning.gif" width="96" height="40" border="0"></a>

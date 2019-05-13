@@ -1,0 +1,527 @@
+<html><!-- #BeginTemplate "/Templates/templateteacher.dwt" -->
+<head>
+<!-- #BeginEditable "doctitle" --> 
+
+<title>Teacher - Stage Directions</title>
+
+<!-- #EndEditable --> 
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<script language="JavaScript">
+<!--
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && document.getElementById) x=document.getElementById(n); return x;
+}
+
+function MM_nbGroup(event, grpName) { //v3.0
+  var i,img,nbArr,args=MM_nbGroup.arguments;
+  if (event == "init" && args.length > 2) {
+    if ((img = MM_findObj(args[2])) != null && !img.MM_init) {
+      img.MM_init = true; img.MM_up = args[3]; img.MM_dn = img.src;
+      if ((nbArr = document[grpName]) == null) nbArr = document[grpName] = new Array();
+      nbArr[nbArr.length] = img;
+      for (i=4; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+        if (!img.MM_up) img.MM_up = img.src;
+        img.src = img.MM_dn = args[i+1];
+        nbArr[nbArr.length] = img;
+    } }
+  } else if (event == "over") {
+    document.MM_nbOver = nbArr = new Array();
+    for (i=1; i < args.length-1; i+=3) if ((img = MM_findObj(args[i])) != null) {
+      if (!img.MM_up) img.MM_up = img.src;
+      img.src = (img.MM_dn && args[i+2]) ? args[i+2] : args[i+1];
+      nbArr[nbArr.length] = img;
+    }
+  } else if (event == "out" ) {
+    for (i=0; i < document.MM_nbOver.length; i++) {
+      img = document.MM_nbOver[i]; img.src = (img.MM_dn) ? img.MM_dn : img.MM_up; }
+  } else if (event == "down") {
+    if ((nbArr = document[grpName]) != null)
+      for (i=0; i < nbArr.length; i++) { img=nbArr[i]; img.src = img.MM_up; img.MM_dn = 0; }
+    document[grpName] = nbArr = new Array();
+    for (i=2; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+      if (!img.MM_up) img.MM_up = img.src;
+      img.src = img.MM_dn = args[i+1];
+      nbArr[nbArr.length] = img;
+  } }
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+</script>
+<!-- #BeginEditable "CourseBuilder" --> 
+<script language="JavaScript">
+<!--
+function MM_initInteractions(){}
+//-->
+</script>
+<!-- #EndEditable --> 
+</head>
+
+<body bgcolor="#669966" text="#000000" onLoad="MM_initInteractions();MM_preloadImages('../library/buttons/home_r1_c1_f3.gif','../library/buttons/home_r1_c1_f2.gif','../library/buttons/home_r1_c1_f4.gif','../library/buttons/home_r2_c1_f2.gif','../library/buttons/studentblue_r1_c1_f3.gif','../library/buttons/studentblue_r1_c1_f2.gif','../library/buttons/studentblue_r1_c1_f4.gif','../library/buttons/courseoutline_r1_c1_f3.gif','../library/buttons/courseoutline_r1_c1_f2.gif','../library/buttons/courseoutline_r1_c1_f4.gif','../library/buttons/courseoutline_r2_c1_f2.gif','../library/buttons/sitemap_r1_c1_f3.gif','../library/buttons/sitemap_r1_c1_f2.gif','../library/buttons/sitemap_r1_c1_f4.gif','../library/buttons/help_r1_c1_f3.gif','../library/buttons/help_r1_c1_f2.gif','../library/buttons/help_r1_c1_f4.gif','../library/buttons/help_r2_c1_f2.gif','../library/buttons/resources_r1_c1_f3.gif','../library/buttons/resources_r1_c1_f2.gif','../library/buttons/resources_r1_c1_f4.gif','../library/buttons/resources_r2_c1_f2.gif','../library/buttons/aboutsite_f3.gif','../library/buttons/aboutsite_f2.gif','../library/buttons/aboutsite_f4.gif','../library/buttons/planning_f3.gif','../library/buttons/planning_f2.gif','../library/buttons/planning_f4.gif','../library/buttons/teacher1_r1_c1_f3.gif','../library/buttons/teacher1_r1_c1_f2.gif','../library/buttons/teacher1_r1_c1_f4.gif','../library/buttons/teacher1_r2_c1_f2.gif')">
+<table width="700" border="0" cellpadding="0" cellspacing="0">
+  <tr> 
+    <td width="97" valign="top" bgcolor="669966" rowspan="2"> <!-- #BeginLibraryItem "/library/buttons/home.lbi" --><table border="0" cellpadding="0" cellspacing="0" width="96">
+<!-- fwtable fwsrc="home1.png" fwbase="home.gif" -->
+  <tr>
+   <td><img src="../library/buttons/spacer.gif" width="96" height="1" border="0"></td>
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+  </tr>
+  <tr>
+    <td><a href="../index.html" onMouseOut="MM_nbGroup('out');"  onMouseOver="MM_nbGroup('over','home_r1_c1','../library/buttons/home_r1_c1_f2.gif','../library/buttons/home_r1_c1_f4.gif',1)"  onClick="MM_nbGroup('down','navbar1','home_r1_c1','../library/buttons/home_r1_c1_f3.gif',1)" ><img name="home_r1_c1" src="../library/buttons/home_r1_c1.gif" width="96" height="79" border="0" alt="home"></a></td>
+   <td><img src="../library/buttons/spacer.gif" width="1" height="79" border="0"></td>
+  </tr>
+  <tr>
+   <td><a href="#" onMouseOut="MM_swapImgRestore();"  onMouseOver="MM_swapImage('home_r2_c1','','../library/buttons/home_r2_c1_f2.gif',1)" ><img name="home_r2_c1" src="../library/buttons/home_r2_c1.gif" width="96" height="1" border="0"></a></td>
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+  </tr>
+</table>
+<!-- #EndLibraryItem --></td>
+    <td valign="top" width="97" bgcolor="669966" rowspan="2"><!-- #BeginLibraryItem "/library/buttons/studentblue.lbi" --><table border="0" cellpadding="0" cellspacing="0" width="96">
+<!-- fwtable fwsrc="student1.png" fwbase="studentblue.gif" -->
+  <tr>
+   <td><img src="../library/buttons/spacer.gif" width="95" height="1" border="0"></td>
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+  </tr>
+  <tr>
+    <td><a href="../mainpages/student.html" onMouseOut="MM_nbGroup('out');"  onMouseOver="MM_nbGroup('over','studentblue_r1_c1','../library/buttons/studentblue_r1_c1_f2.gif','../library/buttons/studentblue_r1_c1_f4.gif',1)"  onClick="MM_nbGroup('down','navbar1','studentblue_r1_c1','../library/buttons/studentblue_r1_c1_f3.gif',1)" ><img name="studentblue_r1_c1" src="../library/buttons/studentblue_r1_c1.gif" width="95" height="79" border="0"></a></td>
+   <td rowspan="2"><img name="studentblue_r1_c2" src="../library/buttons/studentblue_r1_c2.gif" width="1" height="80" border="0"></td>
+   <td><img src="../library/buttons/spacer.gif" width="1" height="79" border="0"></td>
+  </tr>
+  <tr>
+   <td><img name="studentblue_r2_c1" src="../library/buttons/studentblue_r2_c1.gif" width="95" height="1" border="0"></td>
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+  </tr>
+</table>
+<!-- #EndLibraryItem --></td>
+    <td width="97" valign="top" rowspan="2"><!-- #BeginLibraryItem "/library/buttons/teacher1.lbi" --><table border="0" cellpadding="0" cellspacing="0" width="96">
+<!-- fwtable fwsrc="teacher1.png" fwbase="teacher1.gif" -->
+  <tr>
+   <td><img src="../library/buttons/spacer.gif" width="96" height="1" border="0"></td>
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+  </tr>
+  <tr>
+    <td><a href="../mainpages/teacher.html" onMouseOut="MM_nbGroup('out');"  onMouseOver="MM_nbGroup('over','teacher1_r1_c1','../library/buttons/teacher1_r1_c1_f2.gif','../library/buttons/teacher1_r1_c1_f4.gif',1)"  onClick="MM_nbGroup('down','navbar1','teacher1_r1_c1','../library/buttons/teacher1_r1_c1_f3.gif',1)" ><img name="teacher1_r1_c1" src="../library/buttons/teacher1_r1_c1.gif" width="96" height="79" border="0"></a></td>
+   <td><img src="../library/buttons/spacer.gif" width="1" height="79" border="0"></td>
+  </tr>
+  <tr>
+   <td><a href="#" onMouseOut="MM_swapImgRestore();"  onMouseOver="MM_swapImage('teacher1_r2_c1','','../library/buttons/teacher1_r2_c1_f2.gif',1)" ><img name="teacher1_r2_c1" src="../library/buttons/teacher1_r2_c1.gif" width="96" height="1" border="0"></a></td>
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+  </tr>
+</table>
+<!-- #EndLibraryItem --></td>
+    <td width="409" valign="top" bgcolor="669966" height="91"><!-- #BeginEditable "banner" --><!-- #BeginLibraryItem "/library/buttons/dr30titleteacher.lbi" --><img name="dr30titleteacher" src="../library/buttons/dr30titleteacher.gif" width="400" height="80" border="0"><!-- #EndLibraryItem --><!-- #EndEditable --></td>
+  </tr>
+  <tr> 
+    <td valign="top" bgcolor="669966" height="23"><!-- #BeginEditable "pagetitle" --> 
+
+      <div align="center"></div>
+
+      <!-- #EndEditable --></td>
+  </tr>
+  <tr> 
+    <td valign="top" height="347"> 
+      <table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="669966">
+        <tr> 
+          <td width="97" height="56" valign="top" bgcolor="669966"> <!-- #BeginLibraryItem "/library/buttons/courseoutline.lbi" --><table border="0" cellpadding="0" cellspacing="0" width="96">
+<!-- fwtable fwsrc="courseoutline1.png" fwbase="courseoutline.gif" -->
+  <tr>
+   <td><img src="../library/buttons/spacer.gif" width="96" height="1" border="0"></td>
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+  </tr>
+  <tr>
+    <td><a href="../mainpages/courseoutline.htm" onMouseOut="MM_nbGroup('out');"  onMouseOver="MM_nbGroup('over','courseoutline_r1_c1','../library/buttons/courseoutline_r1_c1_f2.gif','../library/buttons/courseoutline_r1_c1_f4.gif',1)"  onClick="MM_nbGroup('down','navbar1','courseoutline_r1_c1','../library/buttons/courseoutline_r1_c1_f3.gif',1)" ><img name="courseoutline_r1_c1" src="../library/buttons/courseoutline_r1_c1.gif" width="96" height="79" border="0"></a></td>
+   <td><img src="../library/buttons/spacer.gif" width="1" height="79" border="0"></td>
+  </tr>
+  <tr>
+   <td><a href="#" onMouseOut="MM_swapImgRestore();"  onMouseOver="MM_swapImage('courseoutline_r2_c1','','../library/buttons/courseoutline_r2_c1_f2.gif',1)" ><img name="courseoutline_r2_c1" src="../library/buttons/courseoutline_r2_c1.gif" width="96" height="1" border="0"></a></td>
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+  </tr>
+</table>
+<!-- #EndLibraryItem --><!-- #BeginLibraryItem "/library/buttons/sitemap.lbi" --><table border="0" cellpadding="0" cellspacing="0" width="96">
+<!-- fwtable fwsrc="sitemap1.png" fwbase="sitemap.gif" -->
+  <tr>
+   <td><img src="../library/buttons/spacer.gif" width="95" height="1" border="0"></td>
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+  </tr>
+  <tr>
+    <td><a href="../mainpages/templatemainmap.html" onMouseOut="MM_nbGroup('out');"  onMouseOver="MM_nbGroup('over','sitemap_r1_c1','../library/buttons/sitemap_r1_c1_f2.gif','../library/buttons/sitemap_r1_c1_f4.gif',1)"  onClick="MM_nbGroup('down','navbar1','sitemap_r1_c1','../library/buttons/sitemap_r1_c1_f3.gif',1)" ><img name="sitemap_r1_c1" src="../library/buttons/sitemap_r1_c1.gif" width="95" height="79" border="0"></a></td>
+   <td rowspan="2"><img name="sitemap_r1_c2" src="../library/buttons/sitemap_r1_c2.gif" width="1" height="80" border="0"></td>
+   <td><img src="../library/buttons/spacer.gif" width="1" height="79" border="0"></td>
+  </tr>
+  <tr>
+   <td><img name="sitemap_r2_c1" src="../library/buttons/sitemap_r2_c1.gif" width="95" height="1" border="0"></td>
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+  </tr>
+</table>
+<!-- #EndLibraryItem --><!-- #BeginLibraryItem "/library/buttons/help.lbi" --><table border="0" cellpadding="0" cellspacing="0" width="96">
+<!-- fwtable fwsrc="help1.png" fwbase="help.gif" -->
+  <tr>
+   <td><img src="../library/buttons/spacer.gif" width="96" height="1" border="0"></td>
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+  </tr>
+  <tr>
+    <td><a href="../mainpages/help.html" onMouseOut="MM_nbGroup('out');"  onMouseOver="MM_nbGroup('over','help_r1_c1','../library/buttons/help_r1_c1_f2.gif','../library/buttons/help_r1_c1_f4.gif',1)"  onClick="MM_nbGroup('down','navbar1','help_r1_c1','../library/buttons/help_r1_c1_f3.gif',1)" ><img name="help_r1_c1" src="../library/buttons/help_r1_c1.gif" width="96" height="79" border="0"></a></td>
+   <td><img src="../library/buttons/spacer.gif" width="1" height="79" border="0"></td>
+  </tr>
+  <tr>
+   <td><a href="#" onMouseOut="MM_swapImgRestore();"  onMouseOver="MM_swapImage('help_r2_c1','','../library/buttons/help_r2_c1_f2.gif',1)" ><img name="help_r2_c1" src="../library/buttons/help_r2_c1.gif" width="96" height="1" border="0"></a></td>
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+  </tr>
+</table>
+<!-- #EndLibraryItem --><!-- #BeginLibraryItem "/library/buttons/resources.lbi" --><table border="0" cellpadding="0" cellspacing="0" width="96">
+<!-- fwtable fwsrc="resources1.png" fwbase="resources.gif" -->
+  <tr>
+   <td><img src="../library/buttons/spacer.gif" width="96" height="1" border="0"></td>
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+  </tr>
+  <tr>
+    <td><a href="../mainpages/resources.html" onMouseOut="MM_nbGroup('out');"  onMouseOver="MM_nbGroup('over','resources_r1_c1','../library/buttons/resources_r1_c1_f2.gif','../library/buttons/resources_r1_c1_f4.gif',1)"  onClick="MM_nbGroup('down','navbar1','resources_r1_c1','../library/buttons/resources_r1_c1_f3.gif',1)" ><img name="resources_r1_c1" src="../library/buttons/resources_r1_c1.gif" width="96" height="79" border="0"></a></td>
+   <td><img src="../library/buttons/spacer.gif" width="1" height="79" border="0"></td>
+  </tr>
+  <tr>
+   <td><a href="#" onMouseOut="MM_swapImgRestore();"  onMouseOver="MM_swapImage('resources_r2_c1','','../library/buttons/resources_r2_c1_f2.gif',1)" ><img name="resources_r2_c1" src="../library/buttons/resources_r2_c1.gif" width="96" height="1" border="0"></a></td>
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+  </tr>
+</table>
+<!-- #EndLibraryItem --></td>
+        </tr>
+      </table>
+    </td>
+    <td colspan="3" rowspan="2" valign="top" bgcolor="669966"> <!-- #BeginEditable "content" --> 
+
+      <table width="603" border="0" cellpadding="5" cellspacing="0" bgcolor="669966">
+
+        <tr> 
+
+          <td height="347" valign="top" bgcolor="ede4d8" width="593"> 
+            <div align="center"> 
+
+              <p><!-- #BeginLibraryItem "/library/buttons/aboutsite.lbi" --><a href="aboutsite.html" onMouseOut="MM_nbGroup('out');"  onMouseOver="MM_nbGroup('over','aboutsite','../library/buttons/aboutsite_f2.gif','../library/buttons/aboutsite_f4.gif',1)"  onClick="MM_nbGroup('down','navbar1','aboutsite','../library/buttons/aboutsite_f3.gif',1)" ><img name="aboutsite" src="../library/buttons/aboutsite.gif" width="96" height="40" border="0"></a><!-- #EndLibraryItem --><!-- #BeginLibraryItem "/library/buttons/planning.lbi" --><a href="courseoutline.html" onMouseOut="MM_nbGroup('out');"  onMouseOver="MM_nbGroup('over','planning','../library/buttons/planning_f2.gif','../library/buttons/planning_f4.gif',1)"  onClick="MM_nbGroup('down','navbar1','planning','../library/buttons/planning_f3.gif',1)" ><img name="planning" src="../library/buttons/planning.gif" width="96" height="40" border="0"></a><!-- #EndLibraryItem --></p>
+
+              <p align="left"><font size="4" color="663333" face="Georgia, Times New Roman, Times, serif"><b>Unit 
+
+                4- Script and Play Analysis</b></font></p>
+
+              <p align="left"><i><font face="Georgia, Times New Roman, Times, serif" size="4" color="663333">Module 
+
+                1 - Play Structure<br>
+
+                </font></i><font face="Georgia, Times New Roman, Times, serif" size="4" color="663333">Lesson 
+
+                3 - Stage Directions</font></p>
+
+              <p align="left"><font face="Georgia, Times New Roman, Times, serif" color="#000000"><b>Objectives:</b><br>
+                - to block improvised or scripted scenes<br>
+                - (to understand and execute <a href="../mainpages/glossary.html#stagem"><font color="#663333">stage 
+                movement</font></a> effectively) not a curriculum objective</font><br>
+                <font face="Georgia, Times New Roman, Times, serif" color="#000000">- 
+                to</font><font face="Georgia, Times New Roman, Times, serif"> 
+                cooperate with others</font></p>
+              <p align="left"><b><font face="Georgia, Times New Roman, Times, serif" color="#000000">Resources: 
+                </font></b><font face="Georgia, Times New Roman, Times, serif" color="#000000"><a href="pdf/stagemovment.pdf"><br>
+                Movement Handout</a>, <a href="pdf/danceevaluation.pdf">Dance 
+                Evaluation</a>(pdf)</font></p>
+              <p align="left"><font face="Georgia, Times New Roman, Times, serif" color="#000000"><b>CELs:<br>
+                </b>C, CCT </font></p>
+              <p align="left"><font face="Georgia, Times New Roman, Times, serif" color="#000000"><b>Components:</b><br>
+                Creative, Productive </font></p>
+              <hr>
+            </div>
+
+          </td>
+
+        </tr>
+
+        <tr> 
+
+          <td height="169" valign="top"> 
+
+            <table width="100%" border="2" cellpadding="5" cellspacing="0" bgcolor="ede4d8">
+              <tr> 
+
+                <td width="115" height="19" valign="middle" align="center"><img src="../library/images/1way.jpg" width="100" height="149"></td>
+
+                <td width="381" valign="middle" align="center">
+                  <div align="left">
+                    <p><font face="Georgia, Times New Roman, Times, serif" color="#000000"><b>Introduction:</b></font></p>
+                    <p><font face="Georgia, Times New Roman, Times, serif">Directions 
+                      are a basic part of traffic flow in all parts of life. On 
+                      the stage there are specific names for locations and symbols 
+                      that are used to help people keep their positions. Sometimes 
+                      the directions can be confusing because right, left, up 
+                      and down are absolutes. This means stage left might be your 
+                      right!</font></p>
+                  </div>
+                </td>
+
+                <td width="67" valign="middle" align="center"><img src="../library/images/lightbulb.gif" width="50" height="50"></td>
+
+              </tr>
+
+            </table>
+
+          </td>
+
+        </tr>
+
+        <tr> 
+
+          <td valign="top" height="210"> 
+
+            <table width="100%" border="5" cellpadding="5" cellspacing="0" bgcolor="ede4d8" bordercolor="#000000">
+              <tr> 
+
+                <td width="443" height="200" valign="top"> 
+
+                  <p><font face="Georgia, Times New Roman, Times, serif"><b>Activities</b>:</font></p>
+                  <p><font face="Georgia, Times New Roman, Times, serif"><i>Background 
+                    Infromation:</i><br>
+                    Each of the labeled directions represents a part of the stage. 
+                    The area closest to the audience at the front of the stage 
+                    is called downstage. The area farthest from the audience is 
+                    upstage. These terms originate from historical stages that 
+                    were raked. The front of the stage was literally lower or 
+                    father down than the back, so that the audience could see 
+                    all parts of the stage even without tiered seating. </font></p>
+
+                  <p><font face="Georgia, Times New Roman, Times, serif">The terms 
+                    stage right and left refer to the actor's right and left when 
+                    on stage. If you sitting with a director who called out &quot;Stage 
+                    Left, please&quot;, you would see the actor move to your right.<br>
+                    <br>
+                    <b>The movie below demonstrates the stage directions:</b> 
+                    </font></p>
+
+                </td>
+
+                <td width="130" valign="middle" align="center"><img src="../library/images/stagedirections.gif" width="140" height="120"></td>
+
+              </tr>
+
+            </table>
+
+          </td>
+
+        </tr>
+
+        <tr> 
+
+          <td valign="top" height="39"> 
+
+            <table width="100%" border="2" cellpadding="5" cellspacing="0" bgcolor="ede4d8">
+              <tr> 
+
+                <td width="583" height="19" valign="middle" align="center"><object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=5,0,0,0" width="550" height="400">
+                    <param name=movie value="../library/movies/stagemovement.swf">
+                    <param name=quality value=high>
+                    <embed src="../library/movies/stagemovement.swf" quality=high pluginspage="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" width="550" height="400">
+                    </embed> 
+                  </object></td>
+
+              </tr>
+
+            </table>
+
+          </td>
+
+        </tr>
+
+        <tr> 
+
+          <td valign="top" height="205"> 
+            <table width="100%" border="0" cellpadding="5" cellspacing="0">
+              <tr> 
+                <td width="583" height="2"></td>
+              </tr>
+              <tr> 
+                <td height="72" valign="top"> 
+                  <table width="100%" border="5" cellpadding="5" cellspacing="0" bgcolor="ede4d8" bordercolor="#000000">
+                    <tr> 
+                      <td width="163" valign="middle" align="center" rowspan="2"> 
+                        <p><img src="../library/images/4cheatingout.jpg" width="211" height="300"></p>
+                        <p><font face="Georgia, Times New Roman, Times, serif" color="#663333"><b><font size="2">This 
+                          photo is provided with permission by Trinity. It is 
+                          a picture from David Mamet's <i>The Cryptogram</i></font></b><font size="2">.</font></font></p>
+                      </td>
+                      <td width="50" height="94" valign="middle" align="center" bgcolor="#FFFFCC"><!-- #BeginLibraryItem "/library/images/lightbulb.lbi" --><img name="lightbulb" src="../library/images/lightbulb.gif" width="50" height="50" border="0"><!-- #EndLibraryItem --></td>
+                      <td width="266" valign="top" bgcolor="#FFFFFF"><font face="Georgia, Times New Roman, Times, serif" color="#669966">Cheating 
+                        out is used by actors to help the audience see more of 
+                        a character. In real life, the man and woman would stand 
+                        directly facing each other. In a play, they would do as 
+                        the woman has - &quot;cheat&quot; by turning her body 
+                        towards the audience.</font> </td>
+                    </tr>
+                    <tr> 
+                      <td valign="top" height="299" colspan="2"> 
+                        <p><font face="Georgia, Times New Roman, Times, serif"><b>Activity 
+                          One:</b><br>
+                          In groups of three or four, students read <a href="pdf/stagemovment.pdf">the 
+                          movement handout</a>. They develop a short action sequence 
+                          (with lines). One person in the group directs the action 
+                          and the other students are characters. Each group uses 
+                          the checklist on the handout to check all the movements 
+                          they have created. The groups present to the class.</font></p>
+                        <p><font face="Georgia, Times New Roman, Times, serif"><b>Activity 
+                          Two:</b><br>
+                          Instructions for this assignment are found in the movement 
+                          handout. Students work in groups of two to five and 
+                          create a brief dance to music. Evaluation is based primarily 
+                          on variety of movements, use of time and how students 
+                          work together.</font></p>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+
+          </td>
+
+        </tr>
+
+        <tr> 
+
+          <td height="145" valign="top">
+
+            <table width="100%" border="0" cellpadding="5" cellspacing="0" bgcolor="ede4d8">
+
+              <tr> 
+
+                <td width="583" height="135" valign="top"> 
+                  <hr>
+                  <p><font face="Georgia, Times New Roman, Times, serif"><b>Instructional 
+                    Strategies:</b> role play, problem solving</font></p>
+
+                  <p><font face="Georgia, Times New Roman, Times, serif"><b>Evaluation:</b> 
+
+                    Informal evaluation of presentation in class. Formal evaluation 
+
+                    of the dance projects, in <a href="pdf/danceevaluation.pdf">pdf</a>.</font></p>
+
+                  <p><font face="Georgia, Times New Roman, Times, serif"><b>On-line 
+
+                    Alternative</b>: Assignments can be done with partners within 
+
+                    the school of origin, then e-mailed as video attachments. 
+
+                    Video tapes may also be sent via the mail.</font></p>
+
+                  <p align="center"><font face="Georgia, Times New Roman, Times, serif"><a href="4medea.html">Next 
+                    Lesson </a>/ <a href="../student/4stagemovement.html">Student 
+                    Lesson</a> / <a href="4playstructure.html">Previous Lesson</a></font></p>
+
+                  </td>
+
+              </tr>
+
+            </table>
+
+          </td>
+
+        </tr>
+
+      </table>
+
+      <!-- #EndEditable --></td>
+  </tr>
+  <tr> 
+    <td valign="top" height="89"> 
+      <table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="669966">
+        <tr> 
+          <td width="97" height="89" valign="top" bgcolor="669966"><!-- #BeginEditable "optional" --> 
+
+            <p>&nbsp;</p>
+
+            <p align="center"><font size="4"><b>Terms:</b></font></p>
+
+            <p>&nbsp;</p>
+
+            <p align="center"><font color="#FFFFFF"><a href="../mainpages/glossary.html">Stage 
+
+              <br>
+
+              Movement</a></font></p>
+
+            <p align="center"><font color="#FFFFFF"><a href="../mainpages/glossary.html">Stage 
+
+              Business</a></font></p>
+
+            <p align="center"><font color="#FFFFFF"><a href="../mainpages/glossary.html">Dance</a></font></p>
+
+            <p>&nbsp;</p>
+
+            <p>&nbsp;</p>
+
+            <p>&nbsp;</p>
+
+            <p>&nbsp;</p>
+
+            <p>&nbsp;</p>
+
+            <p>&nbsp;</p>
+
+            <p>&nbsp;</p>
+
+            <p>&nbsp;</p>
+
+            <p>&nbsp;</p>
+
+            <p>&nbsp;</p>
+
+            <p>&nbsp;</p>
+
+            <p>&nbsp;</p>
+
+            <p>&nbsp;</p>
+
+            <p>&nbsp;</p>
+
+            <p>&nbsp;</p>
+
+            <p>&nbsp;</p>
+
+            <p>&nbsp;</p>
+
+            <p>&nbsp;</p>
+
+            <p>&nbsp;</p>
+
+            <p>&nbsp;</p>
+
+            <p>&nbsp;</p>
+
+            <p>&nbsp;</p>
+
+            <!-- #EndEditable --></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr> 
+    <td height="0"></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+</table>
+</body>
+<!-- #EndTemplate --></html>

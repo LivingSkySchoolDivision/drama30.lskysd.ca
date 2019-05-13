@@ -1,0 +1,455 @@
+<html>
+<!-- #BeginTemplate "/Templates/templateteacher.dwt" --> 
+<head>
+<!-- #BeginEditable "doctitle" --> 
+<title>Teacher - Voice</title>
+<!-- #EndEditable --> 
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<script language="JavaScript">
+<!--
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && document.getElementById) x=document.getElementById(n); return x;
+}
+
+function MM_nbGroup(event, grpName) { //v3.0
+  var i,img,nbArr,args=MM_nbGroup.arguments;
+  if (event == "init" && args.length > 2) {
+    if ((img = MM_findObj(args[2])) != null && !img.MM_init) {
+      img.MM_init = true; img.MM_up = args[3]; img.MM_dn = img.src;
+      if ((nbArr = document[grpName]) == null) nbArr = document[grpName] = new Array();
+      nbArr[nbArr.length] = img;
+      for (i=4; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+        if (!img.MM_up) img.MM_up = img.src;
+        img.src = img.MM_dn = args[i+1];
+        nbArr[nbArr.length] = img;
+    } }
+  } else if (event == "over") {
+    document.MM_nbOver = nbArr = new Array();
+    for (i=1; i < args.length-1; i+=3) if ((img = MM_findObj(args[i])) != null) {
+      if (!img.MM_up) img.MM_up = img.src;
+      img.src = (img.MM_dn && args[i+2]) ? args[i+2] : args[i+1];
+      nbArr[nbArr.length] = img;
+    }
+  } else if (event == "out" ) {
+    for (i=0; i < document.MM_nbOver.length; i++) {
+      img = document.MM_nbOver[i]; img.src = (img.MM_dn) ? img.MM_dn : img.MM_up; }
+  } else if (event == "down") {
+    if ((nbArr = document[grpName]) != null)
+      for (i=0; i < nbArr.length; i++) { img=nbArr[i]; img.src = img.MM_up; img.MM_dn = 0; }
+    document[grpName] = nbArr = new Array();
+    for (i=2; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+      if (!img.MM_up) img.MM_up = img.src;
+      img.src = img.MM_dn = args[i+1];
+      nbArr[nbArr.length] = img;
+  } }
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+</script>
+</head>
+<body bgcolor="#669966" text="#000000" onLoad="MM_preloadImages('../library/buttons/home_r1_c1_f3.gif','../library/buttons/home_r1_c1_f2.gif','../library/buttons/home_r1_c1_f4.gif','../library/buttons/home_r2_c1_f2.gif','../library/buttons/studentblue_r1_c1_f3.gif','../library/buttons/studentblue_r1_c1_f2.gif','../library/buttons/studentblue_r1_c1_f4.gif','../library/buttons/courseoutline_r1_c1_f3.gif','../library/buttons/courseoutline_r1_c1_f2.gif','../library/buttons/courseoutline_r1_c1_f4.gif','../library/buttons/courseoutline_r2_c1_f2.gif','../library/buttons/sitemap_r1_c1_f3.gif','../library/buttons/sitemap_r1_c1_f2.gif','../library/buttons/sitemap_r1_c1_f4.gif','../library/buttons/help_r1_c1_f3.gif','../library/buttons/help_r1_c1_f2.gif','../library/buttons/help_r1_c1_f4.gif','../library/buttons/help_r2_c1_f2.gif','../library/buttons/resources_r1_c1_f3.gif','../library/buttons/resources_r1_c1_f2.gif','../library/buttons/resources_r1_c1_f4.gif','../library/buttons/resources_r2_c1_f2.gif','../library/buttons/aboutsite_f3.gif','../library/buttons/aboutsite_f2.gif','../library/buttons/aboutsite_f4.gif','../library/buttons/planning_f3.gif','../library/buttons/planning_f2.gif','../library/buttons/planning_f4.gif','../library/buttons/teacher1_r1_c1_f3.gif','../library/buttons/teacher1_r1_c1_f2.gif','../library/buttons/teacher1_r1_c1_f4.gif','../library/buttons/teacher1_r2_c1_f2.gif')">
+<table width="700" border="0" cellpadding="0" cellspacing="0">
+  <tr> 
+    <td width="97" valign="top" bgcolor="669966" rowspan="2"> <!-- #BeginLibraryItem "/library/buttons/home.lbi" --><table border="0" cellpadding="0" cellspacing="0" width="96">
+<!-- fwtable fwsrc="home1.png" fwbase="home.gif" -->
+  <tr>
+   <td><img src="../library/buttons/spacer.gif" width="96" height="1" border="0"></td>
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+  </tr>
+  <tr>
+    <td><a href="../index.html" onMouseOut="MM_nbGroup('out');"  onMouseOver="MM_nbGroup('over','home_r1_c1','../library/buttons/home_r1_c1_f2.gif','../library/buttons/home_r1_c1_f4.gif',1)"  onClick="MM_nbGroup('down','navbar1','home_r1_c1','../library/buttons/home_r1_c1_f3.gif',1)" ><img name="home_r1_c1" src="../library/buttons/home_r1_c1.gif" width="96" height="79" border="0" alt="home"></a></td>
+   <td><img src="../library/buttons/spacer.gif" width="1" height="79" border="0"></td>
+  </tr>
+  <tr>
+   <td><a href="#" onMouseOut="MM_swapImgRestore();"  onMouseOver="MM_swapImage('home_r2_c1','','../library/buttons/home_r2_c1_f2.gif',1)" ><img name="home_r2_c1" src="../library/buttons/home_r2_c1.gif" width="96" height="1" border="0"></a></td>
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+  </tr>
+</table>
+<!-- #EndLibraryItem --></td>
+    <td valign="top" width="97" bgcolor="669966" rowspan="2"><!-- #BeginLibraryItem "/library/buttons/studentblue.lbi" --><table border="0" cellpadding="0" cellspacing="0" width="96">
+<!-- fwtable fwsrc="student1.png" fwbase="studentblue.gif" -->
+  <tr>
+   <td><img src="../library/buttons/spacer.gif" width="95" height="1" border="0"></td>
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+  </tr>
+  <tr>
+    <td><a href="../mainpages/student.html" onMouseOut="MM_nbGroup('out');"  onMouseOver="MM_nbGroup('over','studentblue_r1_c1','../library/buttons/studentblue_r1_c1_f2.gif','../library/buttons/studentblue_r1_c1_f4.gif',1)"  onClick="MM_nbGroup('down','navbar1','studentblue_r1_c1','../library/buttons/studentblue_r1_c1_f3.gif',1)" ><img name="studentblue_r1_c1" src="../library/buttons/studentblue_r1_c1.gif" width="95" height="79" border="0"></a></td>
+   <td rowspan="2"><img name="studentblue_r1_c2" src="../library/buttons/studentblue_r1_c2.gif" width="1" height="80" border="0"></td>
+   <td><img src="../library/buttons/spacer.gif" width="1" height="79" border="0"></td>
+  </tr>
+  <tr>
+   <td><img name="studentblue_r2_c1" src="../library/buttons/studentblue_r2_c1.gif" width="95" height="1" border="0"></td>
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+  </tr>
+</table>
+<!-- #EndLibraryItem --></td>
+    <td width="97" valign="top" rowspan="2"><!-- #BeginLibraryItem "/library/buttons/teacher1.lbi" --><table border="0" cellpadding="0" cellspacing="0" width="96">
+<!-- fwtable fwsrc="teacher1.png" fwbase="teacher1.gif" -->
+  <tr>
+   <td><img src="../library/buttons/spacer.gif" width="96" height="1" border="0"></td><td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td></tr>
+  <tr>
+    <td><a href="../mainpages/teacher.html" onMouseOut="MM_nbGroup('out');"  onMouseOver="MM_nbGroup('over','teacher1_r1_c1','../library/buttons/teacher1_r1_c1_f2.gif','../library/buttons/teacher1_r1_c1_f4.gif',1)"  onClick="MM_nbGroup('down','navbar1','teacher1_r1_c1','../library/buttons/teacher1_r1_c1_f3.gif',1)" ><img name="teacher1_r1_c1" src="../library/buttons/teacher1_r1_c1.gif" width="96" height="79" border="0"></a></td><td><img src="../library/buttons/spacer.gif" width="1" height="79" border="0"></td></tr>
+  <tr>
+   <td><a href="#" onMouseOut="MM_swapImgRestore()"  onMouseOver="MM_swapImage('teacher1_r2_c1','','../library/buttons/teacher1_r2_c1_f2.gif',1)" ><img name="teacher1_r2_c1" src="../library/buttons/teacher1_r2_c1.gif" width="96" height="1" border="0"></a></td><td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td></tr>
+</table><!-- #EndLibraryItem --></td>
+    <td width="409" valign="top" bgcolor="669966" height="91"><!-- #BeginEditable "banner" --><!-- #BeginLibraryItem "/library/buttons/dr30titleteacher.lbi" --><img name="dr30titleteacher" src="../library/buttons/dr30titleteacher.gif" width="400" height="80" border="0"><!-- #EndLibraryItem --><!-- #EndEditable --></td>
+  </tr>
+  <tr> 
+    <td valign="top" bgcolor="669966" height="23"><!-- #BeginEditable "pagetitle" --> 
+      <div align="center"></div>
+      <!-- #EndEditable --></td>
+  </tr>
+  <tr> 
+    <td valign="top" height="347"> 
+      <table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="669966">
+        <tr> 
+          <td width="97" height="56" valign="top" bgcolor="669966"> <!-- #BeginLibraryItem "/library/buttons/courseoutline.lbi" --><table border="0" cellpadding="0" cellspacing="0" width="96">
+<!-- fwtable fwsrc="courseoutline1.png" fwbase="courseoutline.gif" -->
+  <tr>
+   <td><img src="../library/buttons/spacer.gif" width="96" height="1" border="0"></td>
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+  </tr>
+  <tr>
+    <td><a href="../mainpages/courseoutline.htm" onMouseOut="MM_nbGroup('out');"  onMouseOver="MM_nbGroup('over','courseoutline_r1_c1','../library/buttons/courseoutline_r1_c1_f2.gif','../library/buttons/courseoutline_r1_c1_f4.gif',1)"  onClick="MM_nbGroup('down','navbar1','courseoutline_r1_c1','../library/buttons/courseoutline_r1_c1_f3.gif',1)" ><img name="courseoutline_r1_c1" src="../library/buttons/courseoutline_r1_c1.gif" width="96" height="79" border="0"></a></td>
+   <td><img src="../library/buttons/spacer.gif" width="1" height="79" border="0"></td>
+  </tr>
+  <tr>
+   <td><a href="#" onMouseOut="MM_swapImgRestore();"  onMouseOver="MM_swapImage('courseoutline_r2_c1','','../library/buttons/courseoutline_r2_c1_f2.gif',1)" ><img name="courseoutline_r2_c1" src="../library/buttons/courseoutline_r2_c1.gif" width="96" height="1" border="0"></a></td>
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+  </tr>
+</table>
+<!-- #EndLibraryItem --><!-- #BeginLibraryItem "/library/buttons/sitemap.lbi" --><table border="0" cellpadding="0" cellspacing="0" width="96">
+<!-- fwtable fwsrc="sitemap1.png" fwbase="sitemap.gif" -->
+  <tr>
+   <td><img src="../library/buttons/spacer.gif" width="95" height="1" border="0"></td>
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+  </tr>
+  <tr>
+    <td><a href="../mainpages/templatemainmap.html" onMouseOut="MM_nbGroup('out');"  onMouseOver="MM_nbGroup('over','sitemap_r1_c1','../library/buttons/sitemap_r1_c1_f2.gif','../library/buttons/sitemap_r1_c1_f4.gif',1)"  onClick="MM_nbGroup('down','navbar1','sitemap_r1_c1','../library/buttons/sitemap_r1_c1_f3.gif',1)" ><img name="sitemap_r1_c1" src="../library/buttons/sitemap_r1_c1.gif" width="95" height="79" border="0"></a></td>
+   <td rowspan="2"><img name="sitemap_r1_c2" src="../library/buttons/sitemap_r1_c2.gif" width="1" height="80" border="0"></td>
+   <td><img src="../library/buttons/spacer.gif" width="1" height="79" border="0"></td>
+  </tr>
+  <tr>
+   <td><img name="sitemap_r2_c1" src="../library/buttons/sitemap_r2_c1.gif" width="95" height="1" border="0"></td>
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+  </tr>
+</table>
+<!-- #EndLibraryItem --><!-- #BeginLibraryItem "/library/buttons/help.lbi" --><table border="0" cellpadding="0" cellspacing="0" width="96">
+<!-- fwtable fwsrc="help1.png" fwbase="help.gif" -->
+  <tr>
+   <td><img src="../library/buttons/spacer.gif" width="96" height="1" border="0"></td>
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+  </tr>
+  <tr>
+    <td><a href="../mainpages/help.html" onMouseOut="MM_nbGroup('out');"  onMouseOver="MM_nbGroup('over','help_r1_c1','../library/buttons/help_r1_c1_f2.gif','../library/buttons/help_r1_c1_f4.gif',1)"  onClick="MM_nbGroup('down','navbar1','help_r1_c1','../library/buttons/help_r1_c1_f3.gif',1)" ><img name="help_r1_c1" src="../library/buttons/help_r1_c1.gif" width="96" height="79" border="0"></a></td>
+   <td><img src="../library/buttons/spacer.gif" width="1" height="79" border="0"></td>
+  </tr>
+  <tr>
+   <td><a href="#" onMouseOut="MM_swapImgRestore();"  onMouseOver="MM_swapImage('help_r2_c1','','../library/buttons/help_r2_c1_f2.gif',1)" ><img name="help_r2_c1" src="../library/buttons/help_r2_c1.gif" width="96" height="1" border="0"></a></td>
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+  </tr>
+</table>
+<!-- #EndLibraryItem --><!-- #BeginLibraryItem "/library/buttons/resources.lbi" --><table border="0" cellpadding="0" cellspacing="0" width="96">
+<!-- fwtable fwsrc="resources1.png" fwbase="resources.gif" -->
+  <tr>
+   <td bgcolor="669966"><img src="../library/buttons/spacer.gif" width="96" height="1" border="0"></td>
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+  </tr>
+  <tr>
+    <td><a href="../mainpages/resources.html" onMouseOut="MM_nbGroup('out');"  onMouseOver="MM_nbGroup('over','resources_r1_c1','../library/buttons/resources_r1_c1_f2.gif','../library/buttons/resources_r1_c1_f4.gif',1)"  onClick="MM_nbGroup('down','navbar1','resources_r1_c1','../library/buttons/resources_r1_c1_f3.gif',1)" ><img name="resources_r1_c1" src="../library/buttons/resources_r1_c1.gif" width="96" height="79" border="0"></a></td>
+   <td><img src="../library/buttons/spacer.gif" width="1" height="79" border="0"></td>
+  </tr>
+  <tr>
+   <td><a href="#" onMouseOut="MM_swapImgRestore();"  onMouseOver="MM_swapImage('resources_r2_c1','','../library/buttons/resources_r2_c1_f2.gif',1)" ><img name="resources_r2_c1" src="../library/buttons/resources_r2_c1.gif" width="96" height="1" border="0"></a></td>
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+  </tr>
+</table>
+<!-- #EndLibraryItem --></td>
+        </tr>
+      </table>
+    </td>
+    <td colspan="3" rowspan="2" valign="top" bgcolor="669966"> <!-- #BeginEditable "content" --> 
+      <table width="603" border="0" cellpadding="5" cellspacing="0" bgcolor="ede4d8">
+        <tr> 
+          <td height="883" width="593" valign="top"> 
+            <div align="center"> 
+              <p><!-- #BeginLibraryItem "/library/buttons/aboutsite.lbi" --><a href="aboutsite.html" onMouseOut="MM_nbGroup('out');"  onMouseOver="MM_nbGroup('over','aboutsite','../library/buttons/aboutsite_f2.gif','../library/buttons/aboutsite_f4.gif',1)"  onClick="MM_nbGroup('down','navbar1','aboutsite','../library/buttons/aboutsite_f3.gif',1)" ><img name="aboutsite" src="../library/buttons/aboutsite.gif" width="96" height="40" border="0"></a><!-- #EndLibraryItem --><!-- #BeginLibraryItem "/library/buttons/planning.lbi" --><a href="courseoutline.html" onMouseOut="MM_nbGroup('out');"  onMouseOver="MM_nbGroup('over','planning','../library/buttons/planning_f2.gif','../library/buttons/planning_f4.gif',1)"  onClick="MM_nbGroup('down','navbar1','planning','../library/buttons/planning_f3.gif',1)" ><img name="planning" src="../library/buttons/planning.gif" width="96" height="40" border="0"></a><!-- #EndLibraryItem --></p>
+              <p align="left"><font size="4"><b><font face="Georgia, Times New Roman, Times, serif" color="#663333">Unit 
+                One - Introduction to Drama</font></b></font><font color="#663333"><b><font face="Georgia, Times New Roman, Times, serif"><br>
+                </font></b><font face="Georgia, Times New Roman, Times, serif"><font size="4"><i>Module 
+                2: Actor's Tools<br>
+                </i>Lesson 3 - Voice</font></font></font></p>
+              <p align="left"><font face="Georgia, Times New Roman, Times, serif"><b>Objectives:</b> 
+                <br>
+                - to use breath control<br>
+                - to use resonance in speaking<br>
+                - to <a href="../mainpages/glossary.html#articulate"><font color="#663333">articulate</font></a> 
+                clearly<br>
+                - to use <a href="../mainpages/glossary.html#voice"><font color="#663333">voice 
+                projection</font></a></font></p>
+              <p align="left"><font face="Georgia, Times New Roman, Times, serif"><b>Resources: 
+                </b><br>
+                voice clips, video clips, <a href="pdf/vocaltermsfordefinition.pdf">definitions 
+                work sheet</a>, <a href="pdf/nurseryrhymerecoding.pdf">Nursery 
+                Rhyme Recording assignment and evaluation</a>, <a href="pdf/poetryreading.pdf">poetry 
+                assignment</a> </font></p>
+              <p align="left"><font face="Georgia, Times New Roman, Times, serif"><b> 
+                CELs</b>:<br>
+                C, TL</font></p>
+              <p align="left"><font face="Georgia, Times New Roman, Times, serif"><b>Components:<br>
+                </b>Critical Responsive, Creative/Productive<br>
+                </font></p>
+              <hr align="left">
+              <p align="left"><font face="Georgia, Times New Roman, Times, serif" color="#000000"><b>Introduction:<br>
+                </b>Voice is the most underdeveloped of an actor's tools in our 
+                schools. Listed here are a variety of voice activities and sample 
+                assignments that you may choose from. The voice must be exercised 
+                regularly to maintain flexibility, clarity, articulation, and 
+                range. While exercises should be used initially to provide familiarity, 
+                they should also be used consistently throughout the year as a 
+                component of the warm-up, and in conjunction with both scripted 
+                and unscripted work. Good voice work has three components: the 
+                body (relaxed, aligned, ready), the breath (flowing free, supported) 
+                and the voice (free, warm, well placed).</font></p>
+              <table width="400" border="5" cellspacing="0" cellpadding="5">
+                <tr>
+                  <td width="48" bgcolor="#FFFFCC"><!-- #BeginLibraryItem "/library/images/lightbulb.lbi" --><img name="lightbulb" src="../library/images/lightbulb.gif" width="50" height="50" border="0"><!-- #EndLibraryItem --></td>
+                  <td width="318"> 
+                    <p><font face="Georgia, Times New Roman, Times, serif" color="#669966"><b>Key 
+                      Principals of Sound:<br>
+                      1. Sound should be pleasurable.<br>
+                      2. Sound is better with no tension because tension kills 
+                      vibration. </b></font></p>
+                    </td>
+                </tr>
+              </table>
+              <p align="left"><font face="Georgia, Times New Roman, Times, serif"><b>Activities:</b><br>
+                </font></p>
+              <p align="left"><b><font face="Georgia, Times New Roman, Times, serif">Activity 
+                1 - Warming Up</font></b></p>
+              <table width="100%" border="5" cellspacing="0" cellpadding="5">
+                <tr> 
+                  <td width="457" height="210" valign="top"><font face="Georgia, Times New Roman, Times, serif"><i>A) 
+                    Face crunches</i><b><br>
+                    </b>&#149; Professor Pamela Haig-Bartley (University of Saskatchewan) 
+                    does a wonderful activity help students warm-up facial muscles.<br>
+                    &#149; Students make their faces as long and wide as possible 
+                    for the big face. <br>
+                    &#149; Then they crunch their faces as small as possible for 
+                    the tiny face. <br>
+                    &#149; The teacher should call out each type of face and do 
+                    the faces with the class, as watching your teacher do this 
+                    activity is endlessly amusing and motivational for students. 
+                    (2 min)</font></td>
+                  <td width="102" valign="middle" align="center"><!-- #BeginLibraryItem "/library/images/tongue.lbi" --><img name="tongue" src="../library/images/tongue.gif" width="98" height="85" border="0"><!-- #EndLibraryItem --></td>
+                </tr>
+              </table>
+              <table width="100%" border="5" cellspacing="0" cellpadding="5">
+                <tr> 
+                  <td width="571" height="192" valign="top"><font face="Georgia, Times New Roman, Times, serif"><i>B) 
+                    Tongue Circles and Face Stretching</i><br>
+                    &#149; Even more popular than the crunches, the tongue work 
+                    also requires teacher leadership.<br>
+                    &#149; Stretch your tongue out as far as you can.<br>
+                    &#149; Try to make your tongue touch you chin, and then you 
+                    nose.<br>
+                    &#149; Make large circles with your tongue outside your lips, 
+                    smaller ones outside your teeth, and tiny ones inside your 
+                    teeth.(2 min)<br>
+                    <br>
+                    Try this and other face stretches as demonstrated on the instructional 
+                    video by Pamela Haig-Bartley.</font></td>
+                </tr>
+              </table>
+              <table width="100%" border="5" cellspacing="0" cellpadding="5">
+                <tr>
+                  <td width="76%"><font face="Georgia, Times New Roman, Times, serif"><i>C) 
+                    Breathing and Posture</i><br>
+                    </font><font face="Georgia, Times New Roman, Times, serif">Correct 
+                    <a href="../mainpages/glossary.html#breath"><font color="#663333">breathing</font></a> 
+                    is difficult to do. View the instructional video by Pamela 
+                    Haig-Bartley as a class and practice the techniques discussed. 
+                    Students must complete this practice before proceeding other 
+                    vocal work (10-15 min.).</font></td>
+                  <td width="24%" align="center" valign="middle" bgcolor="#669966">
+                    <p><font color="#FFFFFF"><b><font face="Georgia, Times New Roman, Times, serif" color="#000000"><a href="../library/movies/breathing.mpg"><font color="#FFFFFF">View 
+                      Video on Breathing and Sound</font></a></font></b></font></p>
+                    <p><b><font face="Georgia, Times New Roman, Times, serif" color="#000000">28.48 
+                      KB </font></b></p>
+                  </td>
+                </tr>
+              </table>
+              <table width="100%" border="5" cellspacing="0" cellpadding="5">
+                <tr> 
+                  <td width="88" height="107" valign="top"><!-- #BeginLibraryItem "/library/images/tongue.lbi" --><img name="tongue" src="../library/images/tongue.gif" width="98" height="85" border="0"><!-- #EndLibraryItem --></td>
+                  <td width="83%" rowspan="2"> 
+                    <p><font face="Georgia, Times New Roman, Times, serif"><i>D) 
+                      Sound exhalation</i><br>
+                      &#149; As a class, practice proper breaths with good posture 
+                      again. Breath should be drawn through the nose and exhaled 
+                      through the mouth. Count your students slowly through each 
+                      breath, for at least 5 breaths.<br>
+                      &#149; Continue proper breathing, but now create consonant 
+                      sounds on the exhale. <br>
+                      &#149; Allow the breath to slowly escape from the mouth 
+                      with sounds like &quot;s-s-s-s&quot; or &quot;th-th-th-th&quot;. 
+                      <br>
+                      &#149; Breath should be dropping in and escaping out, not 
+                      forced or pushed (2 min.).</font></p>
+                    <p><font face="Georgia, Times New Roman, Times, serif">These 
+                      exercises improve <a href="../mainpages/glossary.html#resonance"><font color="#663333">resonance</font></a> 
+                      and breath control.</font></p>
+                  </td>
+                </tr>
+                <tr> 
+                  <td valign="middle" height="140" align="center" bgcolor="#669966">
+                    <p><b><font color="#FFFFFF" face="Georgia, Times New Roman, Times, serif"><a href="../library/movies/resonator.mpg">View 
+                      Video on Resonators</a></font></b></p>
+                    <p><b><font face="Georgia, Times New Roman, Times, serif" color="#000000">6.81 
+                      KB </font></b></p>
+                    <p><b><font color="#FFFFFF" face="Georgia, Times New Roman, Times, serif"><a href="../library/movies/intonation.mpg">View 
+                      Video on Intonation</a></font></b></p>
+                    <p><font face="Georgia, Times New Roman, Times, serif"><b>16.46 
+                      KB</b></font></p>
+                  </td>
+                </tr>
+              </table>
+              <table width="100%" border="5" cellspacing="0" cellpadding="5">
+                <tr> 
+                  <td width="487" height="138" valign="top"><font face="Georgia, Times New Roman, Times, serif"><i>E) 
+                    Tongue twisters</i><br>
+                    Tongue twisters are common warm-ups for the voice. They improve 
+                    articulation. Use a wide variety and target different sound 
+                    combinations. Common choices include the following: &quot;She 
+                    sells sea shells&quot;, &quot;Betty Botter bought some butter&quot; 
+                    and &quot;Red leather, yellow leather&quot;<br>
+                    (10 min.).</font></td>
+                  <td width="72" valign="middle" align="center"><!-- #BeginLibraryItem "/library/images/tongue.lbi" --><img name="tongue" src="../library/images/tongue.gif" width="98" height="85" border="0"><!-- #EndLibraryItem --></td>
+                </tr>
+              </table>
+              <p align="center"><font face="Georgia, Times New Roman, Times, serif"><i><font color="#336633">(Character 
+                Building</font></i><font color="#336633"> by Colbourne and Ramsden 
+                pages 46-52 is an modern, accessible source of good vocal activities)<br>
+                </font></font></p>
+              <p align="left"><font face="Georgia, Times New Roman, Times, serif"><font color="#336633"><br>
+                </font></font><font face="Georgia, Times New Roman, Times, serif"><b>Activity 
+                2 - Assignments:</b></font></p>
+              <table width="100%" border="5" cellspacing="0" cellpadding="5">
+                <tr>
+                  <td>
+                    <p><font face="Georgia, Times New Roman, Times, serif"><a href="pdf/vocaltermsfordefinition.pdf">&#149;Terms 
+                      work sheet </a>(10 min.)<br>
+                      </font><font face="Georgia, Times New Roman, Times, serif"><a href="pdf/nurseryrhymerecoding.pdf">&#149;Nursery 
+                      Rhyme recording</a> (45 min.)<br>
+                      <a href="pdf/poetryreading.pdf">&#149;Poetry Reading Assignment 
+                      and Evaluation (page 2)</a> (55 min.)</font></p>
+                    <p><font face="Georgia, Times New Roman, Times, serif">See 
+                      the student version of this page for the detailed instructions 
+                      to the students.</font></p>
+                  </td>
+                </tr>
+              </table>
+              <table width="100%" border="5" cellspacing="0" cellpadding="5">
+                <tr> 
+                  <td width="185" height="48" valign="middle" align="center"><font face="Georgia, Times New Roman, Times, serif"><a href="pdf/responsesheet.pdf">Teacher 
+                    Evaluation of<br>
+                    </a></font><a href="pdf/responsesheet.pdf"><font face="Georgia, Times New Roman, Times, serif">student 
+                    self-assessment</font></a></td>
+                  <td width="102" valign="middle" align="center"><a href="../student/1voicebadkey.html"><font face="Georgia, Times New Roman, Times, serif">Bad 
+                    Reading</font></a></td>
+                  <td width="117" valign="middle" align="center"><a href="../student/1voicebad.html"><font face="Georgia, Times New Roman, Times, serif">Error 
+                    Analysis</font></a></td>
+                  <td width="131" valign="middle" align="center"><font face="Georgia, Times New Roman, Times, serif"><a href="../library/sound/miss15.mp3">Good 
+                    Reading</a></font></td>
+                </tr>
+              </table>
+              <hr align="left">
+              <p align="left"><font face="Georgia, Times New Roman, Times, serif"><b>Instructional 
+                Strategies: <br>
+                </b>Drill and practice, assigned questions, demonstrations, computer 
+                assisted instruction, concept formation</font></p>
+              <p align="left"><font face="Georgia, Times New Roman, Times, serif"><b>Evaluation:</b> 
+                <br>
+                Warm-up work should be evaluated on participation and effort. 
+                The terms work sheet is out of 12 marks, and is evaluated by the 
+                teacher. The Nursery Rhyme and Poetry Reading assignments require 
+                both teacher evaluation and student self-evaluation(formal and 
+                informal).</font></p>
+              <p align="left"><font face="Georgia, Times New Roman, Times, serif"><b>On-line 
+                Activity Alternatives: </b><br>
+                Completed definitions sheets are e-mailed to the teacher. Audio 
+                tapes could be e-mailed as sound files or the tape could be mailed 
+                to the teacher</font></p>
+              <p align="center"><font face="Georgia, Times New Roman, Times, serif"><a href="movement.html">Next 
+                Lesson</a> /<a href="../student/1voice.html">Student Lesson</a> 
+                /<a href="movement.html">Previous Lesson</a></font></p>
+            </div>
+          </td>
+        </tr>
+        <tr> 
+          <td height="2"></td>
+        </tr>
+      </table>
+      <!-- #EndEditable --></td>
+  </tr>
+  <tr> 
+    <td valign="top" height="89"> 
+      <table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="669966">
+        <tr> 
+          <td width="97" height="89" valign="top" bgcolor="669966"><!-- #BeginEditable "optional" -->
+            <div align="center">
+              <p>&nbsp;</p>
+              <p><font size="4" color="#FFFFFF"><i>Other Resources: </i></font><br>
+              </p>
+            </div>
+            <p align="center"><font color="#FFFFFF" face="Georgia, Times New Roman, Times, serif"><a href="voicenasality.html">Nasality 
+              <br>
+              Workshop</a></font></p>
+            <p align="center"><font color="#FFFFFF" face="Georgia, Times New Roman, Times, serif"><a href="voicestress.html">Stress 
+              and Emphasis Workshop</a></font></p>
+            <p align="center"><font color="#FFFFFF" face="Georgia, Times New Roman, Times, serif">Exercises 
+              <br>
+              and Tips for Teaching<br>
+              Voice, <a href="pdf/1teachingvoice.pdf">pdf only</a></font></p>
+            <p align="center">&nbsp;</p>
+            <p align="center"><font face="Georgia, Times New Roman, Times, serif" color="#FFFFFF">Additional 
+              Video:</font></p>
+            <p align="center"><font face="Georgia, Times New Roman, Times, serif" color="#FFFFFF"><a href="../library/movies/breathcontrol.mpg">Breath 
+              Control </a></font></p>
+            <p align="center"><font face="Georgia, Times New Roman, Times, serif" color="#FFFFFF"><a href="../library/movies/align.mpg">Alignment</a></font></p>
+            <p align="center">&nbsp;</p>
+            <!-- #EndEditable --></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr> 
+    <td height="0"></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+</table>
+</body>
+<!-- #EndTemplate -->
+</html>

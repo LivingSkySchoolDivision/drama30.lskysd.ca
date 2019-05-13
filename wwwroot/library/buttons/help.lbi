@@ -1,0 +1,15 @@
+<table border="0" cellpadding="0" cellspacing="0" width="96">
+<!-- fwtable fwsrc="help1.png" fwbase="help.gif" -->
+  <tr>
+   <td><img src="spacer.gif" width="96" height="1" border="0"></td>
+   <td><img src="spacer.gif" width="1" height="1" border="0"></td>
+  </tr>
+  <tr>
+    <td><a href="../../mainpages/help.html" onMouseOut="MM_nbGroup('out');"  onMouseOver="MM_nbGroup('over','help_r1_c1','help_r1_c1_f2.gif','help_r1_c1_f4.gif',1);"  onClick="MM_nbGroup('down','navbar1','help_r1_c1','help_r1_c1_f3.gif',1);" ><img name="help_r1_c1" src="help_r1_c1.gif" width="96" height="79" border="0"></a></td>
+   <td><img src="spacer.gif" width="1" height="79" border="0"></td>
+  </tr>
+  <tr>
+   <td><a href="#" onMouseOut="MM_swapImgRestore();"  onMouseOver="MM_swapImage('help_r2_c1','','help_r2_c1_f2.gif',1);" ><img name="help_r2_c1" src="help_r2_c1.gif" width="96" height="1" border="0"></a></td>
+   <td><img src="spacer.gif" width="1" height="1" border="0"></td>
+  </tr>
+</table>

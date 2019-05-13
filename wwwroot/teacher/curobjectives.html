@@ -1,0 +1,760 @@
+<html>
+<!-- #BeginTemplate "/Templates/templateteacher.dwt" --> 
+<head>
+<!-- #BeginEditable "doctitle" --> 
+<title>Teacher - Curriculum Objectives</title>
+<!-- #EndEditable --> 
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<script language="JavaScript">
+<!--
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && document.getElementById) x=document.getElementById(n); return x;
+}
+
+function MM_nbGroup(event, grpName) { //v3.0
+  var i,img,nbArr,args=MM_nbGroup.arguments;
+  if (event == "init" && args.length > 2) {
+    if ((img = MM_findObj(args[2])) != null && !img.MM_init) {
+      img.MM_init = true; img.MM_up = args[3]; img.MM_dn = img.src;
+      if ((nbArr = document[grpName]) == null) nbArr = document[grpName] = new Array();
+      nbArr[nbArr.length] = img;
+      for (i=4; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+        if (!img.MM_up) img.MM_up = img.src;
+        img.src = img.MM_dn = args[i+1];
+        nbArr[nbArr.length] = img;
+    } }
+  } else if (event == "over") {
+    document.MM_nbOver = nbArr = new Array();
+    for (i=1; i < args.length-1; i+=3) if ((img = MM_findObj(args[i])) != null) {
+      if (!img.MM_up) img.MM_up = img.src;
+      img.src = (img.MM_dn && args[i+2]) ? args[i+2] : args[i+1];
+      nbArr[nbArr.length] = img;
+    }
+  } else if (event == "out" ) {
+    for (i=0; i < document.MM_nbOver.length; i++) {
+      img = document.MM_nbOver[i]; img.src = (img.MM_dn) ? img.MM_dn : img.MM_up; }
+  } else if (event == "down") {
+    if ((nbArr = document[grpName]) != null)
+      for (i=0; i < nbArr.length; i++) { img=nbArr[i]; img.src = img.MM_up; img.MM_dn = 0; }
+    document[grpName] = nbArr = new Array();
+    for (i=2; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+      if (!img.MM_up) img.MM_up = img.src;
+      img.src = img.MM_dn = args[i+1];
+      nbArr[nbArr.length] = img;
+  } }
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+</script>
+</head>
+<body bgcolor="#669966" text="#000000" onLoad="MM_preloadImages('../library/buttons/home_r1_c1_f3.gif','../library/buttons/home_r1_c1_f2.gif','../library/buttons/home_r1_c1_f4.gif','../library/buttons/home_r2_c1_f2.gif','../library/buttons/studentblue_r1_c1_f3.gif','../library/buttons/studentblue_r1_c1_f2.gif','../library/buttons/studentblue_r1_c1_f4.gif','../library/buttons/courseoutline_r1_c1_f3.gif','../library/buttons/courseoutline_r1_c1_f2.gif','../library/buttons/courseoutline_r1_c1_f4.gif','../library/buttons/courseoutline_r2_c1_f2.gif','../library/buttons/sitemap_r1_c1_f3.gif','../library/buttons/sitemap_r1_c1_f2.gif','../library/buttons/sitemap_r1_c1_f4.gif','../library/buttons/help_r1_c1_f3.gif','../library/buttons/help_r1_c1_f2.gif','../library/buttons/help_r1_c1_f4.gif','../library/buttons/help_r2_c1_f2.gif','../library/buttons/resources_r1_c1_f3.gif','../library/buttons/resources_r1_c1_f2.gif','../library/buttons/resources_r1_c1_f4.gif','../library/buttons/resources_r2_c1_f2.gif','../library/buttons/aboutsite_f3.gif','../library/buttons/aboutsite_f2.gif','../library/buttons/aboutsite_f4.gif','../library/buttons/planning_f3.gif','../library/buttons/planning_f2.gif','../library/buttons/planning_f4.gif','../library/buttons/teacher1_r1_c1_f3.gif','../library/buttons/teacher1_r1_c1_f2.gif','../library/buttons/teacher1_r1_c1_f4.gif','../library/buttons/teacher1_r2_c1_f2.gif')">
+<table width="700" border="0" cellpadding="0" cellspacing="0">
+  <tr> 
+    <td width="97" valign="top" bgcolor="669966" rowspan="2"> <!-- #BeginLibraryItem "/library/buttons/home.lbi" --><table border="0" cellpadding="0" cellspacing="0" width="96">
+<!-- fwtable fwsrc="home1.png" fwbase="home.gif" -->
+  <tr>
+   <td><img src="../library/buttons/spacer.gif" width="96" height="1" border="0"></td>
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+  </tr>
+  <tr>
+    <td><a href="../index.html" onMouseOut="MM_nbGroup('out');"  onMouseOver="MM_nbGroup('over','home_r1_c1','../library/buttons/home_r1_c1_f2.gif','../library/buttons/home_r1_c1_f4.gif',1)"  onClick="MM_nbGroup('down','navbar1','home_r1_c1','../library/buttons/home_r1_c1_f3.gif',1)" ><img name="home_r1_c1" src="../library/buttons/home_r1_c1.gif" width="96" height="79" border="0" alt="home"></a></td>
+   <td><img src="../library/buttons/spacer.gif" width="1" height="79" border="0"></td>
+  </tr>
+  <tr>
+   <td><a href="#" onMouseOut="MM_swapImgRestore();"  onMouseOver="MM_swapImage('home_r2_c1','','../library/buttons/home_r2_c1_f2.gif',1)" ><img name="home_r2_c1" src="../library/buttons/home_r2_c1.gif" width="96" height="1" border="0"></a></td>
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+  </tr>
+</table>
+<!-- #EndLibraryItem --></td>
+    <td valign="top" width="97" bgcolor="669966" rowspan="2"><!-- #BeginLibraryItem "/library/buttons/studentblue.lbi" --><table border="0" cellpadding="0" cellspacing="0" width="96">
+<!-- fwtable fwsrc="student1.png" fwbase="studentblue.gif" -->
+  <tr>
+   <td><img src="../library/buttons/spacer.gif" width="95" height="1" border="0"></td>
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+  </tr>
+  <tr>
+    <td><a href="../mainpages/student.html" onMouseOut="MM_nbGroup('out');"  onMouseOver="MM_nbGroup('over','studentblue_r1_c1','../library/buttons/studentblue_r1_c1_f2.gif','../library/buttons/studentblue_r1_c1_f4.gif',1)"  onClick="MM_nbGroup('down','navbar1','studentblue_r1_c1','../library/buttons/studentblue_r1_c1_f3.gif',1)" ><img name="studentblue_r1_c1" src="../library/buttons/studentblue_r1_c1.gif" width="95" height="79" border="0"></a></td>
+   <td rowspan="2"><img name="studentblue_r1_c2" src="../library/buttons/studentblue_r1_c2.gif" width="1" height="80" border="0"></td>
+   <td><img src="../library/buttons/spacer.gif" width="1" height="79" border="0"></td>
+  </tr>
+  <tr>
+   <td><img name="studentblue_r2_c1" src="../library/buttons/studentblue_r2_c1.gif" width="95" height="1" border="0"></td>
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+  </tr>
+</table>
+<!-- #EndLibraryItem --></td>
+    <td width="97" valign="top" rowspan="2"><!-- #BeginLibraryItem "/library/buttons/teacher1.lbi" --><table border="0" cellpadding="0" cellspacing="0" width="96">
+<!-- fwtable fwsrc="teacher1.png" fwbase="teacher1.gif" -->
+  <tr>
+   <td><img src="../library/buttons/spacer.gif" width="96" height="1" border="0"></td><td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td></tr>
+  <tr>
+    <td><a href="../mainpages/teacher.html" onMouseOut="MM_nbGroup('out');"  onMouseOver="MM_nbGroup('over','teacher1_r1_c1','../library/buttons/teacher1_r1_c1_f2.gif','../library/buttons/teacher1_r1_c1_f4.gif',1)"  onClick="MM_nbGroup('down','navbar1','teacher1_r1_c1','../library/buttons/teacher1_r1_c1_f3.gif',1)" ><img name="teacher1_r1_c1" src="../library/buttons/teacher1_r1_c1.gif" width="96" height="79" border="0"></a></td><td><img src="../library/buttons/spacer.gif" width="1" height="79" border="0"></td></tr>
+  <tr>
+   <td><a href="#" onMouseOut="MM_swapImgRestore()"  onMouseOver="MM_swapImage('teacher1_r2_c1','','../library/buttons/teacher1_r2_c1_f2.gif',1)" ><img name="teacher1_r2_c1" src="../library/buttons/teacher1_r2_c1.gif" width="96" height="1" border="0"></a></td><td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td></tr>
+</table><!-- #EndLibraryItem --></td>
+    <td width="409" valign="top" bgcolor="669966" height="91"><!-- #BeginEditable "banner" --><!-- #BeginLibraryItem "/library/buttons/dr30titleteacher.lbi" --><img name="dr30titleteacher" src="../library/buttons/dr30titleteacher.gif" width="400" height="80" border="0"><!-- #EndLibraryItem --><!-- #EndEditable --></td>
+  </tr>
+  <tr> 
+    <td valign="top" bgcolor="669966" height="23"><!-- #BeginEditable "pagetitle" --> 
+      <div align="center"></div>
+      <!-- #EndEditable --></td>
+  </tr>
+  <tr> 
+    <td valign="top" height="347"> 
+      <table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="669966">
+        <tr> 
+          <td width="97" height="56" valign="top" bgcolor="669966"> <!-- #BeginLibraryItem "/library/buttons/courseoutline.lbi" --><table border="0" cellpadding="0" cellspacing="0" width="96">
+<!-- fwtable fwsrc="courseoutline1.png" fwbase="courseoutline.gif" -->
+  <tr>
+   <td><img src="../library/buttons/spacer.gif" width="96" height="1" border="0"></td>
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+  </tr>
+  <tr>
+    <td><a href="../mainpages/courseoutline.htm" onMouseOut="MM_nbGroup('out');"  onMouseOver="MM_nbGroup('over','courseoutline_r1_c1','../library/buttons/courseoutline_r1_c1_f2.gif','../library/buttons/courseoutline_r1_c1_f4.gif',1)"  onClick="MM_nbGroup('down','navbar1','courseoutline_r1_c1','../library/buttons/courseoutline_r1_c1_f3.gif',1)" ><img name="courseoutline_r1_c1" src="../library/buttons/courseoutline_r1_c1.gif" width="96" height="79" border="0"></a></td>
+   <td><img src="../library/buttons/spacer.gif" width="1" height="79" border="0"></td>
+  </tr>
+  <tr>
+   <td><a href="#" onMouseOut="MM_swapImgRestore();"  onMouseOver="MM_swapImage('courseoutline_r2_c1','','../library/buttons/courseoutline_r2_c1_f2.gif',1)" ><img name="courseoutline_r2_c1" src="../library/buttons/courseoutline_r2_c1.gif" width="96" height="1" border="0"></a></td>
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+  </tr>
+</table>
+<!-- #EndLibraryItem --><!-- #BeginLibraryItem "/library/buttons/sitemap.lbi" --><table border="0" cellpadding="0" cellspacing="0" width="96">
+<!-- fwtable fwsrc="sitemap1.png" fwbase="sitemap.gif" -->
+  <tr>
+   <td><img src="../library/buttons/spacer.gif" width="95" height="1" border="0"></td>
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+  </tr>
+  <tr>
+    <td><a href="../mainpages/templatemainmap.html" onMouseOut="MM_nbGroup('out');"  onMouseOver="MM_nbGroup('over','sitemap_r1_c1','../library/buttons/sitemap_r1_c1_f2.gif','../library/buttons/sitemap_r1_c1_f4.gif',1)"  onClick="MM_nbGroup('down','navbar1','sitemap_r1_c1','../library/buttons/sitemap_r1_c1_f3.gif',1)" ><img name="sitemap_r1_c1" src="../library/buttons/sitemap_r1_c1.gif" width="95" height="79" border="0"></a></td>
+   <td rowspan="2"><img name="sitemap_r1_c2" src="../library/buttons/sitemap_r1_c2.gif" width="1" height="80" border="0"></td>
+   <td><img src="../library/buttons/spacer.gif" width="1" height="79" border="0"></td>
+  </tr>
+  <tr>
+   <td><img name="sitemap_r2_c1" src="../library/buttons/sitemap_r2_c1.gif" width="95" height="1" border="0"></td>
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+  </tr>
+</table>
+<!-- #EndLibraryItem --><!-- #BeginLibraryItem "/library/buttons/help.lbi" --><table border="0" cellpadding="0" cellspacing="0" width="96">
+<!-- fwtable fwsrc="help1.png" fwbase="help.gif" -->
+  <tr>
+   <td><img src="../library/buttons/spacer.gif" width="96" height="1" border="0"></td>
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+  </tr>
+  <tr>
+    <td><a href="../mainpages/help.html" onMouseOut="MM_nbGroup('out');"  onMouseOver="MM_nbGroup('over','help_r1_c1','../library/buttons/help_r1_c1_f2.gif','../library/buttons/help_r1_c1_f4.gif',1)"  onClick="MM_nbGroup('down','navbar1','help_r1_c1','../library/buttons/help_r1_c1_f3.gif',1)" ><img name="help_r1_c1" src="../library/buttons/help_r1_c1.gif" width="96" height="79" border="0"></a></td>
+   <td><img src="../library/buttons/spacer.gif" width="1" height="79" border="0"></td>
+  </tr>
+  <tr>
+   <td><a href="#" onMouseOut="MM_swapImgRestore();"  onMouseOver="MM_swapImage('help_r2_c1','','../library/buttons/help_r2_c1_f2.gif',1)" ><img name="help_r2_c1" src="../library/buttons/help_r2_c1.gif" width="96" height="1" border="0"></a></td>
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+  </tr>
+</table>
+<!-- #EndLibraryItem --><!-- #BeginLibraryItem "/library/buttons/resources.lbi" --><table border="0" cellpadding="0" cellspacing="0" width="96">
+<!-- fwtable fwsrc="resources1.png" fwbase="resources.gif" -->
+  <tr>
+   <td bgcolor="669966"><img src="../library/buttons/spacer.gif" width="96" height="1" border="0"></td>
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+  </tr>
+  <tr>
+    <td><a href="../mainpages/resources.html" onMouseOut="MM_nbGroup('out');"  onMouseOver="MM_nbGroup('over','resources_r1_c1','../library/buttons/resources_r1_c1_f2.gif','../library/buttons/resources_r1_c1_f4.gif',1)"  onClick="MM_nbGroup('down','navbar1','resources_r1_c1','../library/buttons/resources_r1_c1_f3.gif',1)" ><img name="resources_r1_c1" src="../library/buttons/resources_r1_c1.gif" width="96" height="79" border="0"></a></td>
+   <td><img src="../library/buttons/spacer.gif" width="1" height="79" border="0"></td>
+  </tr>
+  <tr>
+   <td><a href="#" onMouseOut="MM_swapImgRestore();"  onMouseOver="MM_swapImage('resources_r2_c1','','../library/buttons/resources_r2_c1_f2.gif',1)" ><img name="resources_r2_c1" src="../library/buttons/resources_r2_c1.gif" width="96" height="1" border="0"></a></td>
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+  </tr>
+</table>
+<!-- #EndLibraryItem --></td>
+        </tr>
+      </table>
+    </td>
+    <td colspan="3" rowspan="2" valign="top" bgcolor="669966"> <!-- #BeginEditable "content" --> 
+      <table width="603" border="0" cellpadding="5" cellspacing="0" bgcolor="669966">
+        <tr> 
+          <td height="325" width="593" valign="top" bgcolor="ede4d8"> 
+            <div align="center"> 
+              <p><!-- #BeginLibraryItem "/library/buttons/aboutsite.lbi" --><a href="aboutsite.html" onMouseOut="MM_nbGroup('out');"  onMouseOver="MM_nbGroup('over','aboutsite','../library/buttons/aboutsite_f2.gif','../library/buttons/aboutsite_f4.gif',1)"  onClick="MM_nbGroup('down','navbar1','aboutsite','../library/buttons/aboutsite_f3.gif',1)" ><img name="aboutsite" src="../library/buttons/aboutsite.gif" width="96" height="40" border="0"></a><!-- #EndLibraryItem --><!-- #BeginLibraryItem "/library/buttons/planning.lbi" --><a href="courseoutline.html" onMouseOut="MM_nbGroup('out');"  onMouseOver="MM_nbGroup('over','planning','../library/buttons/planning_f2.gif','../library/buttons/planning_f4.gif',1)"  onClick="MM_nbGroup('down','navbar1','planning','../library/buttons/planning_f3.gif',1)" ><img name="planning" src="../library/buttons/planning.gif" width="96" height="40" border="0"></a><!-- #EndLibraryItem --></p>
+              <p align="left"><font face="Georgia, Times New Roman, Times, serif">The 
+                following is list of Curriculum Objectives for Drama 30, listed 
+                in the order in which they appear in the curriculum. The lessons 
+                that focus strongly on these objectives are listed below the objective 
+                they fulfill. Please note that the final unit, <i><b>Unit 5 - 
+                The Collective</b></i> may fulfill objectives listed below depending 
+                on the design of the teacher and class. Specific links for unit 
+                5 are not listed here.</font></p>
+              <p align="left"><font face="Georgia, Times New Roman, Times, serif"><b><u>&#149; 
+                recall and respond to drama experiences<br>
+                </u></b>Unit 3, Module 4, Lesson 5, <a href="3eval.html">Evaluation</a><br>
+                <font color="#000000">Unit 5, Module 1, Lesson 1, <a href="5collective.html">Getting 
+                Ideas for Collective</a> </font></font> <font face="Georgia, Times New Roman, Times, serif"><br>
+                <font color="#000000">Unit 5, Module 1, Lesson 2, <a href="5process.html"> 
+                Collective</a> </font></font> <font face="Georgia, Times New Roman, Times, serif"><br>
+                </font></p>
+              <p align="left"><font face="Georgia, Times New Roman, Times, serif"><b><u>&#149; 
+                share responses with other students<br>
+                </u></b>Unit 1, Module 3, Lesson 2, <a href="goals.html">Setting 
+                Goals</a><b><u><br>
+                </u></b>Unit 2, Module 1, Lesson 2, <a href="2shakespeare.html">Shakespeare</a><br>
+                Unit 2, Module 2, Lesson 2, <a href="2commedia.html">Commedia 
+                del'Arte</a><b><u><br>
+                </u></b>Unit 3, Module 1, Lesson 1, <u><a href="3personalobstacles.html">Overcoming 
+                Personal Obstacles</a> </u><b><u><br>
+                </u></b>Unit 3, Module 4, Lesson 5, <a href="3eval.html">Evaluation</a><b><u><br>
+                </u></b><font color="#000000">Unit 5, Module 1, Lesson 2, <a href="5process.html"> 
+                Collective</a></font><b><u><font color="#000000"> </font> <br>
+                <br>
+                &middot; follow classroom routines and procedures</u></b><br>
+                Unit 1, Module 1, Lesson 4, <a href="concensus.html">Consensus</a> 
+                <br>
+                Unit 1, Module 2, Lesson 5, <a href="concentration.html">Concentration 
+                and Focus</a><br>
+                Unit 1, Module 3, Lesson 1, <a href="whoami.html">Who Am I</a> 
+                <br>
+                Unit 2, Module 1, Lesson 4, <a href="2realism.html">Realism and 
+                Contemporary Theatre</a> <br>
+                Unit 2, Module 4, Lesson 1, <a href="2project.html">Process to 
+                Performance </a><br>
+                Unit 3, Module 3, Lesson 4, <u><u><u><a href="3mask.html">Physicality 
+                and Mask Work</a></u></u></u> <br>
+                Unit 4, Module 3, Lesson 3, <a href="4fallsandfighting.html">Falls 
+                and Stage Fighting</a> </font></p>
+              <p align="left"><font face="Georgia, Times New Roman, Times, serif"><b><font size="3"><u>&middot; 
+                feel secure in the class</u></font></b><br>
+                Unit 1, Module 1, Lesson 1, <a href="trust.html">Trust </a><br>
+                Unit 1, Module 1, Lesson 4, <a href="concensus.html">Consensus<br>
+                </a>Unit 1, Module 3, Lesson 1, <a href="whoami.html">Who Am I</a><br>
+                Unit 3, Module 1, Lesson 1, <a href="3personalobstacles.html">Overcoming 
+                Personal Obstacles</a><br>
+                Unit 3, Module 3, Lesson 3, <u><u><a href="3improv.html">Improvisation</a></u> 
+                <br>
+                </u>Unit 3, Module 4, Lesson 2, <u><u><u><u><a href="3director.html">Working 
+                with a Director</a></u></u></u> <br>
+                </u>Unit 4, Module 3, Lesson 3, <a href="4fallsandfighting.html">Falls 
+                and Stage Fighting</a> <br>
+                <font color="#000000">Unit 5, Module 1, Lesson 1, <a href="5collective.html">Getting 
+                Ideas for Collective</a> </font></font> </p>
+              <p align="left"><font face="Georgia, Times New Roman, Times, serif"><b><u>&middot; 
+                cooperate with others</u></b><br>
+                Unit 1, Module 2, Lesson 5, <a href="concentration.html">Concentration 
+                and Focus</a> <br>
+                Unit 1, Module 2, Lesson 6, <a href="imaging.html">Imaging</a> 
+                <br>
+                Unit 3, Module 1, Lesson 1, <a href="3personalobstacles.html">Overcoming 
+                Personal Obstacles</a> <br>
+                Unit 3, Module 3, Lesson 3, <a href="3improv.html">Improvisation<br>
+                </a>Unit 4, Module 1, Lesson 3, <u><u><a href="4stagedirections.html">Stage 
+                Directions </a><br>
+                </u></u></font></p>
+              <p align="left"><font face="Georgia, Times New Roman, Times, serif"><b><font size="3"><u>&middot; 
+                act responsibly toward other members of the class</u></font></b><br>
+                Unit 1, Module 1, Lesson 1, <a href="trust.html">Trust</a><br>
+                Unit 3, Module 4, Lesson 5, <a href="3eval.html">Evaluation</a> 
+                <br>
+                Unit 4, Module 3, Lesson 3, <a href="4fallsandfighting.html">Falls 
+                and Stage Fighting</a></font></p>
+              <p align="left"><font face="Georgia, Times New Roman, Times, serif"><b><u>&middot; 
+                concentrate during drama experiences</u></b><br>
+                Unit 1, Module 1, Lesson 2, <a href="impulse.html">Impulse</a><br>
+                Unit 1, Module 2, Lesson 3, <a href="movement.html">Movement</a> 
+                <br>
+                Unit 1, Module 2, Lesson 5, <a href="concentration.html">Concentration 
+                and Focus</a> <br>
+                Unit 1, Module 2, Lesson 6, <a href="imaging.html">Imaging</a><br>
+                Unit 1, Module 3, Lesson 1, <a href="whoami.html">Who Am I</a> 
+                <br>
+                Unit 1, Module 3, Lesson 2, <a href="goals.html">Setting Goals</a><br>
+                Unit 2, Module 2, Lesson 4, <a href="2juggle.html">Juggling<br>
+                </a>Unit 3, Module 1, Lesson 1, <u><a href="3personalobstacles.html">Overcoming 
+                Personal Obstacles</a> <br>
+                </u>Unit 3, Module 4, Lesson 3, <u><a href="3rehearsal.html">Rehearsal</a><br>
+                </u>Unit 4, Module 3, Lesson 3, <a href="4fallsandfighting.html">Falls 
+                and Stage Fighting</a> </font></p>
+              <p align="left"><font face="Georgia, Times New Roman, Times, serif"><b><u>&middot; 
+                initiate ideas for drama experiences</u><br>
+                </b>Unit 2, Module 4, Lesson 1, <a href="2project.html">Process 
+                to Performance </a><br>
+                Unit 3, Module 1, Lesson 2, <a href="3monologue.html">What is 
+                a Monologue?</a> <br>
+                Unit 3, Module 4, Lesson 2, <u><u><u><u><a href="3director.html">Working 
+                with a Director</a></u></u></u> <br>
+                </u>Unit 4, Module 3, Lesson 1, <a href="4blocking.html">Making 
+                Pictures and Levels</a><u> <br>
+                </u><font color="#000000">Unit 5, Module 1, Lesson 1, <a href="5collective.html">Getting 
+                Ideas for Collective</a> <br>
+                Unit 5, Module 1, Lesson 2, <a href="5process.html"> Collective</a> 
+                </font></font> </p>
+              <p align="left"><font face="Georgia, Times New Roman, Times, serif"><b><u>&middot; 
+                initiate out-of-class activities to support the in-class work</u></b><br>
+                Unit 2, Module 1, Lesson 4, <a href="2realism.html">Realism and 
+                Contemporary Theatre</a> <br>
+                Unit 2, Module 2, Lesson 4, <a href="2juggle.html">Juggling</a> 
+                <br>
+                Unit 3, Module 4, Lesson 4, <a href="3performance.html">Performance 
+                </a> <br>
+                <br>
+                <b><u>&middot; listen to the ideas of others<br>
+                </u></b>Unit 1, Module 1, Lesson 4, <a href="concensus.html">Consensus</a> 
+                <br>
+                Unit 2, Module 1, Lesson 1, <a href="2ancient.html">Classical 
+                Theatre</a><br>
+                Unit 2, Module 2, Lesson 2, <a href="2commedia.html">Commedia 
+                del'Arte</a> <br>
+                Unit 3, Module 1, Lesson 2, <a href="3monologue.html">What is 
+                a Monologue?</a> </font></p>
+              <p align="left"><font face="Georgia, Times New Roman, Times, serif"><b><u>&middot; 
+                work cooperatively in groups of all sizes to plan and participate 
+                in drama experiences</u></b><br>
+                Unit 1, Module 1, Lesson 2, <a href="impulse.html">Impulse<br>
+                </a>Unit 1, Module 1, Lesson 3, <a href="status.html">Status<br>
+                </a>Unit 2, Module 1, Lesson 1, <a href="2ancient.html">Classical 
+                Theatre</a><br>
+                Unit 2, Module 2, Lesson 2, <a href="2commedia.html">Commedia 
+                del'Arte</a> <br>
+                Unit 3, Module 4, Lesson 1, <u><u><u><a href="3acting.html">Acting 
+                Technique </a><br>
+                </u></u></u>Unit 4, Module 4, Lesson 2, <a href="4stumblingthrough.html">Stumble 
+                Through</a> <br>
+                Unit 4, Module 4, Lesson 3, <u><a href="4problemsolving.html">Problem 
+                Solving </a><br>
+                </u>Unit 4, Module 4, Lesson 4, <a href="4directingassignment.html">Directing 
+                Assignment</a> <br>
+                <font color="#000000">Unit 5, Module 1, Lesson 2, <a href="5process.html"> 
+                Collective</a> </font></font> </p>
+              <p align="left"><font face="Georgia, Times New Roman, Times, serif"><b><u>&middot; 
+                become competent in group decision-making and problem-solving</u></b><br>
+                Unit 1, Module 1, Lesson 4, <a href="concensus.html">Consensus</a> 
+                <br>
+                <font color="#000000">Unit 2, Module 4, Lesson 2, <a href="2evaluation.html">Evaluation 
+                and Reflection</a></font></font> <font face="Georgia, Times New Roman, Times, serif"><br>
+                Unit 3, Module 4, Lesson 1, <u><u><u><a href="3acting.html">Acting 
+                Technique </a><br>
+                </u></u></u>Unit 3, Module 4, Lesson 4, <a href="3performance.html">Performance 
+                </a><br>
+                Unit 4, Module 4, Lesson 1, <a href="4lookingatscript.html">Read 
+                Through</a> </font></p>
+              <p align="left"><font face="Georgia, Times New Roman, Times, serif"><b><u>&middot; 
+                reach consensus</u></b><br>
+                Unit 1, Module 1, Lesson 4, <a href="concensus.html">Consensus</a> 
+                <br>
+                Unit 4, Module 4, Lesson 1, <a href="4lookingatscript.html">Read 
+                Through</a></font></p>
+              <p align="left"><font face="Georgia, Times New Roman, Times, serif"><b><u>&middot; 
+                practice leadership of small and large groups</u><br>
+                </b>Unit 2, Module 2, Lesson 2, <a href="2commedia.html">Commedia 
+                del'Arte</a><b> <br>
+                </b>Unit 4, Module 3, Lesson 1, <a href="4blocking.html">Making 
+                Pictures and Levels</a><b> <br>
+                </b>Unit 4, Module 3, Lesson 2, <a href="4characterandconflict.html">Character 
+                and Conflict</a> <br>
+                Unit 4, Module 4, Lesson 2, <a href="4stumblingthrough.html">Stumble 
+                Through</a> <br>
+                Unit 4, Module 4, Lesson 3, <u><a href="4problemsolving.html">Problem 
+                Solving </a><br>
+                </u>Unit 4, Module 4, Lesson 4, <a href="4directingassignment.html">Directing 
+                Assignment</a> </font></p>
+              <p align="left"><font face="Georgia, Times New Roman, Times, serif"><b><u>&middot; 
+                accept the leadership of others in small and large groups</u><br>
+                </b>Unit 2, Module 2, Lesson 2, <a href="2commedia.html">Commedia 
+                del'Arte</a> <br>
+                Unit 4, Module 3, Lesson 1, <a href="4blocking.html">Making Pictures 
+                and Levels</a> <br>
+                Unit 4, Module 3, Lesson 2, <a href="4characterandconflict.html">Character 
+                and Conflict</a> <br>
+                Unit 4, Module 4, Lesson 2, <a href="4stumblingthrough.html">Stumble 
+                Through</a> <br>
+                Unit 4, Module 4, Lesson 3, <u><a href="4problemsolving.html">Problem 
+                Solving </a></u> <br>
+                Unit 4, Module 4, Lesson 4,<u> <a href="4directingassignment.html">Directing 
+                Assignment</a> </u> </font></p>
+              <p align="left"><font face="Georgia, Times New Roman, Times, serif"><b><u>&middot; 
+                evaluate the contributions of themselves and others to projects 
+                undertaken in groups of all sizes</u><br>
+                </b><font color="#000000">Unit 2, Module 4, Lesson 2, <a href="2evaluation.html">Evaluation 
+                and Reflection</a></font></font><font face="Georgia, Times New Roman, Times, serif" color="#000000"><a href="2evaluation.html"><br>
+                </a></font><font face="Georgia, Times New Roman, Times, serif">Unit 
+                3, Module 4, Lesson 1, <u><u><u><a href="3acting.html">Acting 
+                Technique </a></u></u></u><br>
+                Unit 3, Module 4, Lesson 5, <a href="3eval.html">Evaluation</a> 
+                <br>
+                Unit 4, Module 3, Lesson 4, <a href="4blockingassignment.html">Blocking 
+                Assignment</a> <br>
+                <br>
+                <b><u>&middot; use improvisation to explore characters and situations</u></b><br>
+                Unit 1, Module 1, Lesson 5, <a href="improv.html">Improvisation</a><br>
+                Unit 1, Module 2, Lesson 1, <a href="objectives.html">Objectives</a><br>
+                Unit 1, Module 2, Lesson 2, <a href="obstacles.html">Obstacles</a> 
+                <br>
+                Unit 1, Module 2, Lesson 5, <a href="concentration.html">Concentration 
+                and Focus</a> <br>
+                Unit 2, Module 1, Lesson 2, <a href="2shakespeare.html">Shakespeare</a><br>
+                Unit 2, Module 2, Lesson 3, <a href="2clown.html">Clown</a> <br>
+                Unit 2, Module 3, Lesson 1, <a href="2film.html">Film</a><br>
+                Unit 3, Module 1, Lesson 2, <a href="3monologue.html">What is 
+                a Monologue?</a><br>
+                Unit 3, Module 1, Lesson 3,<a href="3objobs.html"> Objectives 
+                and Obstacles </a> <br>
+                Unit 3, Module 3, Lesson 3, <u><u><a href="3improv.html">Improvisation</a></u> 
+                </u> <br>
+                </font></p>
+              <p align="left"><font face="Georgia, Times New Roman, Times, serif"><b><u>&middot; 
+                use improvisation to contribute to the creations of works of dramatic 
+                art</u><br>
+                </b>Unit 2, Module 2, Lesson 3, <a href="2clown.html">Clown</a> 
+                <br>
+                Unit 3, Module 3, Lesson 1, <u><a href="3external.html">Working 
+                Externally (biography)</a><br>
+                </u>Unit 3, Module 3, Lesson 2,<u> <u><a href="3internal.html">Working 
+                Internally (hot seat)</a></u> <br>
+                </u>Unit 3, Module 3, Lesson 3, <u><u><a href="3improv.html">Improvisation</a></u> 
+                <br>
+                </u><font color="#000000">Unit 5, Module 1, Lesson 1, <a href="5collective.html">Getting 
+                Ideas for Collective</a></font><u><font color="#000000"> </font> 
+                </u></font></p>
+              <p align="left"><font face="Georgia, Times New Roman, Times, serif"><b><u>&middot; 
+                purposefully use the elements of focus, tension, contrast and 
+                symbol in all of their drama work</u><br>
+                </b>Unit 3, Module 2, Lesson 2, <u><a href="3writing.html">Writing 
+                Monologues</a></u> <br>
+                Unit 3, Module 2, Lesson 3, <u><a href="3develop.html">Developing 
+                the Monologues<br>
+                </a></u>Unit 4, Module 4, Lesson 3, <u><u><a href="4problemsolving.html"><font color="#0000CC">Problem 
+                Solving</font></a></u></u><b><u><br>
+                </u></b><font color="#000000">Unit 5, Module 1, Lesson 2, <a href="5process.html"> 
+                Collective</a> </font><b><u><br>
+                <br>
+                &middot; reinforce previously developed dramatic abilities and 
+                understanding</u><br>
+                </b>Unit 3, Module 1, Lesson 3,<a href="3objobs.html"> Objectives 
+                and Obstacles <br>
+                </a>Unit 3, Module 3, Lesson 1, <u><a href="3external.html">Working 
+                Externally (biography)</a><br>
+                </u>Unit 3, Module 3, Lesson 3, <u><u><u><a href="3improv.html">Improvisation</a></u> 
+                <br>
+                </u></u>Unit 3, Module 4, Lesson 3, <a href="3rehearsal.html">Rehearsal</a> 
+                <br>
+                Unit 4, Module 2, Lesson 4, <u><u><u><u><u><a href="4dollshouse.html">Objectives 
+                and Text</a> <br>
+                </u></u></u></u></u>Unit 4, Module 4, Lesson 1, <a href="4lookingatscript.html">Read 
+                Through</a><u><u><u><br>
+                </u></u></u>Unit 4, Module 4, Lesson 2, <u><a href="4stumblingthrough.html">Stumble 
+                Through</a> </u></font></p>
+              <p align="left"><font face="Georgia, Times New Roman, Times, serif"><b><u>&middot; 
+                understand the relationship of script to performance</u><br>
+                </b>Unit 2, Module 3, Lesson 1, <a href="2film.html">Film</a> 
+                <br>
+                Unit 3, Module 3, Lesson 1, <u><a href="3external.html">Working 
+                Externally (biography)</a></u> <br>
+                Unit 3, Module 4, Lesson 4, <a href="3performance.html">Performance 
+                </a><br>
+                Unit 4, Module 2, Lesson 1, <u><u><a href="4medea.html">Understanding 
+                Text </a><br>
+                </u></u>Unit 4, Module 2, Lesson 2, <u><u><u><u><u><u><u><u><a href="4everyman.html">Finding 
+                Emotions</a></u></u></u></u></u></u> </u></u> <br>
+                Unit 4, Module 4, Lesson 1, <a href="4lookingatscript.html">Read 
+                Through</a><u><u><u> <br>
+                </u></u></u>Unit 4, Module 4, Lesson 4, <a href="4directingassignment.html">Directing 
+                Assignment</a><u><u><u> </u></u></u> </font></p>
+              <p align="left"><font face="Georgia, Times New Roman, Times, serif"><b><u>&middot; 
+                demonstrate an ability to script a scene or short play (optional)</u><br>
+                </b>Unit 3, Module 2, Lesson 2, <u><a href="3writing.html">Writing 
+                Monologues</a></u> <br>
+                Unit 3, Module 2, Lesson 3, <u><a href="3develop.html">Developing 
+                the Monologues</a></u> <br>
+                <font color="#000000">Unit 5, Module 1, Lesson 2, <a href="5process.html"> 
+                Collective</a> </font></font></p>
+              <p align="left"><font face="Georgia, Times New Roman, Times, serif"><b><u>&middot; 
+                demonstrate an ability to direct a short episode or scene (optional)</u><br>
+                </b>Unit 3, Module 2, Lesson 1, <u><a href="3compare.html">Comparing 
+                Monologues </a> <br>
+                </u>Unit 3, Module 4, Lesson 2, <u><u><u><u><a href="3director.html">Working 
+                with a Director</a></u></u></u><br>
+                </u>Unit 4, Module 4, Lesson 1, <u><a href="4lookingatscript.html">Read 
+                Through</a><u><u><u> <br>
+                </u></u></u></u>Unit 4, Module 4, Lesson 4,<u> <a href="4directingassignment.html">Directing 
+                Assignment</a> <br>
+                </u><font color="#000000">Unit 5, Module 1, Lesson 2, <a href="5process.html"> 
+                Collective</a> </font></font></p>
+              <p align="left"><font face="Georgia, Times New Roman, Times, serif"><b><u>&middot; 
+                demonstrate an ability to contribute to one area of technical 
+                theatre (optional)</u><br>
+                </b>Unit 2, Module 4, Lesson 1, <a href="2project.html">Process 
+                to Performance </a><br>
+                <font color="#000000">Unit 5, Module 1, Lesson 2, <a href="5process.html"> 
+                Collective</a> </font></font></p>
+              <p align="left"><font face="Georgia, Times New Roman, Times, serif"><br>
+                <b><u>&middot; demonstrate an ability to portray a character's 
+                motivation within a scene</u></b><br>
+                Unit 1, Module 2, Lesson 1, <a href="objectives.html">Objectives<br>
+                </a>Unit 1, Module 2, Lesson 2, <a href="obstacles.html">Obstacles</a><br>
+                Unit 3, Module 1, Lesson 3,<a href="3objobs.html"> Objectives 
+                and Obstacles </a><br>
+                Unit 3, Module 2, Lesson 1, <u><a href="3compare.html">Comparing 
+                Monologues </a> </u><b><u><br>
+                </u></b>Unit 4, Module 2, Lesson 4, <u><u><a href="4dollshouse.html">Objectives 
+                and Text</a> </u></u> </font></p>
+              <p align="left"><font face="Georgia, Times New Roman, Times, serif"><b><u>&middot; 
+                express the ideas and emotions appropriate to particular characters</u><br>
+                </b>Unit 3, Module 2, Lesson 2, <u><a href="3writing.html">Writing 
+                Monologues</a></u> <br>
+                Unit 3, Module 3, Lesson 1, <u><a href="3external.html">Working 
+                Externally (biography)</a></u> <br>
+                Unit 3, Module 3, Lesson 2,<u> <u><a href="3internal.html">Working 
+                Internally (hot seat)</a></u> <br>
+                </u>Unit 4, Module 2, Lesson 2, <a href="4everyman.html">Finding 
+                Emotions</a> <br>
+                Unit 4, Module 2, Lesson 3,<u> <u><u><u><u><u><u><u><u><u><u><u><a href="4muchado.html">Subtext</a></u></u></u></u></u></u> 
+                </u></u></u> </u></u> </u> </font></p>
+              <p align="left"><font face="Georgia, Times New Roman, Times, serif"><b><u>&middot; 
+                convey relationships with the other characters in a scene</u></b><br>
+                Unit 1, Module 1, Lesson 3, <a href="status.html">Status</a> <br>
+                Unit 3, Module 3, Lesson 3,<u> <a href="3improv.html">Improvisation</a></u> 
+                <br>
+                Unit 4, Module 2, Lesson 3, <u><u><u><u><u><u><u><u><u><a href="4muchado.html">Subtext</a></u></u></u></u></u></u> 
+                <br>
+                </u></u></u>Unit 4, Module 2, Lesson 4, <u><a href="4dollshouse.html">Objectives 
+                and Text</a> </u> </font></p>
+              <p align="left"><font face="Georgia, Times New Roman, Times, serif"><b><u>&middot; 
+                understand and apply the concept of status</u></b><br>
+                Unit 1, Module 1, Lesson 3, <a href="status.html">Status</a> <br>
+                Unit 4, Module 2, Lesson 4, <u><a href="4dollshouse.html">Objectives 
+                and Text</a> <br>
+                </u>Unit 4, Module 3, Lesson 2, <a href="4characterandconflict.html">Character 
+                and Conflict</a> </font></p>
+              <p align="left"><font face="Georgia, Times New Roman, Times, serif"><b><u>&middot; 
+                become confident in communicating character through movement and 
+                gesture</u></b><br>
+                Unit 1, Module 2, Lesson 3, <a href="movement.html">Movement</a><br>
+                Unit 2, Module 1, Lesson 3, <a href="2neoclass.html">Neo-Classical 
+                Theatre</a> <br>
+                Unit 2, Module 2, Lesson 3, <a href="2clown.html">Clown</a> <br>
+                Unit 3, Module 1, Lesson 3, <a href="3objobs.html">Objectives 
+                and Obstacles </a><br>
+                Unit 3, Module 3, Lesson 1, <u><a href="3external.html">Working 
+                Externally (biography)</a></u> <br>
+                Unit 3, Module 3, Lesson 4, <u><u><u><a href="3mask.html">Physicality 
+                and Mask Work</a></u></u></u> <br>
+                Unit 4, Module 3, Lesson 4, <a href="4blockingassignment.html">Blocking 
+                Assignment</a> </font></p>
+              <p align="left"><font face="Georgia, Times New Roman, Times, serif"><b><u>&middot; 
+                become competent in blocking improvised or scripted scenes</u><br>
+                </b>Unit 3, Module 1, Lesson 3, <a href="3objobs.html">Objectives 
+                and Obstacles </a><br>
+                Unit 4, Module 1, Lesson 3, <u><u><a href="4stagedirections.html">Stage 
+                Directions </a><br>
+                </u></u>Unit 4, Module 3, Lesson 1, <a href="4blocking.html">Making 
+                Pictures and Levels</a> <br>
+                Unit 4, Module 3, Lesson 2, <a href="4characterandconflict.html">Character 
+                and Conflict</a> </font></p>
+              <p align="left"><font face="Georgia, Times New Roman, Times, serif"><b><u>&middot; 
+                demonstrate poised, controlled posture</u></b><br>
+                Unit 3, Module 3, Lesson 4, <u><u><u><a href="3mask.html">Physicality 
+                and Mask Work</a></u></u></u> <br>
+                Unit 3, Module 4, Lesson 3, <u><u><a href="3rehearsal.html">Rehearsal</a></u> 
+                </u> <br>
+                <br>
+                <b><u>&middot; use breath control</u></b><br>
+                Unit 1, Module 2, Lesson 4, <a href="voice.html">Voice</a> <br>
+                Unit 3, Module 3, Lesson 2,<u> <u><a href="3internal.html">Working 
+                Internally (hot seat)</a></u> <br>
+                </u>Unit 3, Module 4, Lesson 3, <u><u><a href="3rehearsal.html">Rehearsal</a></u> 
+                </u> </font></p>
+              <p align="left"><font face="Georgia, Times New Roman, Times, serif"><u><b>&middot; 
+                use resonance in speaking</b></u><br>
+                Unit 1, Module 2, Lesson 4, <a href="voice.html">Voice</a><br>
+                Unit 2, Module 1, Lesson 5, <a href="2world.html">World Theatre</a> 
+                </font></p>
+              <p align="left"><font face="Georgia, Times New Roman, Times, serif"><b><u>&middot; 
+                articulate clearly</u></b><br>
+                Unit 1, Module 2, Lesson 4, <a href="voice.html">Voice</a> <br>
+                Unit 2, Module 1, Lesson 2, <a href="2shakespeare.html">Shakespeare</a><br>
+                Unit 2, Module 2, Lesson 1, <a href="2trickster.html">Tricksters 
+                and Fools </a> </font></p>
+              <p align="left"><font face="Georgia, Times New Roman, Times, serif"><b><u>&middot; 
+                use voice projection</u></b><br>
+                Unit 1, Module 2, Lesson 4, <a href="voice.html">Voice</a> <br>
+                Unit 2, Module 1, Lesson 5, <a href="2world.html">World Theatre</a> 
+                <br>
+                Unit 2, Module 2, Lesson 1, <a href="2trickster.html">Tricksters 
+                and Fools </a><br>
+                Unit 3, Module 4, Lesson 2, <u><u><u><u><a href="3director.html">Working 
+                with a Director</a></u></u></u> </u> </font></p>
+              <p align="left"><font face="Georgia, Times New Roman, Times, serif"><b><u>&middot; 
+                become competent in communicating character through speech</u></b><br>
+                Unit 2, Module 1, Lesson 2, <a href="2shakespeare.html">Shakespeare</a><br>
+                Unit 3, Module 1, Lesson 2, <a href="3monologue.html">What is 
+                a Monologue?</a> <br>
+                Unit 3, Module 2, Lesson 1, <u><a href="3compare.html">Comparing 
+                Monologues </a> </u> <br>
+                Unit 3, Module 3, Lesson 2,<u> <u><a href="3internal.html">Working 
+                Internally (hot seat)</a></u> </u> <br>
+                <u><br>
+                <b>&middot; understand how plays are made</b></u><b><br>
+                </b>Unit 3, Module 2, Lesson 3, <u><a href="3develop.html">Developing 
+                the Monologues</a></u> <br>
+                Unit 4, Module 1, Lesson 1, <a href="4playtypes.html">Types of 
+                Plays</a> <br>
+                <font color="#000000">Unit 2, Module 4, Lesson 2, <a href="2evaluation.html">Evaluation 
+                and Reflection</a></font></font> <font face="Georgia, Times New Roman, Times, serif"><br>
+                Unit 4, Module 2, Lesson 1, <u><u><a href="4medea.html">Understanding 
+                Text </a><br>
+                </u></u>Unit 4, Module 2, Lesson 2,<u><u> <u><u><u><u><a href="4everyman.html">Finding 
+                Emotions</a></u></u></u></u> </u></u> </font></p>
+              <p align="left"><font face="Georgia, Times New Roman, Times, serif"><b><u>&middot; 
+                understand the contributions of various dramatic artists to a 
+                theatrical production</u><br>
+                </b><font color="#000000">Unit 2, Module 4, Lesson 2, <a href="2evaluation.html">Evaluation 
+                and Reflection</a></font></font> </p>
+              <p align="left"><font face="Georgia, Times New Roman, Times, serif"><b><u>&middot; 
+                understand that theatre is a synthesis of the arts</u><br>
+                </b>Unit 2, Module 3, Lesson 2, <a href="2visual.html">Understanding 
+                the Arts</a><br>
+                Unit 3, Module 3, Lesson 4, <u><u><u><a href="3mask.html">Physicality 
+                and Mask Work</a></u></u></u> <br>
+                Unit 5, Module 1, Lesson 1, <a href="5collective.html">Getting 
+                Ideas for Collective</a></font></p>
+              <p align="left"><font face="Georgia, Times New Roman, Times, serif"><b><u>&middot; 
+                understand how the theatre elements of focus, tension, contrast 
+                and symbol contribute to a play</u><br>
+                </b>Unit 2, Module 1, Lesson 4, <a href="2realism.html">Realism 
+                and Contemporary Theatre</a> </font></p>
+              <p align="left"><font face="Georgia, Times New Roman, Times, serif"><b><u>&middot; 
+                understand how the artistic purpose of each of the artists is 
+                served by the use of theatre elements</u><br>
+                </b>Unit 3, Module 2, Lesson 3, <u><a href="3develop.html">Developing 
+                the Monologues</a></u> </font></p>
+              <p align="left"><font face="Georgia, Times New Roman, Times, serif"><b><u>&middot; 
+                understand the historical and cultural influences on a play</u><br>
+                </b>Unit 2, Module 1, Lesson 5, <a href="2world.html">World Theatre</a> 
+                <br>
+                Unit 3, Module 1, Lesson 2, <a href="3monologue.html">What is 
+                a Monologue?</a> <br>
+                Unit 4, Module 1, Lesson 1, <a href="4playtypes.html">Types of 
+                Plays</a><br>
+                Unit 4, Module 1, Lesson 2, <a href="4playstructure.html">Play 
+                Structures<br>
+                </a>Unit 4, Module 2, Lesson 1,<u> <u><u><a href="4medea.html">Understanding 
+                Text<br>
+                </a></u></u></u>Unit 4, Module 2, Lesson 2, <u><u><u><u><a href="4everyman.html">Finding 
+                Emotions</a></u></u></u></u><b><u><br>
+                <br>
+                &middot; use a process like &quot;Looking at Plays&quot; in oral 
+                and written responses to dramatic presentations</u><br>
+                </b>Unit 2, Module 3, Lesson 1, <a href="2film.html">Film</a> 
+                <br>
+                Unit 4, Module 2, Lesson 3,<u> <u><u><u><u><u><u><u><u><u><u><u><a href="4muchado.html">Subtext<br>
+                </a></u></u></u></u></u></u></u></u></u></u></u></u><br>
+                <b><u>&middot; understand that theatre, past and present, can 
+                teach us about ourselves</u><br>
+                </b>Unit 2, Module 1, Lesson 4, <a href="2realism.html">Realism 
+                and Contemporary Theatre</a> <br>
+                <font color="#000000">Unit 2, Module 4, Lesson 2, <a href="2evaluation.html">Evaluation 
+                and Reflection</a><br>
+                Unit 5, Module 1, Lesson 1, <a href="5collective.html">Getting 
+                Ideas for Collective</a> <br>
+                </font></font></p>
+              <p align="left"><font face="Georgia, Times New Roman, Times, serif"><b><u>&middot; 
+                understand that today's dramatic artists are influenced by various 
+                theatre traditions</u><br>
+                </b>Unit 2, Module 1, Lesson 3, <a href="2neoclass.html">Neoclassical 
+                Theatre</a> <br>
+                <font color="#000000">Unit 2, Module 4, Lesson 2, <a href="2evaluation.html">Evaluation 
+                and Reflection</a></font></font> <font face="Georgia, Times New Roman, Times, serif"><br>
+                Unit 3, Module 4, Lesson 1, <u><u><u><a href="3acting.html">Acting 
+                Technique </a><br>
+                </u></u></u>Unit 4, Module 1, Lesson 1, <u><a href="4playtypes.html">Types 
+                of Plays</a> </u> </font></p>
+              <p align="left"><font face="Georgia, Times New Roman, Times, serif"><b><u>&middot; 
+                understand that theatre reflects the society that creates it</u><br>
+                </b>Unit 2, Module 1, Lesson 1, <a href="2ancient.html">Classical 
+                Theatre</a> <br>
+                Unit 2, Module 1, Lesson 3, <a href="2neoclass.html">Neoclassical 
+                Theatre</a> <br>
+                Unit 2, Module 1, Lesson 5, <a href="2world.html">World Theatre</a> 
+                <br>
+                Unit 2, Module 3, Lesson 2, <a href="2visual.html">Understanding 
+                the Arts</a> </font></p>
+              <p align="left"><font face="Georgia, Times New Roman, Times, serif"><b><u>&middot; 
+                understand that theatre can influence the society in which it 
+                is created</u><br>
+                </b>Unit 2, Module 1, Lesson 4, <a href="2realism.html">Realism 
+                and Contemporary Theatre</a></font></p>
+              <p align="left"><font face="Georgia, Times New Roman, Times, serif"><b><u>&middot; 
+                understand the universality of certain themes, characters and 
+                situations in dramatic expression through the ages</u><br>
+                </b>Unit 2, Module 1, Lesson 2, <a href="2shakespeare.html">Shakespeare</a><br>
+                Unit 2, Module 2, Lesson 1, <a href="2trickster.html">Tricksters 
+                and Fools</a><b><a href="2trickster.html"> </a><br>
+                </b>Unit 2, Module 3, Lesson 2, <a href="2visual.html">Understanding 
+                the Arts</a> </font></p>
+              <p align="left"><font face="Georgia, Times New Roman, Times, serif"><b><u>&middot; 
+                continue to explore various presentational styles in their dramatic 
+                presentations</u><br>
+                </b>Unit 2, Module 1, Lesson 5, <a href="2world.html">World Theatre</a> 
+                <br>
+                Unit 2, Module 2, Lesson 3, <a href="2clown.html">Clown</a><br>
+                Unit 2, Module 4, Lesson 1, <a href="2project.html">Process to 
+                Performance </a> </font></p>
+              <p align="left"><font face="Georgia, Times New Roman, Times, serif"><b><u>&middot; 
+                continue to explore various acting styles in their dramatic presentations</u><br>
+                </b>Unit 2, Module 1, Lesson 3, <a href="2neoclass.html">Neoclassical 
+                Theatre</a><br>
+                Unit 3, Module 4, Lesson 1, <u><u><u><a href="3acting.html">Acting 
+                Technique </a></u></u></u> </font></p>
+              <p align="left"><font face="Georgia, Times New Roman, Times, serif"><b><u>&middot; 
+                continue to explore various staging possibilities in their dramatic 
+                presentations</u><br>
+                </b>Unit 2, Module 1, Lesson 3, <a href="2neoclass.html">Neoclassical 
+                Theatre</a><br>
+                Unit 2, Module 4, Lesson 1, <a href="2project.html">Process to 
+                Performance </a><br>
+                Unit 4, Module 3, Lesson 4, <a href="4blockingassignment.html">Blocking 
+                Assignment</a></font></p>
+              <p></p>
+            </div>
+          </td>
+        </tr>
+        <tr> 
+          <td height="22"></td>
+        </tr>
+      </table>
+      <!-- #EndEditable --></td>
+  </tr>
+  <tr> 
+    <td valign="top" height="89"> 
+      <table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="669966">
+        <tr> 
+          <td width="97" height="89" valign="top" bgcolor="669966"><!-- #BeginEditable "optional" --><!-- #EndEditable --></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr> 
+    <td height="0"></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+</table>
+</body>
+<!-- #EndTemplate -->
+</html>

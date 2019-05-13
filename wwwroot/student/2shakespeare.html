@@ -1,0 +1,844 @@
+<html><!-- #BeginTemplate "/Templates/templatestudent.dwt" -->
+
+<head>
+
+<!-- #BeginEditable "doctitle" --> 
+
+
+
+<title>Student: Shakespearean Times</title>
+
+
+
+<!-- #EndEditable --> 
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<script language="JavaScript">
+
+<!--
+
+function MM_preloadImages() { //v3.0
+
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+
+}
+
+
+
+function MM_findObj(n, d) { //v4.0
+
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+
+  if(!x && document.getElementById) x=document.getElementById(n); return x;
+
+}
+
+
+
+function MM_nbGroup(event, grpName) { //v3.0
+
+  var i,img,nbArr,args=MM_nbGroup.arguments;
+
+  if (event == "init" && args.length > 2) {
+
+    if ((img = MM_findObj(args[2])) != null && !img.MM_init) {
+
+      img.MM_init = true; img.MM_up = args[3]; img.MM_dn = img.src;
+
+      if ((nbArr = document[grpName]) == null) nbArr = document[grpName] = new Array();
+
+      nbArr[nbArr.length] = img;
+
+      for (i=4; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+
+        if (!img.MM_up) img.MM_up = img.src;
+
+        img.src = img.MM_dn = args[i+1];
+
+        nbArr[nbArr.length] = img;
+
+    } }
+
+  } else if (event == "over") {
+
+    document.MM_nbOver = nbArr = new Array();
+
+    for (i=1; i < args.length-1; i+=3) if ((img = MM_findObj(args[i])) != null) {
+
+      if (!img.MM_up) img.MM_up = img.src;
+
+      img.src = (img.MM_dn && args[i+2]) ? args[i+2] : args[i+1];
+
+      nbArr[nbArr.length] = img;
+
+    }
+
+  } else if (event == "out" ) {
+
+    for (i=0; i < document.MM_nbOver.length; i++) {
+
+      img = document.MM_nbOver[i]; img.src = (img.MM_dn) ? img.MM_dn : img.MM_up; }
+
+  } else if (event == "down") {
+
+    if ((nbArr = document[grpName]) != null)
+
+      for (i=0; i < nbArr.length; i++) { img=nbArr[i]; img.src = img.MM_up; img.MM_dn = 0; }
+
+    document[grpName] = nbArr = new Array();
+
+    for (i=2; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+
+      if (!img.MM_up) img.MM_up = img.src;
+
+      img.src = img.MM_dn = args[i+1];
+
+      nbArr[nbArr.length] = img;
+
+  } }
+
+}
+
+
+
+function MM_swapImgRestore() { //v3.0
+
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+
+}
+
+
+
+function MM_swapImage() { //v3.0
+
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+
+}
+
+//-->
+
+</script>
+
+<!-- #BeginEditable "CourseBuilder" --> 
+
+<script language="JavaScript">
+
+<!--
+
+function MM_initInteractions(){}
+
+//-->
+
+</script>
+
+<!-- #EndEditable --> 
+
+</head>
+
+
+
+<body bgcolor="#993366" text="#000000" onLoad="MM_initInteractions();MM_preloadImages('../library/buttons/home_r1_c1_f3.gif','../library/buttons/home_r1_c1_f2.gif','../library/buttons/home_r1_c1_f4.gif','../library/buttons/home_r2_c1_f2.gif','../library/buttons/courseoutline_r1_c1_f3.gif','../library/buttons/courseoutline_r1_c1_f2.gif','../library/buttons/courseoutline_r1_c1_f4.gif','../library/buttons/courseoutline_r2_c1_f2.gif','../library/buttons/sitemap_r1_c1_f3.gif','../library/buttons/sitemap_r1_c1_f2.gif','../library/buttons/sitemap_r1_c1_f4.gif','../library/buttons/help_r1_c1_f3.gif','../library/buttons/help_r1_c1_f2.gif','../library/buttons/help_r1_c1_f4.gif','../library/buttons/help_r2_c1_f2.gif','../library/buttons/resources_r1_c1_f3.gif','../library/buttons/resources_r1_c1_f2.gif','../library/buttons/resources_r1_c1_f4.gif','../library/buttons/resources_r2_c1_f2.gif','../library/buttons/teacher1_r1_c1_f3.gif','../library/buttons/teacher1_r1_c1_f2.gif','../library/buttons/teacher1_r1_c1_f4.gif','../library/buttons/teacher1_r2_c1_f2.gif','../library/buttons/class_f3.gif','../library/buttons/class_f2.gif','../library/buttons/class_f4.gif','../library/buttons/outline_f3.gif','../library/buttons/outline_f2.gif','../library/buttons/outline_f4.gif','../library/buttons/studentblue_r1_c1_f3.gif','../library/buttons/studentblue_r1_c1_f2.gif','../library/buttons/studentblue_r1_c1_f4.gif')">
+
+<table width="700" border="0" cellpadding="0" cellspacing="0">
+
+  <tr> 
+
+    <td width="97" valign="top" bgcolor="993366" rowspan="2"> <!-- #BeginLibraryItem "/library/buttons/home.lbi" --><table border="0" cellpadding="0" cellspacing="0" width="96">
+
+<!-- fwtable fwsrc="home1.png" fwbase="home.gif" -->
+
+  <tr>
+
+   <td><img src="../library/buttons/spacer.gif" width="96" height="1" border="0"></td>
+
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+
+  </tr>
+
+  <tr>
+
+    <td><a href="../index.html" onMouseOut="MM_nbGroup('out');"  onMouseOver="MM_nbGroup('over','home_r1_c1','../library/buttons/home_r1_c1_f2.gif','../library/buttons/home_r1_c1_f4.gif',1)"  onClick="MM_nbGroup('down','navbar1','home_r1_c1','../library/buttons/home_r1_c1_f3.gif',1)" ><img name="home_r1_c1" src="../library/buttons/home_r1_c1.gif" width="96" height="79" border="0" alt="home"></a></td>
+
+   <td><img src="../library/buttons/spacer.gif" width="1" height="79" border="0"></td>
+
+  </tr>
+
+  <tr>
+
+   <td><a href="#" onMouseOut="MM_swapImgRestore();"  onMouseOver="MM_swapImage('home_r2_c1','','../library/buttons/home_r2_c1_f2.gif',1)" ><img name="home_r2_c1" src="../library/buttons/home_r2_c1.gif" width="96" height="1" border="0"></a></td>
+
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+
+  </tr>
+
+</table>
+
+<!-- #EndLibraryItem --></td>
+
+    <td valign="top" width="97" bgcolor="993366" rowspan="2"><!-- #BeginLibraryItem "/library/buttons/studentblue.lbi" --><table border="0" cellpadding="0" cellspacing="0" width="96">
+
+<!-- fwtable fwsrc="student1.png" fwbase="studentblue.gif" -->
+
+  <tr>
+
+   <td><img src="../library/buttons/spacer.gif" width="95" height="1" border="0"></td>
+
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+
+  </tr>
+
+  <tr>
+
+    <td><a href="../mainpages/student.html" onMouseOut="MM_nbGroup('out');"  onMouseOver="MM_nbGroup('over','studentblue_r1_c1','../library/buttons/studentblue_r1_c1_f2.gif','../library/buttons/studentblue_r1_c1_f4.gif',1)"  onClick="MM_nbGroup('down','navbar1','studentblue_r1_c1','../library/buttons/studentblue_r1_c1_f3.gif',1)" ><img name="studentblue_r1_c1" src="../library/buttons/studentblue_r1_c1.gif" width="95" height="79" border="0"></a></td>
+
+   <td rowspan="2"><img name="studentblue_r1_c2" src="../library/buttons/studentblue_r1_c2.gif" width="1" height="80" border="0"></td>
+
+   <td><img src="../library/buttons/spacer.gif" width="1" height="79" border="0"></td>
+
+  </tr>
+
+  <tr>
+
+   <td><img name="studentblue_r2_c1" src="../library/buttons/studentblue_r2_c1.gif" width="95" height="1" border="0"></td>
+
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+
+  </tr>
+
+</table>
+
+<!-- #EndLibraryItem --></td>
+
+    <td width="97" valign="top" rowspan="2" bgcolor="993366"><!-- #BeginLibraryItem "/library/buttons/teacher1.lbi" --><table border="0" cellpadding="0" cellspacing="0" width="96">
+
+<!-- fwtable fwsrc="teacher1.png" fwbase="teacher1.gif" -->
+
+  <tr>
+
+   <td><img src="../library/buttons/spacer.gif" width="96" height="1" border="0"></td>
+
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+
+  </tr>
+
+  <tr>
+
+    <td><a href="../mainpages/teacher.html" onMouseOut="MM_nbGroup('out');"  onMouseOver="MM_nbGroup('over','teacher1_r1_c1','../library/buttons/teacher1_r1_c1_f2.gif','../library/buttons/teacher1_r1_c1_f4.gif',1)"  onClick="MM_nbGroup('down','navbar1','teacher1_r1_c1','../library/buttons/teacher1_r1_c1_f3.gif',1)" ><img name="teacher1_r1_c1" src="../library/buttons/teacher1_r1_c1.gif" width="96" height="79" border="0"></a></td>
+
+   <td><img src="../library/buttons/spacer.gif" width="1" height="79" border="0"></td>
+
+  </tr>
+
+  <tr>
+
+   <td><a href="#" onMouseOut="MM_swapImgRestore();"  onMouseOver="MM_swapImage('teacher1_r2_c1','','../library/buttons/teacher1_r2_c1_f2.gif',1)" ><img name="teacher1_r2_c1" src="../library/buttons/teacher1_r2_c1.gif" width="96" height="1" border="0"></a></td>
+
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+
+  </tr>
+
+</table>
+
+<!-- #EndLibraryItem --></td>
+
+    <td width="409" height="81" valign="top" bgcolor="993366"><!-- #BeginEditable "banner" --><!-- #BeginLibraryItem "/library/buttons/dr30titlestudent.lbi" --><img name="dr30titlestudent" src="../library/buttons/dr30titlestudent.gif" width="400" height="80" border="0"><!-- #EndLibraryItem --><!-- #EndEditable --></td>
+
+  </tr>
+
+  <tr> 
+
+    <td valign="top" height="23" bgcolor="993366"><!-- #BeginEditable "pagetitle" --> 
+
+
+
+      <div align="center"></div>
+
+
+
+      <!-- #EndEditable --></td>
+
+  </tr>
+
+  <tr> 
+
+    <td valign="top" height="347"> 
+
+      <table width="100%" border="0" cellpadding="0" cellspacing="0">
+
+        <tr> 
+
+          <td width="97" height="56" valign="top" bgcolor="993366"> <!-- #BeginLibraryItem "/library/buttons/courseoutline.lbi" --><table border="0" cellpadding="0" cellspacing="0" width="96">
+
+<!-- fwtable fwsrc="courseoutline1.png" fwbase="courseoutline.gif" -->
+
+  <tr>
+
+   <td><img src="../library/buttons/spacer.gif" width="96" height="1" border="0"></td>
+
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+
+  </tr>
+
+  <tr>
+
+    <td><a href="../mainpages/courseoutline.htm" onMouseOut="MM_nbGroup('out');"  onMouseOver="MM_nbGroup('over','courseoutline_r1_c1','../library/buttons/courseoutline_r1_c1_f2.gif','../library/buttons/courseoutline_r1_c1_f4.gif',1)"  onClick="MM_nbGroup('down','navbar1','courseoutline_r1_c1','../library/buttons/courseoutline_r1_c1_f3.gif',1)" ><img name="courseoutline_r1_c1" src="../library/buttons/courseoutline_r1_c1.gif" width="96" height="79" border="0"></a></td>
+
+   <td><img src="../library/buttons/spacer.gif" width="1" height="79" border="0"></td>
+
+  </tr>
+
+  <tr>
+
+   <td><a href="#" onMouseOut="MM_swapImgRestore();"  onMouseOver="MM_swapImage('courseoutline_r2_c1','','../library/buttons/courseoutline_r2_c1_f2.gif',1)" ><img name="courseoutline_r2_c1" src="../library/buttons/courseoutline_r2_c1.gif" width="96" height="1" border="0"></a></td>
+
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+
+  </tr>
+
+</table>
+
+<!-- #EndLibraryItem --><!-- #BeginLibraryItem "/library/buttons/sitemap.lbi" --><table border="0" cellpadding="0" cellspacing="0" width="96">
+
+<!-- fwtable fwsrc="sitemap1.png" fwbase="sitemap.gif" -->
+
+  <tr>
+
+   <td><img src="../library/buttons/spacer.gif" width="95" height="1" border="0"></td>
+
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+
+  </tr>
+
+  <tr>
+
+    <td><a href="../mainpages/templatemainmap.html" onMouseOut="MM_nbGroup('out');"  onMouseOver="MM_nbGroup('over','sitemap_r1_c1','../library/buttons/sitemap_r1_c1_f2.gif','../library/buttons/sitemap_r1_c1_f4.gif',1)"  onClick="MM_nbGroup('down','navbar1','sitemap_r1_c1','../library/buttons/sitemap_r1_c1_f3.gif',1)" ><img name="sitemap_r1_c1" src="../library/buttons/sitemap_r1_c1.gif" width="95" height="79" border="0"></a></td>
+
+   <td rowspan="2"><img name="sitemap_r1_c2" src="../library/buttons/sitemap_r1_c2.gif" width="1" height="80" border="0"></td>
+
+   <td><img src="../library/buttons/spacer.gif" width="1" height="79" border="0"></td>
+
+  </tr>
+
+  <tr>
+
+   <td><img name="sitemap_r2_c1" src="../library/buttons/sitemap_r2_c1.gif" width="95" height="1" border="0"></td>
+
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+
+  </tr>
+
+</table>
+
+<!-- #EndLibraryItem --><!-- #BeginLibraryItem "/library/buttons/help.lbi" --><table border="0" cellpadding="0" cellspacing="0" width="96">
+
+<!-- fwtable fwsrc="help1.png" fwbase="help.gif" -->
+
+  <tr>
+
+   <td><img src="../library/buttons/spacer.gif" width="96" height="1" border="0"></td>
+
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+
+  </tr>
+
+  <tr>
+
+    <td><a href="../mainpages/help.html" onMouseOut="MM_nbGroup('out');"  onMouseOver="MM_nbGroup('over','help_r1_c1','../library/buttons/help_r1_c1_f2.gif','../library/buttons/help_r1_c1_f4.gif',1)"  onClick="MM_nbGroup('down','navbar1','help_r1_c1','../library/buttons/help_r1_c1_f3.gif',1)" ><img name="help_r1_c1" src="../library/buttons/help_r1_c1.gif" width="96" height="79" border="0"></a></td>
+
+   <td><img src="../library/buttons/spacer.gif" width="1" height="79" border="0"></td>
+
+  </tr>
+
+  <tr>
+
+   <td><a href="#" onMouseOut="MM_swapImgRestore();"  onMouseOver="MM_swapImage('help_r2_c1','','../library/buttons/help_r2_c1_f2.gif',1)" ><img name="help_r2_c1" src="../library/buttons/help_r2_c1.gif" width="96" height="1" border="0"></a></td>
+
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+
+  </tr>
+
+</table>
+
+<!-- #EndLibraryItem --><!-- #BeginLibraryItem "/library/buttons/resources.lbi" --><table border="0" cellpadding="0" cellspacing="0" width="96">
+
+<!-- fwtable fwsrc="resources1.png" fwbase="resources.gif" -->
+
+  <tr>
+
+   <td><img src="../library/buttons/spacer.gif" width="96" height="1" border="0"></td>
+
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+
+  </tr>
+
+  <tr>
+
+    <td><a href="../mainpages/resources.html" onMouseOut="MM_nbGroup('out');"  onMouseOver="MM_nbGroup('over','resources_r1_c1','../library/buttons/resources_r1_c1_f2.gif','../library/buttons/resources_r1_c1_f4.gif',1)"  onClick="MM_nbGroup('down','navbar1','resources_r1_c1','../library/buttons/resources_r1_c1_f3.gif',1)" ><img name="resources_r1_c1" src="../library/buttons/resources_r1_c1.gif" width="96" height="79" border="0"></a></td>
+
+   <td><img src="../library/buttons/spacer.gif" width="1" height="79" border="0"></td>
+
+  </tr>
+
+  <tr>
+
+   <td><a href="#" onMouseOut="MM_swapImgRestore();"  onMouseOver="MM_swapImage('resources_r2_c1','','../library/buttons/resources_r2_c1_f2.gif',1)" ><img name="resources_r2_c1" src="../library/buttons/resources_r2_c1.gif" width="96" height="1" border="0"></a></td>
+
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+
+  </tr>
+
+</table>
+
+<!-- #EndLibraryItem --></td>
+
+        </tr>
+
+      </table>
+
+    </td>
+
+    <td colspan="3" rowspan="2" valign="top" bgcolor="993366"> <!-- #BeginEditable "content" --> 
+
+
+
+      <table width="603" border="0" cellpadding="5" cellspacing="0" bgcolor="993366">
+        <tr> 
+          <td height="4396" width="593" valign="top" bgcolor="ede4d8"> 
+            <div align="center"> 
+              <p><!-- #BeginLibraryItem "/library/buttons/class.lbi" --><a href="class.html" onMouseOut="MM_nbGroup('out');"  onMouseOver="MM_nbGroup('over','class','../library/buttons/class_f2.gif','../library/buttons/class_f4.gif',1)"  onClick="MM_nbGroup('down','navbar1','class','../library/buttons/class_f3.gif',1)" ><img name="class" src="../library/buttons/class.gif" width="96" height="40" border="0"></a><!-- #EndLibraryItem --><!-- #BeginLibraryItem "/library/buttons/outline.lbi" --><a href="studentoutline.html" onMouseOut="MM_nbGroup('out');"  onMouseOver="MM_nbGroup('over','outline','../library/buttons/outline_f2.gif','../library/buttons/outline_f4.gif',1)"  onClick="MM_nbGroup('down','navbar1','outline','../library/buttons/outline_f3.gif',1)" ><img name="outline" src="../library/buttons/outline.gif" width="96" height="40" border="0"></a><!-- #EndLibraryItem --></p>
+              <div align="center"> 
+                <p align="left"><font size="4" color="663333" face="Georgia, Times New Roman, Times, serif"><b>Unit 
+                  2 - Theatre History<i><br>
+                  </i></b></font><i><font face="Georgia, Times New Roman, Times, serif" size="4" color="663333">Module 
+                  1: Understanding Historical Context<br>
+                  </font></i><font face="Georgia, Times New Roman, Times, serif" size="4" color="663333">Lesson 
+                  2 - Shakespearean Times</font></p>
+                <div align="left"> 
+                  <div align="center"> 
+                    <p align="left"><b><font face="Georgia, Times New Roman, Times, serif" color="#000000">Resources:</font></b><font face="Georgia, Times New Roman, Times, serif" color="#000000"><br>
+                      (pdf's)<a href="../teacher/pdf/2theatrehistorynotes.pdf"> 
+                      Background notes for theatre history unit</a>; <a href="../teacher/pdf/2shakespearequestions.pdf">Shakespeare's 
+                      Theatre Questions</a>; <a href="../teacher/pdf/2shakespeareimprov.pdf">Famous 
+                      Lines</a>; <a href="../mainpages/links.html">Shakespearean 
+                      Web Sites</a>; variety of texts from the period.</font></p>
+                    <div align="left"></div>
+                    <table width="575" border="1" align="center">
+                      <tr> 
+                        <td width="10%" height="49" align="center"><font face="Georgia, Times New Roman, Times, serif" color="#669966"><a href="../teacher/pdf/theatrehistorypdfs.htm"><img src="../library/images/earth.gif" width="50" height="50" border="0"></a></font></td>
+                        <td width="90%" height="49"><font color="#669966"><b><font color="#993366">This 
+                          icon indicates an advanced print resource you can refer 
+                          to for more in depth research information. It has been 
+                          provided courtesy of Dr. Moira Day, University of Saskatchewan, 
+                          Drama Department. </font></b></font></td>
+                      </tr>
+                    </table>
+                    <hr>
+                    <div align="left"></div>
+                    <p align="left"><b><font face="Georgia, Times New Roman, Times, serif">Activities:</font></b></p>
+                    <p align="left"><font face="Georgia, Times New Roman, Times, serif"><b>Activity 
+                      1- Talking Circle: </b></font></p>
+                    <table width="575" border="1" align="center">
+                      <tr> 
+                        <td bgcolor="#CC9966" width="86"><img src="../library/images/talkingcircle.gif" width="85" height="67"></td>
+                        <td width="443" bgcolor="#993366"> 
+                          <p><b><font face="Georgia, Times New Roman, Times, serif">Talking 
+                            Circle: </font></b><font face="Georgia, Times New Roman, Times, serif">Why 
+                            do we study Shakespeare? How has his work remained 
+                            relevant through all these years? What gives it lasting 
+                            power?</font></p>
+                          <p><font face="Georgia, Times New Roman, Times, serif">(Hint: 
+                            What are the key themes used throughout his work? 
+                            Greed, lust, betrayal, loyalty, love, hate, power, 
+                            relationships - both tragic and comedic) </font></p>
+                        </td>
+                      </tr>
+                    </table>
+                    <p align="left"><b><font face="Georgia, Times New Roman, Times, serif">Activity 
+                      2 - Research: </font></b></p>
+                    <p align="left"><font face="Georgia, Times New Roman, Times, serif">Form 
+                      small groups and engage in research, gather and post information 
+                      collectively on posters in the room. Research questions 
+                      may include:</font></p>
+                    <table width="575" border="1" bordercolor="#993366" align="center" height="204">
+                      <tr> 
+                        <td width="150" height="282" bgcolor="#993366"><img src="../library/images/shakespeare.gif" width="150" height="191"></td>
+                        <td width="409" height="282"> 
+                          <p><font face="Georgia, Times New Roman, Times, serif">A. 
+                            Who was Shakespeare?<br>
+                            Make a list of biographical facts about Shakespeare 
+                            as a person.</font></p>
+                          <p><font face="Georgia, Times New Roman, Times, serif">B. 
+                            What are the most important works written of the time? 
+                            Include the work of other writers as well.<br>
+                            Make a list of all Shakespeare's plays. Categorize 
+                            into tragedy and comedy.</font></p>
+                          <p><font face="Georgia, Times New Roman, Times, serif">C. 
+                            What distinguishes the theatre of that time? Describe 
+                            (draw) the stage design of the Globe Theatre? How 
+                            was the stage used effectively to create various effects? 
+                            Why was costuming so important?</font></p>
+                          <p><font face="Georgia, Times New Roman, Times, serif">D. 
+                            What was it like to live in the Elizabethan Era in 
+                            England?<br>
+                            Make a list of what the lifestyle was like, health 
+                            problems (effect of the plague), life expectancy, 
+                            religion, monarchy, other artists, etc.</font></p>
+                          <p><font face="Georgia, Times New Roman, Times, serif">E. 
+                            What were the various duties and positions of people 
+                            involve in the theatre? How often were plays performed 
+                            and how did they prepare for each play?</font></p>
+                        </td>
+                      </tr>
+                    </table>
+                    <br>
+                    <table width="575" border="1" align="center" bgcolor="#993366">
+                      <tr> 
+                        <td width="93%" bgcolor="#993366"> <font face="Georgia, Times New Roman, Times, serif">Bonus 
+                          Question: How were special effects shown in Shakespeare's 
+                          time? Actors were in battles, storms, sword fights, 
+                          people's heads cut off, and ghosts walking about. </font></td>
+                        <td width="7%"> 
+                          <div align="center"><img src="../library/images/questionmark.gif" width="30" height="49"></div>
+                        </td>
+                      </tr>
+                    </table>
+                    <p align="left"><font face="Georgia, Times New Roman, Times, serif">(*Thunder 
+                      - roll a canon ball on the floor behind the curtain; * Blood 
+                      - a red vinegar soaked sponge held under the arm and squeezed 
+                      upon being stabbed; * Ghosts - rise up out of the floor 
+                      from a hidden trap door; * Decapitated head - actor is under 
+                      a table with their through a whole to show on a table, while 
+                      the body is hidden with a cloth.)</font></p>
+                    <table width="575" border="3" bordercolor="#993366">
+                      <tr> 
+                        <td> 
+                          <p align="center"><font face="Georgia, Times New Roman, Times, serif"><b>Background 
+                            Notes for Research</b></font></p>
+                          <p align="left"><font face="Georgia, Times New Roman, Times, serif">Students 
+                            may refer to the pdf notes </font><font face="Georgia, Times New Roman, Times, serif" color="#000000"><a href="../teacher/pdf/2theatrehistorynotes.pdf">Background 
+                            notes for theatre history unit</a></font> <font face="Georgia, Times New Roman, Times, serif">to 
+                            assist them with their research.</font></p>
+                          <table width="575" border="1" align="center" bordercolor="#993366">
+                            <tr> 
+                              <td width="19%"><img src="../library/images/surfnet.gif" width="100" height="80"></td>
+                              <td width="81%" bgcolor="#FFFFFF"><font face="Georgia, Times New Roman, Times, serif">There 
+                                are many good resources on Shakespeare and the 
+                                Elizabethan period. </font><font face="Georgia, Times New Roman, Times, serif" color="#000000"><a href="../mainpages/links.html">Shakespearean 
+                                Web Sites</a></font></td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                    <div align="left"> 
+                      <p><font face="Georgia, Times New Roman, Times, serif"><b>Activity 
+                        3 - Improv Exercise:</b></font></p>
+                    </div>
+                    <div align="left"> 
+                      <p><font face="Georgia, Times New Roman, Times, serif">(<a href="../teacher/pdf/2shakespeareimprov.pdf">click 
+                        here for pdf</a>)</font></p>
+                    </div>
+                    <p align="left"><font face="Georgia, Times New Roman, Times, serif">Use 
+                      the quotes provided below to put together new, improvised 
+                      scenes:</font></p>
+                    <div align="left"> 
+                      <ul>
+                        <li><font face="Georgia, Times New Roman, Times, serif"> 
+                          cut them up and draw from a hat at random. </font></li>
+                        <li><font face="Georgia, Times New Roman, Times, serif">or 
+                          perhaps put them into groups and assign a line from 
+                          each category - opening lines, lines of love, insults 
+                          and closing lines. </font></li>
+                        <li><font face="Georgia, Times New Roman, Times, serif">it 
+                          will work best if students memorize the lines and are 
+                          able to improvise new lines (of a Shakespearean sounding 
+                          sort). </font></li>
+                        <li><font face="Georgia, Times New Roman, Times, serif">the 
+                          exercise is for fun - to take pleasure in the words 
+                          Shakespeare has given to the English language.</font></li>
+                        <li><font face="Georgia, Times New Roman, Times, serif">encourage 
+                          them to add in sword fights (mime), balcony scenes, 
+                          betrayal, mistaken identity, jealousy and madness - 
+                          all elements of the best plays.</font></li>
+                      </ul>
+                    </div>
+                    <ul>
+                    </ul>
+                    <div align="left"> 
+                      <table width="575" border="1" bordercolor="#993366" bgcolor="#FFFFFF" align="center">
+                        <tr> 
+                          <td> 
+                            <p align="center"><font face="Georgia, Times New Roman, Times, serif"><b>Famous 
+                              Opening Lines</b><br>
+                              </font></p>
+                            <p><font face="Georgia, Times New Roman, Times, serif">&quot;In 
+                              delivering my son from me, I bury a second husband.&quot; 
+                              (<i>All's Well That ends Well</i>)</font></p>
+                            <p><font face="Georgia, Times New Roman, Times, serif">&quot;In 
+                              sooth, I know not why I am so sad.&quot; (<i>Merchant 
+                              of Venice</i>)</font></p>
+                            <p><font face="Georgia, Times New Roman, Times, serif">&quot;I 
+                              wonder how the King escaped our hands.&quot; (<i>Henry 
+                              IV</i>)</font></p>
+                            <p><font face="Georgia, Times New Roman, Times, serif">&quot;Who's 
+                              there?&quot; (<i>Hamlet</i>)</font></p>
+                            <p><font face="Georgia, Times New Roman, Times, serif">&quot;Hence! 
+                              Home, you idle creatures, get you home.&quot; (<i>Julius 
+                              Caesar)</i></font></p>
+                            <p><font face="Georgia, Times New Roman, Times, serif">&quot;When 
+                              shall we three meet again In thunder, lightning 
+                              or in rain?&quot; (<i>Macbeth)</i></font></p>
+                            <p><font face="Georgia, Times New Roman, Times, serif">&quot;Boatswain!&quot; 
+                              (<i>The Tempest)</i></font></p>
+                            <p><font face="Georgia, Times New Roman, Times, serif">&quot;Now 
+                              is the winter of our discontent made glorious summer 
+                              by this son of York.&quot; (<i>Richard III)</i></font></p>
+                            <p><font face="Georgia, Times New Roman, Times, serif">&quot;If 
+                              music be the food of love , play on; Give me excess 
+                              of it, that, surfeiting, The appetite may sicken, 
+                              and so die.&quot; (<i>Twelfth Night)</i></font></p>
+                          </td>
+                        </tr>
+                      </table>
+                      <table width="575" border="1" bordercolor="#993366" bgcolor="#FFFFFF" align="center">
+                        <tr> 
+                          <td> 
+                            <p align="center"><b><font face="Georgia, Times New Roman, Times, serif">Famous 
+                              Words of Love</font></b><font face="Georgia, Times New Roman, Times, serif"><br>
+                              </font></p>
+                            <p><font face="Georgia, Times New Roman, Times, serif">&quot;I 
+                              dedicate myself to your sweet pleasure.&quot; (<i>Cymbeline)</i></font></p>
+                            <p><font face="Georgia, Times New Roman, Times, serif">&quot;By'r 
+                              lady, your ladyship is nearer to heaven than when 
+                              I saw you last.&quot; (<i>Hamlet)</i></font></p>
+                            <p><font face="Georgia, Times New Roman, Times, serif">&quot;I 
+                              love you more than words can wield the matter, dearer 
+                              then eye-sight, space and liberty.&quot; (<i>King 
+                              Lear)</i></font></p>
+                            <p><font face="Georgia, Times New Roman, Times, serif">&quot;Fair 
+                              thoughts and happy hours attend on you.&quot; (<i>Merchant 
+                              of Venice)</i></font></p>
+                            <p><font face="Georgia, Times New Roman, Times, serif">&quot;O, 
+                              how ripe in show thy lips, those kissing cherries, 
+                              tempting grow.&quot; (<i>A Midsummer Night's Dream)</i></font></p>
+                            <p><font face="Georgia, Times New Roman, Times, serif">&quot;I 
+                              love you with so much of my heart that none is left 
+                              to protest.&quot; (<i>Much Ado About Nothing)</i></font></p>
+                            <p><font face="Georgia, Times New Roman, Times, serif">&quot;I 
+                              burn, I pine, I perish.&quot; (<i>The Taming of 
+                              the Shrew)</i></font></p>
+                            <p><font face="Georgia, Times New Roman, Times, serif">&quot;How 
+                              like a dream is this I see and hear! Love, lend 
+                              me patience to forbear awhile.&quot; (<i>Two Gentlemen 
+                              of Verona)</i></font></p>
+                          </td>
+                        </tr>
+                      </table>
+                      <p align="center"><img src="../library/images/eyes.gif" width="75" height="37"></p>
+                      <table width="575" border="1" bordercolor="#993366" bgcolor="#FFFFFF" align="center">
+                        <tr> 
+                          <td> 
+                            <p align="center"><b><font face="Georgia, Times New Roman, Times, serif">Famous 
+                              Insults</font><i><font face="Georgia, Times New Roman, Times, serif"><br>
+                              </font></i></b></p>
+                            <p><font face="Georgia, Times New Roman, Times, serif">&quot;More 
+                              of your conversation would infect my brain.&quot; 
+                              (<i>Coriolanus)</i></font></p>
+                            <p><font face="Georgia, Times New Roman, Times, serif">&quot;Away! 
+                              Thou art poison to my blood.&quot; (<i>Cymbeline)</i></font></p>
+                            <p><font face="Georgia, Times New Roman, Times, serif">&quot;Hang 
+                              yourself, you muddy conger, hang yourself!&quot; 
+                              (<i>Henry IV)</i></font></p>
+                            <p><font face="Georgia, Times New Roman, Times, serif">&quot;He 
+                              is deformed, crooked, old, and sere,<br>
+                              Ill faced, worse bodied, shapeless everywhere;<br>
+                              Vicious, ungentle, foolish, blunt, unkind;<br>
+                              Stigmatical in making, worse in mind.&quot; (<i>The 
+                              Comedy of Errors)</i></font></p>
+                            <p><font face="Georgia, Times New Roman, Times, serif">&quot;Why, 
+                              thou clay-brained guts, thou knotty-pated fool, 
+                              thou whoreson obscene greasy tallow-catch.&quot; 
+                              (<i>Henry IV)</i></font></p>
+                            <p><font face="Georgia, Times New Roman, Times, serif">&quot;Thou 
+                              art a boil, A plague-sore, an embossed carbuncle 
+                              In my corrupted blood.&quot; (<i>King Lear)</i></font></p>
+                            <p><font face="Georgia, Times New Roman, Times, serif">&quot;Let's 
+                              meet as little as we can.&quot; (<i>As You Like 
+                              It)</i></font></p>
+                            <p><font face="Georgia, Times New Roman, Times, serif">&quot;I 
+                              had rather hear my dog bark at a crow than a man 
+                              swear he loves me.&quot; (<i>Much Ado About Nothing)</i></font></p>
+                            <p><font face="Georgia, Times New Roman, Times, serif">&quot;Come, 
+                              you are a tedious fool.&quot; (<i>Measure for Measure)</i></font></p>
+                            <p><font face="Georgia, Times New Roman, Times, serif">&quot;You 
+                              secret, black and midnight hags.&quot; (<i>Macbeth)</i></font></p>
+                            <p><font face="Georgia, Times New Roman, Times, serif">&quot;Thou 
+                              lump of foul deformity.&quot; (<i>Richard III)</i></font></p>
+                            <p><font face="Georgia, Times New Roman, Times, serif">&quot;Away, 
+                              you 3 inch fool.&quot; (<i>Taming of the Shrew)</i></font></p>
+                            <p><font face="Georgia, Times New Roman, Times, serif">&quot;Would 
+                              thou wert clean enough to spit upon!&quot; (<i>Timon 
+                              of Athens)</i></font></p>
+                            <p><font face="Georgia, Times New Roman, Times, serif">&quot;Thou 
+                              sodden-witted lord! Thou hast no more brain than 
+                              I have in mine elbows.&quot; (<i>Troilus and Cressida)</i></font></p>
+                            <p><font face="Georgia, Times New Roman, Times, serif">&quot;If 
+                              you spend word for word with me, I shall make your 
+                              wit bankrupt.&quot; (<i>Two Gentlemen of Verona)</i></font></p>
+                          </td>
+                        </tr>
+                      </table>
+                      <table width="575" border="1" bordercolor="#993366" bgcolor="#FFFFFF" align="center">
+                        <tr> 
+                          <td> 
+                            <p align="center"><font face="Georgia, Times New Roman, Times, serif"><b>Famous 
+                              Last Words</b><br>
+                              </font></p>
+                            <p><font face="Georgia, Times New Roman, Times, serif">&quot;Et 
+                              tu, Brute! Then fall, Caesar.&quot; (<i>Julius Caesar</i>)</font></p>
+                            <p><font face="Georgia, Times New Roman, Times, serif">&quot;No, 
+                              no, the drink, the drink, - O my dear Hamlet, - 
+                              The drink, the drink! I am poison'd&quot; (<i>Hamlet</i>)</font></p>
+                            <p><font face="Georgia, Times New Roman, Times, serif">&quot;Now 
+                              my spirit is going; I can no more.&quot; (<i>Antony 
+                              and Cleopatra</i>)</font></p>
+                            <p><font face="Georgia, Times New Roman, Times, serif">&quot;I 
+                              kiss'd thee ere I kill'd thee: no way but this; 
+                              Killing myself, to die upon a kiss.&quot; (<i>Othello</i>)</font></p>
+                            <p><font face="Georgia, Times New Roman, Times, serif">&quot;The 
+                              rest is silence.&quot; (<i>Hamlet</i>)</font></p>
+                            <p><font face="Georgia, Times New Roman, Times, serif">&quot;Lay 
+                              on, MacDuff, and damn'd be him that first cries, 
+                              &quot;Hold, enough!&quot; (<i>Macbeth</i>)</font></p>
+                            <p><font face="Georgia, Times New Roman, Times, serif">&quot;A 
+                              plaque o' both your houses! They have made worm's 
+                              meat of me: I have it, and soundly too: your houses!&quot; 
+                              (<i>Romeo &amp; Juliet</i>)</font></p>
+                            <p><font face="Georgia, Times New Roman, Times, serif">&quot;A 
+                              horse! A horse! My kingdom for a horse!&quot; (<i>Henry 
+                              IV</i>)</font></p>
+                          </td>
+                        </tr>
+                      </table>
+                      <p><font face="Georgia, Times New Roman, Times, serif"><b>Activity 
+                        4 - Journal:</b></font></p>
+                      <table width="575" border="1" align="center" bordercolor="#993366" bgcolor="#993366">
+                        <tr> 
+                          <td width="82"><img src="../library/images/journal.gif" width="78" height="119"></td>
+                          <td width="447" bgcolor="#993366"><b><font face="Georgia, Times New Roman, Times, serif">Journal 
+                            Note:</font></b><font face="Georgia, Times New Roman, Times, serif"> 
+                            If you were to direct, or act in, a Shakespearean 
+                            play, which would you choose? Explain why and what 
+                            particularly interests you. What would be the most 
+                            challenging aspect of this work in your opinion?</font></td>
+                        </tr>
+                      </table>
+                      <p><font face="Georgia, Times New Roman, Times, serif"><b>Activity 
+                        5 - </b></font><b><font face="Georgia, Times New Roman, Times, serif">Staged 
+                        Reading:</font></b></p>
+                      <p><font face="Georgia, Times New Roman, Times, serif">Select 
+                        a sonnet or a soliloquy to perform as a staged reading 
+                        for the class. You need to consider how to present the 
+                        text, i.e.: costume, lighting, music, etc. Rehearse the 
+                        text aloud to perfect pronunciation, articulation of words. 
+                        Be sure of the meaning as well, otherwise the intention 
+                        will be unclear.</font></p>
+                      <p><font face="Georgia, Times New Roman, Times, serif"><b>Activity 
+                        6 - Evaluation:</b></font></p>
+                      <p><font face="Georgia, Times New Roman, Times, serif">Use 
+                        the handout </font><font face="Georgia, Times New Roman, Times, serif" color="#000000"><a href="../teacher/pdf/2shakespearequestions.pdf">Shakespeare's 
+                        Theatre Questions</a></font> <font face="Georgia, Times New Roman, Times, serif">to 
+                        evaluate your understanding of the period.</font><br>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <blockquote> 
+                <div align="left"></div>
+              </blockquote>
+              <div align="center"> 
+                <hr>
+                <p align="left"><font face="Georgia, Times New Roman, Times, serif"><b>Evaluation:<br>
+                  </b>Shakespeare's Theatre questions are use to check comprehension. 
+                  Participation in the jigsaw exercise could be marked out of 
+                  / 10, or completion of the poster out of a similar amount. </font></p>
+              </div>
+              <p><font face="Georgia, Times New Roman, Times, serif"><a href="2neoclassical.html">Next 
+                Lesson</a> / <a href="2ancient.html">Previous Lesson</a></font></p>
+            </div>
+          </td>
+        </tr>
+      </table>
+
+
+
+      <!-- #EndEditable --></td>
+
+  </tr>
+
+  <tr> 
+
+    <td valign="top" height="89" bgcolor="993366"> <!-- #BeginEditable "optional" --> 
+
+
+
+      <table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="993366">
+
+
+
+        <tr> 
+
+
+
+          <td width="97" height="89" valign="top" bgcolor="993366">&nbsp;</td>
+
+
+
+        </tr>
+
+
+
+      </table>
+
+
+
+      <!-- #EndEditable --></td>
+
+  </tr>
+
+  <tr> 
+
+    <td height="0"></td>
+
+    <td></td>
+
+    <td></td>
+
+    <td></td>
+
+  </tr>
+
+</table>
+
+</body>
+
+<!-- #EndTemplate --></html>
+

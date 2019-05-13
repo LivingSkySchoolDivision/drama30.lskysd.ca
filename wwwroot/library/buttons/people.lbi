@@ -1,0 +1,1 @@
+<a href="../../mainpages/people.html" onMouseOut="MM_nbGroup('out');"  onMouseOver="MM_nbGroup('over','people','people_f2.gif','people_f4.gif',1);"  onClick="MM_nbGroup('down','navbar1','people','people_f3.gif',1);" ><img name="people" src="people.gif" width="96" height="40" border="0"></a>

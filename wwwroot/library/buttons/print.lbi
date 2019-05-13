@@ -1,0 +1,1 @@
+<a href="../../mainpages/printresources.html" onMouseOut="MM_nbGroup('out');"  onMouseOver="MM_nbGroup('over','print','print_f2.gif','print_f4.gif',1);"  onClick="MM_nbGroup('down','navbar1','print','print_f3.gif',1);" ><img name="print" src="print.gif" width="96" height="40" border="0"></a>

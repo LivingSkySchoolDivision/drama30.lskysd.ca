@@ -1,0 +1,600 @@
+<html><!-- #BeginTemplate "/Templates/templateteacher.dwt" -->
+<head>
+<!-- #BeginEditable "doctitle" --> 
+
+
+
+<title>Teacher: Working with a Director</title>
+
+
+
+<!-- #EndEditable --> 
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<script language="JavaScript">
+<!--
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && document.getElementById) x=document.getElementById(n); return x;
+}
+
+function MM_nbGroup(event, grpName) { //v3.0
+  var i,img,nbArr,args=MM_nbGroup.arguments;
+  if (event == "init" && args.length > 2) {
+    if ((img = MM_findObj(args[2])) != null && !img.MM_init) {
+      img.MM_init = true; img.MM_up = args[3]; img.MM_dn = img.src;
+      if ((nbArr = document[grpName]) == null) nbArr = document[grpName] = new Array();
+      nbArr[nbArr.length] = img;
+      for (i=4; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+        if (!img.MM_up) img.MM_up = img.src;
+        img.src = img.MM_dn = args[i+1];
+        nbArr[nbArr.length] = img;
+    } }
+  } else if (event == "over") {
+    document.MM_nbOver = nbArr = new Array();
+    for (i=1; i < args.length-1; i+=3) if ((img = MM_findObj(args[i])) != null) {
+      if (!img.MM_up) img.MM_up = img.src;
+      img.src = (img.MM_dn && args[i+2]) ? args[i+2] : args[i+1];
+      nbArr[nbArr.length] = img;
+    }
+  } else if (event == "out" ) {
+    for (i=0; i < document.MM_nbOver.length; i++) {
+      img = document.MM_nbOver[i]; img.src = (img.MM_dn) ? img.MM_dn : img.MM_up; }
+  } else if (event == "down") {
+    if ((nbArr = document[grpName]) != null)
+      for (i=0; i < nbArr.length; i++) { img=nbArr[i]; img.src = img.MM_up; img.MM_dn = 0; }
+    document[grpName] = nbArr = new Array();
+    for (i=2; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+      if (!img.MM_up) img.MM_up = img.src;
+      img.src = img.MM_dn = args[i+1];
+      nbArr[nbArr.length] = img;
+  } }
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+</script>
+<!-- #BeginEditable "CourseBuilder" --> 
+<script language="JavaScript">
+<!--
+function MM_initInteractions(){}
+//-->
+</script>
+<!-- #EndEditable --> 
+</head>
+
+<body bgcolor="#669966" text="#000000" onLoad="MM_initInteractions();MM_preloadImages('../library/buttons/home_r1_c1_f3.gif','../library/buttons/home_r1_c1_f2.gif','../library/buttons/home_r1_c1_f4.gif','../library/buttons/home_r2_c1_f2.gif','../library/buttons/studentblue_r1_c1_f3.gif','../library/buttons/studentblue_r1_c1_f2.gif','../library/buttons/studentblue_r1_c1_f4.gif','../library/buttons/courseoutline_r1_c1_f3.gif','../library/buttons/courseoutline_r1_c1_f2.gif','../library/buttons/courseoutline_r1_c1_f4.gif','../library/buttons/courseoutline_r2_c1_f2.gif','../library/buttons/sitemap_r1_c1_f3.gif','../library/buttons/sitemap_r1_c1_f2.gif','../library/buttons/sitemap_r1_c1_f4.gif','../library/buttons/help_r1_c1_f3.gif','../library/buttons/help_r1_c1_f2.gif','../library/buttons/help_r1_c1_f4.gif','../library/buttons/help_r2_c1_f2.gif','../library/buttons/resources_r1_c1_f3.gif','../library/buttons/resources_r1_c1_f2.gif','../library/buttons/resources_r1_c1_f4.gif','../library/buttons/resources_r2_c1_f2.gif','../library/buttons/aboutsite_f3.gif','../library/buttons/aboutsite_f2.gif','../library/buttons/aboutsite_f4.gif','../library/buttons/planning_f3.gif','../library/buttons/planning_f2.gif','../library/buttons/planning_f4.gif','../library/buttons/teacher1_r1_c1_f3.gif','../library/buttons/teacher1_r1_c1_f2.gif','../library/buttons/teacher1_r1_c1_f4.gif','../library/buttons/teacher1_r2_c1_f2.gif')">
+<table width="700" border="0" cellpadding="0" cellspacing="0">
+  <tr> 
+    <td width="97" valign="top" bgcolor="669966" rowspan="2"> <!-- #BeginLibraryItem "/library/buttons/home.lbi" --><table border="0" cellpadding="0" cellspacing="0" width="96">
+<!-- fwtable fwsrc="home1.png" fwbase="home.gif" -->
+  <tr>
+   <td><img src="../library/buttons/spacer.gif" width="96" height="1" border="0"></td>
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+  </tr>
+  <tr>
+    <td><a href="../index.html" onMouseOut="MM_nbGroup('out');"  onMouseOver="MM_nbGroup('over','home_r1_c1','../library/buttons/home_r1_c1_f2.gif','../library/buttons/home_r1_c1_f4.gif',1)"  onClick="MM_nbGroup('down','navbar1','home_r1_c1','../library/buttons/home_r1_c1_f3.gif',1)" ><img name="home_r1_c1" src="../library/buttons/home_r1_c1.gif" width="96" height="79" border="0" alt="home"></a></td>
+   <td><img src="../library/buttons/spacer.gif" width="1" height="79" border="0"></td>
+  </tr>
+  <tr>
+   <td><a href="#" onMouseOut="MM_swapImgRestore();"  onMouseOver="MM_swapImage('home_r2_c1','','../library/buttons/home_r2_c1_f2.gif',1)" ><img name="home_r2_c1" src="../library/buttons/home_r2_c1.gif" width="96" height="1" border="0"></a></td>
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+  </tr>
+</table>
+<!-- #EndLibraryItem --></td>
+    <td valign="top" width="97" bgcolor="669966" rowspan="2"><!-- #BeginLibraryItem "/library/buttons/studentblue.lbi" --><table border="0" cellpadding="0" cellspacing="0" width="96">
+<!-- fwtable fwsrc="student1.png" fwbase="studentblue.gif" -->
+  <tr>
+   <td><img src="../library/buttons/spacer.gif" width="95" height="1" border="0"></td>
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+  </tr>
+  <tr>
+    <td><a href="../mainpages/student.html" onMouseOut="MM_nbGroup('out');"  onMouseOver="MM_nbGroup('over','studentblue_r1_c1','../library/buttons/studentblue_r1_c1_f2.gif','../library/buttons/studentblue_r1_c1_f4.gif',1)"  onClick="MM_nbGroup('down','navbar1','studentblue_r1_c1','../library/buttons/studentblue_r1_c1_f3.gif',1)" ><img name="studentblue_r1_c1" src="../library/buttons/studentblue_r1_c1.gif" width="95" height="79" border="0"></a></td>
+   <td rowspan="2"><img name="studentblue_r1_c2" src="../library/buttons/studentblue_r1_c2.gif" width="1" height="80" border="0"></td>
+   <td><img src="../library/buttons/spacer.gif" width="1" height="79" border="0"></td>
+  </tr>
+  <tr>
+   <td><img name="studentblue_r2_c1" src="../library/buttons/studentblue_r2_c1.gif" width="95" height="1" border="0"></td>
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+  </tr>
+</table>
+<!-- #EndLibraryItem --></td>
+    <td width="97" valign="top" rowspan="2"><!-- #BeginLibraryItem "/library/buttons/teacher1.lbi" --><table border="0" cellpadding="0" cellspacing="0" width="96">
+<!-- fwtable fwsrc="teacher1.png" fwbase="teacher1.gif" -->
+  <tr>
+   <td><img src="../library/buttons/spacer.gif" width="96" height="1" border="0"></td>
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+  </tr>
+  <tr>
+    <td><a href="../mainpages/teacher.html" onMouseOut="MM_nbGroup('out');"  onMouseOver="MM_nbGroup('over','teacher1_r1_c1','../library/buttons/teacher1_r1_c1_f2.gif','../library/buttons/teacher1_r1_c1_f4.gif',1)"  onClick="MM_nbGroup('down','navbar1','teacher1_r1_c1','../library/buttons/teacher1_r1_c1_f3.gif',1)" ><img name="teacher1_r1_c1" src="../library/buttons/teacher1_r1_c1.gif" width="96" height="79" border="0"></a></td>
+   <td><img src="../library/buttons/spacer.gif" width="1" height="79" border="0"></td>
+  </tr>
+  <tr>
+   <td><a href="#" onMouseOut="MM_swapImgRestore();"  onMouseOver="MM_swapImage('teacher1_r2_c1','','../library/buttons/teacher1_r2_c1_f2.gif',1)" ><img name="teacher1_r2_c1" src="../library/buttons/teacher1_r2_c1.gif" width="96" height="1" border="0"></a></td>
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+  </tr>
+</table>
+<!-- #EndLibraryItem --></td>
+    <td width="409" valign="top" bgcolor="669966" height="91"><!-- #BeginEditable "banner" --><!-- #BeginLibraryItem "/library/buttons/dr30titleteacher.lbi" --><img name="dr30titleteacher" src="../library/buttons/dr30titleteacher.gif" width="400" height="80" border="0"><!-- #EndLibraryItem --><!-- #EndEditable --></td>
+  </tr>
+  <tr> 
+    <td valign="top" bgcolor="669966" height="23"><!-- #BeginEditable "pagetitle" --> 
+
+
+
+      <div align="center"></div>
+
+
+
+      <!-- #EndEditable --></td>
+  </tr>
+  <tr> 
+    <td valign="top" height="347"> 
+      <table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="669966">
+        <tr> 
+          <td width="97" height="56" valign="top" bgcolor="669966"> <!-- #BeginLibraryItem "/library/buttons/courseoutline.lbi" --><table border="0" cellpadding="0" cellspacing="0" width="96">
+<!-- fwtable fwsrc="courseoutline1.png" fwbase="courseoutline.gif" -->
+  <tr>
+   <td><img src="../library/buttons/spacer.gif" width="96" height="1" border="0"></td>
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+  </tr>
+  <tr>
+    <td><a href="../mainpages/courseoutline.htm" onMouseOut="MM_nbGroup('out');"  onMouseOver="MM_nbGroup('over','courseoutline_r1_c1','../library/buttons/courseoutline_r1_c1_f2.gif','../library/buttons/courseoutline_r1_c1_f4.gif',1)"  onClick="MM_nbGroup('down','navbar1','courseoutline_r1_c1','../library/buttons/courseoutline_r1_c1_f3.gif',1)" ><img name="courseoutline_r1_c1" src="../library/buttons/courseoutline_r1_c1.gif" width="96" height="79" border="0"></a></td>
+   <td><img src="../library/buttons/spacer.gif" width="1" height="79" border="0"></td>
+  </tr>
+  <tr>
+   <td><a href="#" onMouseOut="MM_swapImgRestore();"  onMouseOver="MM_swapImage('courseoutline_r2_c1','','../library/buttons/courseoutline_r2_c1_f2.gif',1)" ><img name="courseoutline_r2_c1" src="../library/buttons/courseoutline_r2_c1.gif" width="96" height="1" border="0"></a></td>
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+  </tr>
+</table>
+<!-- #EndLibraryItem --><!-- #BeginLibraryItem "/library/buttons/sitemap.lbi" --><table border="0" cellpadding="0" cellspacing="0" width="96">
+<!-- fwtable fwsrc="sitemap1.png" fwbase="sitemap.gif" -->
+  <tr>
+   <td><img src="../library/buttons/spacer.gif" width="95" height="1" border="0"></td>
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+  </tr>
+  <tr>
+    <td><a href="../mainpages/templatemainmap.html" onMouseOut="MM_nbGroup('out');"  onMouseOver="MM_nbGroup('over','sitemap_r1_c1','../library/buttons/sitemap_r1_c1_f2.gif','../library/buttons/sitemap_r1_c1_f4.gif',1)"  onClick="MM_nbGroup('down','navbar1','sitemap_r1_c1','../library/buttons/sitemap_r1_c1_f3.gif',1)" ><img name="sitemap_r1_c1" src="../library/buttons/sitemap_r1_c1.gif" width="95" height="79" border="0"></a></td>
+   <td rowspan="2"><img name="sitemap_r1_c2" src="../library/buttons/sitemap_r1_c2.gif" width="1" height="80" border="0"></td>
+   <td><img src="../library/buttons/spacer.gif" width="1" height="79" border="0"></td>
+  </tr>
+  <tr>
+   <td><img name="sitemap_r2_c1" src="../library/buttons/sitemap_r2_c1.gif" width="95" height="1" border="0"></td>
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+  </tr>
+</table>
+<!-- #EndLibraryItem --><!-- #BeginLibraryItem "/library/buttons/help.lbi" --><table border="0" cellpadding="0" cellspacing="0" width="96">
+<!-- fwtable fwsrc="help1.png" fwbase="help.gif" -->
+  <tr>
+   <td><img src="../library/buttons/spacer.gif" width="96" height="1" border="0"></td>
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+  </tr>
+  <tr>
+    <td><a href="../mainpages/help.html" onMouseOut="MM_nbGroup('out');"  onMouseOver="MM_nbGroup('over','help_r1_c1','../library/buttons/help_r1_c1_f2.gif','../library/buttons/help_r1_c1_f4.gif',1)"  onClick="MM_nbGroup('down','navbar1','help_r1_c1','../library/buttons/help_r1_c1_f3.gif',1)" ><img name="help_r1_c1" src="../library/buttons/help_r1_c1.gif" width="96" height="79" border="0"></a></td>
+   <td><img src="../library/buttons/spacer.gif" width="1" height="79" border="0"></td>
+  </tr>
+  <tr>
+   <td><a href="#" onMouseOut="MM_swapImgRestore();"  onMouseOver="MM_swapImage('help_r2_c1','','../library/buttons/help_r2_c1_f2.gif',1)" ><img name="help_r2_c1" src="../library/buttons/help_r2_c1.gif" width="96" height="1" border="0"></a></td>
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+  </tr>
+</table>
+<!-- #EndLibraryItem --><!-- #BeginLibraryItem "/library/buttons/resources.lbi" --><table border="0" cellpadding="0" cellspacing="0" width="96">
+<!-- fwtable fwsrc="resources1.png" fwbase="resources.gif" -->
+  <tr>
+   <td><img src="../library/buttons/spacer.gif" width="96" height="1" border="0"></td>
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+  </tr>
+  <tr>
+    <td><a href="../mainpages/resources.html" onMouseOut="MM_nbGroup('out');"  onMouseOver="MM_nbGroup('over','resources_r1_c1','../library/buttons/resources_r1_c1_f2.gif','../library/buttons/resources_r1_c1_f4.gif',1)"  onClick="MM_nbGroup('down','navbar1','resources_r1_c1','../library/buttons/resources_r1_c1_f3.gif',1)" ><img name="resources_r1_c1" src="../library/buttons/resources_r1_c1.gif" width="96" height="79" border="0"></a></td>
+   <td><img src="../library/buttons/spacer.gif" width="1" height="79" border="0"></td>
+  </tr>
+  <tr>
+   <td><a href="#" onMouseOut="MM_swapImgRestore();"  onMouseOver="MM_swapImage('resources_r2_c1','','../library/buttons/resources_r2_c1_f2.gif',1)" ><img name="resources_r2_c1" src="../library/buttons/resources_r2_c1.gif" width="96" height="1" border="0"></a></td>
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+  </tr>
+</table>
+<!-- #EndLibraryItem --></td>
+        </tr>
+      </table>
+    </td>
+    <td colspan="3" rowspan="2" valign="top" bgcolor="669966"> <!-- #BeginEditable "content" --> 
+
+
+
+      <table width="100%" border="0" cellpadding="5" cellspacing="0" bgcolor="ede4d8">
+        <tr> 
+          <td height="1917" width="593" valign="top"> 
+            <div align="center"> 
+              <p><!-- #BeginLibraryItem "/library/buttons/aboutsite.lbi" --><a href="aboutsite.html" onMouseOut="MM_nbGroup('out');"  onMouseOver="MM_nbGroup('over','aboutsite','../library/buttons/aboutsite_f2.gif','../library/buttons/aboutsite_f4.gif',1)"  onClick="MM_nbGroup('down','navbar1','aboutsite','../library/buttons/aboutsite_f3.gif',1)" ><img name="aboutsite" src="../library/buttons/aboutsite.gif" width="96" height="40" border="0"></a><!-- #EndLibraryItem --><!-- #BeginLibraryItem "/library/buttons/planning.lbi" --><a href="courseoutline.html" onMouseOut="MM_nbGroup('out');"  onMouseOver="MM_nbGroup('over','planning','../library/buttons/planning_f2.gif','../library/buttons/planning_f4.gif',1)"  onClick="MM_nbGroup('down','navbar1','planning','../library/buttons/planning_f3.gif',1)" ><img name="planning" src="../library/buttons/planning.gif" width="96" height="40" border="0"></a><!-- #EndLibraryItem --></p>
+              <div align="center"> 
+                <p align="left"><font size="4" color="663333" face="Georgia, Times New Roman, Times, serif"><b>Unit 
+                  3 - Character<i><br>
+                  </i></b></font><i><font face="Georgia, Times New Roman, Times, serif" size="4" color="663333">Module 
+                  4: Performing<br>
+                  </font></i><font face="Georgia, Times New Roman, Times, serif" size="4" color="663333">Lesson 
+                  2 - Working With a Director</font></p>
+                <p align="left"><font face="Georgia, Times New Roman, Times, serif" color="#000000"><b>Introduction:<br>
+                  </b>The purpose of this lesson is to provide an opportunity 
+                  for personal reflection and experience with the directoral process. 
+                  At the end of the lesson, students should be able to orally 
+                  identify some of the characteristics of a good director.<br>
+                  </font></p>
+                <p align="left"><font face="Georgia, Times New Roman, Times, serif" color="#000000"> 
+                  <b>Objectives:</b><br>
+                  - to feel secure in class<br>
+                  - to initiate ideas for drama experiences</font><br>
+                  <font face="Georgia, Times New Roman, Times, serif"> - to demonstrate 
+                  an ability to direct a short scene<br>
+                  - to use voice projection</font></p>
+                <p align="left"><b><font face="Georgia, Times New Roman, Times, serif" color="#000000">Resources:</font></b><font face="Georgia, Times New Roman, Times, serif" color="#000000"><br>
+                  paper and pen.<br>
+                  </font></p>
+                <p align="left"><b><font face="Georgia, Times New Roman, Times, serif" color="#000000">CELs:</font></b><font face="Georgia, Times New Roman, Times, serif" color="#000000"><br>
+                  C, CCT, IL, PSVS</font></p>
+                <p align="left"><b><font face="Georgia, Times New Roman, Times, serif" color="#000000">Components:</font></b><font face="Georgia, Times New Roman, Times, serif" color="#000000"><br>
+                  Creative/Productive, Cultural/Historical</font></p>
+                <hr>
+                <table width="575" border="1" align="center">
+                  <tr> 
+                    <td bgcolor="#669966"><font face="Georgia, Times New Roman, Times, serif"><b><font color="#FFFFFF">Note:</font></b><font color="#FFFFFF"> 
+                      As students are preparing to perform their monologues, help 
+                      them apply all that they study to the performance. They 
+                      should consider only elements which are within their grasp. 
+                      For example: Lighting plan should reflect actual equipment 
+                      available.</font></font></td>
+                  </tr>
+                </table>
+                <table width="575" border="1" height="23" bordercolor="#669966" bgcolor="#FFFFFF" align="center">
+                  <tr> 
+                    <td bgcolor="#FFFFFF" width="10%"><img src="../library/images/lightbulb.gif" width="50" height="50"></td>
+                    <td bgcolor="#FFFFFF" width="90%"><b><font face="Georgia, Times New Roman, Times, serif">Performance 
+                      Alternative:</font></b><font face="Georgia, Times New Roman, Times, serif"> 
+                      Remember that not all students in drama wish to perform 
+                      - some may prefer to work behind the scenes. Give students 
+                      the option for finding someone else to do the acting, while 
+                      they direct the performance. </font></td>
+                  </tr>
+                </table>
+                <p align="left"><b><font face="Georgia, Times New Roman, Times, serif">Activities:</font></b></p>
+              </div>
+              <div align="left"> 
+                <p><font face="Georgia, Times New Roman, Times, serif"> <b>Activity 
+                  1 - Talking Circle or Discussion</b></font></p>
+                <table width="575" border="1" align="center" cellpadding="5">
+                  <tr> 
+                    <td width="442" bgcolor="#669966"><font face="Georgia, Times New Roman, Times, serif">&#149; 
+                      What does it mean to have a vision, a clear picture of what 
+                      you want? <br>
+                      &#149; How can you best get others to do what you want? 
+                      <br>
+                      &#149; What qualities in a leader do you most admire? <br>
+                      &#149; How is this this similar to a director? (10 min.)</font></td>
+                    <td width="101" bgcolor="#CC9966"> 
+                      <div align="center"><img src="../library/images/talkingcircle.gif" width="85" height="67"></div>
+                    </td>
+                  </tr>
+                </table>
+                <p><b><font face="Georgia, Times New Roman, Times, serif">Activity 
+                  2 - Personal Analysis:</font></b><font face="Georgia, Times New Roman, Times, serif"><br>
+                  As the teacher, read the following characteristics of a good 
+                  director aloud, and have the students record which ones they 
+                  will excel at, and where they will struggle. (7-10 min.)</font></p>
+              </div>
+              <ul>
+                <li> 
+                  <div align="left"><font face="Georgia, Times New Roman, Times, serif">knows 
+                    the play/script very well (even before casting &amp; rehearsals)</font></div>
+                </li>
+                <li> 
+                  <div align="left"><font face="Georgia, Times New Roman, Times, serif">has 
+                    a vision of the play</font></div>
+                </li>
+                <li> 
+                  <div align="left"><font face="Georgia, Times New Roman, Times, serif">has 
+                    to find the right people to work with for acting and technical 
+                    roles</font></div>
+                </li>
+                <li> 
+                  <div align="left"><font face="Georgia, Times New Roman, Times, serif">convinces 
+                    others of the vision - so it is a shared vision</font></div>
+                </li>
+                <li> 
+                  <div align="left"><font face="Georgia, Times New Roman, Times, serif">gains 
+                    trust and respect of cast and crew</font></div>
+                </li>
+                <li> 
+                  <div align="left"><font face="Georgia, Times New Roman, Times, serif">may 
+                    help actor(s) understand their role<b>, </b>or lead them through 
+                    exploration of the character</font></div>
+                </li>
+                <li> 
+                  <div align="left"><font face="Georgia, Times New Roman, Times, serif">may 
+                    assign background research to actors to help them understand 
+                    the play</font></div>
+                </li>
+                <li> 
+                  <div align="left"><font face="Georgia, Times New Roman, Times, serif">sensitive 
+                    to the overall tempo of the play, provides objective feedback</font></div>
+                </li>
+                <li> 
+                  <div align="left"><font face="Georgia, Times New Roman, Times, serif">may 
+                    provide notes to actors after rehearsals (things to work on, 
+                    be aware of)</font></div>
+                </li>
+                <li> 
+                  <div align="left"><font face="Georgia, Times New Roman, Times, serif">leads 
+                    actors and crew from rehearsal to performance</font></div>
+                </li>
+              </ul>
+              <div align="left">
+<table width="57%" border="1" align="center">
+                  <tr> 
+                    <td width="7%"><img src="../library/images/questionmark.gif" width="30" height="49"></td>
+                    <td width="93%" valign="middle" bgcolor="#669966"> 
+                      <div align="center"> 
+                        <p><font face="Georgia, Times New Roman, Times, serif">When 
+                          you choose to direct as a teacher, what will be your 
+                          biggest strength? What will be your biggest weakness?</font></p>
+                      </div>
+                    </td>
+                  </tr>
+                </table>
+                <p align="left"><b><font face="Georgia, Times New Roman, Times, serif">Activity 
+                  3 - Directing Plan Presentation:</font></b><font face="Georgia, Times New Roman, Times, serif"><br>
+                  Students are to create a directing plan for their monologue 
+                  performance pieces. Allow them to be creative in how they present 
+                  the plans. They must, however, show that the elements for performance 
+                  have been considered:</font></p>
+              </div>
+              <div align="left"> 
+                <ol>
+                  <li> <font face="Georgia, Times New Roman, Times, serif">vision 
+                    (perhaps through a metaphor, drawings, related art or music)</font></li>
+                  <li><font face="Georgia, Times New Roman, Times, serif">rehearsal 
+                    process (include strategies for finding character)</font></li>
+                  <li><font face="Georgia, Times New Roman, Times, serif">technical 
+                    aspects - blocking, staging, props, costume, make up, light, 
+                    sound</font></li>
+                  <li><font face="Georgia, Times New Roman, Times, serif">cast 
+                    and crew list</font></li>
+                  <li><font face="Georgia, Times New Roman, Times, serif">expected 
+                    audience, invitation or ticket, video documentation</font></li>
+                </ol>
+              </div>
+              <ol>
+              </ol>
+             
+                <div align="left"> 
+                  
+                <p><font face="Georgia, Times New Roman, Times, serif">Tell students 
+                  they will present their plans to the class. The teacher will 
+                  be the &quot;Producer&quot; with all the money and resources 
+                  needed to bring the performances to the stage. They need to 
+                  convince you with their plans. Style and panache count! (work 
+                  time 20 min., presentations 2-3 min. each next day)</font></p>
+                </div>
+              <hr>
+              <p align="left"><b><font face="Georgia, Times New Roman, Times, serif">Instructional</font><font face="Georgia, Times New Roman, Times, serif"> 
+                Strategies:<br>
+                </font></b><font face="Georgia, Times New Roman, Times, serif">Games, 
+                Reflection</font><font face="Georgia, Times New Roman, Times, serif"></font><b><font face="Georgia, Times New Roman, Times, serif"><br>
+                </font></b></p>
+              <p align="left"><font face="Georgia, Times New Roman, Times, serif"><b>Evaluation:<br>
+                </b>Look at the directing plan for the elements (2 marks each)<b>, 
+                </b>for creativity (5 marks) and for clarity of vision and expression 
+                (5 marks)<b>.<br>
+                </b></font></p>
+              <p align="left"><b><font face="Georgia, Times New Roman, Times, serif">Alternative 
+                On-line Activity:<br>
+                </font></b><font face="Georgia, Times New Roman, Times, serif">Submit 
+                the plans on-line, student chooses the format. Complete discussions 
+                using a whiteboard, e-mail or a secure chat. </font></p>
+              <p align="center"><font face="Georgia, Times New Roman, Times, serif"><a href="3rehearsal.html">Next 
+                Lesson</a> / <a href="3acting.html">Previous Lesson</a> / <a href="../student/3director.html">Student 
+                Lesson</a></font></p>
+            </div>
+          </td>
+        </tr>
+        <tr> 
+          <td height="2"></td>
+        </tr>
+      </table>
+
+
+
+      <!-- #EndEditable --></td>
+  </tr>
+  <tr> 
+    <td valign="top" height="89"> 
+      <table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="669966">
+        <tr> 
+          <td width="97" height="89" valign="top" bgcolor="669966"><!-- #BeginEditable "optional" -->
+
+
+
+            <p>&nbsp;</p>
+
+
+
+            <p>&nbsp;</p>
+
+
+
+            <p>&nbsp;</p>
+
+
+
+            <p>&nbsp;</p>
+
+
+
+            <p>&nbsp;</p>
+
+
+
+            <p>&nbsp;</p>
+
+
+
+            <p>&nbsp;</p>
+
+
+
+            <p>&nbsp;</p>
+
+
+
+            <p>&nbsp;</p>
+
+
+
+            <p>&nbsp;</p>
+
+
+
+            <p>&nbsp;</p>
+
+
+
+            <p>&nbsp;</p>
+
+
+
+            <p>&nbsp;</p>
+
+
+
+            <p>&nbsp;</p>
+
+
+
+            <p>&nbsp;</p>
+
+
+
+            <p>&nbsp;</p>
+
+
+
+            <p>&nbsp;</p>
+
+
+
+            <p>&nbsp;</p>
+
+
+
+            <p>&nbsp;</p>
+
+
+
+            <p>&nbsp;</p>
+
+
+
+            <p>&nbsp;</p>
+
+
+
+            <p>&nbsp;</p>
+
+
+
+            <p>&nbsp;</p>
+
+
+
+            <p>&nbsp;</p>
+
+
+
+            <p>&nbsp;</p>
+
+
+
+            <p>&nbsp;</p>
+
+
+
+            <p>&nbsp;</p>
+
+
+
+            <p>&nbsp;</p>
+
+
+
+            <p>&nbsp;</p>
+
+
+
+            <p>&nbsp;</p>
+
+
+
+            <p>&nbsp;</p>
+
+
+
+            <p>&nbsp;</p>
+
+
+
+            <p>&nbsp;</p>
+
+
+
+            <p>&nbsp;</p>
+
+
+
+            <p>&nbsp;</p>
+
+
+
+            <p>&nbsp;</p>
+
+
+
+            <p>&nbsp;</p>
+
+
+
+            <p>&nbsp;</p>
+
+
+
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <!-- #EndEditable --></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr> 
+    <td height="0"></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+</table>
+</body>
+<!-- #EndTemplate --></html>

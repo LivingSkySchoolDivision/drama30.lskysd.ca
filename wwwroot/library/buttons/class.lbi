@@ -1,0 +1,1 @@
+<a href="../../student/class.html" onMouseOut="MM_nbGroup('out');"  onMouseOver="MM_nbGroup('over','class','class_f2.gif','class_f4.gif',1);"  onClick="MM_nbGroup('down','navbar1','class','class_f3.gif',1);" ><img name="class" src="class.gif" width="96" height="40" border="0"></a>

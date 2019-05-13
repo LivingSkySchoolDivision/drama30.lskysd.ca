@@ -1,0 +1,931 @@
+<html><!-- #BeginTemplate "/Templates/templateteacher.dwt" -->
+
+<head>
+
+<!-- #BeginEditable "doctitle" --> 
+
+<title>Teacher: Collective Creation</title>
+
+<!-- #EndEditable --> 
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<script language="JavaScript">
+
+<!--
+
+function MM_preloadImages() { //v3.0
+
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+
+}
+
+
+
+function MM_findObj(n, d) { //v4.0
+
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+
+  if(!x && document.getElementById) x=document.getElementById(n); return x;
+
+}
+
+
+
+function MM_nbGroup(event, grpName) { //v3.0
+
+  var i,img,nbArr,args=MM_nbGroup.arguments;
+
+  if (event == "init" && args.length > 2) {
+
+    if ((img = MM_findObj(args[2])) != null && !img.MM_init) {
+
+      img.MM_init = true; img.MM_up = args[3]; img.MM_dn = img.src;
+
+      if ((nbArr = document[grpName]) == null) nbArr = document[grpName] = new Array();
+
+      nbArr[nbArr.length] = img;
+
+      for (i=4; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+
+        if (!img.MM_up) img.MM_up = img.src;
+
+        img.src = img.MM_dn = args[i+1];
+
+        nbArr[nbArr.length] = img;
+
+    } }
+
+  } else if (event == "over") {
+
+    document.MM_nbOver = nbArr = new Array();
+
+    for (i=1; i < args.length-1; i+=3) if ((img = MM_findObj(args[i])) != null) {
+
+      if (!img.MM_up) img.MM_up = img.src;
+
+      img.src = (img.MM_dn && args[i+2]) ? args[i+2] : args[i+1];
+
+      nbArr[nbArr.length] = img;
+
+    }
+
+  } else if (event == "out" ) {
+
+    for (i=0; i < document.MM_nbOver.length; i++) {
+
+      img = document.MM_nbOver[i]; img.src = (img.MM_dn) ? img.MM_dn : img.MM_up; }
+
+  } else if (event == "down") {
+
+    if ((nbArr = document[grpName]) != null)
+
+      for (i=0; i < nbArr.length; i++) { img=nbArr[i]; img.src = img.MM_up; img.MM_dn = 0; }
+
+    document[grpName] = nbArr = new Array();
+
+    for (i=2; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+
+      if (!img.MM_up) img.MM_up = img.src;
+
+      img.src = img.MM_dn = args[i+1];
+
+      nbArr[nbArr.length] = img;
+
+  } }
+
+}
+
+
+
+function MM_swapImgRestore() { //v3.0
+
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+
+}
+
+
+
+function MM_swapImage() { //v3.0
+
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+
+}
+
+//-->
+
+</script>
+
+<!-- #BeginEditable "CourseBuilder" --> 
+
+<script language="JavaScript">
+
+<!--
+
+function MM_initInteractions(){}
+
+//-->
+
+</script>
+
+<!-- #EndEditable --> 
+
+</head>
+
+
+
+<body bgcolor="#669966" text="#000000" onLoad="MM_initInteractions();MM_preloadImages('../library/buttons/home_r1_c1_f3.gif','../library/buttons/home_r1_c1_f2.gif','../library/buttons/home_r1_c1_f4.gif','../library/buttons/home_r2_c1_f2.gif','../library/buttons/studentblue_r1_c1_f3.gif','../library/buttons/studentblue_r1_c1_f2.gif','../library/buttons/studentblue_r1_c1_f4.gif','../library/buttons/courseoutline_r1_c1_f3.gif','../library/buttons/courseoutline_r1_c1_f2.gif','../library/buttons/courseoutline_r1_c1_f4.gif','../library/buttons/courseoutline_r2_c1_f2.gif','../library/buttons/sitemap_r1_c1_f3.gif','../library/buttons/sitemap_r1_c1_f2.gif','../library/buttons/sitemap_r1_c1_f4.gif','../library/buttons/help_r1_c1_f3.gif','../library/buttons/help_r1_c1_f2.gif','../library/buttons/help_r1_c1_f4.gif','../library/buttons/help_r2_c1_f2.gif','../library/buttons/resources_r1_c1_f3.gif','../library/buttons/resources_r1_c1_f2.gif','../library/buttons/resources_r1_c1_f4.gif','../library/buttons/resources_r2_c1_f2.gif','../library/buttons/aboutsite_f3.gif','../library/buttons/aboutsite_f2.gif','../library/buttons/aboutsite_f4.gif','../library/buttons/planning_f3.gif','../library/buttons/planning_f2.gif','../library/buttons/planning_f4.gif','../library/buttons/teacher1_r1_c1_f3.gif','../library/buttons/teacher1_r1_c1_f2.gif','../library/buttons/teacher1_r1_c1_f4.gif','../library/buttons/teacher1_r2_c1_f2.gif')">
+
+<table width="700" border="0" cellpadding="0" cellspacing="0">
+
+  <tr> 
+
+    <td width="97" valign="top" bgcolor="669966" rowspan="2"> <!-- #BeginLibraryItem "/library/buttons/home.lbi" --><table border="0" cellpadding="0" cellspacing="0" width="96">
+
+<!-- fwtable fwsrc="home1.png" fwbase="home.gif" -->
+
+  <tr>
+
+   <td><img src="../library/buttons/spacer.gif" width="96" height="1" border="0"></td>
+
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+
+  </tr>
+
+  <tr>
+
+    <td><a href="../index.html" onMouseOut="MM_nbGroup('out');"  onMouseOver="MM_nbGroup('over','home_r1_c1','../library/buttons/home_r1_c1_f2.gif','../library/buttons/home_r1_c1_f4.gif',1)"  onClick="MM_nbGroup('down','navbar1','home_r1_c1','../library/buttons/home_r1_c1_f3.gif',1)" ><img name="home_r1_c1" src="../library/buttons/home_r1_c1.gif" width="96" height="79" border="0" alt="home"></a></td>
+
+   <td><img src="../library/buttons/spacer.gif" width="1" height="79" border="0"></td>
+
+  </tr>
+
+  <tr>
+
+   <td><a href="#" onMouseOut="MM_swapImgRestore();"  onMouseOver="MM_swapImage('home_r2_c1','','../library/buttons/home_r2_c1_f2.gif',1)" ><img name="home_r2_c1" src="../library/buttons/home_r2_c1.gif" width="96" height="1" border="0"></a></td>
+
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+
+  </tr>
+
+</table>
+
+<!-- #EndLibraryItem --></td>
+
+    <td valign="top" width="97" bgcolor="669966" rowspan="2"><!-- #BeginLibraryItem "/library/buttons/studentblue.lbi" --><table border="0" cellpadding="0" cellspacing="0" width="96">
+
+<!-- fwtable fwsrc="student1.png" fwbase="studentblue.gif" -->
+
+  <tr>
+
+   <td><img src="../library/buttons/spacer.gif" width="95" height="1" border="0"></td>
+
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+
+  </tr>
+
+  <tr>
+
+    <td><a href="../mainpages/student.html" onMouseOut="MM_nbGroup('out');"  onMouseOver="MM_nbGroup('over','studentblue_r1_c1','../library/buttons/studentblue_r1_c1_f2.gif','../library/buttons/studentblue_r1_c1_f4.gif',1)"  onClick="MM_nbGroup('down','navbar1','studentblue_r1_c1','../library/buttons/studentblue_r1_c1_f3.gif',1)" ><img name="studentblue_r1_c1" src="../library/buttons/studentblue_r1_c1.gif" width="95" height="79" border="0"></a></td>
+
+   <td rowspan="2"><img name="studentblue_r1_c2" src="../library/buttons/studentblue_r1_c2.gif" width="1" height="80" border="0"></td>
+
+   <td><img src="../library/buttons/spacer.gif" width="1" height="79" border="0"></td>
+
+  </tr>
+
+  <tr>
+
+   <td><img name="studentblue_r2_c1" src="../library/buttons/studentblue_r2_c1.gif" width="95" height="1" border="0"></td>
+
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+
+  </tr>
+
+</table>
+
+<!-- #EndLibraryItem --></td>
+
+    <td width="97" valign="top" rowspan="2"><!-- #BeginLibraryItem "/library/buttons/teacher1.lbi" --><table border="0" cellpadding="0" cellspacing="0" width="96">
+
+<!-- fwtable fwsrc="teacher1.png" fwbase="teacher1.gif" -->
+
+  <tr>
+
+   <td><img src="../library/buttons/spacer.gif" width="96" height="1" border="0"></td>
+
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+
+  </tr>
+
+  <tr>
+
+    <td><a href="../mainpages/teacher.html" onMouseOut="MM_nbGroup('out');"  onMouseOver="MM_nbGroup('over','teacher1_r1_c1','../library/buttons/teacher1_r1_c1_f2.gif','../library/buttons/teacher1_r1_c1_f4.gif',1)"  onClick="MM_nbGroup('down','navbar1','teacher1_r1_c1','../library/buttons/teacher1_r1_c1_f3.gif',1)" ><img name="teacher1_r1_c1" src="../library/buttons/teacher1_r1_c1.gif" width="96" height="79" border="0"></a></td>
+
+   <td><img src="../library/buttons/spacer.gif" width="1" height="79" border="0"></td>
+
+  </tr>
+
+  <tr>
+
+   <td><a href="#" onMouseOut="MM_swapImgRestore();"  onMouseOver="MM_swapImage('teacher1_r2_c1','','../library/buttons/teacher1_r2_c1_f2.gif',1)" ><img name="teacher1_r2_c1" src="../library/buttons/teacher1_r2_c1.gif" width="96" height="1" border="0"></a></td>
+
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+
+  </tr>
+
+</table>
+
+<!-- #EndLibraryItem --></td>
+
+    <td width="409" valign="top" bgcolor="669966" height="91"><!-- #BeginEditable "banner" --><!-- #BeginLibraryItem "/library/buttons/dr30titleteacher.lbi" --><img name="dr30titleteacher" src="../library/buttons/dr30titleteacher.gif" width="400" height="80" border="0"><!-- #EndLibraryItem --><!-- #EndEditable --></td>
+
+  </tr>
+
+  <tr> 
+
+    <td valign="top" bgcolor="669966" height="23"><!-- #BeginEditable "pagetitle" --> 
+
+      <div align="center"></div>
+
+      <!-- #EndEditable --></td>
+
+  </tr>
+
+  <tr> 
+
+    <td valign="top" height="347"> 
+
+      <table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="669966">
+
+        <tr> 
+
+          <td width="97" height="56" valign="top" bgcolor="669966"> <!-- #BeginLibraryItem "/library/buttons/courseoutline.lbi" --><table border="0" cellpadding="0" cellspacing="0" width="96">
+
+<!-- fwtable fwsrc="courseoutline1.png" fwbase="courseoutline.gif" -->
+
+  <tr>
+
+   <td><img src="../library/buttons/spacer.gif" width="96" height="1" border="0"></td>
+
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+
+  </tr>
+
+  <tr>
+
+    <td><a href="../mainpages/courseoutline.htm" onMouseOut="MM_nbGroup('out');"  onMouseOver="MM_nbGroup('over','courseoutline_r1_c1','../library/buttons/courseoutline_r1_c1_f2.gif','../library/buttons/courseoutline_r1_c1_f4.gif',1)"  onClick="MM_nbGroup('down','navbar1','courseoutline_r1_c1','../library/buttons/courseoutline_r1_c1_f3.gif',1)" ><img name="courseoutline_r1_c1" src="../library/buttons/courseoutline_r1_c1.gif" width="96" height="79" border="0"></a></td>
+
+   <td><img src="../library/buttons/spacer.gif" width="1" height="79" border="0"></td>
+
+  </tr>
+
+  <tr>
+
+   <td><a href="#" onMouseOut="MM_swapImgRestore();"  onMouseOver="MM_swapImage('courseoutline_r2_c1','','../library/buttons/courseoutline_r2_c1_f2.gif',1)" ><img name="courseoutline_r2_c1" src="../library/buttons/courseoutline_r2_c1.gif" width="96" height="1" border="0"></a></td>
+
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+
+  </tr>
+
+</table>
+
+<!-- #EndLibraryItem --><!-- #BeginLibraryItem "/library/buttons/sitemap.lbi" --><table border="0" cellpadding="0" cellspacing="0" width="96">
+
+<!-- fwtable fwsrc="sitemap1.png" fwbase="sitemap.gif" -->
+
+  <tr>
+
+   <td><img src="../library/buttons/spacer.gif" width="95" height="1" border="0"></td>
+
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+
+  </tr>
+
+  <tr>
+
+    <td><a href="../mainpages/templatemainmap.html" onMouseOut="MM_nbGroup('out');"  onMouseOver="MM_nbGroup('over','sitemap_r1_c1','../library/buttons/sitemap_r1_c1_f2.gif','../library/buttons/sitemap_r1_c1_f4.gif',1)"  onClick="MM_nbGroup('down','navbar1','sitemap_r1_c1','../library/buttons/sitemap_r1_c1_f3.gif',1)" ><img name="sitemap_r1_c1" src="../library/buttons/sitemap_r1_c1.gif" width="95" height="79" border="0"></a></td>
+
+   <td rowspan="2"><img name="sitemap_r1_c2" src="../library/buttons/sitemap_r1_c2.gif" width="1" height="80" border="0"></td>
+
+   <td><img src="../library/buttons/spacer.gif" width="1" height="79" border="0"></td>
+
+  </tr>
+
+  <tr>
+
+   <td><img name="sitemap_r2_c1" src="../library/buttons/sitemap_r2_c1.gif" width="95" height="1" border="0"></td>
+
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+
+  </tr>
+
+</table>
+
+<!-- #EndLibraryItem --><!-- #BeginLibraryItem "/library/buttons/help.lbi" --><table border="0" cellpadding="0" cellspacing="0" width="96">
+
+<!-- fwtable fwsrc="help1.png" fwbase="help.gif" -->
+
+  <tr>
+
+   <td><img src="../library/buttons/spacer.gif" width="96" height="1" border="0"></td>
+
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+
+  </tr>
+
+  <tr>
+
+    <td><a href="../mainpages/help.html" onMouseOut="MM_nbGroup('out');"  onMouseOver="MM_nbGroup('over','help_r1_c1','../library/buttons/help_r1_c1_f2.gif','../library/buttons/help_r1_c1_f4.gif',1)"  onClick="MM_nbGroup('down','navbar1','help_r1_c1','../library/buttons/help_r1_c1_f3.gif',1)" ><img name="help_r1_c1" src="../library/buttons/help_r1_c1.gif" width="96" height="79" border="0"></a></td>
+
+   <td><img src="../library/buttons/spacer.gif" width="1" height="79" border="0"></td>
+
+  </tr>
+
+  <tr>
+
+   <td><a href="#" onMouseOut="MM_swapImgRestore();"  onMouseOver="MM_swapImage('help_r2_c1','','../library/buttons/help_r2_c1_f2.gif',1)" ><img name="help_r2_c1" src="../library/buttons/help_r2_c1.gif" width="96" height="1" border="0"></a></td>
+
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+
+  </tr>
+
+</table>
+
+<!-- #EndLibraryItem --><!-- #BeginLibraryItem "/library/buttons/resources.lbi" --><table border="0" cellpadding="0" cellspacing="0" width="96">
+
+<!-- fwtable fwsrc="resources1.png" fwbase="resources.gif" -->
+
+  <tr>
+
+   <td><img src="../library/buttons/spacer.gif" width="96" height="1" border="0"></td>
+
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+
+  </tr>
+
+  <tr>
+
+    <td><a href="../mainpages/resources.html" onMouseOut="MM_nbGroup('out');"  onMouseOver="MM_nbGroup('over','resources_r1_c1','../library/buttons/resources_r1_c1_f2.gif','../library/buttons/resources_r1_c1_f4.gif',1)"  onClick="MM_nbGroup('down','navbar1','resources_r1_c1','../library/buttons/resources_r1_c1_f3.gif',1)" ><img name="resources_r1_c1" src="../library/buttons/resources_r1_c1.gif" width="96" height="79" border="0"></a></td>
+
+   <td><img src="../library/buttons/spacer.gif" width="1" height="79" border="0"></td>
+
+  </tr>
+
+  <tr>
+
+   <td><a href="#" onMouseOut="MM_swapImgRestore();"  onMouseOver="MM_swapImage('resources_r2_c1','','../library/buttons/resources_r2_c1_f2.gif',1)" ><img name="resources_r2_c1" src="../library/buttons/resources_r2_c1.gif" width="96" height="1" border="0"></a></td>
+
+   <td><img src="../library/buttons/spacer.gif" width="1" height="1" border="0"></td>
+
+  </tr>
+
+</table>
+
+<!-- #EndLibraryItem --></td>
+
+        </tr>
+
+      </table>
+
+    </td>
+
+    <td colspan="3" rowspan="2" valign="top" bgcolor="669966"> <!-- #BeginEditable "content" --> 
+
+      <table width="603" border="0" cellpadding="5" cellspacing="0" bgcolor="ede4d8">
+
+        <tr> 
+
+          <td height="1068" width="593" valign="top"> 
+            <div align="center"> 
+
+              <p><!-- #BeginLibraryItem "/library/buttons/aboutsite.lbi" --><a href="aboutsite.html" onMouseOut="MM_nbGroup('out');"  onMouseOver="MM_nbGroup('over','aboutsite','../library/buttons/aboutsite_f2.gif','../library/buttons/aboutsite_f4.gif',1)"  onClick="MM_nbGroup('down','navbar1','aboutsite','../library/buttons/aboutsite_f3.gif',1)" ><img name="aboutsite" src="../library/buttons/aboutsite.gif" width="96" height="40" border="0"></a><!-- #EndLibraryItem --><!-- #BeginLibraryItem "/library/buttons/planning.lbi" --><a href="courseoutline.html" onMouseOut="MM_nbGroup('out');"  onMouseOver="MM_nbGroup('over','planning','../library/buttons/planning_f2.gif','../library/buttons/planning_f4.gif',1)"  onClick="MM_nbGroup('down','navbar1','planning','../library/buttons/planning_f3.gif',1)" ><img name="planning" src="../library/buttons/planning.gif" width="96" height="40" border="0"></a><!-- #EndLibraryItem --></p>
+
+              <p align="left"><font size="4" color="663333" face="Georgia, Times New Roman, Times, serif"><b>Unit 
+
+                5 - Collective Creation</b></font><i><font face="Georgia, Times New Roman, Times, serif" size="4" color="663333"><br>
+
+                </font></i><font face="Georgia, Times New Roman, Times, serif" size="4" color="663333">Lesson 
+
+                2 - The Collective Process</font></p>
+
+              <p align="left"><font face="Georgia, Times New Roman, Times, serif" color="#000000"><b>Introduction:<br>
+
+                </b>The purpose of the collective is to use all the ideas students 
+
+                have learned during the year to complete and original drama production.<b><br>
+
+                <br>
+
+                Objectives:</b><br>
+
+                - to understand the process of building a collective creation 
+
+                (not a curriculum objective)<br>
+
+                - to recall and respond to drama experience<br>
+
+                - to share responses with other students<br>
+
+                - to initiate ideas for drama experiences</font><br>
+
+                <font face="Georgia, Times New Roman, Times, serif">- to work 
+
+                in groups of all sizes to plan and participate in drama experiences<br>
+
+                - to demonstrate the ability to script a short scene<br>
+
+                - to demonstrate the ability to direct a short scene<br>
+
+                - to purposefully use the elements of focus, tension, contrast 
+
+                and symbol in all their drama work<br>
+
+                - to demonstrate an ability to contribute to one area of technical 
+
+                theatre</font></p>
+
+              <p align="left"><b><font face="Georgia, Times New Roman, Times, serif" color="#000000">Resources:</font></b><font face="Georgia, Times New Roman, Times, serif" color="#000000"><br>
+
+                <i>Examples of Student Collective Creations:</i></font><br>
+
+                <font face="Georgia, Times New Roman, Times, serif" color="#000000">Web 
+
+                Site,<i><a href="http://www.sasked.gov.sk.ca/%7Enbchs/ltf/">&quot;Learning 
+
+                to Fly&quot;</a> </i> (North Battleford Comprehensive High School 
+
+                collective documentation)<br>
+                </font><font face="Georgia, Times New Roman, Times, serif" color="#000000">(pdf)<i> 
+                <a href="pdf/5learningtofly.pdf">Learning to Fly</a></i>, script</font><font face="Georgia, Times New Roman, Times, serif" color="#000000"><br>
+
+                </font><font face="Georgia, Times New Roman, Times, serif" color="#000000">(pdf)<a href="pdf/5collectiveprocess.pdf"> 
+
+                Collective Creation</a> (process handout)</font></p>
+
+              <p align="left"><b><font face="Georgia, Times New Roman, Times, serif" color="#000000">CELs:</font></b><font face="Georgia, Times New Roman, Times, serif" color="#000000"><br>
+
+                C, CCL, PSVS, TL<br>
+
+                </font></p>
+
+              <p align="left"><b><font face="Georgia, Times New Roman, Times, serif" color="#000000">Components:</font></b><font face="Georgia, Times New Roman, Times, serif" color="#000000"><br>
+
+                Creative/Productive, Cultural/Historical</font></p>
+
+              <hr>
+
+              <p align="center"><font face="Georgia, Times New Roman, Times, serif"><b><u>Background 
+
+                Notes:</u><br>
+
+                <br>
+
+                Collective Creation: What is it?</b><br>
+
+                </font></p>
+
+            </div>
+
+            <ul>
+
+              <li> 
+
+                <div align="left"><font face="Georgia, Times New Roman, Times, serif">The 
+
+                  term &quot;Collective Creation&quot; refers to a creative venture 
+
+                  made by group (or collective) decisions. </font></div>
+
+              </li>
+
+              <li> 
+
+                <div align="left"><font face="Georgia, Times New Roman, Times, serif">A 
+
+                  Collective is built upon the strength of the group as it makes 
+
+                  the journey.</font></div>
+
+              </li>
+
+              <li> 
+
+                <div align="left"><font face="Georgia, Times New Roman, Times, serif"> 
+
+                  The process may vary from group to group according to the topic 
+
+                  selected and the makeup of the group. </font></div>
+
+              </li>
+
+            </ul>
+
+            <div align="left"> 
+
+              <p><font face="Georgia, Times New Roman, Times, serif">It is important 
+
+                for the teacher (facilitator) to listen well to the members of 
+
+                the group and allow the process to unfold accordingly.</font></p>
+
+              <p align="center"><font face="Georgia, Times New Roman, Times, serif"><b><u><br>
+
+                Principles:</u></b></font></p>
+
+              <p align="left"><font face="Georgia, Times New Roman, Times, serif"><br>
+
+                1. <i>It is a Group Process</i>: everyone must agree to work together, 
+
+                contribute ideas, remain flexible.<br>
+
+                2. <i>It is Collaborative</i>: there is a sharing of power and 
+
+                decision making, everyone has a voice, respect one another.<br>
+
+                3.<i> It Requires Rigorous Thinking</i>: engage in a world of 
+
+                ideas and concepts; explore ideas through image, music and metaphor; 
+
+                it involves creative and critical thinking.<br>
+
+                4. <i>It Requires Trust</i>: building an atmosphere of trust and 
+
+                support is the most important task of the teacher or facilitator.<br>
+
+                5.<i> It is Aesthetic</i>: an aesthetic experience occurs; the 
+
+                need to think as artists; emphasis must remain on the work, decisions 
+
+                that make the play stronger (not catering to individual egos).<br>
+
+                6.<i> Document the Process</i>: this project is an invaluable 
+
+                source of reflection and evaluation.</font> </p>
+
+            </div>
+
+            <div align="left"> 
+
+              <p align="center"><font face="Georgia, Times New Roman, Times, serif"><br>
+
+                </font> <font face="Georgia, Times New Roman, Times, serif"><b><i><font color="#669966">Dramatic 
+
+                Elements to consider:</font></i><font color="#669966"><i><br>
+
+                <br>
+
+                focus<br>
+
+                tension <br>
+
+                contrast<br>
+
+                </i></font></b></font><b><font color="#669966"><i><font face="Georgia, Times New Roman, Times, serif">symbol<br>
+
+                rhythm<br>
+
+                mood</font></i></font></b></p>
+
+            </div>
+
+          </td>
+
+        </tr>
+
+        <tr> 
+
+          <td height="138" valign="top"> 
+
+            <table width="100%" border="0" cellpadding="5" cellspacing="0">
+
+              <tr> 
+
+                <td width="247" height="128" valign="top" bgcolor="#000000"><img src="../library/images/5doctors.jpg" width="250" height="188"></td>
+
+                <td width="326" valign="top"> 
+
+                  <p><font face="Georgia, Times New Roman, Times, serif"><a href="5process_sample.html">View 
+                    some highlights from student Collective called &quot;Learning 
+                    to Fly&quot;</a></font></p>
+
+                  <p>&nbsp;</p>
+                  <p><font face="Georgia, Times New Roman, Times, serif">Other 
+                    resources:</font><br>
+                    <font face="Georgia, Times New Roman, Times, serif" color="#000000">Web 
+                    Site,<i><a href="http://www.sasked.gov.sk.ca/%7Enbchs/ltf/">&quot;Learning 
+                    to Fly&quot;</a> </i> (North Battleford Comprehensive High 
+                    School collective documentation)<br>
+                    </font><font face="Georgia, Times New Roman, Times, serif" color="#000000">(pdf)<i> 
+                    <a href="pdf/5learningtofly.pdf">Learning to Fly</a></i>, 
+                    script<br>
+                    </font><font face="Georgia, Times New Roman, Times, serif" color="#000000">(pdf)<i> 
+                    So Fair and Foul</i>, excerpts, (Carpenter High School collective, 
+                    script)<br>
+                    </font><font face="Georgia, Times New Roman, Times, serif" color="#000000">(pdf)<a href="pdf/5collectiveprocess.pdf"> 
+                    Collective Creation</a> (process handout)</font> </p>
+
+                </td>
+
+              </tr>
+
+            </table>
+
+          </td>
+
+        </tr>
+
+        <tr> 
+
+          <td height="1256" valign="top"> 
+
+            <div align="left"> 
+
+              <hr>
+
+              <p><font face="Georgia, Times New Roman, Times, serif"><b>Activities: 
+
+                <br>
+
+                <br>
+
+                The Collective Process:</b><a href="pdf/5collectiveprocess.pdf"> 
+
+                (pdf version of process)<br>
+
+                </a><br>
+
+                Theatre, by definition is about communicating meaning to an audience 
+
+                whereas Drama education is about finding meaning for oneself through 
+
+                personal exploration. The Collective Creation is a way to successfully 
+
+                bring together both into one meaningful experience.</font> <font face="Georgia, Times New Roman, Times, serif"> 
+
+                <font face="Georgia, Times New Roman, Times, serif">You </font><font face="Georgia, Times New Roman, Times, serif"> 
+
+                will answer the question,&quot;What shall we do a play about?&quot; 
+
+                by following the steps outlined Preparing for a Collective. It 
+
+                is important to do at least one activity from each step - pick 
+
+                and choose as you wish.</font></font></p>
+
+              <p><font face="Georgia, Times New Roman, Times, serif">If you choose 
+
+                to do the lesson on getting ideas for the collective, some of 
+
+                these activities will be redundant. You may wish to start at <b>Activity 
+
+                6</b>. There you will be working writing, rehearsing and performing.<br>
+
+                </font></p>
+
+              <table width="200" border="5" cellspacing="0" cellpadding="5" align="center">
+
+                <tr> 
+
+                  <td width="86" height="138" valign="middle" align="center" bgcolor="#669966"> 
+
+                    <p><font face="Georgia, Times New Roman, Times, serif"><b>Preparing 
+
+                      for Collective</b></font></p>
+
+                    <p><b><font face="Georgia, Times New Roman, Times, serif"><a href="5process1-5.html"><font color="#FFFFFF">Activities 
+
+                      1-5</font></a></font></b></p>
+
+                  </td>
+
+                  <td width="99" valign="middle" align="center" bgcolor="#669966"><font face="Georgia, Times New Roman, Times, serif"><b>Writing, 
+
+                    Rehearsing, and Performing<br>
+
+                    <br>
+
+                    <a href="5process6-9.html"><font color="#FFFFFF">Activities 
+
+                    <br>
+
+                    6-9</font></a></b></font></td>
+
+                </tr>
+
+              </table>
+
+            </div>
+
+            <div align="left"> 
+
+              <hr>
+
+              <p><font face="Georgia, Times New Roman, Times, serif"><b>Instructional 
+
+                Strategies:</b> <br>
+
+                Structured Overview, Reflective Study, Games, Simulations, Focused 
+
+                Imaging, Role Playing, Discussion</font></p>
+
+              <p><font face="Georgia, Times New Roman, Times, serif"><b>Evaluation:<br>
+
+                </b>Evaluation should be developed by the students and the teacher 
+
+                in cooperation, but over-all weighting and general categories 
+
+                should be preset. A sample of evaluation weighting is found below:</font></p>
+
+              <p><font face="Georgia, Times New Roman, Times, serif"><i>A) Individual</i><br>
+
+                - participation /50<br>
+
+                - acting or directing /75<br>
+
+                - reflection and self-evaluation /50<br>
+
+                <i><br>
+
+                B) Group</i><br>
+
+                - collective scripting /75<br>
+
+                - group work skills and use of time /50<br>
+
+                - rehearsal process /75<br>
+
+                - production /25</font></p>
+
+              <p> <font face="Georgia, Times New Roman, Times, serif"><br>
+
+                <i>Overall /400</i></font></p>
+
+              <p><font face="Georgia, Times New Roman, Times, serif"><b><font color="#669966">Note 
+
+                that the evaluation considers both group and individual work, 
+
+                and that final production is not worth much of the mark. Collective 
+
+                development is about process not product, so marks should be weighted 
+
+                far more heavily in formative categories.</font></b></font> <font color="#669966"><b><font face="Georgia, Times New Roman, Times, serif">Within 
+
+                each category, specific expectations and mark allocation will 
+
+                need to be established.</font></b></font><br>
+
+              </p>
+
+              <p><b><font face="Georgia, Times New Roman, Times, serif">On-line 
+
+                Alternatives:<br>
+
+                </font></b><font face="Georgia, Times New Roman, Times, serif">Omit 
+
+                the Activities 1-5 and be sure the Virtual Collective (Unit 5, 
+
+                Lesson 1) is completed. Following the development of background 
+
+                material, two options are possible choices.</font></p>
+
+              <p><font face="Georgia, Times New Roman, Times, serif"><i><b>Option 
+
+                1</b> - fast, technically easier.</i><br>
+
+                Students should submit an rtf file of a two minute monologue that 
+
+                follows the theme. These monologues could be e-mailed to another 
+
+                student for editing and suggestions, then video taped and streamed. 
+
+                The final collective could be created by a one-day weekend workshop 
+
+                where the class meets, or by posting all the scenes and bridging 
+
+                material on the class web site. Once the material is posted, students 
+
+                create journal responses and complete an evaluation of the project 
+
+                as a whole, then it is published in final form on the site.</font></p>
+
+              <p><font face="Georgia, Times New Roman, Times, serif"><i><b>Option 
+
+                2</b> - more in the spirit of a collective<br>
+
+                </i>The class should send a video tape (through the mail), with 
+
+                each student adding in his or her monologue. Each student is also 
+
+                responsible for the transition between his or her monologue and 
+
+                the previous one. Prior to sending the tape, students decide as 
+
+                a group how to do transitions - even if just a fade in and fade 
+
+                out with similar locations. The tape gets sent around until complete. 
+
+                This process allows student work to feed off of the work of others.<br>
+
+                <br>
+
+                Finally, the tape returns to the teacher for final editing, and 
+
+                he or she makes copies for everyone. The material is also posted 
+
+                and annotated on the web site for the class.</font> <font face="Georgia, Times New Roman, Times, serif">Once 
+
+                the material is posted, students create journal responses and 
+
+                complete an evaluation of the project as a whole. This option 
+
+                is preferable because the process is more meaningful and has a 
+
+                more appropriate outcome. </font></p>
+
+              <p><font face="Georgia, Times New Roman, Times, serif">If using 
+
+                this process, ensure that students have access to digital video 
+
+                cameras and the ability to copy tapes. Each student should keep 
+
+                a copy of the current material and send on the original. The copy 
+
+                is kept so the class work can't be lost, and the original is sent 
+
+                on to keep the quality of the recording high.</font><br>
+
+              </p>
+
+              <p align="center"><font face="Georgia, Times New Roman, Times, serif"><a href="../student/5process.html">Student 
+
+                Lesson</a></font><b><font face="Georgia, Times New Roman, Times, serif"> 
+
+                / </font></b><font face="Georgia, Times New Roman, Times, serif"><a href="5collective.html">Previous 
+
+                Lesson</a></font></p>
+
+            </div>
+
+          </td>
+
+        </tr>
+
+      </table>
+
+      <!-- #EndEditable --></td>
+
+  </tr>
+
+  <tr> 
+
+    <td valign="top" height="89"> 
+
+      <table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="669966">
+
+        <tr> 
+
+          <td width="97" height="89" valign="top" bgcolor="669966"><!-- #BeginEditable "optional" --><!-- #EndEditable --></td>
+
+        </tr>
+
+      </table>
+
+    </td>
+
+  </tr>
+
+  <tr> 
+
+    <td height="0"></td>
+
+    <td></td>
+
+    <td></td>
+
+    <td></td>
+
+  </tr>
+
+</table>
+
+</body>
+
+<!-- #EndTemplate --></html>
+
