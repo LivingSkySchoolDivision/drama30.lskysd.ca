@@ -9,8 +9,8 @@ pipeline {
         stage('Git clone') {
             steps {
                 git branch: 'master',
-                    credentialsId: 'JENKINS-AZUREDEVOPS',
-                    url: 'git@ssh.dev.azure.com:v3/LivingSkySchoolDivision/ArchivedWebsite-Drama30/ArchivedWebsite-Drama30'
+                    credentialsId: 'DEPLOY-KEY-JENKINS',
+                    url: 'ssh://git@sourcecode.lskysd.ca:32123/PublicCode/ArchivedWebsite-Drama30.git'
             }
         }
         stage('Docker build') {
@@ -27,11 +27,6 @@ pipeline {
         }
     }
     post {
-        failure {
-            mail to:'jenkinsalerts@lskysd.ca',
-                subject: "Failed Pipeline: ${currentBuild.fullDisplayName}",
-                body: "Something is wrong with ${env.BUILD_URL}"
-        }
         always {
             deleteDir()
         }
